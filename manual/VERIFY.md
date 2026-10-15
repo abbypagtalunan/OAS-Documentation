@@ -23,3 +23,115 @@ Statements in the manual taken from the code, not yet seen on screen.
 ## Project-wide
 - [ ] Role names mapped to code roles (Applicant, Engineering, Permit Evaluator, Assessor, Permit Issuance, Administrator).
 - [ ] All offices must approve: confirm where this is enforced.
+
+## Section 3.5 Payment History
+- [ ] The list shows payments recorded for the applicant's businesses after the cashier's OR is encoded (onsite payment).
+- [ ] "Export Pdf" in the three-dot menu works and its output.
+- [ ] Guide Video opens by itself only on the first visit per browser (code stores this in the browser).
+
+## Section 4: Adding a New Business
+- [ ] Required fields: besides the asterisk fields, the form also requires Business Category, Owner Type, Barangay and Business Line Desc. (from the code).
+- [ ] Validation messages table: only "Business name is required" and "Franchise name is required" were seen on screen; the rest come from the code.
+- [ ] Text is converted to capitals automatically (code uses an uppercase handler).
+- [ ] What to enter in Franchise Name when the business has no franchise (sample used INDEPENDENT).
+- [ ] Meaning of Office Type / Type Of Bank / Type Of Club / Bedroom Type / With AC (numeric fields defaulting to 0), and whether an applicant should touch them.
+- [ ] After "Add Company": "Company Created" message and redirect to the Business Holdings list (from the code).
+- [ ] SEC Registration No. and SEC Date Issued appear only when Owner Type is not Sole Proprietor.
+- [ ] "Area of Signboard" appears when Using Signboard = Yes.
+- [ ] DTI No. and DTI Date Issued show an asterisk, but their validation is commented out in the code; confirm whether the form actually blocks saving without them.
+- [ ] Business row icons: pencil = Edit Business, numbered 1 = Step One - Display Assessment List (shown while no assessment request exists), pin = Location. Icon is disabled with "Please click Edit to provide the required company details and continue." when details are incomplete (from code).
+
+## Sections 5 to 8: Requesting a Permit (New Business, Renewal, Closure, Transfer)
+- [x] Payment Mode options confirmed: New Business and Closure allow only Annual; Renewal and Transfer allow Annual, Semi-Annual and Quarterly. The system spells the options "Annualy" and "Semi-Annualy"; the manual uses the correct spelling. Consider asking the developers to fix the typo.
+- [x] Quarter selector seen: Quarterly shows "Select Quarter Type" (Single Quarter or Multiple Quarter); Semi-Annual shows an "Annual" field (1st Annual).
+- [ ] Why 2nd to 4th Quarter are greyed out in Single Quarter (earlier quarter not yet requested? already requested?), and the other Annual choices besides "1st Annual".
+- [ ] The system spells "Mutiple Quarter" and "Semi-Annualy" on screen; the manual uses the correct spelling.
+- [x] Gross Income is asked instead of Capitalization for a Renewal (confirmed).
+- [ ] Requirements differ by transaction type: New Business shows Sketch and Photos of location, DTI, Title or Tax Dec; Renewal shows DTI and Title or Tax Dec. Closure shows only DTI; Transfer shows "No requirements needed." (both seen).
+- [ ] Camera tab in the Select Attachment Method window (what it does).
+- [ ] "You have no request recorded for this year." appears only when no request exists for the year.
+- [ ] Which requirements appear (depends on business type) and whether more than one file per requirement is allowed.
+- [ ] Error wording "area must be greater than or equal to 1" and "no_of_storey must be greater than or equal to 1" is shown as raw field names; consider asking the developers to reword.
+- [ ] What happens after clicking Request ("Assessment Sent" message, redirect) and whether a required requirement with no file blocks sending.
+
+## Section 4.5 Viewing the business details (tabs)
+- [ ] DTI Date Issued shows a raw timestamp (2026-10-04T13:18:00.000Z) on the Registration tab; consider asking the developers to format it as a date.
+- [ ] Owner Type and Gender appear as letters (S, F); confirm the meanings S = Sole Proprietor, F = Female.
+- [ ] "Business Type Code" column shows the type name, not a code.
+
+## Section 5.4 and 5.5: after the request is sent
+- [x] Upload window, Email Sent, SENT status and picture icon seen on screen. "Email not sent." comes from the code only.
+- [ ] The upload box says "Drop files here or click browse thorough your machine" ("thorough" looks like a typo for "through").
+- [x] Camera tab: takes a photo directly with the device camera (confirmed by the project owner). The screenshot was taken on a computer without camera access, so it shows the error "Unable to open camera. Please allow camera permission and try again." A capture of the working camera on a phone is still needed.
+- [ ] "Attachment On Request" shows the files sent with the request ("Assessment Request Attachments" window; "No attachment found." when none).
+- [ ] The eye/picture icon "View uploaded requirements" after a file is sent.
+- [ ] Which offices appear (Assessor, Engineering, Fire, Peso, Mao, Menro, Mpdo, Rhu, Bplo and the business's barangay) and whether the list changes by business type.
+- [ ] Whether all requirements for all offices must be sent before the request moves forward.
+- [x] Requirements List seen on screen: columns Id, Requirement, Required (TRUE), Status (UNSENT red, SENT green), Forms ("No form included." or a downloadable file), Action (Attach File; picture icon after sending); empty offices show "No requirements found."
+- [ ] Some requirement names in the sample data look like test data (for example "Sample requirements in fire"); confirm the real names before publishing, or keep the figures generic.
+- [ ] The tooltip on the picture icon reads "View uplaoded requirements" on screen (typo for "uploaded"); the manual uses the correct spelling.
+- [x] Multiple files can be uploaded for one requirement and viewed in the "Uploaded Requirements Attachment" window (confirmed).
+
+## Sections 5.6 to 5.8
+- [ ] "Business" in the path at the top of the Assessment Requirements page returns to the Assessment Information list (per the project owner); confirm where it goes.
+- [ ] Meaning of the dot colors in the status list: red = no action yet; green = approved; orange = not approved (from the code: action null / 1 / 0). Confirm the wording shown to applicants.
+- [ ] Icon behavior: Send Inquiry opens the inquiry page; Offices Uploaded Files; View/Sent Attachments (paperclip, replaces the numbered 3 icon after the first file is sent); Assessment Details (print) and View/Print Assessment (arrow) are disabled until the request is approved by BPLO (from the code; tooltips not seen on screen).
+- [x] The status popover figure originally showed a second test request (Quarterly, 1st Quarter); the second row was edited out of the figure.
+
+## Section 5.9: Wait for the approval of the offices
+- [ ] The bell icon shows notifications about the request when offices act.
+- [ ] "A request waiting on one office cannot be paid or released" (all offices must approve, per the project owner); confirm the exact rule, including whether BPLO approval alone enables the print icons.
+
+## Section 9: Sending an Inquiry (from the code)
+- [x] Make Inquiry window and its messages seen on screen: "Inquiry successfully sent." and the error "Inquery is a required field." ("Inquery" looks like a typo for "Inquiry"). "Receiver is a required field." comes from the code only.
+- [x] Chat error seen on screen: "message is a required field."
+- [ ] Inquiries page: "List Of Inquiries" with Search, "No record found.", unread count, chat panel with live messages.
+- [ ] Whether the paper plane icon opens the Make Inquiry window directly (the link is /app/inquiry?new=yes).
+
+## Section 10: Permit Evaluator
+- [ ] The paperclip icon in the New Request / Approved list shows "View request on attachments and requirements per office" (tooltip from the code).
+- [ ] Account name shown for staff: "eBPLS Permit Evaluator". Confirm the official role name for the manual.
+- [ ] The example "Approved Request For Assessment" list shows other applicants' businesses; their names are hidden in the figure.
+- [ ] Staff accounts use the same Sign in page and are redirected by role (from the code).
+
+## Section 10.5: Review and approve a new request
+- [ ] Required fields on the details form (from the code): Business Category, Business Type, Transaction Type, Owner Type, No. Of Employee, CTC Number, Payment Mode. CTC Number confirmed on screen; the rest from the code (only Business Type shows an asterisk).
+- [ ] For a renewal, the details form asks for Gross Sales For Year (and Daily Sales) instead of Capitalization (from the code); screenshot needed.
+- [x] After Approve the system runs the assessment automatically; messages "Sworn successfully approve.", "Please wait while we run the assessment process..." and "Assessment process completed successfully" (the last one seen on screen). The error "CTC number is required" was seen on screen.
+- [ ] Years Arrears: meaning and when it is filled in.
+
+## Section 10.7 and 10.8: For Assessment and the assessment
+- [x] The document icon in the For Assessment list opens the Files page: files uploaded by the offices (confirmed by the project owner).
+- [ ] The Files page: what the Upload button does (who can upload, for which office), the Action column and the Description values once a file exists (screenshot needed).
+- [ ] "Amount payable to the BFP" is the amount payable to the Bureau of Fire Protection; confirm the label and meaning.
+- [ ] What Current Dues and Annually Dues mean for a new business (both show 0.00 in the example).
+- [ ] The Assessment button is greyed out because the assessment was already run on Approve (code: disabled when the assessment header exists).
+- [ ] The five lists: For Assessment, Assessed For Payment, Paid Assessment Request, Semi-Annual/Quarter Transaction, Closure Transaction (meanings from the code).
+
+## Section 11: Offices (Engineering used as the example)
+- [ ] Full names of the offices: Municipal Assessor's Office, Municipal Engineering Office, Bureau of Fire Protection (BFP), Public Employment Service Office (PESO), Municipal Agriculture Office (MAO), Municipal Environment and Natural Resources Office (MENRO), Municipal Planning and Development Office (MPDO), Rural Health Unit (RHU), Business Permits and Licensing Office (BPLO). Standard Philippine LGU office names assumed; confirm for Oas.
+- [ ] Which fees belong to which office (the "In the example" lines are guesses from the fee names and requirements seen in the test request).
+- [ ] The office rules in 11.3 come from the code: request appears after assessment; amount needed to act; first-quarter or annual only.
+- [ ] Offices can add, change and remove fees in their own assessment section (Add Fee, pencil, trash), seen on screen for Engineering. Confirm this is intended for every office and what it does to the total.
+- [ ] "New Requirements" lets an office add requirements for the applicant (the ticked ones are the requirements already asked for; the sample showed "Building Permit / Occupancy Permit" unticked and the mechanical permit ticked). Confirm what Save does for the applicant.
+- [x] The Approved window (Remarks required, buttons No and Yes) and the message "Request Approved Successful" were seen on screen; counts on the dashboard change.
+- [x] The Disapproved window (Remarks required, No and Yes) seen on screen.
+- [ ] After disapproving, the message still reads "Request Approved Successful" (wording in the system; ask the developers to show "Request Disapproved Successful").
+- [ ] Changing a decision: the button of the current status is greyed out and the other two stay available (seen on screen). Until when a decision can be changed (for example after BPLO approval or payment) is not confirmed.
+- [ ] The Pending window (what the Pending button asks for; code: PENDING REQUEST with remarks).
+- [ ] The "Request With Attachment" panel on the office dashboard (what it lists).
+- [ ] The Holdings and Requirements pages of an office (not yet documented).
+
+## Section 11.7: Office inquiries
+- [ ] The office opens the Inquiries page through the Make Inquiry link in Business Information (the top bar chat icon also lists inquiries; the code links it to /<role>/inquiry).
+- [ ] An inquiry sent by an office appears in the list under the name "ENGINEERING" (the office name) while one from the applicant shows the applicant's name; confirm how names are shown.
+- [ ] The office can reply in the conversation with the Message box and send icon (cropped out of the screenshot because of a screenshot overlay); a capture of the Message box is needed.
+
+## Sections 11.8 to 11.10: office report, holdings and requirements
+- [x] The two icons next to Search Business: download as PDF and download as .xlsx (confirmed by the project owner).
+- [ ] The Amount column of Request For Clearances (what it totals; sample rows show 0.00 and 3,560.00).
+- [ ] Holdings: the tick boxes and View Map (assumed: tick businesses, then View Map). Link Accounts lock icon opens "Users account users this business." with the name and email of linked accounts (names hidden in the figure).
+- [ ] Requirements: meaning of "Is Default" and "Business Type" (empty business type), the Attachments file, and the New / Renewal / Transfer / Closure tick boxes. The page title reads "List Of Requirments" (typo).
+- [x] Requirements: the Edit Requirements window seen (same fields as New Requirements, with the tick boxes).
+- [ ] Select Business Type is a searchable list (typing narrows it); confirm.
+- [ ] Whether adding, changing or removing an office requirement changes what applicants see on new and existing requests.

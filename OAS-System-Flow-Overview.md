@@ -154,7 +154,12 @@ Automatic notifications (cron, 9:00 AM): Apr 20 (Q2), Sep 20 (Q3), Oct 20 (Q4 an
 10. Reports guide (six reports)
 11. Troubleshooting / FAQ, appendices (status codes, error messages)
 
-## 9. Open questions to confirm on the live site
+## 9a. Answers confirmed by the project owner
+- The applicant portal is live. Payment is **onsite (cashier + OR number)**, not online, so the manual should not document Paynamics/GCash.
+- **All offices must approve** before the request can proceed. **[verify in code]** where this is enforced.
+- Official role names for the manual: Applicant, Engineering, Permit Evaluator, Assessor, Permit Issuance, Administrator, BPCOS. **[pending]** map each name to its code role (BPCOS to `bplo` or `moderator`?).
+
+## 9. Open questions to confirm on the live site (remaining)
 1. Is the applicant (`user`) portal live, or do staff encode everything? Is online payment (Paynamics) enabled?
 2. Do all offices have to approve before BPLO, or is BPLO the only gate?
 3. What does BPLO "Disapproved" lead to in practice?

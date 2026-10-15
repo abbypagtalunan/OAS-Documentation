@@ -30,3 +30,16 @@ li { margin-bottom: 1.5mm; }
 .warning strong:first-child { color:#b45309; }
 .error { background:#fdecec; border-left:4px solid #c62828; padding:3mm 4mm; margin:4mm 0; break-inside:avoid; }
 .error strong:first-child { color:#c62828; }
+
+ul.indent { margin-left: 14mm; }
+
+.toc { background: var(--soft); border: 1px solid var(--line); border-radius: 2mm; padding: 4mm 6mm; margin: 5mm 0 7mm; break-inside: avoid; }
+.toc .toc-title { font-weight: 700; color: var(--brand); margin-bottom: 2mm; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0 0 1mm; }
+.toc li.sub { margin-left: 8mm; font-size: 10pt; }
+
+.role { border: 2px solid #e8381f; background: #fff4f1; border-radius: 2mm; padding: 3mm 5mm; margin: 4mm 0 5mm; break-inside: avoid; }
+.role .role-label { display: inline-block; background: #e8381f; color: #fff; font-weight: 700; font-size: 9pt; letter-spacing: .06em; text-transform: uppercase; padding: 0.8mm 3mm; border-radius: 1mm; margin-right: 3mm; }
+
+.todo { border: 1px dashed var(--muted); background: #fafafa; color: var(--muted); font-style: italic; padding: 2mm 4mm; margin: 2mm 0 4mm; border-radius: 1.5mm; break-inside: avoid; }
