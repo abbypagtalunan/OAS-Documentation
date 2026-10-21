@@ -135,3 +135,55 @@ Statements in the manual taken from the code, not yet seen on screen.
 - [x] Requirements: the Edit Requirements window seen (same fields as New Requirements, with the tick boxes).
 - [ ] Select Business Type is a searchable list (typing narrows it); confirm.
 - [ ] Whether adding, changing or removing an office requirement changes what applicants see on new and existing requests.
+
+## Section 10.9 Add or edit fees
+- [x] The Edit Fees Amount window seen: Enter Amount, Update, Close.
+- [ ] The trash icon removes a fee at once with no confirmation window; confirm on the live site.
+- [ ] System typos: "Fee succesfully added to installment.", "Fee succesfully updated.", "Fee succesfully removed." ("succesfully").
+- [ ] Rules in the code: amount of 1 or more; for the tax refund fee only negative amounts are allowed. Confirm what the Penalty fee amount rule is.
+- [ ] Whether the fee changes also change the totals shown on the Assessment Request page (Total Assessment, Current Dues).
+
+## Section 10.10 For Approval
+- [ ] The tip on the For Approval button reads "Approved to enable bplo actions". Confirm what it means for the user.
+- [ ] After sending, the Assessment, Add/Edit Fees and For Approval buttons are gray; confirm the evaluator cannot change the assessment until the BPLO acts or a rollback is done.
+- [ ] System wording: the success message reads "Request successfully added to assessment" even though the request is sent for approval.
+- [ ] Figure with the empty-box error was taken on a request with different totals (3,610.00) than the other figures (1,440.00). Retake with the test request if exact figures matter.
+
+## Section 12 Municipal Treasurer's Office (eBPLS Assessment)
+- [ ] Confirm the account eBPLS Assessment (route /bplo, office "bplo") is the Municipal Treasurer's Office, and that Section 11 and 10 should call it that instead of "Business Permits and Licensing Office".
+- [ ] Summary of Collection per Barangay: clicking it showed the Registered Businesses page again (address shown was /bplo/report/summary-collection, which has no route in the code). Check what the page does.
+- [x] View Map becomes active when a business is ticked; it shows a map with View List to return (confirmed).
+- [ ] Index Of Payments: the code has a second page per business (/report/index-of-payments/:busCode). Screenshot needed.
+- [ ] Fees Account: what the arrow icon, the edit icon and New Fees Account do. Fees Template: New Fees Template and edit windows.
+- [ ] Download Excel and Print Report on the reports: confirm they become active only after Generate.
+- [ ] "Registered Businesses" breadcrumb appears on the Business Category per Account page (system wording).
+- [ ] What the Mail, Chat and Calendar items open for this account.
+
+## Section 12.6 Review a request (Municipal Treasurer's Office)
+- [ ] "Assessment - MTO": MTO is read as Municipal Treasurer's Office; confirm.
+- [ ] The Actions panel label reads "CURRRENT STATUS" (three r) in the system.
+- [ ] What the Logs link and Add Arrears window do; what Location and Files show.
+- [ ] Messages after adding, editing and removing a fee as MTO (not seen). The window titles seen: Add Fees To Installment, EDIT AMOUNT (No/Save), "Are you sure you want to remove this fee?" (Remove/Cancel).
+- [ ] Total Fees (MTO list, 1,040.00 in the example) versus Total Assessment on the Permit Evaluator side (1,440.00): confirm what each total covers.
+- [ ] Approved and Disapproved windows and messages for this office.
+- [ ] Moderator Remarks panel shows "Approved Date" and "Approved Remarks" (the Permit Evaluator's For Approval remarks); confirm.
+- [ ] MTO "Total Fees" (1,040.00) vs Assessment Details "Total LGU Fees" (1,440.00): MTO list is likely this office's own fees only; confirm. "Amount payable to the BFP" shows 534.00 here.
+- [ ] New Requirements window (MTO): adds requirements to the request; confirm what happens after Save (message, does the applicant see it).
+- [ ] Approve/Disapprove/Pending windows (MTO) are titled APPROVED REQUEST, DISAPPROVED REQUEST, PENDING REQUEST, each with a required Remarks box and No/Yes. Messages: "Request approved successful." and "Request disapproved successful." (system wording). Message after Pending: "Request pending successful."
+- [ ] After approval, does the request move on to Permit Issuance or to the Permit Evaluator for payment? (The dashboard shows an "For MP Preparation" list for this office.)
+- [ ] Files page: what the Action column holds once a file is uploaded; the upload window text says "browse thorough your machine" (typo).
+- [ ] Location page: pin comes from the business location the applicant saved.
+- [ ] Processed Time (e.g., "38 minutes") appears in Business Information after approval; confirm meaning.
+- [ ] The applicant sees this office as "BPLO" in the status list (remarks example "Approved Final 1"); confirm the Municipal Treasurer's Office is the account behind BPLO, and that FOR PAYMENT follows its approval.
+- [ ] Orange dot for Engineering in the applicant status list: which action produced it (Pending or Disapproved)?
+- [ ] The map after View Map showed the whole region without a pin at the default zoom; confirm that the ticked businesses appear as pins when zoomed in.
+- [ ] Request For Clearances (MTO): the column heading reads "Trasaction Type" (system typo). Amount and Total in the example: 3,560.00 (test business), total 12,030.00; confirm what Amount covers (assessment total vs fees).
+- [ ] Registered Businesses Excel: sheet "Report"; headings partly cut in the screenshot (Business Tax, Amount Paid, "OR N..."); confirm the exact heading of the last column (OR number?) and that the Excel has the extra columns Capital, Gross, Total Assessment.
+- [ ] Print Report opens the browser print window (not a PDF file by itself).
+- [ ] Edit Company page (Holdings): screenshot showed only the top part (General Information up to Company Email). Need the rest of the page and the Save message. Business Type was empty for the example business and is marked required.
+- [ ] Business Category per Account: only SERVICES appeared for the period (test data has TRADING too); confirm whether categories without collections are left out. Business Summary default start date was January 1st in this screenshot (October 1st on first open).
+- [ ] Summary Report: Collections figures (2,890.00 new, 3,460.00 renewed) vs totals elsewhere; confirm they are amounts paid.
+- [ ] Fees Account: "Account - 1" label above the account code (meaning?). The window for adding an amount is titled "New Fees Account" like the one for a new account (system naming). Type Of Charging is grayed (Fixed Amount); other types exist in the New Fees Account window (list not seen).
+- [ ] Fees Account: windows for the edit icon of a fee and of an amount, the trash icon, and messages after saving not seen.
+- [ ] Fees Template: the window for a new template is titled "New Business Category" (system naming) and has Business Type, Fees Account, Fees Type. Confirm that the edit window (same title, filled with SERVICES and Regulatory Fee, Fees Account empty) is the one opened by the edit icon.
+- [ ] Fees Template: meaning and use of a template (does the assessment use it to choose fees per category?). Trash confirmation and messages not seen.
