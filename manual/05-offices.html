@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OAS Unified Online Services: Offices</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 40mm; } .fig.tall img { max-height: 80mm; }</style>
+</head>
+<body>
+
+<div class="section-no">Section 5</div>
+<h1>Offices: Reviewing Requests</h1>
+<p class="lead">After a request is assessed, the offices that are involved review it. All the offices use the same screens, so this section describes them once, using the Engineering office as the example, and then lists what is different for each office.</p>
+
+<div class="role"><span class="role-label">Roles</span><strong>Office accounts</strong>: Assessor, Engineering, Fire, Peso, Mao, Menro, Mpdo, Rhu and Barangay. Each office signs in with its own account. The figures show the Engineering account, whose name, <em>eBPLS Engineering</em>, is highlighted in red in the first figure. The final approver, the Municipal Treasurer's Office (Bplo in the system), is covered in <a href="06-treasurer.html">Section 6</a>.</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s5-1">5.1 The offices and how they work</a></li>
+  <li><a href="#s5-2">5.2 Sign in and open the dashboard (Pending, Disapproved and Approved lists)</a></li>
+  <li><a href="#s5-3">5.3 Open a request from the Pending list</a></li>
+  <li><a href="#s5-4">5.4 Check the request before you decide</a></li>
+  <li class="sub"><a href="#s5-4-1">5.4.1 Assessment fee(s) of your office (view, add, edit fees)</a></li>
+  <li class="sub"><a href="#s5-4-2">5.4.2 Assessment Details</a></li>
+  <li class="sub"><a href="#s5-4-3">5.4.3 Requirements Per Assessment (view uploaded files, add a requirement)</a></li>
+  <li><a href="#s5-5">5.5 Approve or disapprove the request (with remarks)</a></li>
+  <li class="sub"><a href="#s5-5-1">To approve a request</a></li>
+  <li class="sub"><a href="#s5-5-2">To disapprove a request</a></li>
+  <li class="sub"><a href="#s5-5-3">To change a decision</a></li>
+  <li><a href="#s5-6">5.6 When an office can act (amount set by the Permit Evaluator)</a></li>
+  <li><a href="#s5-7">5.7 Inquiries with applicants</a></li>
+  <li class="sub"><a href="#s5-7-1">Open the Inquiries page</a></li>
+  <li class="sub"><a href="#s5-7-2">Make an inquiry</a></li>
+  <li class="sub"><a href="#s5-7-3">Read and answer an inquiry</a></li>
+  <li><a href="#s5-8">5.8 Request For Clearances (report, search, download as PDF or .xlsx)</a></li>
+  <li><a href="#s5-9">5.9 Holdings (business list and linked accounts)</a></li>
+  <li class="sub"><a href="#s5-9-1">Find a business</a></li>
+  <li class="sub"><a href="#s5-9-2">See the accounts linked to a business</a></li>
+  <li><a href="#s5-10">5.10 Requirements (add, change and remove)</a></li>
+  <li class="sub"><a href="#s5-10-1">To add a requirement</a></li>
+  <li class="sub"><a href="#s5-10-2">To change a requirement</a></li>
+  <li class="sub"><a href="#s5-10-3">To remove a requirement</a></li>
+  <li><a href="#s5-11">5.11 Application to Different Offices</a></li>
+</ul>
+</div>
+
+
+<h2 id="s5-1">5.1 The offices</h2>
+<p>These offices review a request:</p>
+<ol>
+  <li><strong>Assessor</strong> (Municipal Assessor's Office).</li>
+  <li><strong>Engineering</strong> (Municipal Engineering Office).</li>
+  <li><strong>Fire</strong> (Bureau of Fire Protection (BFP)).</li>
+  <li><strong>Peso</strong> (Public Employment Service Office).</li>
+  <li><strong>Mao</strong> (Municipal Agriculture Office).</li>
+  <li><strong>Menro</strong> (Municipal Environment and Natural Resources Office).</li>
+  <li><strong>Mpdo</strong> (Municipal Planning and Development Office).</li>
+  <li><strong>Rhu</strong> (Rural Health Unit).</li>
+  <li><strong>Barangay</strong> (the barangay where the business is located).</li>
+  <li><strong>Bplo</strong> (the Municipal Treasurer's Office, account <em>eBPLS Assessment</em>): the final approver. It has its own section, <a href="06-treasurer.html">Section 6</a>.</li>
+</ol>
+<p>The Permit Evaluator, who assesses the request first, is covered in <a href="04-permit-evaluator.html">Section 4</a>. The applicant sees each office in the status list of the request (<a href="03-applicant.html#s3-3-8">Section 3.3.8</a>).</p>
+
+<h2 id="s5-2">5.2 Sign in and open the dashboard</h2>
+<p>Sign in with the account of the office, as described in <a href="02-getting-started.html#s2-2">Section 2.2</a>. The dashboard of the office opens. For the Engineering office its title is <strong>Engineering Administrator Dashboard</strong>.</p>
+<div class="fig tall"><img src="images/fig-11-dashboard.png" alt="Office dashboard"></div>
+<div class="caption">Figure 5.1. The dashboard of the Engineering office, with the account highlighted in red. The business names of other applicants are hidden.</div>
+
+<p>The dashboard has three lists of requests. The number beside each name shows how many requests it holds.</p>
+<ul>
+  <li><strong>Pending</strong>: requests waiting for the office to act. Use <strong>Search</strong>, <strong>Request Type</strong> and <strong>Year</strong> to find a request.</li>
+  <li><strong>Disapproved</strong>: requests the office has disapproved.</li>
+  <li><strong>Approved</strong>: requests the office has approved.</li>
+</ul>
+
+<p>The panel on the right, <strong>Request With Attachment</strong>, lists requests that have attachments, with the <strong>Business</strong>, <strong>Description</strong>, <strong>Status</strong> and <strong>Remarks</strong>. It says <strong>No record found.</strong> when there are none.</p>
+<p>The sidebar has <strong>Dashboard</strong>, and under <strong>Reports</strong>, <strong>Request For Clearances</strong>, <strong>Holdings</strong> and <strong>Requirements</strong>, and the <strong>Applications</strong> links (Mail, Chat and Calendar).</p>
+
+<h2 id="s5-3">5.3 Open a request</h2>
+<p>In the <strong>Pending</strong> list, click the business of the request (highlighted).</p>
+<div class="fig tall"><img src="images/fig-11-click-business.png" alt="Click the business"></div>
+<div class="caption">Figure 5.2. Click the business in the Pending list (highlighted) to open its request.</div>
+
+<p>The <strong>Business Information</strong> panel opens on the right. Use the <strong>Make Inquiry</strong> link at its top right to send a message to the applicant (see <a href="#s5-7">Section 5.7</a>).</p>
+<div class="fig tall"><img src="images/fig-11-business-info.png" alt="Business Information"></div>
+<div class="caption">Figure 5.3. The Business Information panel of the request.</div>
+
+<ul>
+  <li><strong>Assessment Request No.</strong>, <strong>Assessment Code</strong> and <strong>Request Date</strong>: the numbers and the date of the request.</li>
+  <li><strong>Transaction Type</strong>, <strong>Payment Type</strong> and <strong>Business Year</strong>: for example <em>New Business</em>, <em>Annually</em> and <em>2026</em>.</li>
+  <li><strong>Gross Income</strong>: the gross income entered for the request.</li>
+  <li><strong>Business Type</strong>: for example <em>Sole Proprietor</em>.</li>
+  <li><strong>Business Name</strong>, <strong>Franchise Name</strong>, <strong>Business Activity</strong> and <strong>Business Category</strong>: what the business is.</li>
+  <li><strong>Business Contact</strong>, <strong>Business Email</strong>, <strong>Business Plate No.</strong> and <strong>Business Address</strong>: how to reach the business and where it is.</li>
+  <li><strong>Authorized Representative</strong>: the person who transacts for the business.</li>
+  <li><strong>No. Of Storey</strong>, <strong>Total Floor Area</strong> and <strong>No. Of Employees</strong>: the size of the business.</li>
+</ul>
+
+
+<h2 id="s5-4">5.4 Check the request</h2>
+<p>Below the business information there are three sections. Click the name of a section to open it.</p>
+
+<h3 id="s5-4-1">5.4.1 Assessment fee(s) of your office</h3>
+<p>The section named after your office, for example <strong>Assessment - ENGINEERING</strong>, lists the fees that belong to your office, with the <strong>Account Number</strong>, <strong>Description</strong> and <strong>Amount</strong>, and the <strong>Total Fees</strong>. You can add, change or remove a fee.</p>
+<p><strong>To add a fee:</strong> click <strong>Add Fee</strong> (highlighted).</p>
+<div class="fig tall"><img src="images/fig-11-addfee.png" alt="Add Fee button"></div>
+<div class="caption">Figure 5.4. Click Add Fee (highlighted) to add a fee to the assessment of your office.</div>
+
+<p>The <strong>Add Fees To Installment</strong> window opens. Choose the fee from the list, type the amount in <strong>Enter Amount</strong> and click <strong>Save</strong> (highlighted). Click <strong>Close</strong> to leave without saving.</p>
+<div class="fig tall"><img src="images/fig-11-dlg-add.png" alt="Add Fees To Installment"></div>
+<div class="caption">Figure 5.5. The Add Fees To Installment window.</div>
+
+<p><strong>To change the amount of a fee:</strong> click the <strong>pencil icon</strong> (highlighted) in the <strong>Action</strong> column.</p>
+<div class="fig tall"><img src="images/fig-11-editfee.png" alt="Edit icon"></div>
+<div class="caption">Figure 5.6. Click the pencil icon (highlighted) to change the amount of a fee.</div>
+
+<p>The <strong>Edit Amount</strong> window opens. Type the new amount and click <strong>Save</strong> (highlighted), or click <strong>No</strong> to leave without changing it.</p>
+<div class="fig tall"><img src="images/fig-11-dlg-edit.png" alt="Edit Amount"></div>
+<div class="caption">Figure 5.7. The Edit Amount window.</div>
+
+<p><strong>To remove a fee:</strong> click the <strong>trash icon</strong> (highlighted) in the <strong>Action</strong> column.</p>
+<div class="fig tall"><img src="images/fig-11-removefee.png" alt="Trash icon"></div>
+<div class="caption">Figure 5.8. Click the trash icon (highlighted) to remove a fee.</div>
+
+<p>The window asks <em>Are you sure you want to remove this fee?</em> Click <strong>Remove</strong> (highlighted) to remove it, or <strong>Cancel</strong> to keep it.</p>
+<div class="fig tall"><img src="images/fig-11-dlg-remove.png" alt="Remove fee confirmation"></div>
+<div class="caption">Figure 5.9. The confirmation window for removing a fee.</div>
+
+
+<h3 id="s5-4-2">5.4.2 Assessment Details</h3>
+<p><strong>Assessment Details</strong> lists all the fees of the request, from every office, with the <strong>Account Number</strong>, <strong>Description</strong> and <strong>Amount</strong>. It ends with the <strong>Amount payable to the BFP</strong> and the <strong>Total LGU Fees</strong>.</p>
+<div class="fig tall"><img src="images/fig-11-details.png" alt="Assessment Details"></div>
+<div class="caption">Figure 5.10. The Assessment Details of the request.</div>
+
+
+<h3 id="s5-4-3">5.4.3 Requirements Per Assessment</h3>
+<p><strong>Requirements Per Assessment</strong> lists the requirements of your office, with the <strong>Description</strong>, the <strong>Status</strong>, the <strong>Date Submitted</strong> and an <strong>Action</strong> icon. The status <strong>SENT</strong> means the applicant has sent the file.</p>
+<p><strong>To ask for more requirements:</strong> click <strong>New Requirements</strong> (highlighted).</p>
+<div class="fig tall"><img src="images/fig-11-newreq.png" alt="New Requirements button"></div>
+<div class="caption">Figure 5.11. Click New Requirements (highlighted) to add requirements for the applicant.</div>
+
+<p>The <strong>New Requirements</strong> window lists the requirements created and required of business owners. The ones already asked for are ticked. Tick the requirement you want to add and click <strong>Save</strong> (highlighted), or click <strong>Close</strong> to leave without saving.</p>
+<div class="fig tall"><img src="images/fig-11-dlg-newreq.png" alt="New Requirements window"></div>
+<div class="caption">Figure 5.12. The New Requirements window.</div>
+
+<p><strong>To view the files the applicant sent:</strong> click the <strong>paperclip icon</strong> (highlighted) in the <strong>Action</strong> column.</p>
+<div class="fig tall"><img src="images/fig-11-paperclip.png" alt="Paperclip icon"></div>
+<div class="caption">Figure 5.13. Click the paperclip icon (highlighted) to view the files sent for the requirement.</div>
+
+<p>The <strong>Uploaded Requirements Attachment</strong> window opens, with each file as a tile showing its file type and file name. Click the <strong>X</strong> at the top right to close it.</p>
+<div class="fig tall"><img src="images/fig-11-files.png" alt="Uploaded Requirements Attachment"></div>
+<div class="caption">Figure 5.14. The files the applicant sent for the requirement.</div>
+
+
+<h2 id="s5-5">5.5 Approve or disapprove the request</h2>
+<p>At the bottom of the request, the <strong>Actions</strong> card shows the <strong>Date</strong> of the last action, and the <strong>Current Status</strong>, for example <strong>PENDING</strong>. It has five buttons:</p>
+<ul>
+  <li><strong>Pending</strong>: puts the request back to pending. It is greyed out while the request is already pending.</li>
+  <li><strong>Disapproved</strong>: disapproves the request. Write your remarks.</li>
+  <li><strong>Approved</strong>: approves the request. Write your remarks.</li>
+  <li><strong>Location</strong>: shows the location of the business.</li>
+  <li><strong>Files</strong>: shows the files uploaded by the offices for the request.</li>
+</ul>
+
+<div class="fig tall"><img src="images/fig-11-actions.png" alt="Actions card"></div>
+<div class="caption">Figure 5.15. The Actions card. Click Disapproved or Approved (highlighted) to give your decision.</div>
+
+<h3 id="s5-5-1">To approve a request</h3>
+<ol>
+  <li>Click <strong>Approved</strong> in the <strong>Actions</strong> card. The <strong>Approved Request</strong> window opens.</li>
+  <li>Type your <strong>Remarks</strong> in the box. The remarks are required, and the applicant will read them. In the example, the remarks are <em>Cleared</em>.</li>
+  <li>Click <strong>Yes</strong> (highlighted) to approve, or <strong>No</strong> to close the window without approving.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-11-dlg-approve.png" alt="Approved Request window"></div>
+<div class="caption">Figure 5.16. The Approved Request window. Type the remarks and click Yes (highlighted).</div>
+
+<p>A green message, <strong>Request Approved Successful</strong>, appears at the lower left. The request leaves the <strong>Pending</strong> list, and the numbers beside the lists change. In the example, <strong>Pending</strong> goes down by one and <strong>Approved</strong> goes up to 1.</p>
+<div class="fig tall"><img src="images/fig-11-approve-msg.png" alt="Request Approved Successful"></div>
+<div class="caption">Figure 5.17. The dashboard after approving. The message Request Approved Successful appears at the lower left. The business names of other applicants are hidden.</div>
+
+<p>Open the <strong>Approved</strong> list to find the request. The approved request is listed there (highlighted).</p>
+<div class="fig tall"><img src="images/fig-11-approved-list.png" alt="Approved list"></div>
+<div class="caption">Figure 5.18. The Approved list with the request that was approved. The business names of other applicants are hidden.</div>
+
+<p>The applicant sees your decision and your remarks in the status list of the request: a green dot for approved. Clicking the arrow next to the office shows the remarks (Figure 5.19 and Figure 5.20). The offices that have not acted yet keep a red dot.</p>
+<div class="fig tall"><img src="images/fig-11-status-approved.png" alt="Status list as the applicant sees it"></div>
+<div class="caption">Figure 5.19. The status list on the applicant's side. Engineering has a green dot and its remarks.</div>
+<div class="fig small"><img src="images/fig-11-status-approved-zoom.png" alt="Status list close-up"></div>
+<div class="caption">Figure 5.20. A closer view of the status list.</div>
+<h3 id="s5-5-2">To disapprove a request</h3>
+<ol>
+  <li>Click <strong>Disapproved</strong> in the <strong>Actions</strong> card. The <strong>Disapproved Request</strong> window opens.</li>
+  <li>Type your <strong>Remarks</strong>, which are required. Say what is wrong, so the applicant knows what to correct. In the example, the remarks are <em>Discrepancy Found</em>.</li>
+  <li>Click <strong>Yes</strong> (highlighted) to confirm, or <strong>No</strong> to close the window.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-11-dlg-disapprove.png" alt="Disapproved Request window"></div>
+<div class="caption">Figure 5.21. The Disapproved Request window. Type the remarks and click Yes (highlighted).</div>
+
+<p>A green message appears at the lower left. The message reads <em>Request Approved Successful</em> even when you disapprove a request. This is the wording of the system. The request leaves the <strong>Pending</strong> list and the number beside <strong>Disapproved</strong> goes up.</p>
+<div class="fig tall"><img src="images/fig-11-disapprove-msg.png" alt="Message after disapproving"></div>
+<div class="caption">Figure 5.22. The dashboard after disapproving. The business names of other applicants are hidden.</div>
+
+<p>Open the <strong>Disapproved</strong> list to find the request (highlighted).</p>
+<div class="fig tall"><img src="images/fig-11-disapproved-list.png" alt="Disapproved list"></div>
+<div class="caption">Figure 5.23. The Disapproved list with the request that was disapproved.</div>
+
+<p>The applicant sees an orange dot and your remarks in the status list of the request (Figure 5.24).</p>
+<div class="fig small"><img src="images/fig-11-status-disapproved.png" alt="Orange dot with remarks"></div>
+<div class="caption">Figure 5.24. The status list on the applicant's side. Engineering has an orange dot and its remarks.</div>
+
+<h3 id="s5-5-3">To change a decision</h3>
+<p>A decision is not final. Open the request from the <strong>Approved</strong> list or the <strong>Disapproved</strong> list. In the <strong>Actions</strong> card, the <strong>Current Status</strong>, the <strong>Date</strong> and your <strong>Remarks</strong> show the last decision, and the button of the current decision is greyed out. The other buttons stay available:</p>
+<ul>
+  <li><strong>Pending</strong>: puts the request back to pending, as if the office had not acted yet. The request returns to the <strong>Pending</strong> list.</li>
+  <li><strong>Disapproved</strong>: changes an approved request to disapproved.</li>
+  <li><strong>Approved</strong>: changes a disapproved request to approved.</li>
+</ul>
+
+<p>For an approved request, <strong>Pending</strong> and <strong>Disapproved</strong> are available (highlighted), and <strong>Approved</strong> is greyed out:</p>
+<div class="fig tall"><img src="images/fig-11-change-from-approved.png" alt="Approved request, available buttons"></div>
+<div class="caption">Figure 5.25. An approved request. Click Pending or Disapproved (highlighted) to change the decision.</div>
+
+<p>For a disapproved request, <strong>Pending</strong> and <strong>Approved</strong> are available (highlighted), and <strong>Disapproved</strong> is greyed out:</p>
+<div class="fig tall"><img src="images/fig-11-change-from-disapproved.png" alt="Disapproved request, available buttons"></div>
+<div class="caption">Figure 5.26. A disapproved request. Click Pending or Approved (highlighted) to change the decision.</div>
+
+<p>Clicking one of the buttons opens the same window, where you write your remarks and confirm. The new decision replaces the old one, and the applicant sees the new dot and the new remarks.</p>
+
+<h2 id="s5-6">5.6 When an office can act</h2>
+<ul>
+  <li><strong>The request must be assessed.</strong> A request appears in an office's <strong>Pending</strong> list only after the Permit Evaluator has approved its details and the assessment has been created (<a href="04-permit-evaluator.html#s4-5">Section 4.5</a>).</li>
+  <li><strong>The office must have an amount in the assessment.</strong> If the assessment has no fee with an amount for the office, the action buttons are hidden and the page says <em>Action buttons are hidden due to Assessment - ... amount not set.</em></li>
+  <li><strong>First quarter or annual requests.</strong> Only annual requests and first-quarter requests appear in the offices' <strong>Pending</strong> lists. Later quarters do not need approval from the offices.</li>
+</ul>
+
+<div class="note">The system does not check whether all the offices approved before Bplo approves. Following the approval of every office is part of the office procedure.</div>
+
+<h2 id="s5-7">5.7 Inquiries</h2>
+<p>An office can send a question to an applicant, and read and answer the applicant's questions, on the <strong>Inquiries</strong> page.</p>
+<h3 id="s5-7-1">Open the Inquiries page</h3>
+<p>Click <strong>Make Inquiry</strong> in the <strong>Business Information</strong> panel of a request (<a href="#s5-3">Section 5.3</a>). The <strong>Inquiries</strong> page opens. It has a <strong>List Of Inquiries</strong> with a <strong>Search</strong> box. Each inquiry in the list shows a name and the beginning of its latest message. <strong>Make Inquiry</strong> is at the top right.</p>
+<div class="fig tall"><img src="images/fig-11-inq-page.png" alt="Inquiries page of an office"></div>
+<div class="caption">Figure 5.27. The Inquiries page of an office. Click Make Inquiry (highlighted) to write a new inquiry.</div>
+
+<h3 id="s5-7-2">Make an inquiry</h3>
+<ol>
+  <li>Click <strong>Make Inquiry</strong> (highlighted in Figure 5.27). The <strong>Make Inquiry Office</strong> window opens.</li>
+  <li>Click <strong>Select Business</strong> and choose the business you want to ask about.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-11-inq-business.png" alt="Select Business list"></div>
+<div class="caption">Figure 5.28. The Select Business list.</div>
+
+<ol start="3">
+  <li>Type your message in <strong>Enter message inquiry</strong>.</li>
+  <li>Click <strong>Send</strong> (highlighted), or <strong>Cancel</strong> to close the window without sending.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-11-inq-window.png" alt="Make Inquiry Office window"></div>
+<div class="caption">Figure 5.29. The Make Inquiry Office window, filled in. Click Send (highlighted) to send the inquiry.</div>
+
+<p>A green message, <strong>Inquiry successfully sent.</strong>, appears at the lower left.</p>
+<div class="fig tall"><img src="images/fig-11-inq-sent.png" alt="Inquiry sent"></div>
+<div class="caption">Figure 5.30. The Inquiries page after the inquiry is sent.</div>
+
+<h3 id="s5-7-3">Read and answer an inquiry</h3>
+<p>Click an inquiry in the <strong>List Of Inquiries</strong> to open it. The conversation opens on the right. It shows the business the inquiry is about and the date, and the messages in the conversation. Your messages are in a blue box. The reply of the applicant appears in the same conversation.</p>
+<div class="fig tall"><img src="images/fig-11-inq-chat.png" alt="Inquiry conversation"></div>
+<div class="caption">Figure 5.31. An inquiry opened. The conversation shows the message sent to the applicant.</div>
+
+<p>To answer, type your message in the <strong>Message</strong> box at the bottom of the conversation and click the <strong>send icon</strong> at its right. It works as the applicant's chat described in <a href="03-applicant.html#s3-7-3">Section 3.7.3</a>.</p>
+
+<h2 id="s5-8">5.8 Request For Clearances</h2>
+<p>The <strong>Request For Clearances</strong> page, under <strong>Reports</strong> in the sidebar, is a report of the requests that came to your office. Use it to look back at requests by year, status and date.</p>
+<p>The <strong>Request Parameters</strong> are:</p>
+<ul>
+  <li><strong>Year</strong>: choose a year, or <em>all</em>.</li>
+  <li><strong>Status</strong>: choose a status, or <em>all</em>.</li>
+  <li><strong>Date From</strong> and <strong>Date To</strong>: the period to show. The page opens with the current month.</li>
+</ul>
+
+<p>Click <strong>Search</strong> (highlighted) to show the list.</p>
+<div class="fig tall"><img src="images/fig-11-clearances.png" alt="Request For Clearances page"></div>
+<div class="caption">Figure 5.32. The Request For Clearances page. Choose the parameters and click Search (highlighted).</div>
+
+<p>The list shows <em>List of all Company</em> and the period you chose. Use <strong>Search Business</strong> to find a business. The two icons at the right of the search box download the list:</p>
+<ul>
+  <li>The <strong>PDF icon</strong> downloads the list as a PDF file.</li>
+  <li>The <strong>document icon</strong> downloads the list as an Excel (.xlsx) file.</li>
+</ul>
+<div class="fig small"><img src="images/fig-11-export-icons.png" alt="Export icons"></div>
+<div class="caption">Figure 5.33. The search box and the two download icons (highlighted): download as PDF and download as .xlsx.</div>
+<p>The columns are:</p>
+<ul>
+  <li><strong>Id</strong>: the number of the row.</li>
+  <li><strong>Business Name</strong>: the name of the business.</li>
+  <li><strong>Transaction Date</strong> and <strong>Transaction Year</strong>: when and for which year the request was made.</li>
+  <li><strong>Payment Mode</strong> and <strong>Payment Quarter</strong>: how the applicant pays and, for a quarterly request, the quarter.</li>
+  <li><strong>Transaction Type</strong>: for example <em>New Business</em>.</li>
+  <li><strong>Business Type</strong>, <strong>Business Activity</strong> and <strong>Business Category</strong>: what the business is.</li>
+  <li><strong>Remarks</strong>: the decision of your office, for example <em>Approved</em>.</li>
+  <li><strong>Amount</strong>: the amount of the request.</li>
+</ul>
+
+
+<h2 id="s5-9">5.9 Holdings</h2>
+<p>The <strong>Holdings</strong> page, under <strong>Reports</strong> in the sidebar, opens the <strong>List of Business</strong>. It lists all the businesses in the system.</p>
+<div class="fig tall"><img src="images/fig-11-hold-list.png" alt="List of Business"></div>
+<div class="caption">Figure 5.34. The List of Business.</div>
+
+<p>The columns are the tick box, <strong>Bus Code</strong>, <strong>Business Name</strong>, <strong>Owner</strong>, <strong>Owner Type</strong> and <strong>Link Accounts</strong>. The <strong>View Map</strong> button at the top right is greyed out until you tick a business.</p>
+<h3 id="s5-9-1">Find a business</h3>
+<p>Type the name of the business in <strong>Search business</strong> and click <strong>Search</strong> (highlighted). In the example, typing "juan" lists the businesses with "juan" in the name.</p>
+<div class="fig tall"><img src="images/fig-11-hold-search.png" alt="Search a business"></div>
+<div class="caption">Figure 5.35. The List of Business after a search. Click Search (highlighted). Point to the lock icon to see "View users link in this business". The names of other businesses and owners are hidden.</div>
+
+<h3 id="s5-9-2">See the accounts linked to a business</h3>
+<p>Click the <strong>lock icon</strong> in the <strong>Link Accounts</strong> column. The window <em>Users account users this business.</em> lists the user accounts that are linked to the business, with the name and the email address of each. Click <strong>Close</strong> (highlighted) to close it.</p>
+<div class="fig tall"><img src="images/fig-11-hold-users.png" alt="Linked accounts"></div>
+<div class="caption">Figure 5.36. The accounts linked to a business.</div>
+
+
+<h2 id="s5-10">5.10 Requirements</h2>
+<p>The <strong>Requirements</strong> page, under <strong>Reports</strong> in the sidebar, is the <strong>List Of Requirments</strong> of your office. These are the requirements your office asks applicants to send. The list is on the left and the <strong>New Requirements</strong> form is on the right.</p>
+<div class="fig tall"><img src="images/fig-11-req-page.png" alt="List Of Requirements"></div>
+<div class="caption">Figure 5.37. The List Of Requirements. The pencil icon (highlighted) changes a requirement.</div>
+
+<p>The <strong>Requirements List</strong> has a search box (<em>Search bus type, role, desc.</em>), and these columns:</p>
+<ul>
+  <li><strong>Id</strong>: the number of the requirement.</li>
+  <li><strong>Office</strong>: your office.</li>
+  <li><strong>Business Type</strong>: the business type the requirement applies to, when one is set.</li>
+  <li><strong>Requirements</strong>: the name of the requirement.</li>
+  <li><strong>Attachments</strong>: a form or file attached to the requirement. It says <em>No attachment.</em> when there is none.</li>
+  <li><strong>Action</strong>: the pencil icon changes the requirement, and the trash icon removes it.</li>
+</ul>
+
+<h3 id="s5-10-1">To add a requirement</h3>
+<ol>
+  <li>In the <strong>New Requirements</strong> form, type the name of the requirement in <strong>Requirement</strong>.</li>
+  <li>Choose <strong>Is Required</strong>: <em>true</em> if the applicant must send it.</li>
+  <li>Choose <strong>Is Default</strong>, <em>Yes</em> or <em>No</em>.</li>
+  <li>Click <strong>Select Business Type</strong> and choose the business type the requirement is for from the list. You can also type to narrow the list.</li>
+  <li>If your office has a form for this requirement, click <strong>Choose Files</strong> under <strong>Attachments</strong> to attach it. The applicant can download it.</li>
+  <li>Tick the kinds of request the requirement is for: <strong>New</strong>, <strong>Renewal</strong>, <strong>Transfer</strong> and <strong>Closure</strong>.</li>
+  <li>Click <strong>Save</strong> (highlighted), or <strong>Cancel</strong> to clear the form.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-11-req-filled.png" alt="New Requirements form filled in"></div>
+<div class="caption">Figure 5.38. The New Requirements form filled in. Click Save (highlighted).</div>
+<div class="fig tall"><img src="images/fig-11-req-business-type.png" alt="Business type list"></div>
+<div class="caption">Figure 5.39. The Select Business Type list shows the business types.</div>
+
+<p>A green message, <strong>Requirements successfully added.</strong>, appears at the lower left, and the new requirement is added to the list.</p>
+<div class="fig tall"><img src="images/fig-11-req-added.png" alt="Requirement added"></div>
+<div class="caption">Figure 5.40. The list after the requirement is added.</div>
+
+<h3 id="s5-10-2">To change a requirement</h3>
+<ol>
+  <li>Click the <strong>pencil icon</strong> in the <strong>Action</strong> column of the requirement (highlighted in Figure 5.37). The <strong>Edit Requirements</strong> window opens with the details of the requirement.</li>
+  <li>Change what you need: the <strong>Requirement</strong>, <strong>Is Required</strong>, <strong>Is Default</strong>, the business type, the attachment, and the kinds of request (<strong>New</strong>, <strong>Renewal</strong>, <strong>Transfer</strong>, <strong>Closure</strong>).</li>
+  <li>Click <strong>Save</strong> (highlighted), or <strong>Cancel</strong> to close the window without changing it.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-11-req-edit.png" alt="Edit Requirements window"></div>
+<div class="caption">Figure 5.41. The Edit Requirements window. Click Save (highlighted) to keep your changes.</div>
+
+<h3 id="s5-10-3">To remove a requirement</h3>
+<p>Click the <strong>trash icon</strong> in the <strong>Action</strong> column of the requirement. The window asks <em>Are you sure to remove this requirement?</em> Click <strong>Yes</strong> (highlighted) to remove it, or <strong>No</strong> to keep it.</p>
+<div class="fig tall"><img src="images/fig-11-req-remove.png" alt="Remove requirement confirmation"></div>
+<div class="caption">Figure 5.42. The confirmation window for removing a requirement.</div>
+
+<div class="note">Changes to the requirements of your office affect the requirements the applicants see for their requests.</div>
+
+<h2 id="s5-11">5.11 Application to Different Offices</h2>
+<p>The screens are the same for every office. What changes is the name of the account, the fees of the office and the requirements it asks for. The table shows each office. The examples come from the test business used in this manual, and the fees and requirements depend on the business.</p>
+<table>
+  <thead><tr><th style="width:15%">Office</th><th style="width:28%">Name</th><th>In the example</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Assessor</strong></td><td>Municipal Assessor's Office</td><td>Fee: <strong>RPTS/Tax Clearance</strong>.</td></tr>
+    <tr><td><strong>Engineering</strong></td><td>Municipal Engineering Office</td><td>Fee: <strong>Bldg. Inspection Fee</strong>. Requirement: the mechanical permit for manufacturing machineries and pictures. This is the office shown in the figures of this section.</td></tr>
+    <tr><td><strong>Fire</strong></td><td>Bureau of Fire Protection (BFP)</td><td>Amount: shown as <strong>Amount payable to the BFP</strong>. Requirements: include the Occupancy Permit.</td></tr>
+    <tr><td><strong>Peso</strong></td><td>Public Employment Service Office</td><td>Requirement: the Masterlist of Employees, with a form to download.</td></tr>
+    <tr><td><strong>Mao</strong></td><td>Municipal Agriculture Office</td><td>No requirements for the business.</td></tr>
+    <tr><td><strong>Menro</strong></td><td>Municipal Environment and Natural Resources Office</td><td>Requirements: the Memorandum of Agreement of the hazardous or medical waste hauler, and the Environmental Compliance Certificate (ECC) or Certificate of Non-Coverage (CNC).</td></tr>
+    <tr><td><strong>Mpdo</strong></td><td>Municipal Planning and Development Office</td><td>Fee: <strong>Locational Clearance</strong>.</td></tr>
+    <tr><td><strong>Rhu</strong></td><td>Rural Health Unit</td><td>Fee: <strong>Health and Sanitary</strong>.</td></tr>
+    <tr><td><strong>Barangay</strong></td><td>The barangay where the business is located</td><td>Each barangay has its own account and sees only the businesses in its barangay. In the example, the barangay is Barangay Badbad. Requirements: the DTI, a valid ID and the Cedula.</td></tr>
+    <tr><td><strong>Bplo</strong></td><td>Municipal Treasurer's Office (account eBPLS Assessment)</td><td>The last office to approve a request. It sees the request in its <strong>Pending</strong> list only after the Permit Evaluator has clicked <strong>For Approval</strong>. It is covered in its own section.</td></tr>
+  </tbody>
+</table>
+
+</body>
+</html>

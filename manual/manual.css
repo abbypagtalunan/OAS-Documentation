@@ -38,6 +38,7 @@ ul.indent { margin-left: 14mm; }
 .toc ul { list-style: none; margin: 0; padding: 0; }
 .toc li { margin: 0 0 1mm; }
 .toc li.sub { margin-left: 8mm; font-size: 10pt; }
+.toc li.sub2 { margin-left: 16mm; font-size: 9.5pt; }
 
 .role { border: 2px solid #e8381f; background: #fff4f1; border-radius: 2mm; padding: 3mm 5mm; margin: 4mm 0 5mm; break-inside: avoid; }
 .role .role-label { display: inline-block; background: #e8381f; color: #fff; font-weight: 700; font-size: 9pt; letter-spacing: .06em; text-transform: uppercase; padding: 0.8mm 3mm; border-radius: 1mm; margin-right: 3mm; }

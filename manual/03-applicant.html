@@ -1,0 +1,993 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OAS Unified Online Services: The eBPLS Applicant</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 40mm; } .fig.tall img { max-height: 80mm; } .sec-3-1 .fig.small img { max-height: 55mm; } .toc { break-inside: auto; }</style>
+</head>
+<body>
+
+<div class="section-no">Section 3</div>
+<h1>The eBPLS Applicant</h1>
+<p class="lead">This section is for business owners, called applicants, who use eBPLS to list their business and to ask the municipality for a permit. It follows the work in the order you do it: see your dashboard, add a business, request a permit, and ask an office a question.</p>
+
+<div class="role"><span class="role-label">Role</span><strong>Applicant</strong>: the business owner or authorized representative who signed in to eBPLS (<a href="02-getting-started.html#s2-2">Section 2.2</a>).</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s3-1">3.1 The Dashboard</a></li>
+  <li class="sub"><a href="#s3-1-1">3.1.1 Overview</a></li>
+  <li class="sub"><a href="#s3-1-2">3.1.2 Top bar</a></li>
+  <li class="sub2"><a href="#s3-1-2-1">Account menu</a></li>
+  <li class="sub2"><a href="#s3-1-2-2">Settings</a></li>
+  <li class="sub"><a href="#s3-1-3">3.1.3 Sidebar</a></li>
+  <li class="sub"><a href="#s3-1-4">3.1.4 Business Holdings</a></li>
+  <li class="sub2"><a href="#s3-1-4-1">Watch Guide Video</a></li>
+  <li class="sub"><a href="#s3-1-5">3.1.5 Payment History</a></li>
+  <li><a href="#s3-2">3.2 Adding a New Business</a></li>
+  <li class="sub"><a href="#s3-2-1">3.2.1 Before you begin</a></li>
+  <li class="sub"><a href="#s3-2-2">3.2.2 Fill out the new business form</a></li>
+  <li class="sub2"><a href="#s3-2-2-1">3.2.2.1 General Information</a></li>
+  <li class="sub2"><a href="#s3-2-2-2">3.2.2.2 Registration</a></li>
+  <li class="sub2"><a href="#s3-2-2-3">3.2.2.3 Registered Owner</a></li>
+  <li class="sub2"><a href="#s3-2-2-4">3.2.2.4 Miscellaneous</a></li>
+  <li class="sub"><a href="#s3-2-3">3.2.3 Saving the business</a></li>
+  <li class="sub2"><a href="#s3-2-3-1">If a required field is missing</a></li>
+  <li class="sub"><a href="#s3-2-4">3.2.4 After the business is added</a></li>
+  <li class="sub"><a href="#s3-2-5">3.2.5 Viewing the business details</a></li>
+  <li class="sub2"><a href="#s3-2-5-1">3.2.5.1 General Info tab</a></li>
+  <li class="sub2"><a href="#s3-2-5-2">3.2.5.2 Registration tab</a></li>
+  <li class="sub2"><a href="#s3-2-5-3">3.2.5.3 Registered Owner tab</a></li>
+  <li class="sub2"><a href="#s3-2-5-4">3.2.5.4 Miscellaneous tab</a></li>
+  <li><a href="#s3-3">3.3 Requesting a Permit: New Business</a></li>
+  <li class="sub"><a href="#s3-3-1">3.3.1 Open the assessment list</a></li>
+  <li class="sub"><a href="#s3-3-2">3.3.2 Fill out the request form</a></li>
+  <li class="sub2"><a href="#s3-3-2-1">3.3.2.1 Fill in the details</a></li>
+  <li class="sub2"><a href="#s3-3-2-2">3.3.2.2 Choose the payment mode</a></li>
+  <li class="sub2"><a href="#s3-3-2-3">3.3.2.3 Attach the requirements</a></li>
+  <li class="sub"><a href="#s3-3-3">3.3.3 Send the request</a></li>
+  <li class="sub2"><a href="#s3-3-3-1">If something is missing</a></li>
+  <li class="sub"><a href="#s3-3-4">3.3.4 After the request is sent</a></li>
+  <li class="sub"><a href="#s3-3-5">3.3.5 Complete the assessment requirements</a></li>
+  <li class="sub2"><a href="#s3-3-5-1">Open an office and read its requirements</a></li>
+  <li class="sub2"><a href="#s3-3-5-2">Send the file for a requirement</a></li>
+  <li class="sub2"><a href="#s3-3-5-3">View the files you sent</a></li>
+  <li class="sub2"><a href="#s3-3-5-4">Requirements in the example</a></li>
+  <li class="sub"><a href="#s3-3-6">3.3.6 Return to the Assessment Information list</a></li>
+  <li class="sub"><a href="#s3-3-7">3.3.7 View the Assessment Information list</a></li>
+  <li class="sub"><a href="#s3-3-8">3.3.8 Check the status of your request</a></li>
+  <li class="sub"><a href="#s3-3-9">3.3.9 Wait for the approval of the offices</a></li>
+  <li><a href="#s3-4">3.4 Requesting a Permit: Renewal</a></li>
+  <li class="sub"><a href="#s3-4-1">3.4.1 Open the request form</a></li>
+  <li class="sub"><a href="#s3-4-2">3.4.2 Fill in the details</a></li>
+  <li class="sub"><a href="#s3-4-3">3.4.3 Choose the payment mode</a></li>
+  <li class="sub"><a href="#s3-4-4">3.4.4 Attach the requirements</a></li>
+  <li class="sub"><a href="#s3-4-5">3.4.5 Send the request</a></li>
+  <li><a href="#s3-5">3.5 Requesting a Permit: Closure</a></li>
+  <li class="sub"><a href="#s3-5-1">3.5.1 Open the request form</a></li>
+  <li class="sub"><a href="#s3-5-2">3.5.2 Fill in the details</a></li>
+  <li class="sub"><a href="#s3-5-3">3.5.3 Choose the payment mode</a></li>
+  <li class="sub"><a href="#s3-5-4">3.5.4 Attach the requirements</a></li>
+  <li class="sub"><a href="#s3-5-5">3.5.5 Send the request</a></li>
+  <li><a href="#s3-6">3.6 Requesting a Permit: Transfer</a></li>
+  <li class="sub"><a href="#s3-6-1">3.6.1 Open the request form</a></li>
+  <li class="sub"><a href="#s3-6-2">3.6.2 Fill in the details</a></li>
+  <li class="sub"><a href="#s3-6-3">3.6.3 Choose the payment mode</a></li>
+  <li class="sub"><a href="#s3-6-4">3.6.4 Attach the requirements</a></li>
+  <li class="sub"><a href="#s3-6-5">3.6.5 Send the request</a></li>
+  <li><a href="#s3-7">3.7 Sending an Inquiry</a></li>
+  <li class="sub"><a href="#s3-7-1">3.7.1 Open the Inquiries page</a></li>
+  <li class="sub"><a href="#s3-7-2">3.7.2 Make an inquiry</a></li>
+  <li class="sub"><a href="#s3-7-3">3.7.3 View your inquiries and continue the conversation</a></li>
+  <li><a href="#s3-8">3.8 Waiting for Approval: The Pending Status</a></li>
+  <li class="sub"><a href="#s3-8-1">3.8.1 Who reviews your request</a></li>
+  <li class="sub"><a href="#s3-8-2">3.8.2 What you see while you wait</a></li>
+  <li class="sub"><a href="#s3-8-3">3.8.3 What you can do while you wait</a></li>
+  <li><a href="#s3-9">3.9 Approved Request: View the Assessment Details and Pay</a></li>
+  <li class="sub"><a href="#s3-9-1">3.9.1 Your request is approved</a></li>
+  <li class="sub"><a href="#s3-9-2">3.9.2 View the assessment details</a></li>
+  <li class="sub"><a href="#s3-9-3">3.9.3 Print the assessment</a></li>
+  <li class="sub"><a href="#s3-9-4">3.9.4 Pay the assessment fee</a></li>
+  <li><a href="#s3-10">3.10 After Payment: Permit Preparation and Pickup</a></li>
+  <li class="sub"><a href="#s3-10-1">3.10.1 MP Preparation</a></li>
+  <li class="sub"><a href="#s3-10-2">3.10.2 Permit Is Ready for Pickup</a></li>
+</ul>
+</div>
+
+<h2 id="s3-0">The four kinds of request</h2>
+<p>A permit request has a <strong>transaction type</strong>. Each type has its own part of this section. The steps are the same for every type; <a href="#s3-3">3.3</a> describes them in full, and 3.4 to 3.6 describe only what is different.</p>
+<table>
+  <thead><tr><th style="width:22%">Request type</th><th style="width:36%">Payment modes</th><th style="width:18%">Requirements</th><th>Where</th></tr></thead>
+  <tbody>
+    <tr><td><strong>New Business</strong></td><td>Annual only</td><td>3 files</td><td><a href="#s3-3">3.3</a></td></tr>
+    <tr><td><strong>Renewal</strong></td><td>Annual, Semi-Annual or Quarterly</td><td>2 files</td><td><a href="#s3-4">3.4</a></td></tr>
+    <tr><td><strong>Closure</strong></td><td>Annual only</td><td>1 file</td><td><a href="#s3-5">3.5</a></td></tr>
+    <tr><td><strong>Transfer</strong></td><td>Annual, Semi-Annual or Quarterly</td><td>None</td><td><a href="#s3-6">3.6</a></td></tr>
+  </tbody>
+</table>
+
+<div class="sec-3-1">
+<h2 id="s3-1">3.1 The Dashboard</h2>
+<p>After you sign in, eBPLS opens the Dashboard, which is the Business Holdings page. This section describes what you see on it and how to use its menus.</p>
+<h3 id="s3-1-1">3.1.1 Overview</h3>
+<p>The Dashboard has three areas:</p>
+<ul>
+  <li><strong>Top bar</strong> (blue, across the top): chat, notifications, settings and your account menu. See <a href="#s3-1-2">Section 3.1.2</a>.</li>
+  <li><strong>Sidebar</strong> (left side): links to the Dashboard, Payment History and other applications. See <a href="#s3-1-3">Section 3.1.3</a>.</li>
+  <li><strong>Main content</strong>: the <strong>Business Holdings</strong> page, where your businesses are listed. See <a href="#s3-1-4">Section 3.1.4</a>.</li>
+</ul>
+
+<div class="fig tall"><img src="images/fig-3-overview.png" alt="Dashboard overview"></div>
+<div class="caption">Figure 3.1. The Dashboard (Business Holdings page) of a new account.</div>
+
+<div class="note"><strong>No business holding record yet.</strong> When an account has no business holding record, the Business Holdings page appears as shown in the figure above: the table lists only its column headings, and the page count at the bottom reads <strong>0-0 of 0</strong>. This is the normal appearance of a newly created account and does not indicate an error.</div>
+
+<h3 id="s3-1-2">3.1.2 Top bar</h3>
+
+<div class="fig small"><img src="images/fig-3-topbar-annotated.png" alt="Top bar icons"></div>
+<div class="caption">Figure 3.2. The top bar, with an arrow and a label for each icon: Chat, Notifications, Settings and Account.</div>
+<table>
+  <thead><tr><th style="width:28%">Item</th><th>Use it to</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Chat</strong> (speech bubble icon)</td><td>Open your inquiries and messages with the offices.</td></tr>
+    <tr><td><strong>Notifications</strong> (bell icon)</td><td>See your notifications, such as updates on your requests.</td></tr>
+    <tr><td><strong>Settings</strong> (gear icon)</td><td>Open the display settings (see <em>Settings</em> below).</td></tr>
+    <tr><td><strong>Account</strong> (your profile picture and name)</td><td>Open the account menu with <em>Account</em> and <em>Logout</em> (see <em>Account menu</em> below).</td></tr>
+  </tbody>
+</table>
+
+<h4 id="s3-1-2-1">Account menu</h4>
+<p>Click your name at the top right to open the account menu.</p>
+<div class="fig small"><img src="images/fig-2-account-menu.png" alt="Account menu with Account and Logout"></div>
+<div class="caption">Figure 3.3. The account menu.</div>
+<ul>
+  <li><strong>Account</strong>: Open your account page to view and update your profile details.</li>
+  <li><strong>Logout</strong>: Sign out of eBPLS. Always log out when you finish, especially on a shared computer.</li>
+</ul>
+
+<h4 id="s3-1-2-2">Settings</h4>
+<p>Click the settings icon (the gear) in the top bar to open the <strong>Settings</strong> panel. These options change how the pages are displayed on your device only. They do not change any permit or business record.</p>
+<div class="fig small"><img src="images/fig-2-settings-panel.png" alt="Settings panel"></div>
+<div class="caption">Figure 3.4. The Settings panel.</div>
+<ul>
+  <li><strong>RTL</strong>: Switches the page layout to right-to-left. Leave it off for normal left-to-right reading.</li>
+  <li><strong>Responsive font sizes</strong>: Adjusts the size of the text to fit your screen. It is on by default.</li>
+  <li><strong>Theme</strong>: Changes the color theme of the pages. The default is <em>Light</em>.</li>
+  <li><strong>Save Settings</strong>: Click to apply the settings you chose.</li>
+</ul>
+
+
+<h3 id="s3-1-3">3.1.3 Sidebar</h3>
+<p>The sidebar shows your profile picture and name, followed by these links:</p>
+<table>
+  <thead><tr><th style="width:30%">Item</th><th>Use it to</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Dashboard</strong></td><td>Return to the Business Holdings page.</td></tr>
+    <tr><td><strong>Payment History</strong> (under Reports)</td><td>View the payments recorded for your businesses (see <a href="#s3-1-5">Section 3.1.5</a>).</td></tr>
+    <tr><td><strong>Mail, Chat and Calendar</strong> (under Applications)</td><td>Open the additional applications listed under Applications. A purple <em>Updated</em> label may appear beside an item.</td></tr>
+  </tbody>
+</table>
+
+<h3 id="s3-1-4">3.1.4 Business Holdings</h3>
+<p>The Business Holdings page lists the businesses under your account. The buttons at the top right and the tools above the table are:</p>
+<table>
+  <thead><tr><th style="width:30%">Item</th><th>Use it to</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Watch Guide Video</strong></td><td>Watch the guide video (see below).</td></tr>
+    <tr><td><strong>Add New Company</strong></td><td>Register a new business under your account (see <a href="#s3-2">Section 3.2</a>).</td></tr>
+    <tr><td><strong>Business Registration</strong></td><td>Shows another video demo.</td></tr>
+    <tr><td><strong>Search Business</strong></td><td>Find a business in your list by typing its name.</td></tr>
+  </tbody>
+</table>
+<p><strong>Add New Company</strong> is explained in <a href="#s3-2">Section 3.2</a>.</p>
+
+<h4 id="s3-1-4-1">Watch Guide Video</h4>
+<p>Click <strong>Watch Guide Video</strong> to open the <strong>Guide Video</strong> window. It plays a short tutorial on using the system to request an assessment. The window also opens by itself the first time you visit this page in a browser.</p>
+<div class="fig tall"><img src="images/fig-3-guide-video.png" alt="Guide Video window"></div>
+<div class="caption">Figure 3.5. The Guide Video window.</div>
+<ul>
+  <li>Use the video controls to play, pause and adjust the sound.</li>
+  <li>Click the <strong>X</strong> at the top right of the window to close it. Once you close it, it does not open by itself again in that browser, but you can always open it with <strong>Watch Guide Video</strong>.</li>
+</ul>
+
+
+<h3 id="s3-1-5">3.1.5 Payment History</h3>
+<p>Click <strong>Payment History</strong>, under Reports in the sidebar, to open the <strong>Payment History List</strong>. It lists the payments recorded for your businesses.</p>
+<div class="fig tall"><img src="images/fig-3-payment-history.png" alt="Payment History List"></div>
+<div class="caption">Figure 3.6. The Payment History List with no payment record yet.</div>
+<ul>
+  <li><strong>OR Date</strong>: The date of the official receipt.</li>
+  <li><strong>Business Name</strong>: The business the payment belongs to.</li>
+  <li><strong>OR Number</strong>: The official receipt number.</li>
+  <li><strong>Amount</strong>: The amount paid.</li>
+</ul>
+<p>Click the <strong>three-dot icon</strong> (More options) at the top right of the list and choose <strong>Export Pdf</strong> to download the list as a PDF file. Use <strong>Rows per page</strong> and the arrows at the bottom to move through the list.</p>
+<div class="note"><strong>No payment record yet.</strong> When no payment has been recorded for your businesses, the list shows only its column headings and the page count reads <strong>0-0 of 0</strong>. This is normal for an account that has not made a payment.</div>
+
+
+</div>
+<div class="sec-3-2">
+<h2 id="s3-2">3.2 Adding a New Business</h2>
+<p>Before you can request a permit, your business must be listed under your account. This section shows how to add a new business using <strong>Add New Company</strong>.</p>
+<h3 id="s3-2-1">3.2.1 Before you begin</h3>
+<p>Have the following information ready:</p>
+<ul>
+  <li>The business name, franchise name, category and type, and a description of the business.</li>
+  <li>The complete business address, including the barangay.</li>
+  <li>The business email address.</li>
+  <li>The DTI registration number and the date it was issued.</li>
+  <li>The owner's name, address and gender.</li>
+  <li>The number of employees and the date the business started.</li>
+</ul>
+<div class="note"><strong>Required fields.</strong> You must complete the following fields before the business can be saved. Fields marked with an asterisk (<strong>*</strong>) in the form are required; Business Category, Owner Type, Barangay and Business Line Desc. are also required even though they have no asterisk.
+<ul>
+  <li><strong>General Information</strong>: Business Name, Franchise Name, Business Category, Business Type, Owner Type, Business Line Desc., Barangay, Complete Address, Company Email.</li>
+  <li><strong>Registration</strong>: DTI No., DTI Date Issued.</li>
+  <li><strong>Registered Owner</strong>: Owner, Owner Address, Owner Gender, No. of Employee (at least 1), Date Start.</li>
+  <li><strong>Miscellaneous</strong>: none.</li>
+</ul>
+Text you type in most fields is converted to capital letters automatically.</div>
+
+<h3 id="s3-2-2">3.2.2 Fill out the new business form</h3>
+<ol>
+  <li>On the Dashboard, click <strong>Add New Company</strong> (see <a href="#s3-1-4">Section 3.1.4</a>).</li>
+</ol>
+<div class="fig small"><img src="images/fig-4-open-add-company.png" alt="Add New Company button highlighted"></div>
+<div class="caption">Figure 3.7. Click Add New Company (highlighted) on the Business Holdings page.</div>
+
+<ol start="2">
+  <li>The <strong>New Business</strong> page opens. The path at the top of the page reads <em>Dashboard, Management, Companies, Create</em>.</li>
+  <li>Fill in the four sections of the form, one after the other, as described in 4.2.1 to 4.2.4. Their names appear in the left column, highlighted in red in the figures.</li>
+</ol>
+<ul>
+  <li><strong>General Information</strong>: the business name, category, type, address and contact details.</li>
+  <li><strong>Registration</strong>: the DTI registration and other identification numbers.</li>
+  <li><strong>Registered Owner</strong>: the owner and representative details, the business size and the key dates.</li>
+  <li><strong>Miscellaneous</strong>: rental and other business-specific details.</li>
+</ul>
+
+<h4 id="s3-2-2-1">3.2.2.1 General Information</h4>
+<p>This is the first section of the form.</p>
+<div class="fig tall"><img src="images/fig-4-general-info.png" alt="New Business form, General Information"></div>
+<div class="caption">Figure 3.8. The New Business page, showing the General Information section.</div>
+
+<ul>
+  <li><strong>Business Name</strong> (required): the registered name of the business.</li>
+  <li><strong>Franchise Name</strong> (required): the franchise name of the business.</li>
+  <li><strong>Business Category</strong> (required): choose the category from the list. A category may already be selected when the form opens; change it to match your business.</li>
+  <li><strong>Business Type</strong> (required): choose the type from the list. The list depends on the category you chose.</li>
+  <li><strong>Owner Type</strong> (required): choose Corporation, Cooperative, Foundation, Partnership or Sole Proprietor.</li>
+  <li><strong>Business Line Desc.</strong> (required): describe what the business does.</li>
+  <li><strong>Street</strong>, <strong>Lot/Block No.</strong> and <strong>Street Code</strong>: the street, lot or block number and street code of the business address. Street Code starts at <strong>0</strong>.</li>
+  <li><strong>Barangay</strong> (required): choose the barangay from the list.</li>
+  <li><strong>Province</strong> and <strong>Municipality</strong>: pre-filled with <strong>ALBAY</strong> and <strong>OAS</strong>. Change them only if the business is elsewhere.</li>
+  <li><strong>Complete Address</strong> (required): the full address of the business.</li>
+  <li><strong>Telephone No.</strong> and <strong>Fax No.</strong>: contact numbers of the business.</li>
+  <li><strong>Company Email</strong> (required): the business email address. It must be a valid email.</li>
+  <li><strong>Latitude</strong> and <strong>Longitude</strong>: the map coordinates of the business location.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-4-registration.png" alt="Registration section"></div>
+<div class="caption">Figure 3.9. The rest of the General Information section (Complete Address to Longitude), followed by the Registration section.</div>
+
+<h4 id="s3-2-2-2">3.2.2.2 Registration</h4>
+<p>The Registration section follows General Information (see the lower part of Figure 3.9).</p>
+<ul>
+  <li><strong>DTI No.</strong> (required): the DTI registration number.</li>
+  <li><strong>DTI Date Issued</strong> (required): the date the DTI registration was issued. Choose it from the calendar.</li>
+  <li><strong>TIN</strong>, <strong>PhilHealth</strong>, <strong>SSS</strong> and <strong>HDMF</strong>: the business identification numbers. SSS and HDMF accept up to 15 characters.</li>
+  <li><strong>SEC Registration No.</strong> and <strong>SEC Date Issued</strong>: these two fields appear only when the Owner Type is not Sole Proprietor.</li>
+</ul>
+
+<h4 id="s3-2-2-3">3.2.2.3 Registered Owner</h4>
+<div class="fig tall"><img src="images/fig-4-registered-owner.png" alt="Registered Owner section"></div>
+<div class="caption">Figure 3.10. The Registered Owner section.</div>
+
+<div class="fig tall"><img src="images/fig-4-owner-dates.png" alt="Registered Owner section, dates"></div>
+<div class="caption">Figure 3.11. The end of the Registered Owner section (signboard and dates), followed by the Miscellaneous section.</div>
+
+<ul class="indent">
+  <li><strong>Owner</strong> (required): the full name of the business owner.</li>
+  <li><strong>Owner Address</strong> (required): the owner's address.</li>
+  <li><strong>Owner Gender</strong> (required): choose Male, Female or N/A.</li>
+  <li><strong>Mobile No.</strong>: the owner's mobile number.</li>
+  <li><strong>President</strong> and <strong>Treasurer</strong>: for organizations, the names of the president and the treasurer.</li>
+  <li><strong>Representative</strong>, <strong>Representative Address</strong> and <strong>Representative Position</strong>: the person who represents the business, with address and position.</li>
+  <li><strong>Capitalization</strong>: the capital of the business, in pesos.</li>
+  <li><strong>No. of Employee</strong> (required): the number of employees. Enter at least 1.</li>
+  <li><strong>Total Floor Area</strong> and <strong>No. of Storey</strong>: the floor area and the number of storeys of the business premises.</li>
+  <li><strong>Using Signboard</strong>: choose Yes or No. If you choose Yes, an <strong>Area of Signboard</strong> field appears.</li>
+  <li><strong>Date Start</strong> (required): the date the business started operating. Choose it from the calendar.</li>
+  <li><strong>Date Applied</strong>, <strong>Date Renew</strong>, <strong>Date of Transfer</strong> and <strong>Date Closed</strong>: choose each date from the calendar. Leave them empty unless they apply.</li>
+</ul>
+
+<h4 id="s3-2-2-4">3.2.2.4 Miscellaneous</h4>
+<div class="fig tall"><img src="images/fig-4-miscellaneous.png" alt="Miscellaneous section"></div>
+<div class="caption">Figure 3.12. The Miscellaneous section.</div>
+
+<ul>
+  <li><strong>Rented</strong>: choose Yes if the business premises are rented. If you choose Yes, <strong>Since When</strong>, <strong>Monthly Rental</strong> and <strong>From Whom</strong> appear.</li>
+  <li><strong>Office Type</strong>, <strong>Type Of Bank</strong> and <strong>Type Of Club</strong>: type-specific details. Leave them at <strong>0</strong> if they do not apply to your business.</li>
+  <li><strong>No. of Heads If Farm</strong>: for farms, the number of heads. Leave at <strong>0</strong> if it does not apply.</li>
+  <li><strong>Bedroom Type</strong>, <strong>No. of Bedrooms</strong>, <strong>No. Of Occupancy</strong> and <strong>With AC</strong>: for lodging businesses, the bedroom details. Leave them at <strong>0</strong> if they do not apply.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-4-form-bottom.png" alt="End of the form"></div>
+<div class="caption">Figure 3.13. The end of the form, with the Cancel and Add Company buttons.</div>
+
+<h3 id="s3-2-3">3.2.3 Saving the business</h3>
+<p>At the bottom of the form there are two buttons:</p>
+<div class="fig small"><img src="images/fig-4-buttons.png" alt="Cancel and Add Company buttons"></div>
+<div class="caption">Figure 3.14. The Cancel and Add Company buttons.</div>
+
+<ul>
+  <li><strong>Add Company</strong>: saves the business. A green message, <em>Company Created</em>, appears and you are taken back to the Business Holdings page, where the new business now appears in the list.</li>
+  <li><strong>Cancel</strong>: closes the form without saving and returns to the Business Holdings page.</li>
+</ul>
+
+<h4 id="s3-2-3-1">If a required field is missing</h4>
+<p>If a required field is empty when you click <strong>Add Company</strong>, the business is not saved. The empty field is outlined in red and a red message appears under it, as shown below.</p>
+<div class="fig tall"><img src="images/fig-4-required-error.png" alt="Required field messages"></div>
+<div class="caption">Figure 3.15. Required fields left empty, outlined in red with a message under each.</div>
+
+<div class="error"><strong>Error:</strong> <em>Business name is required</em> and <em>Franchise name is required</em> (as in the figure). Fill in every field that shows a red message and click <strong>Add Company</strong> again. Scroll through all four sections, because a field with a message may be above or below the part of the form you are viewing.</div>
+<p>The messages you may see are:</p>
+<ul>
+  <li><em>Business name is required</em>: appears under Business Name.</li>
+  <li><em>Franchise name is required</em>: appears under Franchise Name.</li>
+  <li><em>Business category is required</em> and <em>Business type is required</em>: appear under Business Category and Business Type.</li>
+  <li><em>Owner type is required</em>: appears under Owner Type.</li>
+  <li><em>Business line description is required</em>: appears under Business Line Desc.</li>
+  <li><em>Barangay is required</em>: appears under Barangay.</li>
+  <li><em>Business address is required</em>: appears under Complete Address.</li>
+  <li><em>Company email is required</em> and <em>Invalid email address</em>: appear under Company Email.</li>
+  <li><em>Owner is required</em>, <em>Owner address is required</em> and <em>Owner gender is required</em>: appear under Owner, Owner Address and Owner Gender.</li>
+  <li><em>No. of employee is required</em>: appears under No. of Employee.</li>
+  <li><em>Date start is required</em>: appears under Date Start.</li>
+</ul>
+
+
+<h3 id="s3-2-4">3.2.4 After the business is added</h3>
+<p>After you click <strong>Add Company</strong>, the system returns you to the <strong>Business Holdings</strong> page. The business you just added now appears in the list, and the page count at the bottom changes from <strong>0-0 of 0</strong> to <strong>1-1 of 1</strong>.</p>
+<div class="fig tall"><img src="images/fig-4-new-business-listed.png" alt="Business Holdings page showing the newly added business"></div>
+<div class="caption">Figure 3.16. The Business Holdings page showing the newly added business (highlighted in red).</div>
+<p>The first column of the row, <strong>Assessment Request</strong>, has three icons:</p>
+<ul>
+  <li><strong>Edit Business</strong> (pencil icon): opens the business record so you can review or change its details.</li>
+  <li><strong>Step One - Display Assessment List</strong> (numbered 1 icon): opens the business's assessment list, where permit requests are made. A label with this name appears next to the icon while the business has no assessment request yet.</li>
+  <li><strong>Location</strong> (pin icon): shows the business location.</li>
+</ul>
+<div class="note">If the numbered icon is greyed out, the business record is missing required details. Hover over the icon to read the message, then click <strong>Edit Business</strong> to complete the details.</div>
+
+
+<h3 id="s3-2-5">3.2.5 Viewing the business details</h3>
+<p>The business you added appears on the Business Holdings page. The table has four tabs: <strong>General Info</strong>, <strong>Registration</strong>, <strong>Registered Owner</strong> and <strong>Miscellaneous</strong>. Click a tab to see a different set of details for each business. The <strong>Assessment Request</strong> and <strong>Business</strong> columns stay on every tab. If the table is wider than your screen, scroll sideways to see all columns.</p>
+
+<h4 id="s3-2-5-1">3.2.5.1 General Info tab</h4>
+<div class="fig tall"><img src="images/fig-4-tab-general-info.png" alt="General Info tab"></div>
+<div class="caption">Figure 3.17. The General Info tab.</div>
+
+<ul>
+  <li><strong>Assessment Request</strong>: the icons for the business (see <a href="#s3-2-4">Section 3.2.4</a>).</li>
+  <li><strong>Business</strong>: the business name.</li>
+  <li><strong>Franchise Name</strong>: the franchise name of the business.</li>
+  <li><strong>Line Of Business</strong>: what the business does.</li>
+  <li><strong>Complete Address</strong>: the full address of the business.</li>
+  <li><strong>Business Type Code</strong>: the business type, such as General Merchandise.</li>
+  <li><strong>Business Code</strong>: the number the system assigned to the business.</li>
+  <li><strong>Owner Type</strong>: the owner type, shown as a letter, such as S for Sole Proprietor.</li>
+  <li><strong>Street</strong>, <strong>Barangay</strong>, <strong>Street Code</strong> and <strong>Lot/Block No</strong>: the parts of the business address.</li>
+</ul>
+
+<h4 id="s3-2-5-2">3.2.5.2 Registration tab</h4>
+<div class="fig tall"><img src="images/fig-4-tab-registration.png" alt="Registration tab"></div>
+<div class="caption">Figure 3.18. The Registration tab.</div>
+
+<ul>
+  <li><strong>SEC Registration No</strong> and <strong>SEC Date Issued</strong>: the SEC details. They are empty for a sole proprietor.</li>
+  <li><strong>DTI Number</strong> and <strong>DTI Date Issued</strong>: the DTI registration number and the date it was issued.</li>
+  <li><strong>TIN</strong>, <strong>PhilHealth</strong>, <strong>SSS</strong> and <strong>HDMF</strong>: the business identification numbers, when provided.</li>
+</ul>
+
+<h4 id="s3-2-5-3">3.2.5.3 Registered Owner tab</h4>
+<div class="fig tall"><img src="images/fig-4-tab-registered-owner.png" alt="Registered Owner tab"></div>
+<div class="caption">Figure 3.19. The Registered Owner tab.</div>
+
+<ul>
+  <li><strong>Owner</strong>, <strong>Address</strong>, <strong>Gender</strong> and <strong>Mobile</strong>: the details of the business owner. Gender is shown as a letter, such as F for Female.</li>
+  <li><strong>President/GM</strong>, <strong>Treasurer</strong>, <strong>Representative</strong> and <strong>Representative Position</strong>: the officers and representative of the business, when provided.</li>
+</ul>
+
+<h4 id="s3-2-5-4">3.2.5.4 Miscellaneous tab</h4>
+<div class="fig tall"><img src="images/fig-4-tab-miscellaneous.png" alt="Miscellaneous tab"></div>
+<div class="caption">Figure 3.20. The Miscellaneous tab.</div>
+
+<ul>
+  <li><strong>Rented</strong>: Y if the business premises are rented.</li>
+  <li><strong>Since when</strong>, <strong>Monthly Rental</strong> and <strong>From Whom</strong>: the rental details.</li>
+  <li><strong>Type of Office</strong>, <strong>Type of Bank</strong> and <strong>Type of Club</strong>: type-specific details. They show <strong>0</strong> when they do not apply.</li>
+  <li><strong>Bedroom Type</strong>, <strong>No. of Occupancy</strong>, <strong>No. of Bedrooms</strong> and <strong>With A/C</strong>: the details for lodging businesses. They show <strong>0</strong> when they do not apply.</li>
+</ul>
+
+
+
+<p>The next section explains how to open the assessment list and request a permit.</p>
+
+</div>
+<div class="sec-3-3">
+<h2 id="s3-3">3.3 Requesting a Permit: New Business</h2>
+<p>A <strong>New Business</strong> request is for a business applying for a permit for the first time. This section shows how to open the assessment list for your business, fill out the request form, attach the requirements and send the request. Requests for a renewal, a closure or a transfer are explained in their own sections: <a href="#s3-4">Section 3.4</a>, <a href="#s3-5">Section 3.5</a> and <a href="#s3-6">Section 3.6</a>.</p>
+<h3 id="s3-3-1">3.3.1 Open the assessment list</h3>
+<ol>
+  <li>On the Business Holdings page, find your business in the list.</li>
+  <li>Click the numbered <strong>1</strong> icon in the <strong>Assessment Request</strong> column. A label, <em>Step One - Display Assessment List</em>, appears next to it while the business has no request yet.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-5-business-row.png" alt="Business row with the Step One icon"></div>
+<div class="caption">Figure 3.21. Click the numbered 1 icon (Step One - Display Assessment List) in the business row, highlighted in red.</div>
+<p>The numbered <strong>1</strong> icon appears only while the business has no request yet. After a request exists, it is replaced by an arrow. Click the arrow to open the <strong>Assessment Information</strong> page.</p>
+<div class="fig tall"><img src="images/fig-5-arrow-icon.png" alt="Arrow icon in the business row"></div>
+<div class="caption">Figure 3.22. When the business already has a request, the numbered 1 icon is replaced by an arrow. Click the arrow to open the Assessment Information page.</div>
+
+<p>The <strong>Assessment Information</strong> page opens. A new business has no request yet, so the page says <strong>No assessment found.</strong> and shows the <strong>Request</strong> button at the top right, with the label <em>Step Two - Create Assessment Request</em> next to it.</p>
+<div class="fig tall"><img src="images/fig-5-assessment-empty.png" alt="Assessment Information page with no assessment"></div>
+<div class="caption">Figure 3.23. The Assessment Information page of a business with no request yet.</div>
+
+
+<h3 id="s3-3-2">3.3.2 Fill out the request form</h3>
+<p>Click <strong>Request</strong>. The <strong>Request For Assessment</strong> page opens with the <strong>Request Form</strong>. The path at the top of the page reads <em>Dashboard, Business, Assessment, Request</em>. The page also says <em>You have no request recorded for this year.</em> when no request exists yet for the year.</p>
+<p>The form has three parts, which you complete in this order: the details (<a href="#s3-3-2-1">Section 3.3.2.1</a>), the payment mode (<a href="#s3-3-2-2">Section 3.3.2.2</a>) and the requirements to attach (<a href="#s3-3-2-3">Section 3.3.2.3</a>).</p>
+<div class="note">Fields marked with an asterisk (<strong>*</strong>) are required. Some details are filled in from the business record. Check them before you continue.</div>
+
+<h4 id="s3-3-2-1">3.3.2.1 Fill in the details</h4>
+<p>Click <strong>Transaction Type</strong> to open the list and choose <strong>New Business</strong>.</p>
+<div class="fig small"><img src="images/fig-5-transaction-type.png" alt="Transaction Type list"></div>
+<div class="caption">Figure 3.24. The Transaction Type list. Choose New Business.</div>
+
+<p>Then complete the form from top to bottom:</p>
+<div class="fig tall"><img src="images/fig-5-form-top.png" alt="Request Form for a new business"></div>
+<div class="caption">Figure 3.25. The top of the Request Form for a New Business.</div>
+
+<ul>
+  <li><strong>Business Name</strong>: the name of your business. It is filled in for you and cannot be changed.</li>
+  <li><strong>Business Category</strong> and <strong>Business Type</strong> (required): filled in from the business record. Change them only if they are wrong.</li>
+  <li><strong>Transaction Year</strong>: the year of the request.</li>
+  <li><strong>Transaction Type</strong> (required): choose <em>New Business</em>.</li>
+  <li><strong>Capitalization</strong>: the capital of the business, in pesos.</li>
+  <li><strong>No of Employees</strong>: the number of employees.</li>
+  <li><strong>Total Floor Area</strong> (required): the floor area of the business premises. It must be at least 1.</li>
+  <li><strong>No. of Storey</strong> (required): the number of storeys. It must be at least 1.</li>
+  <li><strong>Contact No</strong>: the contact number of the business.</li>
+  <li><strong>Owner Name</strong>: the name of the business owner.</li>
+  <li><strong>Authorized Representative</strong> (required): the person authorized to transact for the business.</li>
+</ul>
+
+<div class="fig tall"><img src="images/fig-5-form-middle.png" alt="Request Form, filled in"></div>
+<div class="caption">Figure 3.26. The Request Form filled in with sample details. The Attach Requirements section follows Payment Mode.</div>
+
+
+<h4 id="s3-3-2-2">3.3.2.2 Choose the payment mode</h4>
+<p>Click <strong>Payment Mode</strong> to open the list. For a New Business, only <strong>Annual</strong> can be chosen. <strong>Semi-Annual</strong> and <strong>Quarterly</strong> are greyed out.</p>
+<div class="fig small"><img src="images/fig-5-payment-new.png" alt="Payment Mode list for a new business"></div>
+<div class="caption">Figure 3.27. The Payment Mode list for a New Business. Only Annual is available.</div>
+
+
+<h4 id="s3-3-2-3">3.3.2.3 Attach the requirements</h4>
+<p>Below <strong>Payment Mode</strong>, the <strong>Attach Requirements</strong> section lists the documents needed. This is marked <em>Step 3</em> on the page. For a New Business in the example, they are <strong>Sketch and Photos of location</strong>, <strong>DTI</strong> and <strong>Title or Tax Dec</strong>. A requirement with an asterisk (<strong>*</strong>) is required.</p>
+<div class="fig tall"><img src="images/fig-5-attach-empty.png" alt="Attach Requirements section"></div>
+<div class="caption">Figure 3.28. The Attach Requirements section, with a Select Files button for each requirement, and the Cancel and Request buttons.</div>
+
+<ol>
+  <li>Click <strong>Select Files</strong> beside a requirement. The <strong>Select Attachment Method</strong> window opens.</li>
+  <li>Choose how to attach the file:
+    <ul>
+      <li><strong>Upload Files</strong>: click <strong>Choose Files</strong> and select one or more files from your device.</li>
+      <li><strong>Camera</strong>: use your device camera to capture the document.</li>
+    </ul>
+  </li>
+  <li>Repeat for every requirement.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-5-attach-dialog.png" alt="Select Attachment Method window"></div>
+<div class="caption">Figure 3.29. The Select Attachment Method window, with the Upload Files and Camera tabs.</div>
+
+<p>Each file you attach is listed under its requirement with its file name and size. To remove a file, click the <strong>trash icon</strong> at the right of the file.</p>
+<div class="fig tall"><img src="images/fig-5-attached.png" alt="Requirements attached"></div>
+<div class="caption">Figure 3.30. The requirements with their files attached. Each file has a trash icon for removing it.</div>
+
+
+<h3 id="s3-3-3">3.3.3 Send the request</h3>
+<p>At the bottom of the form:</p>
+<div class="fig small"><img src="images/fig-5-request-button.png" alt="Cancel and Request buttons" style="max-height:40mm"></div>
+<div class="caption">Figure 3.31. Click Request (highlighted) at the bottom of the form to send the request.</div>
+<ul>
+  <li><strong>Request</strong>: sends the request.</li>
+  <li><strong>Cancel</strong>: closes the form without sending.</li>
+</ul>
+<h4 id="s3-3-3-1">If something is missing</h4>
+<p>If a required field is empty or incorrect, the request is not sent. The field is outlined in red and a red message appears under it. Every requirement marked with an asterisk must also have a file attached.</p>
+<div class="fig tall"><img src="images/fig-5-form-errors.png" alt="Request Form with error messages"></div>
+<div class="caption">Figure 3.32. The Request Form with messages under the fields that need correction.</div>
+
+<div class="error"><strong>Error:</strong> correct each field that shows a red message, then click <strong>Request</strong> again. The messages shown in the figure are:</div>
+<ul>
+  <li><em>area must be greater than or equal to 1</em>: appears under Total Floor Area when it is 0.</li>
+  <li><em>no_of_storey must be greater than or equal to 1</em>: appears under No. of Storey when it is 0.</li>
+  <li><em>Authorized representative is required</em>: appears under Authorized Representative.</li>
+  <li><em>Payment mode is required</em>: appears under Payment Mode.</li>
+</ul>
+
+
+
+<h3 id="s3-3-4">3.3.4 After the request is sent</h3>
+<p>After you click <strong>Request</strong>, a green message, <strong>Assessment Sent</strong>, appears at the lower left of the screen while the next page loads. This means your request has been sent.</p>
+<div class="fig tall"><img src="images/fig-5-assessment-sent.png" alt="Assessment Sent message"></div>
+<div class="caption">Figure 3.33. The Assessment Sent message at the lower left, while the next page loads.</div>
+
+<p>The <strong>Assessment Requirements</strong> page then opens, with a reminder: <em>Kindly complete the assessment requirements to avoid any delays in the process.</em> Click <strong>Close</strong> to dismiss the reminder.</p>
+<div class="fig tall"><img src="images/fig-5-requirements-reminder.png" alt="Assessment requirements reminder"></div>
+<div class="caption">Figure 3.34. The reminder shown when the Assessment Requirements page opens.</div>
+
+
+<h3 id="s3-3-5">3.3.5 Complete the assessment requirements</h3>
+<p>The <strong>Assessment Requirements</strong> page lists the offices that review your request. In the example these are Assessor, Engineering, Fire, Peso, Mao, Menro, Mpdo, Rhu and Bplo, followed by the barangay of the business (here, Barangay Badbad). This is <em>Step 3</em> of the process: sending the attachments each office needs.</p>
+<p>You can open this page from the <strong>Assessment Information</strong> list. After you send a request, it appears in the list with the status <strong>PENDING</strong>. Click the numbered <strong>3</strong> icon (<em>Step Three - Sent Attachment Per Office</em>) in the <strong>Action</strong> column of your request.</p>
+<div class="fig small"><img src="images/fig-5-assessment-list-pending.png" alt="Assessment Information list with the new request" style="max-height:66mm"></div>
+<div class="caption">Figure 3.35. The Assessment Information list after the request is sent. The new request has the status PENDING, and the numbered 3 icon opens the Assessment Requirements page.</div>
+<div class="fig tall"><img src="images/fig-5-requirements-page.png" alt="Assessment Requirements page"></div>
+<div class="caption">Figure 3.36. The Assessment Requirements page, with one row for each office.</div>
+
+<p>At the top right of the page:</p>
+<ul>
+  <li><strong>Back</strong>: returns to the previous page.</li>
+  <li><strong>Attachment On Request</strong>: shows the files you attached when you sent the request (see <a href="#s3-3-2-3">Section 3.3.2.3</a>). If you attached none, it says <em>No attachment found.</em></li>
+</ul>
+<div class="note"><strong>Check the requirements of every office</strong> and upload the file needed for each requirement. Requirements that are not sent can delay your request.</div>
+
+<h4 id="s3-3-5-1">Open an office and read its requirements</h4>
+<p>Click the name of an office, or the arrow at the right of its row, to open its <strong>Requirements List</strong>.</p>
+<div class="fig small"><img src="images/fig-5-office-opened.png" alt="An office opened on the Assessment Requirements page" style="max-height:66mm"></div>
+<div class="caption">Figure 3.37. An office opened on the Assessment Requirements page, showing its Requirements List with the requirements still UNSENT.</div>
+
+<p>The list has these columns:</p>
+<ul>
+  <li><strong>Id</strong>: the number of the requirement.</li>
+  <li><strong>Requirement</strong>: the document the office needs.</li>
+  <li><strong>Required</strong>: <strong>TRUE</strong> means you must send this document.</li>
+  <li><strong>Status</strong>: <strong>UNSENT</strong> (red) means you have not sent the file yet. <strong>SENT</strong> (green) means it has been sent.</li>
+  <li><strong>Forms</strong>: <em>No form included.</em> means there is nothing to download. If the office provides a form, its file name appears here. Click it to download the form, fill it in and attach it.</li>
+  <li><strong>Action</strong>: click <strong>Attach File</strong> to send the file. After a file is sent, a picture icon (<strong>View uploaded requirements</strong>) also appears.</li>
+</ul>
+<p>An office that has no requirements for your business shows <strong>No requirements found.</strong> You do not need to send anything to that office.</p>
+
+<h4 id="s3-3-5-2">Send the file for a requirement</h4>
+<ol>
+  <li>Click <strong>Attach File</strong> beside the requirement. The <strong>Upload Requirements Attachment</strong> window opens. It has two tabs, <strong>Upload Files</strong> and <strong>Camera</strong>.</li>
+</ol>
+<div class="fig small"><img src="images/fig-5-upload-window.png" alt="Upload Requirements Attachment window" style="max-height:66mm"></div>
+<div class="caption">Figure 3.38. The Upload Requirements Attachment window.</div>
+
+<ol start="2">
+  <li>On the <strong>Upload Files</strong> tab, drop the file into the <strong>Select files</strong> box, or click <strong>browse</strong> to choose it from your computer. The files must total less than 50 MB. You can add more than one file for the same requirement.</li>
+  <li>Each chosen file is listed with its name and size. To take a file out, click the <strong>trash icon</strong> beside it. Click <strong>Remove all</strong> to clear every chosen file.</li>
+</ol>
+<div class="fig small"><img src="images/fig-5-upload-window-file.png" alt="Upload window with a chosen file" style="max-height:66mm"></div>
+<div class="caption">Figure 3.39. A chosen file listed in the window, with the trash icon and Remove all.</div>
+
+<ol start="4">
+  <li>Click <strong>Upload Requirements</strong> to send the file, or <strong>Cancel</strong> to close the window without sending.</li>
+</ol>
+<p>When the file is sent, a green message, <strong>Email Sent</strong>, appears at the lower left. The <strong>Status</strong> of that requirement changes from <strong>UNSENT</strong> to <strong>SENT</strong>, and a picture icon (<strong>View uploaded requirements</strong>) appears in the <strong>Action</strong> column. Click it to see what you sent.</p>
+<div class="fig small"><img src="images/fig-5-one-sent.png" alt="One requirement sent" style="max-height:66mm"></div>
+<div class="caption">Figure 3.40. The DTI requirement is now SENT, with the picture icon. The other requirements are still UNSENT.</div>
+
+<p>Repeat for every requirement of every office. When you finish an office, every requirement in its list shows <strong>SENT</strong>.</p>
+<div class="fig small"><img src="images/fig-5-all-sent.png" alt="All requirements sent" style="max-height:66mm"></div>
+<div class="caption">Figure 3.41. All requirements of the office are SENT.</div>
+
+<p>If a file cannot be sent, the message <strong>Email not sent.</strong> appears. Check your internet connection and try again.</p>
+<div class="error"><strong>Error:</strong> <em>images is a required field</em> appears in red in the window if you click <strong>Upload Requirements</strong> without choosing a file. Choose a file first, then click <strong>Upload Requirements</strong> again.</div>
+<div class="fig small"><img src="images/fig-5-fire-sent.png" alt="Another office with all requirements sent" style="max-height:66mm"></div>
+<div class="caption">Figure 3.42. Another office, Fire, with both requirements SENT.</div>
+
+<h4 id="s3-3-5-3">View the files you sent</h4>
+<p>After a requirement is sent, a picture icon (<strong>View uploaded requirements</strong>) appears in its <strong>Action</strong> column. Point to it to see its label, then click it.</p>
+<div class="fig small"><img src="images/fig-5-view-icon.png" alt="View uploaded requirements icon" style="max-height:66mm"></div>
+<div class="caption">Figure 3.43. The picture icon (highlighted) in the Action column. Point to it to see "View uploaded requirements".</div>
+
+<p>The <strong>Uploaded Requirements Attachment</strong> window opens. Each file you sent for that requirement appears as a tile with its file type and file name. If you sent more than one file, all of them are shown. Click the <strong>X</strong> at the top right to close the window.</p>
+<div class="fig small"><img src="images/fig-5-view-uploaded.png" alt="Uploaded Requirements Attachment window" style="max-height:66mm"></div>
+<div class="caption">Figure 3.44. The Uploaded Requirements Attachment window, showing two files sent for one requirement.</div>
+
+<div class="note"><strong>Camera.</strong> The <strong>Camera</strong> tab lets you take a photo of the document directly with your device camera, for example on a phone or tablet. Your browser may ask for permission to use the camera.</div>
+
+<h4 id="s3-3-5-4">Requirements in the example</h4>
+<p>The requirements depend on the business. In the example, the offices show the following.</p>
+<ul>
+  <li><strong>Assessor</strong>: no requirements.</li>
+  <li><strong>Engineering</strong>: one requirement.</li>
+  <li><strong>Fire</strong>: two requirements.</li>
+  <li><strong>Peso</strong>: one requirement, with a form to download (a Masterlist of Employees file).</li>
+  <li><strong>Mao</strong>: no requirements.</li>
+  <li><strong>Menro</strong>: two requirements.</li>
+  <li><strong>Mpdo</strong>: no requirements.</li>
+  <li><strong>Rhu</strong>: no requirements.</li>
+  <li><strong>Bplo</strong>: three requirements, already sent with the request (DTI, Title or Tax Dec, and Sketch and Photos of location).</li>
+  <li><strong>Barangay</strong>: three requirements (DTI, Valid ID and Cedula).</li>
+</ul>
+<div class="fig small"><img src="images/fig-5-req-assessor.png" alt="Assessor requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.45. The Assessor has no requirements: "No requirements found."</div>
+<div class="fig small"><img src="images/fig-5-req-engineering.png" alt="Engineering requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.46. The Engineering requirements, with the status UNSENT.</div>
+<div class="fig small"><img src="images/fig-5-req-fire.png" alt="Fire requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.47. The Fire requirements, with the status UNSENT.</div>
+<div class="fig small"><img src="images/fig-5-req-peso.png" alt="Peso requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.48. The Peso requirement, with a form to download in the Forms column.</div>
+<div class="fig small"><img src="images/fig-5-req-mao.png" alt="Mao requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.49. Mao has no requirements: "No requirements found."</div>
+<div class="fig small"><img src="images/fig-5-req-menro.png" alt="Menro requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.50. The Menro requirements, with the status UNSENT.</div>
+<div class="fig small"><img src="images/fig-5-req-mpdo.png" alt="Mpdo requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.51. Mpdo has no requirements: "No requirements found."</div>
+<div class="fig small"><img src="images/fig-5-req-rhu.png" alt="Rhu requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.52. Rhu has no requirements: "No requirements found."</div>
+<div class="fig small"><img src="images/fig-5-req-bplo.png" alt="Bplo requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.53. The Bplo requirements, already SENT, with the picture icon for viewing the uploaded files.</div>
+<div class="fig small"><img src="images/fig-5-req-barangay.png" alt="Barangay requirements" style="max-height:62mm"></div>
+<div class="caption">Figure 3.54. The barangay requirements, with the status UNSENT.</div>
+
+
+<h3 id="s3-3-6">3.3.6 Return to the Assessment Information list</h3>
+<p>When you have checked the requirements of every office and sent the files you need, go back to the <strong>Assessment Information</strong> list. Click <strong>Back</strong> at the top right of the Assessment Requirements page, or click <strong>Business</strong> in the path at the top of the page (<em>Dashboard, Business, Assessment</em>).</p>
+<div class="fig small"><img src="images/fig-5-back-button.png" alt="Back button highlighted" style="max-height:66mm"></div>
+<div class="caption">Figure 3.55. Click Back (highlighted) at the top right to return to the Assessment Information list.</div>
+
+
+<h3 id="s3-3-7">3.3.7 View the Assessment Information list</h3>
+<p>The <strong>Assessment Information</strong> page lists your requests for the business. Each request is one row.</p>
+<div class="fig small"><img src="images/fig-5-assessment-info-list.png" alt="Assessment Information list" style="max-height:66mm"></div>
+<div class="caption">Figure 3.56. The Assessment Information list. The request has the status PENDING.</div>
+
+<p>The columns are:</p>
+<ul>
+  <li><strong>Action</strong>: the icons for the request (see below).</li>
+  <li><strong>Status</strong>: the status of the request, for example <strong>PENDING</strong>. Click it to see the status of each office (see <a href="#s3-3-8">Section 3.3.8</a>).</li>
+  <li><strong>Assessment Code</strong>: the number of the request.</li>
+  <li><strong>Date Requested</strong> and <strong>Transaction Year</strong>: when and for which year you made the request.</li>
+  <li><strong>Transaction Type</strong>: the kind of request, for example New Business.</li>
+  <li><strong>Capitalization</strong> and <strong>Gross Income</strong>: the amount you entered. A new business shows its capitalization, and a renewal shows its gross income.</li>
+  <li><strong>Payment Mode</strong> and <strong>Payment Quarter</strong>: how you will pay and, for a quarterly request, the quarter.</li>
+</ul>
+<p>The icons in the <strong>Action</strong> column are:</p>
+<div class="fig small"><img src="images/fig-5-action-icons.png" alt="Action icons" style="max-height:40mm"></div>
+<div class="caption">Figure 3.57. The icons in the Action column: Send Inquiry, Offices Uploaded Files, View/Sent Attachments, Assessment Details and View/Print Assessment.</div>
+<ul>
+  <li><strong>Send Inquiry</strong> (paper plane): opens the inquiry page so you can send a question to the offices (see <a href="#s3-7">Section 3.7</a>).</li>
+  <li><strong>Offices Uploaded Files</strong> (upload icon): shows the files the offices have uploaded for your request.</li>
+  <li><strong>View/Sent Attachments</strong> (paperclip): opens the Assessment Requirements page again, where you can check and send requirements. Until you send your first file, this icon is the numbered 3 icon (<em>Step Three - Sent Attachment Per Office</em>).</li>
+  <li><strong>Assessment Details</strong> (print icon): opens the assessment so you can print it. It is greyed out until the request has been approved.</li>
+  <li><strong>View/Print Assessment</strong> (arrow icon): opens the assessment details. It is greyed out until the request has been approved.</li>
+</ul>
+
+<h3 id="s3-3-8">3.3.8 Check the status of your request</h3>
+<p>Click the status of the request (for example <strong>PENDING</strong>) to see where it stands. A list opens with one row for each office: Fire, Engineering, Assessor, Rhu, Mpdo, Menro, Mao, Peso, Barangay and Bplo.</p>
+<div class="fig small"><img src="images/fig-5-status-popover.png" alt="Status of each office" style="max-height:66mm"></div>
+<div class="caption">Figure 3.58. The status of each office. A red dot means the office has not acted on the request yet.</div>
+
+<ul>
+  <li>A <strong>red</strong> dot means the office has not acted on your request yet. All offices show red when a request is new.</li>
+  <li>A <strong>green</strong> dot means the office has approved your request.</li>
+  <li>An <strong>orange</strong> dot means the office has not approved your request.</li>
+  <li>Click the arrow at the right of an office to read its remarks. If the office left none, it says <em>No remarks</em>.</li>
+</ul>
+
+
+<h3 id="s3-3-9">3.3.9 Wait for the approval of the offices</h3>
+<p>After you send your request and its requirements, the offices review it. <strong>All the offices must approve your request</strong> before it can move forward, so you need to wait for each one.</p>
+<ul>
+  <li><strong>Check the progress.</strong> Click the status of your request in the Assessment Information list to see the status of each office (<a href="#s3-3-8">Section 3.3.8</a>). The dot of an office changes from red when the office acts on your request. Click the arrow beside an office to read its remarks. The offices are described in <a href="05-offices.html">Section 5</a>.</li>
+  <li><strong>Watch your notifications.</strong> The bell icon in the top bar shows updates about your request.</li>
+  <li><strong>If an office needs something more.</strong> Read its remarks, then send the missing or corrected files on the Assessment Requirements page (<a href="#s3-3-5">Section 3.3.5</a>). You can also click <strong>Send Inquiry</strong> in the Action column to ask the office a question (see <a href="#s3-7">Section 3.7</a>).</li>
+    </ul>
+<div class="note">While you wait, the status stays PENDING (<a href="#s3-8">Section 3.8</a>). Keep checking the status of your request until every office has approved it. A request that is waiting on one office cannot be paid or released.</div>
+
+
+</div>
+<div class="sec-3-4">
+<h2 id="s3-4">3.4 Requesting a Permit: Renewal</h2>
+<p>A <strong>Renewal</strong> request is for a business renewing its permit. The steps are similar to a new business request (<a href="#s3-3">Section 3.3</a>), with the differences described here.</p>
+<h3 id="s3-4-1">3.4.1 Open the request form</h3>
+<p>Open the assessment list and click <strong>Request</strong>, as described in <a href="#s3-3-1">Section 3.3.1</a>. On the Request Form, click <strong>Transaction Type</strong> and choose <strong>Renewal</strong>.</p>
+
+<h3 id="s3-4-2">3.4.2 Fill in the details</h3>
+<p>For a renewal, the form asks for the <strong>Gross Income</strong> of the business instead of its <strong>Capitalization</strong>.</p>
+<div class="fig tall"><img src="images/fig-5-form-renewal-top.png" alt="Request Form for a renewal"></div>
+<div class="caption">Figure 3.59. The Request Form with Renewal selected. The form asks for Gross Income.</div>
+
+<ul>
+  <li><strong>Business Name</strong>: the name of your business. It is filled in for you and cannot be changed.</li>
+  <li><strong>Business Category</strong> and <strong>Business Type</strong> (required): filled in from the business record. Change them only if they are wrong.</li>
+  <li><strong>Transaction Year</strong>: the year of the request.</li>
+  <li><strong>Transaction Type</strong> (required): choose <em>Renewal</em>.</li>
+  <li><strong>Gross Income</strong>: the gross income of the business, in pesos.</li>
+  <li><strong>No of Employees</strong>: the number of employees.</li>
+  <li><strong>Total Floor Area</strong> (required): the floor area of the business premises. It must be at least 1.</li>
+  <li><strong>No. of Storey</strong> (required): the number of storeys. It must be at least 1.</li>
+  <li><strong>Contact No</strong>: the contact number of the business.</li>
+  <li><strong>Owner Name</strong>: the name of the business owner.</li>
+  <li><strong>Authorized Representative</strong> (required): the person authorized to transact for the business.</li>
+</ul>
+
+
+<h3 id="s3-4-3">3.4.3 Choose the payment mode</h3>
+<p>Click <strong>Payment Mode</strong> to open the list. For a Renewal, you can choose <strong>Annual</strong>, <strong>Semi-Annual</strong> or <strong>Quarterly</strong>.</p>
+<div class="fig small"><img src="images/fig-5-payment-renewal.png" alt="Payment Mode list for a renewal"></div>
+<div class="caption">Figure 3.60. The Payment Mode list for a Renewal. All three payment modes are available.</div>
+
+<p>Because you chose <strong>Semi-Annual</strong> or <strong>Quarterly</strong>, an extra field appears below <strong>Payment Mode</strong> so you can say which period you are paying for.</p>
+<ul>
+  <li><strong>Semi-Annual</strong>: an <strong>Annual</strong> field appears. Choose the period from the list, for example <strong>1st Annual</strong>.</li>
+  <li><strong>Quarterly</strong>: a <strong>Select Quarter Type</strong> field appears. Choose <strong>Single Quarter</strong> or <strong>Multiple Quarter</strong>.</li>
+</ul>
+<div class="fig small"><img src="images/fig-5-semiannual.png" alt="Semi-Annual period field"></div>
+<div class="caption">Figure 3.61. Semi-Annual selected. The Annual field lets you choose the period, here 1st Annual.</div>
+
+<p>With <strong>Single Quarter</strong>, choose one quarter from the list: 1st Quarter, 2nd Quarter, 3rd Quarter or 4th Quarter. Quarters that cannot be chosen yet are greyed out. In the example, only the 1st Quarter can be chosen.</p>
+<div class="fig small"><img src="images/fig-5-quarter-single.png" alt="Single Quarter list"></div>
+<div class="caption">Figure 3.62. Quarterly with Single Quarter selected. The quarter list shows 1st Quarter, with the other quarters greyed out.</div>
+
+<p>With <strong>Multiple Quarter</strong>, tick the box of each quarter you want to request: 1st Quarter, 2nd Quarter, 3rd Quarter and 4th Quarter.</p>
+<div class="fig small"><img src="images/fig-5-quarter-multiple.png" alt="Multiple Quarter check boxes"></div>
+<div class="caption">Figure 3.63. Quarterly with Multiple Quarter selected. Tick the quarters you want to request.</div>
+
+
+<h3 id="s3-4-4">3.4.4 Attach the requirements</h3>
+<p>For a Renewal in the example, the requirements are <strong>DTI</strong> and <strong>Title or Tax Dec</strong>. Attach each file as described in <a href="#s3-3-2-3">Section 3.3.2.3</a>.</p>
+<div class="fig tall"><img src="images/fig-5-form-renewal-bottom.png" alt="Request Form for a renewal, requirements"></div>
+<div class="caption">Figure 3.64. The bottom of the Request Form for a Renewal, with the DTI and Title or Tax Dec requirements attached.</div>
+
+
+<h3 id="s3-4-5">3.4.5 Send the request</h3>
+<p>Click <strong>Request</strong> to send the request, or <strong>Cancel</strong> to close the form without sending. If a field needs correction, see <a href="#s3-3-3">Section 3.3.3</a>.</p>
+
+
+</div>
+<div class="sec-3-5">
+<h2 id="s3-5">3.5 Requesting a Permit: Closure</h2>
+<p>A <strong>Closure</strong> request is for a business that is closing. The steps are similar to a new business request (<a href="#s3-3">Section 3.3</a>), with the differences described here.</p>
+<h3 id="s3-5-1">3.5.1 Open the request form</h3>
+<p>Open the assessment list and click <strong>Request</strong>, as described in <a href="#s3-3-1">Section 3.3.1</a>. On the Request Form, click <strong>Transaction Type</strong> and choose <strong>Closure</strong>.</p>
+
+<h3 id="s3-5-2">3.5.2 Fill in the details</h3>
+<p>For a closure, the form does not ask for <strong>Capitalization</strong> or <strong>Gross Income</strong>. After <strong>Transaction Type</strong>, it goes straight to <strong>No of Employees</strong>.</p>
+<div class="fig tall"><img src="images/fig-5-form-closure-top.png" alt="Request Form for a closure"></div>
+<div class="caption">Figure 3.65. The Request Form with Closure selected. There is no Capitalization or Gross Income field.</div>
+
+<ul>
+  <li><strong>Business Name</strong>: the name of your business. It is filled in for you and cannot be changed.</li>
+  <li><strong>Business Category</strong> and <strong>Business Type</strong> (required): filled in from the business record. Change them only if they are wrong.</li>
+  <li><strong>Transaction Year</strong>: the year of the request.</li>
+  <li><strong>Transaction Type</strong> (required): choose <em>Closure</em>.</li>
+  <li><strong>No of Employees</strong>: the number of employees.</li>
+  <li><strong>Total Floor Area</strong> (required): the floor area of the business premises. It must be at least 1.</li>
+  <li><strong>No. of Storey</strong> (required): the number of storeys. It must be at least 1.</li>
+  <li><strong>Contact No</strong>: the contact number of the business.</li>
+  <li><strong>Owner Name</strong>: the name of the business owner.</li>
+  <li><strong>Authorized Representative</strong> (required): the person authorized to transact for the business.</li>
+</ul>
+
+
+<h3 id="s3-5-3">3.5.3 Choose the payment mode</h3>
+<p>For a Closure, only <strong>Annual</strong> can be chosen.</p>
+
+<h3 id="s3-5-4">3.5.4 Attach the requirements</h3>
+<p>For a Closure in the example, the only requirement is <strong>DTI</strong>. Attach the file as described in <a href="#s3-3-2-3">Section 3.3.2.3</a>.</p>
+<div class="fig tall"><img src="images/fig-5-form-closure-bottom.png" alt="Request Form for a closure, requirements"></div>
+<div class="caption">Figure 3.66. The bottom of the Request Form for a Closure, with the DTI requirement attached.</div>
+
+
+<h3 id="s3-5-5">3.5.5 Send the request</h3>
+<p>Click <strong>Request</strong> to send the request, or <strong>Cancel</strong> to close the form without sending. If a field needs correction, see <a href="#s3-3-3">Section 3.3.3</a>.</p>
+
+
+</div>
+<div class="sec-3-6">
+<h2 id="s3-6">3.6 Requesting a Permit: Transfer</h2>
+<p>A <strong>Transfer</strong> request is for a business that is being transferred. The steps are similar to a new business request (<a href="#s3-3">Section 3.3</a>), with the differences described here.</p>
+<h3 id="s3-6-1">3.6.1 Open the request form</h3>
+<p>Open the assessment list and click <strong>Request</strong>, as described in <a href="#s3-3-1">Section 3.3.1</a>. On the Request Form, click <strong>Transaction Type</strong> and choose <strong>Transfer</strong>.</p>
+
+<h3 id="s3-6-2">3.6.2 Fill in the details</h3>
+<p>For a transfer, the form does not ask for <strong>Capitalization</strong> or <strong>Gross Income</strong>. After <strong>Transaction Type</strong>, it goes straight to <strong>No of Employees</strong>.</p>
+<div class="fig tall"><img src="images/fig-5-form-transfer-top.png" alt="Request Form for a transfer"></div>
+<div class="caption">Figure 3.67. The Request Form with Transfer selected. There is no Capitalization or Gross Income field.</div>
+
+<ul>
+  <li><strong>Business Name</strong>: the name of your business. It is filled in for you and cannot be changed.</li>
+  <li><strong>Business Category</strong> and <strong>Business Type</strong> (required): filled in from the business record. Change them only if they are wrong.</li>
+  <li><strong>Transaction Year</strong>: the year of the request.</li>
+  <li><strong>Transaction Type</strong> (required): choose <em>Transfer</em>.</li>
+  <li><strong>No of Employees</strong>: the number of employees.</li>
+  <li><strong>Total Floor Area</strong> (required): the floor area of the business premises. It must be at least 1.</li>
+  <li><strong>No. of Storey</strong> (required): the number of storeys. It must be at least 1.</li>
+  <li><strong>Contact No</strong>: the contact number of the business.</li>
+  <li><strong>Owner Name</strong>: the name of the business owner.</li>
+  <li><strong>Authorized Representative</strong> (required): the person authorized to transact for the business.</li>
+</ul>
+
+
+<h3 id="s3-6-3">3.6.3 Choose the payment mode</h3>
+<p>For a Transfer, you can choose <strong>Annual</strong>, <strong>Semi-Annual</strong> or <strong>Quarterly</strong>. If you choose Semi-Annual or Quarterly, choose the period as described in <a href="#s3-4-3">Section 3.4.3</a>.</p>
+
+<h3 id="s3-6-4">3.6.4 Attach the requirements</h3>
+<p>For a Transfer, the Attach Requirements section says <em>No requirements needed.</em> You have nothing to attach.</p>
+<div class="fig tall"><img src="images/fig-5-form-transfer-bottom.png" alt="Request Form for a transfer, requirements"></div>
+<div class="caption">Figure 3.68. The bottom of the Request Form for a Transfer. The Attach Requirements section says "No requirements needed."</div>
+
+
+<h3 id="s3-6-5">3.6.5 Send the request</h3>
+<p>Click <strong>Request</strong> to send the request, or <strong>Cancel</strong> to close the form without sending. If a field needs correction, see <a href="#s3-3-3">Section 3.3.3</a>.</p>
+
+
+</div>
+<div class="sec-3-7">
+<h2 id="s3-7">3.7 Sending an Inquiry</h2>
+<p>Use an inquiry to ask an office a question about your business or your request. The office answers in the same conversation.</p>
+<h3 id="s3-7-1">3.7.1 Open the Inquiries page</h3>
+<p>In the <strong>Assessment Information</strong> list, click the <strong>Send Inquiry</strong> icon (the paper plane) in the <strong>Action</strong> column.</p>
+<div class="fig tall"><img src="images/fig-9-paper-plane.png" alt="Send Inquiry icon highlighted"></div>
+<div class="caption">Figure 3.69. Click the Send Inquiry icon (highlighted) in the Action column of the Assessment Information list.</div>
+
+<p>The <strong>Inquiries</strong> page opens. If you have not sent any inquiry yet, the <strong>List Of Inquiries</strong> says <strong>No record found.</strong> The page has these parts:</p>
+<ul>
+  <li><strong>Watch Guide Video</strong>: plays the guide video.</li>
+  <li><strong>Make Inquiry</strong>: opens the window where you write a new inquiry.</li>
+  <li><strong>List Of Inquiries</strong>: lists your inquiries. Use the <strong>Search</strong> box to find one.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-9-inquiries-empty.png" alt="Inquiries page with no inquiries"></div>
+<div class="caption">Figure 3.70. The Inquiries page with no inquiries yet. Click Make Inquiry (highlighted) to write one.</div>
+
+
+<h3 id="s3-7-2">3.7.2 Make an inquiry</h3>
+<ol>
+  <li>Click <strong>Make Inquiry</strong> (highlighted in Figure 3.70). The <strong>Make Inquiry</strong> window opens.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-9-make-empty.png" alt="Make Inquiry window"></div>
+<div class="caption">Figure 3.71. The Make Inquiry window, with Select Business, Select Office and Enter message inquiry.</div>
+
+<ol start="2">
+  <li>Click <strong>Select Business</strong> and choose your business from the list.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-9-select-business.png" alt="Select Business list"></div>
+<div class="caption">Figure 3.72. The Select Business list shows your businesses.</div>
+
+<ol start="3">
+  <li>Click <strong>Select Office</strong> and choose the office you want to ask. The list has Assessor, Engineering, Fire, Peso, Mao, Menro, Mpdo, Rhu and Bplo, and the barangay of your business.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-9-select-office.png" alt="Select Office list"></div>
+<div class="caption">Figure 3.73. The Select Office list. In the example, the barangay of the business is Barangay Badbad.</div>
+
+<ol start="4">
+  <li>Type your question in <strong>Enter message inquiry</strong>.</li>
+  <li>Click <strong>Send</strong> (highlighted), or <strong>Cancel</strong> to close the window without sending.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-9-make-filled.png" alt="Make Inquiry window filled in"></div>
+<div class="caption">Figure 3.74. The Make Inquiry window filled in. Click Send (highlighted) to send the inquiry.</div>
+
+<p>A green message, <strong>Inquiry successfully sent.</strong>, appears at the lower left, and the inquiry appears in the <strong>List Of Inquiries</strong>. It is listed by the name of the office, with the beginning of your message.</p>
+<div class="fig tall"><img src="images/fig-9-inquiry-sent.png" alt="Inquiry sent"></div>
+<div class="caption">Figure 3.75. The Inquiries page after the inquiry is sent. The inquiry is listed under the office name.</div>
+
+<div class="fig tall"><img src="images/fig-9-error-inquiry.png" alt="Make Inquiry window with an error"></div>
+<div class="caption">Figure 3.76. Clicking Send (highlighted) with the form incomplete shows a red message at the lower left. In the figure, the message is "Inquery is a required field."</div>
+<div class="error"><strong>Error:</strong> if you click <strong>Send</strong> without choosing an office or without writing a message, the inquiry is not sent and a red message appears. The messages are <em>Receiver is a required field.</em> and <em>Inquery is a required field.</em> Choose the office, write your message and click <strong>Send</strong> again.</div>
+
+<h3 id="s3-7-3">3.7.3 View your inquiries and continue the conversation</h3>
+<p>Click an inquiry in the <strong>List Of Inquiries</strong> to open it. The conversation opens on the right. It shows the business the inquiry is about and the date, and your message in a blue box. When the office replies, its reply appears in the same conversation.</p>
+<div class="fig tall"><img src="images/fig-9-chat.png" alt="Inquiry conversation"></div>
+<div class="caption">Figure 3.77. An inquiry opened. Type in the Message box and click the send icon (highlighted) to send another message.</div>
+
+<p>To send another message in the same conversation:</p>
+<ol>
+  <li>Type your message in the <strong>Message</strong> box at the bottom.</li>
+  <li>Click the <strong>send icon</strong> (the paper plane at the right of the box, highlighted).</li>
+</ol>
+<div class="fig tall"><img src="images/fig-9-error-message.png" alt="Conversation with an empty message error"></div>
+<div class="caption">Figure 3.78. Clicking the send icon (highlighted) with an empty Message box shows the red message "message is a required field."</div>
+<div class="error"><strong>Error:</strong> if you click the send icon with an empty box, a red message, <em>message is a required field.</em>, appears and nothing is sent. Type your message and try again.</div>
+
+
+
+</div>
+
+<div class="sec-3-8">
+<h2 id="s3-8">3.8 Waiting for Approval: The Pending Status</h2>
+<p>After you send your request and its requirements, your request is reviewed in several steps. The status of the request stays <strong>PENDING</strong> in your <strong>Assessment Information</strong> list the whole time you wait. This part explains who reviews the request and what you can do meanwhile.</p>
+<h3 id="s3-8-1">3.8.1 Who reviews your request</h3>
+<p>Three groups of staff work on your request. Until they have finished, the status does not change.</p>
+<ol>
+  <li><strong>The Permit Evaluator</strong> checks the request and its requirements, runs the assessment and sends it on for approval (<a href="04-permit-evaluator.html">Section 4</a>).</li>
+  <li><strong>The offices</strong> (for example Engineering, Fire and Health) review the request and approve or disapprove it, each with remarks (<a href="05-offices.html">Section 5</a>).</li>
+  <li><strong>The Municipal Treasurer's Office</strong> reviews the fees of the assessment and gives the final approval (<a href="06-treasurer.html">Section 6</a>). In the status list of your request, this office appears as <strong>BPLO</strong>.</li>
+</ol>
+<h3 id="s3-8-2">3.8.2 What you see while you wait</h3>
+<p>The <strong>Status</strong> column of the <strong>Assessment Information</strong> list shows <strong>PENDING</strong> in orange for your request. The <strong>print icon</strong> and the <strong>arrow icon</strong> in the <strong>Action</strong> column are gray, which means they are not available yet.</p>
+<div class="fig tall"><img src="images/fig-9-assessment-list.png" alt="Assessment Information list with pending requests"></div>
+<div class="caption">Figure 3.79. The Assessment Information list while the requests are waiting. The status of both requests is PENDING.</div>
+<p>To see how far your request has come, click the <strong>PENDING</strong> status. The list shows each office with a colored dot: red when the office has not acted yet, green when it approved, and orange when it did not approve (<a href="#s3-3-8">Section 3.3.8</a>). Click the arrow beside an office to read its remarks.</p>
+<p>When every review is done and the request is approved, the status changes to <strong>FOR PAYMENT</strong> and the print icon and the arrow icon become available (<a href="#s3-9">Section 3.9</a>). Payment is made on site.</p>
+<h3 id="s3-8-3">3.8.3 What you can do while you wait</h3>
+<ul>
+  <li><strong>Check your notifications.</strong> The bell icon in the top bar shows updates about your request.</li>
+  <li><strong>Send what is missing.</strong> If an office asks for another file, send it on the Assessment Requirements page (<a href="#s3-3-5">Section 3.3.5</a>).</li>
+  <li><strong>Ask a question.</strong> Click <strong>Send Inquiry</strong> to write to an office (<a href="#s3-7">Section 3.7</a>).</li>
+</ul>
+<div class="note">A request that is still PENDING cannot be paid or released. You do not need to send the request again while you wait.</div>
+</div>
+
+<div class="sec-3-9">
+<h2 id="s3-9">3.9 Approved Request: View the Assessment Details and Pay</h2>
+<p>When the Permit Evaluator and the Municipal Treasurer's Office have approved your request, you can see how much you have to pay, print the assessment, and pay at the municipal hall.</p>
+<h3 id="s3-9-1">3.9.1 Your request is approved</h3>
+<p>In the <strong>Assessment Information</strong> list, the <strong>Status</strong> of your request changes from PENDING to <strong>FOR PAYMENT</strong> (green). Two icons in the <strong>Action</strong> column become available that were gray before (<a href="#s3-8">Section 3.8</a>): the <strong>print icon</strong> and the <strong>arrow icon</strong>.</p>
+<h3 id="s3-9-2">3.9.2 View the assessment details</h3>
+<ol>
+  <li>Click the <strong>arrow icon</strong> (highlighted) in the <strong>Action</strong> column of your request.</li>
+  <li>The assessment details of your request open. They list the fees of your assessment and the totals.</li>
+  <li>Take note of the fees to be paid. The totals shown are <strong>Total Assessment</strong>, <strong>Current Dues</strong>, <strong>Annually Dues</strong> and <strong>Amount payable to the BFP</strong>.</li>
+</ol>
+<div class="fig small"><img src="images/fig-3-arrow-icon.png" alt="Arrow icon"></div>
+<div class="caption">Figure 3.80. The Action column of an approved request. Click the arrow icon (highlighted) to view the assessment details.</div>
+<div class="fig tall"><img src="images/fig-3-assessment-details.png" alt="Totals of the assessment"></div>
+<div class="caption">Figure 3.81. The totals of the assessment: Total Assessment, Current Dues, Annually Dues and Amount payable to the BFP.</div>
+<h3 id="s3-9-3">3.9.3 Print the assessment</h3>
+<ol>
+  <li>Click the <strong>print icon</strong> (highlighted) in the <strong>Action</strong> column of your request.</li>
+  <li>The assessment opens as the form <strong>Application For Mayor's Permit</strong>. Check your details. Click <strong>Print Assessment</strong> (highlighted) at the top right.</li>
+  <li>The print window of the browser opens with a preview. Choose a printer, or click <strong>PDF</strong> (highlighted) at the lower left to save the assessment as a PDF file, then click <strong>Print</strong>. Click <strong>Cancel</strong> to close the window without printing.</li>
+</ol>
+<div class="fig small"><img src="images/fig-3-print-icon.png" alt="Print icon"></div>
+<div class="caption">Figure 3.82. The Action column of an approved request. Click the print icon (highlighted) to open the assessment.</div>
+<p>The form shows the kind of request (<em>New</em>, <em>Renewal</em> or <em>Closure</em>), the <strong>Control No.</strong>, the <strong>Business Year</strong>, the date and the <strong>Turn Around Time</strong>. Below it are the business type, the name of the owner, the name and the activity of the business, and the numbers of your documents (<strong>TIN</strong>, <strong>SSS No.</strong>, <strong>CTC</strong>, <strong>SEC Registration No.</strong> and <strong>DTI No.</strong>, with their dates), then the business address.</p>
+<div class="fig tall"><img src="images/fig-3-print-assessment-top.png" alt="Application For Mayor's Permit"></div>
+<div class="caption">Figure 3.83. The top of the assessment form. Click Print Assessment (highlighted) to print it. The name of the account is hidden.</div>
+<p>The <strong>Particulars of Assessment</strong> table lists each fee with its <strong>Code</strong>, <strong>Description</strong> and <strong>Amount</strong>, followed by <strong>Total Assessment</strong>, <strong>Current Dues</strong>, <strong>Amount payable to the BFP</strong> and <strong>Annually Dues</strong>. At the bottom are the <strong>Capitalization</strong>, the <strong>Last Year Gross Sale</strong>, the <strong>Year</strong>, the <strong>Mode of Payment</strong> (<em>Annual</em>, <em>Semi-Annual</em> or <em>Quarterly</em>), the <strong>Current Dues</strong> and the <strong>Schedule of payment</strong>. The form ends with the names and dates of the staff who assessed and approved it.</p>
+<div class="fig tall"><img src="images/fig-3-print-assessment-bottom.png" alt="Particulars of Assessment"></div>
+<div class="caption">Figure 3.84. The fees, the totals and the schedule of payment on the assessment form. The names of the staff are hidden.</div>
+<div class="fig tall"><img src="images/fig-3-print-dialog.png" alt="Print window"></div>
+<div class="caption">Figure 3.85. The print window with a preview of the assessment. Click PDF (highlighted) to save it as a PDF file.</div>
+<h3 id="s3-9-4">3.9.4 Pay the assessment fee</h3>
+<p>Pay the assessment fee at the municipal hall. Payment is made on site, not online. You can bring the printed assessment with you.</p>
+<div class="note">After you pay, the staff processes your payment. Your permit is then prepared for release.</div>
+<p>Wait again for your applicant status to change (<a href="#s3-10">Section 3.10</a>).</p>
+</div>
+
+<div class="sec-3-10">
+<h2 id="s3-10">3.10 After Payment: Permit Preparation and Pickup</h2>
+<p>After you pay, the status of your request in the <strong>Assessment Information</strong> list changes in two more steps. Check the list from time to time to see the new status.</p>
+<h3 id="s3-10-1">3.10.1 MP Preparation</h3>
+<p>When the Municipal Treasurer's Office has processed your payment, the status changes to <strong>MP Preparation</strong>. It means your permit is now handled by the <strong>Permit Issuance</strong> staff, who prepare your Mayor's Permit (MP) (<a href="07-permit-issuance.html">Section 7</a>). You do not need to do anything at this step.</p>
+<div class="fig tall"><img src="images/fig-3-mp-preparation.png" alt="MP Preparation status"></div>
+<div class="caption">Figure 3.86. The Assessment Information list while the Permit Issuance staff prepare the permit. The status reads MP PREPARATION.</div>
+<h3 id="s3-10-2">3.10.2 Permit Is Ready for Pickup</h3>
+<p>After the Permit Issuance staff have prepared and printed your permit, the status changes to <strong>PERMIT IS READY FOR PICKUP</strong>. It means your Mayor's Permit is ready. To see and download it:</p>
+<div class="fig tall"><img src="images/fig-3-ready-for-pickup.png" alt="Permit is ready for pickup"></div>
+<div class="caption">Figure 3.87. The Assessment Information list when the permit is ready: the status reads PERMIT IS READY FOR PICKUP.</div>
+
+<ol>
+  <li>Click the <strong>second icon</strong> (highlighted) in the <strong>Action</strong> column of your request. Its tip reads <em>Offices Uploaded Files</em>. The <strong>Files</strong> page opens with the title <em>List of uploaded files</em>. It lists the permit that the <strong>Permit-Issuance</strong> office uploaded for your business, with the columns <strong>Bus No</strong>, <strong>Assessment Code</strong>, <strong>Description</strong> (for example <em>Mayors Permit 000251</em>) and <strong>Office</strong>.</li>
+  <li>Click <strong>View File</strong> (highlighted). The page <strong>Uploaded Requirements Attachment</strong> opens and shows the permit as a PDF file.</li>
+  <li>Click the file (highlighted) to download the business permit.</li>
+</ol>
+<div class="fig small"><img src="images/fig-3-second-icon.png" alt="Second icon"></div>
+<div class="caption">Figure 3.88. The Action column of the request. Click the second icon (highlighted) to see the permit.</div>
+<div class="fig small"><img src="images/fig-3-permit-files.png" alt="Files page with the permit"></div>
+<div class="caption">Figure 3.89. The Files page. Click View File (highlighted) next to the permit.</div>
+<div class="fig tall"><img src="images/fig-3-permit-file-tile.png" alt="Permit file"></div>
+<div class="caption">Figure 3.90. The Uploaded Requirements Attachment page. Click the file (highlighted) to download the business permit.</div>
+<p>The business permit has the heading <strong>Office of the Mayor</strong> and the title <strong>Business Permit</strong> with the year. It shows the <strong>Permit No.</strong>, whether it is a <em>New</em> or a <em>Renewal</em> permit, the name and address of the owner, the name of the business, its nature, its address, the date until which the permit is valid, and the date it was issued. It also shows the <strong>OR Number</strong> and <strong>OR Date</strong> of your payment, the title <em>Municipal Mayor</em>, and a QR code. The note on the permit says that it must be displayed conspicuously in the place of business and surrendered when the business closes.</p>
+<div class="fig tall"><img src="images/fig-3-business-permit.png" alt="Business Permit"></div>
+<div class="caption">Figure 3.91. The business permit. The name and signature of the Municipal Mayor are hidden.</div>
+</div>
+</div>
+
+</body>
+</html>
