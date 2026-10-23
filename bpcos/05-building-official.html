@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BPCOS: Building Official</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 80mm; }</style>
+</head>
+<body>
+
+<div class="section-no">Section 5</div>
+<h1>The Building Official</h1>
+<p class="lead">The Building Official is the engineering office of the Municipality. It receives the applications after their review is started, assesses the fees, approves or declines the application, and prints the permit. This section shows the Dashboard and the For Print pages of the Building Official.</p>
+<div class="note"><strong>Account.</strong> The role of the account is shown at the top left of every page, next to the logo. For this role it reads <strong>BUILDING OFFICIAL</strong>.</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s5-1">5.1 The Dashboard</a></li>
+  <li class="sub"><a href="#s5-1-1">Building Permit</a></li>
+  <li class="sub"><a href="#s5-1-2">Approved Permits</a></li>
+  <li class="sub"><a href="#s5-1-3">Declined Permits</a></li>
+  <li class="sub"><a href="#s5-1-4">Occupancy Permit and Electrical Permit</a></li>
+  <li><a href="#s5-2">5.2 The sidebar: For Print</a></li>
+  <li class="sub"><a href="#s5-2-1">Building Permits</a></li>
+  <li class="sub"><a href="#s5-2-2">Occupancy Permits</a></li>
+  <li class="sub"><a href="#s5-2-3">Electrical Permits</a></li>
+  <li><a href="#s5-3">5.3 Reviewing an application</a></li>
+  <li class="sub"><a href="#s5-3-1">The remarks of the application</a></li>
+  <li class="sub"><a href="#s5-3-2">The requirements of the application</a></li>
+  <li class="sub"><a href="#s5-3-3">Reading the files</a></li>
+  <li class="sub"><a href="#s5-3-4">Approving or declining a requirement</a></li>
+  <li><a href="#s5-4">5.4 Application assessment</a></li>
+  <li class="sub"><a href="#s5-4-1">Opening the assessment</a></li>
+  <li class="sub"><a href="#s5-4-2">The Order of Payment page</a></li>
+  <li class="sub"><a href="#s5-4-3">Completing the application summary</a></li>
+  <li class="sub"><a href="#s5-4-4">Pending Assessment Fees</a></li>
+  <li class="sub"><a href="#s5-4-5">Reading a proposed fee</a></li>
+  <li class="sub"><a href="#s5-4-6">Creating an assessment</a></li>
+  <li class="sub"><a href="#s5-4-7">Example: Electrical Fees</a></li>
+  <li class="sub"><a href="#s5-4-8">The assessed fees</a></li>
+  <li class="sub"><a href="#s5-4-9">Editing and removing a fee</a></li>
+  <li class="sub"><a href="#s5-4-10">Printing the order of payment</a></li>
+  <li><a href="#s5-5">5.5 Approving or declining the permit</a></li>
+  <li class="sub"><a href="#s5-5-1">Approving the permit</a></li>
+  <li class="sub"><a href="#s5-5-2">Declining the permit</a></li>
+</ul>
+</div>
+
+<h2 id="s5-1">5.1 The Dashboard</h2>
+<p>The Building Official signs in with the sign in page of <a href="02-getting-started.pdf">Section 2</a>. The first page is the <strong>Engineering Dashboard</strong>, titled <strong>Building Permit</strong>. It has five cards. Each card has a switch, a search box and, for the first three, a number in a blue circle that counts the applications in it. Click the switch of a card to show or hide its list. Type a number, a type or a name in the search box to find an application. Click <strong>Scan QR</strong> at the top right to open an application by scanning its QR code.</p>
+<div class="fig tall"><img src="images/fig-5-dashboard.png" alt="The Engineering Dashboard. The role is boxed in red."></div>
+<div class="caption">Figure 5.1. The Engineering Dashboard. The role is boxed in red.</div>
+
+<h3 id="s5-1-1">Building Permit</h3>
+<p>This card lists the applications that wait for the Building Official. The columns are <strong>Date</strong>, <strong>Owner</strong>, <strong>Project Title</strong>, <strong>Location</strong> and <strong>Actions</strong>. Click the arrows beside <strong>Date</strong>, <strong>Owner</strong> and <strong>Location</strong> to sort the list. The column <strong>Actions</strong> has five icons:</p>
+<ul>
+  <li><strong>Arrow icon (Remarks):</strong> shows the remarks that the offices wrote about the application.</li>
+  <li><strong>Paperclip icon (Attachments):</strong> opens the requirements that the applicant uploaded.</li>
+  <li><strong>Check box icon (Assessments):</strong> opens the assessment of the fees of the application.</li>
+  <li><strong>Double check icon (Approve Permit):</strong> approves the application.</li>
+  <li><strong>Box with an X icon (Disapproved Permit):</strong> declines the application.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-5-bp-list.png" alt="The Building Permit card. The five icons of Actions are boxed."></div>
+<div class="caption">Figure 5.2. The Building Permit card. The five icons of Actions are boxed.</div>
+
+<h3 id="s5-1-2">Approved Permits</h3>
+<p>This card lists the applications that the Building Official approved. The columns are <strong>Building Permit No.</strong>, <strong>Date</strong>, <strong>Owner</strong>, <strong>Project Title</strong>, <strong>Location</strong> and <strong>Actions</strong>. A permit that has no number yet shows an empty <strong>Building Permit No.</strong> The column <strong>Actions</strong> has the arrow icon for the remarks and the paperclip icon for the attachments.</p>
+<div class="fig tall"><img src="images/fig-5-approved.png" alt="The Approved Permits card."></div>
+<div class="caption">Figure 5.3. The Approved Permits card.</div>
+
+<h3 id="s5-1-3">Declined Permits</h3>
+<p>This card lists the applications that the Building Official declined. The columns are <strong>Date</strong>, <strong>Owner</strong>, <strong>Location</strong> and <strong>Actions</strong>. The column <strong>Actions</strong> has the arrow icon for the remarks, where the reason of the decline is, and the paperclip icon for the attachments.</p>
+<div class="fig tall"><img src="images/fig-5-declined.png" alt="The Declined Permits card."></div>
+<div class="caption">Figure 5.4. The Declined Permits card.</div>
+
+<h3 id="s5-1-4">Occupancy Permit and Electrical Permit</h3>
+<p>The card <strong>Occupancy Permit</strong> lists the occupancy permit requests. Its columns are <strong>Building Permit No.</strong>, <strong>Date</strong>, <strong>Application No.</strong>, <strong>Project Title</strong>, <strong>Completion Date</strong>, <strong>Status</strong> and <strong>Action</strong>. The card <strong>Electrical Permit</strong> lists the electrical permit requests. Its columns are <strong>Date</strong>, <strong>Application No.</strong>, <strong>Owner</strong>, <strong>Completion Date</strong>, <strong>Start Of Installation</strong>, <strong>Request Status</strong> and <strong>Action</strong>. A list that has nothing to show says <em>No record found.</em></p>
+<div class="fig tall"><img src="images/fig-5-occ-elec.png" alt="The cards Occupancy Permit and Electrical Permit."></div>
+<div class="caption">Figure 5.5. The cards Occupancy Permit and Electrical Permit.</div>
+
+<h2 id="s5-2">5.2 The sidebar: For Print</h2>
+<p>The sidebar has the <strong>Dashboard</strong> and, under <strong>Engineering Submenu</strong>, the item <strong>For Print</strong>. Click <strong>For Print</strong> to show three pages: <strong>Building Permits</strong>, <strong>Occupancy Permits</strong> and <strong>Electrical Permits</strong>. These are the permits that are ready to be printed.</p>
+<h3 id="s5-2-1">Building Permits</h3>
+<p>The page <strong>Building Permit For Print</strong> lists the building permits that are ready for printing. Type a number or a name in the search box to find one. The columns are <strong>Date</strong>, <strong>Owner</strong>, <strong>No.</strong>, <strong>Type</strong>, <strong>Status</strong>, <strong>OR Number</strong>, <strong>OR Date</strong>, <strong>FSEC No</strong> and <strong>Action</strong>. The <strong>OR Number</strong> and the <strong>OR Date</strong> are the official receipt of the payment of the fees. The <strong>FSEC No</strong> is the number of the Fire Safety Evaluation Clearance of the permit. The tag in <strong>Status</strong> shows <strong>APPROVED FOR PAYMENT</strong> or <strong>NOT-SET</strong>. The column <strong>Action</strong> has two buttons:</p>
+<ul>
+  <li><strong>FSEC:</strong> opens a window to type the FSEC number and its date of issue.</li>
+  <li><strong>Print:</strong> prints the permit.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-5-print-bp.png" alt="The page Building Permit For Print. The buttons FSEC and Print are boxed."></div>
+<div class="caption">Figure 5.6. The page Building Permit For Print. The buttons FSEC and Print are boxed.</div>
+
+<h3 id="s5-2-2">Occupancy Permits</h3>
+<p>The page <strong>Occupancy Permit For Print</strong> lists the occupancy permits that are ready for printing. Type a number or a name in the search box to find one. The columns are <strong>Date</strong>, <strong>Owner</strong>, <strong>Application No.</strong>, <strong>Occupancy Id</strong>, <strong>Status</strong>, <strong>OR Number</strong>, <strong>OR Date</strong>, <strong>FSEC No</strong> and <strong>Action</strong>. The bottom of the table shows the rows per page and the page count.</p>
+<div class="fig tall"><img src="images/fig-5-print-occ.png" alt="The page Occupancy Permit For Print."></div>
+<div class="caption">Figure 5.7. The page Occupancy Permit For Print.</div>
+
+<h3 id="s5-2-3">Electrical Permits</h3>
+<p>The page <strong>Completed Electrical Permit List</strong> lists the electrical permits that are completed. The columns are <strong>Date</strong>, <strong>Application No.</strong>, <strong>Owner</strong>, <strong>Completion Date</strong>, <strong>Start Of Installation</strong>, <strong>Request Status</strong> and <strong>Action</strong>.</p>
+<div class="fig tall"><img src="images/fig-5-print-elec.png" alt="The page Completed Electrical Permit List."></div>
+<div class="caption">Figure 5.8. The page Completed Electrical Permit List.</div>
+
+<h2 id="s5-3">5.3 Reviewing an application</h2>
+<p>The Building Official reads the application and reviews each requirement that the applicant uploaded. The Building Official also decides on every requirement: it approves it or declines it.</p>
+<h3 id="s5-3-1">The remarks of the application</h3>
+<p>Click the arrow icon of an application in the Building Permit card to open <strong>Building Permit Remarks</strong>. It shows the remarks that the offices wrote about the application, with the <strong>Date</strong>, the office in <strong>Process From</strong>, the <strong>Remarks</strong> and the <strong>Status</strong>. When there is none, it says <em>No remarks found.</em> Click the X to close it.</p>
+<div class="fig tall"><img src="images/fig-5-remarks.png" alt="The Building Permit Remarks window."></div>
+<div class="caption">Figure 5.9. The Building Permit Remarks window.</div>
+
+<h3 id="s5-3-2">The requirements of the application</h3>
+<p>Click the paperclip icon of an application to open the page <strong>Application Requirements</strong>. It has the six groups of requirements at the left: Forms, Plans, Technical Documents, PRC IDs &amp; PTRs, Personal Documents and Certifications. Click a group to show its requirements at the right. Each requirement has a <strong>More</strong> button. At the top right are three buttons, which are boxed in the figure:</p>
+<ul>
+  <li><strong>Assessments:</strong> opens the assessment of the fees of the application.</li>
+  <li><strong>View Reviews:</strong> shows the reviews of the offices. It is dimmed until a review exists.</li>
+  <li><strong>Proceed For Printing:</strong> sends the approved application to printing. It is dimmed until the fees of the application are assessed.</li>
+</ul>
+<div class="fig "><img src="images/fig-5-paperclip.png" alt="The paperclip icon of the application is boxed."></div>
+<div class="caption">Figure 5.10. The paperclip icon of the application is boxed.</div>
+<div class="fig tall"><img src="images/fig-5-req-page.png" alt="The Application Requirements page. The three buttons at the top right are boxed."></div>
+<div class="caption">Figure 5.11. The Application Requirements page. The three buttons at the top right are boxed.</div>
+
+<h3 id="s5-3-3">Reading the files</h3>
+<p>Click <strong>More</strong> beside a requirement to open its menu. It has three options: <strong>Approve</strong>, <strong>Decline</strong> and <strong>View Files</strong>. Click <strong>View Files</strong> to open the files that the applicant uploaded, then click the name of a file to open it. When the applicant uploaded no file, the option reads <strong>No Files</strong> and is dimmed.</p>
+<div class="fig tall"><img src="images/fig-5-req-menu-nofiles.png" alt="The menu of a requirement without files. No Files is dimmed."></div>
+<div class="caption">Figure 5.12. The menu of a requirement without files. No Files is dimmed.</div>
+<div class="fig tall"><img src="images/fig-5-req-files.png" alt="The files of a requirement."></div>
+<div class="caption">Figure 5.13. The files of a requirement.</div>
+
+<h3 id="s5-3-4">Approving or declining a requirement</h3>
+<div class="note"><strong>Important.</strong> The Building Official gives a decision for each requirement. A remark is required for both decisions, and the button <strong>Confirm</strong> stays dimmed until you type one.</div>
+<ol>
+  <li>Click <strong>More</strong> beside the requirement, then click <strong>Approve</strong> or <strong>Decline</strong>.</li>
+  <li>In the window <strong>Approve Requirement</strong> (or <strong>Decline Requirement</strong>), type your note in <strong>Remarks</strong>. For a decline, write what the applicant must correct.</li>
+  <li>Click <strong>Confirm</strong>. Click <strong>Cancel</strong> to leave without a decision.</li>
+</ol>
+<div class="fig tall"><img src="images/fig-5-req-menu.png" alt="The menu of More. Approve is boxed."></div>
+<div class="caption">Figure 5.14. The menu of More. Approve is boxed.</div>
+<p>After you confirm, the decision is shown beside the requirement, for example <strong>Status: Approved</strong>. The option you used is then dimmed in the menu, so the same decision cannot be given twice.</p>
+<div class="fig tall"><img src="images/fig-5-req-approve.png" alt="The window Approve Requirement. Remarks and Confirm are boxed."></div>
+<div class="caption">Figure 5.15. The window Approve Requirement. Remarks and Confirm are boxed.</div>
+<div class="fig tall"><img src="images/fig-5-req-approved.png" alt="The decision is shown beside the requirement."></div>
+<div class="caption">Figure 5.16. The decision is shown beside the requirement.</div>
+<p>To decline a requirement, click <strong>Decline</strong> in the same menu. The window <strong>Decline Requirement</strong> works the same way: type the reason in <strong>Remarks</strong>, then click <strong>Confirm</strong>. The requirement then shows <strong>Status: Declined</strong>.</p>
+<div class="fig tall"><img src="images/fig-5-req-decline.png" alt="The window Decline Requirement. Remarks and Confirm are boxed."></div>
+<div class="caption">Figure 5.17. The window Decline Requirement. Remarks and Confirm are boxed.</div>
+<div class="fig tall"><img src="images/fig-5-req-declined.png" alt="The requirement shows Status: Declined."></div>
+<div class="caption">Figure 5.18. The requirement shows Status: Declined.</div>
+
+<h2 id="s5-4">5.4 Application assessment</h2>
+<p>The assessment is the list of fees that the applicant must pay for the permit. The page is titled <strong>Order of Payment</strong>. The Building Official prepares it after reviewing the requirements.</p>
+
+<h3 id="s5-4-1">Opening the assessment</h3>
+<p>Click the check box icon, the third icon, in the <strong>Actions</strong> of the application in the Building Permit card. The page <strong>Order of Payment</strong> opens. You can also open it from the requirements: click the paperclip icon, the second icon, to open <strong>Application Requirements</strong>, and click <strong>Assessments</strong> at the top right of that page.</p>
+<div class="fig small"><img src="images/fig-5-actions-icons.png" alt="The check box icon, the third icon in Actions, is boxed."></div>
+<div class="caption">Figure 5.19. The check box icon, the third icon in Actions, is boxed.</div>
+<div class="fig tall"><img src="images/fig-5-req-top.png" alt="Click Assessments on the page Application Requirements."></div>
+<div class="caption">Figure 5.20. Click Assessments on the page Application Requirements.</div>
+
+<h3 id="s5-4-2">The Order of Payment page</h3>
+<p>The page has these parts:</p>
+<ul>
+  <li><strong>Print Assessment</strong> at the top right. It is dimmed until at least one fee is assessed.</li>
+  <li><strong>Pending Assessment Fees</strong> at the left. These are the fees that the system suggests. See <a href="#s5-4-4">Section 5.4.4</a>.</li>
+  <li>The table of <strong>assessed fees</strong> under it, with the fees that are already part of the assessment. See <a href="#s5-4-8">Section 5.4.8</a>.</li>
+  <li><strong>Application Summary</strong> at the right. Click its arrow to show or hide the details of the application that the fees are computed from. You complete it first, see <a href="#s5-4-3">Section 5.4.3</a>.</li>
+  <li><strong>Create Assessment Form</strong> under it, where you add a fee. See <a href="#s5-4-6">Section 5.4.6</a>.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-5-op-page.png" alt="The Order of Payment page with suggested fees."></div>
+<div class="caption">Figure 5.21. The Order of Payment page with suggested fees.</div>
+
+<h3 id="s5-4-3">Completing the application summary</h3>
+<p>Before you add any fee, complete the <strong>Application Summary</strong>. The fees are computed from it. Click the arrow of <strong>Application Summary</strong> to open it. The first fields show the application and cannot be changed here: the <strong>Owner</strong>, the <strong>Project Date</strong>, the <strong>Location</strong> and the <strong>Character of Occupancy</strong>. You complete the rest:</p>
+<ul>
+  <li><strong>Group:</strong> click the box and choose the group of the building, from <strong>A - Group A</strong> to <strong>J - Group J</strong>. These are the groups of use of the building.</li>
+  <li><strong>Division:</strong> choose the division of the group. It is dimmed until you choose a group, and it lists only the divisions of that group, for example <strong>A-1 - Division A-1</strong> and <strong>A-2 - Division A-2</strong> for Group A.</li>
+  <li><strong>Building Height (m):</strong> type the height of the building in meters.</li>
+  <li><strong>Floor Area (sq.m):</strong> shows the floor area of the application. Change it if the assessed area is different.</li>
+  <li><strong>Storage Silo Height (m):</strong> type the height only when the project has a storage silo.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-5-sum-empty.png" alt="The Application Summary. Group, Division and Building Height are boxed."></div>
+<div class="caption">Figure 5.22. The Application Summary. Group, Division and Building Height are boxed.</div>
+<div class="fig small"><img src="images/fig-5-sum-groups.png" alt="The choices of Group."></div>
+<div class="caption">Figure 5.23. The choices of Group.</div>
+<div class="fig small"><img src="images/fig-5-sum-divisions.png" alt="The choices of Division for Group A."></div>
+<div class="caption">Figure 5.24. The choices of Division for Group A.</div>
+<div class="note"><strong>Important.</strong> Group, division, floor area and building height are required. If one is empty when you click <strong>Save Summary</strong>, the message <em>Group, division, floor area, and building height are required.</em> appears and nothing is saved.</div>
+<div class="fig tall"><img src="images/fig-5-sum-error.png" alt="The message when the building height is empty."></div>
+<div class="caption">Figure 5.25. The message when the building height is empty.</div>
+<p>When all the required fields are filled in, click <strong>Save Summary</strong>. The message <em>Application summary saved.</em> appears.</p>
+<div class="fig tall"><img src="images/fig-5-sum-saved.png" alt="The summary is saved. Save Summary is boxed."></div>
+<div class="caption">Figure 5.26. The summary is saved. Save Summary is boxed.</div>
+
+<h3 id="s5-4-4">Pending Assessment Fees</h3>
+<p>When the applicant uploaded plans, the system reads them and suggests the fees that apply. The suggestions are not part of the assessment yet. The red number beside <strong>Pending Assessment Fees</strong> counts the suggestions that wait for your decision. Click the arrow of the panel to show or hide them. Each suggestion shows:</p>
+<ul>
+  <li>The fee item, for example <em>8.a, Balconies, terraces, lanais and similar building parts open on two or more sides</em>.</li>
+  <li><strong>Basis</strong>, <strong>Base</strong> and <strong>Rate</strong>, and the <strong>Proposed amount</strong> that they give.</li>
+  <li>The <strong>Source</strong>: the file of the applicant, the page or pages it was found on, and the <strong>Confidence</strong> of the reading.</li>
+  <li>The link <strong>View Attachment</strong> or <strong>Download Attachment</strong>, to check the file yourself.</li>
+  <li>A note in red that explains what the system found in the plan and what you must verify.</li>
+</ul>
+<p>Check each suggestion against the plan, then decide:</p>
+<ul>
+  <li><strong>Accept:</strong> adds the fee to the assessment. The message <em>Pending assessment fee accepted.</em> appears, and the number of pending fees goes down by one.</li>
+  <li><strong>Remove:</strong> discards the suggestion. The message <em>Pending assessment fee removed.</em> appears.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-5-op-accept.png" alt="A suggested fee. Accept and Remove are boxed."></div>
+<div class="caption">Figure 5.27. A suggested fee. Accept and Remove are boxed.</div>
+
+<h3 id="s5-4-5">Reading a proposed fee</h3>
+<p>Read each proposed fee from top to bottom. The figure shows one fee, and its parts are boxed:</p>
+<ol>
+  <li><strong>The title.</strong> It starts with the number of the fee in the fee table, for example <em>4.a</em>, followed by the description of the fee.</li>
+  <li><strong>Basis.</strong> This is the quantity that the system read from the plan and that the amount is computed from. It can be a number of items, an area, a cost or a load, depending on the fee. Here the basis is 1.00: one electrical panel.</li>
+  <li><strong>Base</strong> and <strong>Rate.</strong> Both come from the fee table of the Municipality. The base is a fixed amount for the fee. The rate is the amount for each unit of the basis. Here the base is 200.00 and the rate is 0.00, so the fee is a fixed 200.00.</li>
+  <li><strong>Proposed amount.</strong> This is the amount that the fee would add to the assessment, computed from the base, the rate and the basis. Here it is 200.00.</li>
+  <li><strong>Source.</strong> This is the file that the system read, the page or pages where it found the item, and the <strong>Confidence</strong> of the reading. A confidence of 100% means that the system is sure of what it read. A lower value means that you must check the plan more carefully.</li>
+  <li><strong>Download Attachment</strong> or <strong>View Attachment.</strong> Click it to open the source file. A PDF is downloaded, and an image is opened on the page.</li>
+  <li><strong>The note in red.</strong> This is what the system found: the <em>Item</em>, the <em>evidence</em> in the plan, the <em>unit</em> that was counted, and what you must <em>verify</em>. Here it says that one electrical panel is visible in the electrical layout.</li>
+</ol>
+<div class="fig small"><img src="images/fig-5-proposed-fee.png" alt="A proposed fee. Its parts are boxed, from the title to the note in red."></div>
+<div class="caption">Figure 5.28. A proposed fee. Its parts are boxed, from the title to the note in red.</div>
+<p>Then decide. Open the source file and compare the quantity with the plan.</p>
+<ul>
+  <li>If the item, the quantity and the fee are right, click <strong>Accept</strong>. The system calculates the amount again with the current rates of the fee table when it adds the fee, so check the amount in the table of assessed fees.</li>
+  <li>If the quantity is wrong, or the fee does not apply, click <strong>Remove</strong>. If the amount is wrong, add the fee yourself with the Create Assessment Form, see <a href="#s5-4-6">Section 5.4.6</a>.</li>
+  <li>The same item can appear more than once when it was found in more than one file. Accept it once and remove the other.</li>
+</ul>
+
+<h3 id="s5-4-6">Creating an assessment</h3>
+<p>To add a fee yourself, use the <strong>Create Assessment Form</strong>.</p>
+<ol>
+  <li>Make sure the <a href="#s5-4-3">Application Summary</a> is saved.</li>
+  <li>Click <strong>Fee Category</strong> and choose a category. A category that is already in the assessment is dimmed, so the same fee is not added twice.</li>
+  <li>The form shows the fields of the category. Fill them in. The amount is computed from the rate tables of the system.</li>
+  <li>Check the <strong>Assessment Amount</strong>. It is filled in with the computed amount, and you can change it.</li>
+  <li>Click <strong>Save</strong> to add the fee. A message confirms that the assessment is saved, and the fee appears in the table of assessed fees with the new <strong>TOTAL</strong>. Click <strong>Cancel</strong> to leave without adding it.</li>
+</ol>
+<p>When there are no suggestions left, the panel <strong>Pending Assessment Fees</strong> says <em>No pending assessment fees.</em> The note under the form says that saving keeps the selected group, division, floor area and building height in step with the application summary.</p>
+<div class="fig small"><img src="images/fig-5-ca-form.png" alt="The Create Assessment Form. Click Fee Category to choose a category."></div>
+<div class="caption">Figure 5.29. The Create Assessment Form. Click Fee Category to choose a category.</div>
+<div class="fig small"><img src="images/fig-5-ca-list.png" alt="The choices of Fee Category. The categories that are already assessed are dimmed."></div>
+<div class="caption">Figure 5.30. The choices of Fee Category. The categories that are already assessed are dimmed.</div>
+
+<p>The categories are:</p>
+<ul>
+  <li><strong>Building Fees:</strong> computed from the group, the division and the floor area of the application.</li>
+  <li><strong>Accessory Structure Fees:</strong> computed from the accessory structure fee table and the values of the application summary. Check <strong>Apply this fee</strong> on each row that applies.</li>
+  <li><strong>Accessory Fees:</strong> enter the quantity or the size that each row needs, for example for signs.</li>
+  <li><strong>Electrical Fees:</strong> see <a href="#s5-4-7">Section 5.4.7</a>.</li>
+  <li><strong>Mechanical Fees:</strong> enter the quantity of each item. The rate is taken from the table.</li>
+  <li><strong>Plumbing Fees:</strong> enter the number of fixtures installed. Water meter fees use the size of the meter.</li>
+  <li><strong>Electronics Fees:</strong> enter the quantity of each item, which is multiplied by its rate.</li>
+  <li><strong>Certificate of Occupancy Fees</strong> and <strong>Annual Inspection Fees:</strong> each has its own calculator.</li>
+  <li><strong>Surcharge and penalties</strong>, <strong>Filing Fees</strong> and <strong>Processing Fees:</strong> the other fees of the permit.</li>
+</ul>
+<p>In the categories with many rows, type in <strong>Search displayed fees</strong> to filter the rows by section or description.</p>
+
+<h3 id="s5-4-7">Example: Electrical Fees</h3>
+<p>The form <strong>Electrical Assessment</strong> has these fields. Each amount field shows its computed amount below it:</p>
+<ul>
+  <li><strong>Total Connected Load</strong> and <strong>UPS/Generator Capacity:</strong> type the value. The base fee is taken from the table.</li>
+  <li><strong>Pole/Attachment Location Plan Permit:</strong> type the number of poles in <strong>Power Supply Pole Location</strong> and the number of attachments in <strong>Guying Attachment</strong>. The rate is 30.00 for each.</li>
+  <li><strong>Miscellaneous Fees:</strong> check the fee that applies, grouped by use: <strong>Residential</strong>, <strong>Commercial_Industrial</strong> or <strong>Institutional</strong>. Each group has an <strong>Electrical Meter</strong> fee and a <strong>Wiring Meter</strong> fee.</li>
+</ul>
+
+<div class="fig tall"><img src="images/fig-5-el-top.png" alt="The form Electrical Assessment. The loads, the pole and the attachment are filled in."></div>
+<div class="caption">Figure 5.31. The form Electrical Assessment. The loads, the pole and the attachment are filled in.</div>
+<div class="fig tall"><img src="images/fig-5-el-misc.png" alt="The attachment and the miscellaneous fees. All the meter fees are checked."></div>
+<div class="caption">Figure 5.32. The attachment and the miscellaneous fees. All the meter fees are checked.</div>
+<p>Below the fees, <strong>Computed Assessment Basis</strong> and <strong>Computed Amount Due</strong> show the total of what you entered. The box <strong>Assessment Amount</strong> starts with that amount, and you can type another amount, for example to round it. The note under it reads: <em>Editable amount. The database calculation is used as the default.</em></p>
+
+<p>In the example, the fees add up to a computed amount of 468.00, so the box starts with 468. To charge a different amount, type it in the box, for example 490.</p>
+<div class="fig small"><img src="images/fig-5-el-amount.png" alt="The Assessment Amount starts with the computed amount, 468."></div>
+<div class="caption">Figure 5.33. The Assessment Amount starts with the computed amount, 468.</div>
+<div class="fig small"><img src="images/fig-5-el-amount-edit.png" alt="Another amount, 490, typed in the Assessment Amount. Assessment Amount and Save are boxed."></div>
+<div class="caption">Figure 5.34. Another amount, 490, typed in the Assessment Amount. Assessment Amount and Save are boxed.</div>
+<p>After you click <strong>Save</strong>, the form is cleared, the message that the assessment is saved appears, and the fee is added to the table of assessed fees. The <strong>TOTAL</strong> is updated. In the example, the amount 468.00 was saved, so the table shows <strong>Electrical Fees</strong> with 468.00 and a <strong>TOTAL</strong> of 6,292.00.</p>
+<div class="fig tall"><img src="images/fig-5-el-saved.png" alt="The Electrical Fees are added to the assessed fees. The new row is boxed."></div>
+<div class="caption">Figure 5.35. The Electrical Fees are added to the assessed fees. The new row is boxed.</div>
+
+<h3 id="s5-4-8">The assessed fees</h3>
+<p>The table of assessed fees lists what is already in the assessment. Its columns are <strong>Assessed Fees</strong>, <strong>Account Code</strong>, <strong>Amount Due</strong>, <strong>Assessed By</strong> and <strong>Action</strong>. The last row, <strong>TOTAL</strong>, is the sum that the applicant must pay. In <strong>Action</strong>, click the edit icon to change a fee, or the trash icon to remove it. When at least one fee is assessed, <strong>Print Assessment</strong> is enabled. Click it to print the order of payment.</p>
+<div class="fig tall"><img src="images/fig-5-op-assessed.png" alt="The assessed fees. The edit icon, the trash icon and Print Assessment are boxed."></div>
+<div class="caption">Figure 5.36. The assessed fees. The edit icon, the trash icon and Print Assessment are boxed.</div>
+
+<h3 id="s5-4-9">Editing and removing a fee</h3>
+<p><strong>To edit a fee,</strong> click the edit icon of the fee in the table of assessed fees. The form below changes to the fee: it shows the computed amount and the <strong>Assessment Amount</strong>. Change the amount, then click <strong>Update</strong>. Click <strong>Cancel</strong> to leave without a change. The message <em>assessment updated.</em> appears, and the amount of the fee and the <strong>TOTAL</strong> are updated.</p>
+<div class="fig small"><img src="images/fig-5-edit-icon.png" alt="The edit icon of a fee."></div>
+<div class="caption">Figure 5.37. The edit icon of a fee.</div>
+<div class="fig small"><img src="images/fig-5-edit-form.png" alt="The form of an edit. The Assessment Amount is changed to 50. Update is boxed."></div>
+<div class="caption">Figure 5.38. The form of an edit. The Assessment Amount is changed to 50. Update is boxed.</div>
+<div class="fig tall"><img src="images/fig-5-edit-saved.png" alt="The fee and the TOTAL are updated."></div>
+<div class="caption">Figure 5.39. The fee and the TOTAL are updated.</div>
+<p><strong>To remove a fee,</strong> click the trash icon of the fee. The window <strong>Delete assessment</strong> asks <em>Are you sure you want to delete this assessment?</em> Click <strong>Delete</strong> to remove the fee, or <strong>Cancel</strong> to keep it. The message <em>Assessment removed.</em> appears, the fee leaves the table and the <strong>TOTAL</strong> is updated.</p>
+<div class="fig small"><img src="images/fig-5-del-confirm.png" alt="The window Delete assessment."></div>
+<div class="caption">Figure 5.40. The window Delete assessment.</div>
+<div class="fig tall"><img src="images/fig-5-del-done.png" alt="The fee is removed and the TOTAL is updated."></div>
+<div class="caption">Figure 5.41. The fee is removed and the TOTAL is updated.</div>
+
+<h3 id="s5-4-10">Printing the order of payment</h3>
+<p>Click <strong>Print Assessment</strong> at the top right of the Order of Payment. The page <strong>Print Assessment</strong> shows the order of payment as it will be printed. It has these parts:</p>
+<ul>
+  <li>The heading of the <strong>Office of the Building Official</strong>, with the logos and a QR code.</li>
+  <li>The owner, the proposed project and the location, and, at the right, the division, the group and the date.</li>
+  <li>The <strong>fee description</strong> and the <strong>assessed</strong> amount of each fee, and the <strong>TOTAL</strong>.</li>
+  <li><strong>Official Receipt No.</strong> and <strong>Date Paid</strong>. They show <em>N/A</em> until the fees are paid.</li>
+  <li>The <strong>breakdown of the collection</strong> derived from the building fees and other charges: the eighty percent (80%) share of the Local Government Unit, the fifteen percent (15%) share of the Office of the Building Official, and the five percent (5%) share of the NCBOD.</li>
+  <li>The <strong>floor area</strong>, the additional floor area and the total floor area.</li>
+  <li>The signature lines: <strong>Reviewed and recommended for payment</strong> by the Chief, Processing and Evaluation Division, and <strong>For payment</strong> by the Building Official.</li>
+</ul>
+<p>Click <strong>Print Assessment</strong> on this page to open the print window of the browser. Choose a printer, or save the page as a PDF. Click <strong>Close</strong> to go back to the Order of Payment.</p>
+<div class="fig tall"><img src="images/fig-5-print-page.png" alt="The page Print Assessment. The button Print Assessment is boxed."></div>
+<div class="caption">Figure 5.42. The page Print Assessment. The button Print Assessment is boxed.</div>
+<div class="fig tall"><img src="images/fig-5-print-dialog.png" alt="The print window of the browser."></div>
+<div class="caption">Figure 5.43. The print window of the browser.</div>
+
+<h2 id="s5-5">5.5 Approving or declining the permit</h2>
+<p>When the requirements are reviewed and the fees are assessed, the Building Official decides on the permit: it approves it or declines it.</p>
+<h3 id="s5-5-1">Approving the permit</h3>
+<p>There are two ways to start the approval:</p>
+<ul>
+  <li>In the Building Permit card, click the double check icon of the application, <strong>Approve Permit</strong>. Its name appears when you point to it.</li>
+  <li>On the page <strong>Application Requirements</strong>, click <strong>Proceed For Printing</strong>. It is dimmed until the fees are assessed, and it is enabled after.</li>
+</ul>
+<div class="fig small"><img src="images/fig-5-approve-icon.png" alt="The icon Approve Permit, the double check icon."></div>
+<div class="caption">Figure 5.44. The icon Approve Permit, the double check icon.</div>
+<div class="fig tall"><img src="images/fig-5-proceed.png" alt="Proceed For Printing is enabled after the fees are assessed."></div>
+<div class="caption">Figure 5.45. Proceed For Printing is enabled after the fees are assessed.</div>
+<p>The window <strong>Approved Building Permit Request</strong> opens. Fill in two boxes, then click <strong>Approved</strong>. Click <strong>Cancel</strong> to leave without approving.</p>
+<ul>
+  <li><strong>Building Permit No.:</strong> type the number of the permit.</li>
+  <li><strong>Remarks:</strong> type your note.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-5-approve-window.png" alt="The window Approved Building Permit Request. Building Permit No. and Approved are boxed."></div>
+<div class="caption">Figure 5.46. The window Approved Building Permit Request. Building Permit No. and Approved are boxed.</div>
+<p>The message <em>Building permit successfully approved.</em> appears. The application leaves the Building Permit card and is listed in <strong>Approved Permits</strong> with its <strong>Building Permit No.</strong> In its remarks, the arrow icon shows your note under <strong>Process From</strong> <em>Approver</em>.</p>
+<div class="fig tall"><img src="images/fig-5-approved-toast.png" alt="The message after the permit is approved."></div>
+<div class="caption">Figure 5.47. The message after the permit is approved.</div>
+<div class="fig "><img src="images/fig-5-approved-card.png" alt="The application is in Approved Permits with its Building Permit No."></div>
+<div class="caption">Figure 5.48. The application is in Approved Permits with its Building Permit No.</div>
+<div class="fig tall"><img src="images/fig-5-approved-remarks.png" alt="The remarks of the approved application."></div>
+<div class="caption">Figure 5.49. The remarks of the approved application.</div>
+<p>The applicant sees the status of the application change to <strong>APPROVED</strong>. See <a href="03-applicant.pdf#s3-5-5">Section 3.5</a>.</p>
+<h3 id="s5-5-2">Declining the permit</h3>
+<p>To decline, click the box with an X icon of the application in the Building Permit card, <strong>Disapproved Permit</strong>. The window <strong>Declined Building Permit Request</strong> opens. Type the reason in <strong>Remarks</strong>, then click <strong>Declined</strong>. Click <strong>Cancel</strong> to leave without declining. The application is then listed in <strong>Declined Permits</strong>, where its remarks show the reason.</p>
+<div class="fig tall"><img src="images/fig-5-decline-window.png" alt="The window Declined Building Permit Request. Remarks and Declined are boxed."></div>
+<div class="caption">Figure 5.50. The window Declined Building Permit Request. Remarks and Declined are boxed.</div>
+
+<div class="todo">Screenshots of the Declined Permits card after a decline, the FSEC window, and the printed building permit.</div>
+
+</body>
+</html>
