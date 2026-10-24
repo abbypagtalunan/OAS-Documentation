@@ -6,7 +6,20 @@ User manual for the **Doctor** role of MediLink, the Integrated Healthcare Syste
 
 > All patients, doctors, appointments, results, prices and pharmacies shown are **sample data only**.
 
-## Contents
+## All MediLink role manuals
+
+| Manual | Pages | Sources |
+|---|---|---|
+| [Doctor](MediLink-Doctor-User-Manual.pdf) | 38 | this folder |
+| [Secretary](MediLink-Secretary-User-Manual.pdf) | 27 | `Secretary/` |
+| [Patient](MediLink-Patient-User-Manual.pdf) | 20 | `Patient/` |
+| [Imaging](MediLink-Imaging-User-Manual.pdf) | 13 | `Imaging/` |
+| [Laboratory](MediLink-Laboratory-User-Manual.pdf) | 15 | `Laboratory/` |
+| [Admin](MediLink-Admin-User-Manual.pdf) | 21 | `Admin/` |
+
+Screenshots for every role are in `raw/` (prefixes `ml-` Doctor, `sec-`, `pat-`, `img-`, `lab-`, `adm-`). Each role folder has its own README with rebuild steps and items to confirm.
+
+## Doctor manual contents
 
 1. Getting Started — signing in, the Doctor screen, account menu
 2. Appointments — Month, Week, Day and Agenda views; appointment details

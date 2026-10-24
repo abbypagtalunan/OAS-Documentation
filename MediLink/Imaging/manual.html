@@ -1,0 +1,95 @@
+<!doctype html><html><head><meta charset="utf-8"><title>MediLink: Imaging User Manual</title><style>@page { size: A4; margin: 20mm 18mm 20mm 18mm;
+  @bottom-left { content: "MediLink · Imaging User Manual"; font: 7.5pt Inter, sans-serif; color: #8a94a3; }
+  @bottom-right { content: counter(page); font: 600 8pt Inter, sans-serif; color: #1b4f8a; }
+}
+@page :first { margin: 0; @bottom-left { content: none } @bottom-right { content: none } }
+:root { --navy:#1b4f8a; --ink:#1f2933; --mute:#5f6b7a; --line:#d8dee6; --pale:#f2f6fa; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin:0; font-family: Inter, "Helvetica Neue", Arial, sans-serif; font-size: 9.6pt; line-height: 1.55; color: var(--ink); }
+a { color: var(--navy); text-decoration: none; }
+
+.cover { height: 297mm; width: 210mm; padding: 34mm 24mm 22mm; position: relative; page-break-after: always;
+  background: linear-gradient(180deg,#fff 0%,#fff 58%,#eef3f8 58%); }
+.cover .seal { width: 30mm; height: 30mm; }
+.cover .ct { margin-top: 12mm; font-size: 27pt; font-weight: 800; line-height: 1.15; color: var(--navy); letter-spacing: -0.3pt; }
+.cover .cs { margin-top: 5mm; font-size: 15pt; color: var(--ink); font-weight: 500; }
+.cover .cu { margin-top: 2mm; font-size: 10.5pt; color: var(--mute); }
+.cover .hero { position: absolute; left: 24mm; right: 24mm; top: 128mm; width: 162mm; border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 6px 22px rgba(20,40,70,.16); }
+.cover .cm { position: absolute; left: 24mm; bottom: 22mm; font-size: 8.5pt; color: var(--mute); line-height: 1.6; }
+
+.toc { page-break-after: always; }
+.toc .t1 { margin-top: 4.2mm; font-weight: 700; color: var(--navy); font-size: 10.2pt; }
+.toc .t2 { margin-left: 7mm; font-size: 9.3pt; margin-top: 1.1mm; }
+.toc a { display: flex; align-items: baseline; color: inherit; }
+.toc a i { flex: 1; border-bottom: 1px dotted #b7c0cc; margin: 0 2mm; transform: translateY(-2.5pt); }
+.toc a em { font-style: normal; min-width: 6mm; text-align: right; }
+
+.sec { page-break-before: always; }
+.kick { font-size: 8pt; letter-spacing: 1.2pt; color: var(--mute); text-transform: uppercase; }
+h1 { font-size: 21pt; color: var(--navy); margin: 2mm 0 3mm; font-weight: 700; letter-spacing: -0.2pt; }
+.rule { height: 2.2pt; background: var(--navy); margin-bottom: 4mm; }
+.lead { color: var(--mute); font-size: 10.2pt; }
+.inthis { background: var(--pale); border: 1px solid #dde5ee; border-radius: 5px; padding: 3.5mm 5mm; margin: 4mm 0 6mm; }
+.inthis .ih { font-weight: 700; color: var(--navy); font-size: 9pt; margin-bottom: 1.5mm; }
+.inthis ul { list-style: none; margin: 0; padding: 0; columns: 1; }
+.inthis li { margin: 1mm 0; font-size: 9.2pt; }
+h2 { font-size: 13pt; color: var(--navy); margin: 7mm 0 2.5mm; break-after: avoid; }
+h2.brk { break-before: page; margin-top: 0; }
+p { margin: 0 0 2.6mm; }
+ol.steps { margin: 0 0 3mm; padding-left: 6mm; }
+ol.steps li { margin: 1.2mm 0; padding-left: 1mm; }
+ul.bul { margin: 0 0 3mm; padding-left: 5mm; }
+ul.bul li { margin: 1.2mm 0; }
+
+figure { margin: 3mm 0 4.5mm; break-inside: avoid; text-align: center; }
+figure img { width: 100%; border: 1px solid var(--line); border-radius: 3px; display: block; margin: 0 auto; }
+figure.mid img { width: 86%; }
+figure.tall img { width: auto; max-width: 100%; max-height: 126mm; }
+figure.phone img { width: 78%; }
+figcaption { font-size: 8.3pt; color: var(--mute); margin-top: 1.8mm; }
+figcaption b { color: var(--ink); }
+.legend { margin-top: 1.6mm; font-size: 8pt; color: var(--ink); display: flex; flex-wrap: wrap; justify-content: center; gap: 1mm 4mm; }
+.legend span { white-space: nowrap; }
+.legend b { display: inline-block; width: 4.2mm; height: 4.2mm; line-height: 4.2mm; border-radius: 50%; background: #d62828; color: #fff; font-size: 6.8pt; text-align: center; margin-right: 1.2mm; }
+
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 4.5mm; font-size: 8.9pt; break-inside: auto; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th { background: var(--navy); color: #fff; text-align: left; padding: 2mm 3mm; font-weight: 600; }
+td { padding: 2mm 3mm; border-bottom: 1px solid var(--line); vertical-align: top; }
+table td:first-child { width: 32%; }
+table.w3 td:first-child { width: 28%; } table.w3 td:last-child { width: 30%; }
+
+.call { border-left: 3pt solid; padding: 2.4mm 4mm; margin: 3mm 0 4mm; border-radius: 0 4px 4px 0; font-size: 9pt; break-inside: avoid; }
+.call b:first-child { margin-right: 1.5mm; }
+.call.note { background: #f3f4f6; border-color: #9aa3ae; }
+.call.important { background: #eaf2fb; border-color: var(--navy); }
+.call.warning { background: #fff6dc; border-color: #d9a400; }
+</style></head><body>
+<section class="cover">
+ <img class="seal" src="fig/seal.png">
+ <div class="ct">MediLink<br>Integrated Healthcare System</div>
+ <div class="cs">User Manual for Imaging Staff</div>
+ <div class="cu">medilink.oas.lguapp.com · Municipality of Oas, Albay</div>
+ <img class="hero" src="fig/f-layout.jpg">
+ <div class="cm">Prepared by iConcept IT Solutions<br>Draft, 24 October 2026<br>All data shown is sample data only</div>
+</section>
+<section class="toc" id="toc"><div class="kick">CONTENTS</div><h1>Table of Contents</h1><div class="rule"></div><div class="t1"><a href="#s1"><span>Section 1&nbsp;&nbsp;Getting Started</span><i></i><em>3</em></a></div><div class="t2"><a href="#s1-1"><span>1.1&nbsp;&nbsp;About the Imaging role</span><i></i><em>3</em></a></div><div class="t2"><a href="#s1-2"><span>1.2&nbsp;&nbsp;Signing in</span><i></i><em>3</em></a></div><div class="t2"><a href="#s1-3"><span>1.3&nbsp;&nbsp;The Imaging screen</span><i></i><em>4</em></a></div><div class="t2"><a href="#s1-4"><span>1.4&nbsp;&nbsp;Account menu and signing out</span><i></i><em>5</em></a></div><div class="t1"><a href="#s2"><span>Section 2&nbsp;&nbsp;Patients</span><i></i><em>6</em></a></div><div class="t2"><a href="#s2-1"><span>2.1&nbsp;&nbsp;The patient list</span><i></i><em>6</em></a></div><div class="t1"><a href="#s3"><span>Section 3&nbsp;&nbsp;Imaging Tests</span><i></i><em>7</em></a></div><div class="t2"><a href="#s3-1"><span>3.1&nbsp;&nbsp;The test list</span><i></i><em>7</em></a></div><div class="t2"><a href="#s3-2"><span>3.2&nbsp;&nbsp;Adding a test</span><i></i><em>7</em></a></div><div class="t2"><a href="#s3-3"><span>3.3&nbsp;&nbsp;Changing a test or rate</span><i></i><em>8</em></a></div><div class="t1"><a href="#s4"><span>Section 4&nbsp;&nbsp;Report</span><i></i><em>9</em></a></div><div class="t2"><a href="#s4-1"><span>4.1&nbsp;&nbsp;The transaction list</span><i></i><em>9</em></a></div><div class="t2"><a href="#s4-2"><span>4.2&nbsp;&nbsp;Viewing and printing a result</span><i></i><em>9</em></a></div><div class="t1"><a href="#s5"><span>Section 5&nbsp;&nbsp;Account Settings</span><i></i><em>11</em></a></div><div class="t2"><a href="#s5-1"><span>5.1&nbsp;&nbsp;Profile</span><i></i><em>11</em></a></div><div class="t2"><a href="#s5-2"><span>5.2&nbsp;&nbsp;Changing your email</span><i></i><em>12</em></a></div><div class="t2"><a href="#s5-3"><span>5.3&nbsp;&nbsp;Changing your password</span><i></i><em>12</em></a></div><div class="t1"><a href="#sa"><span>Appendix A&nbsp;&nbsp;Quick Reference</span><i></i><em>13</em></a></div></section>
+<section class="sec" id="s1">
+<div class="kick">SECTION 1</div><h1>Getting Started</h1><div class="rule"></div>
+<p class="lead">This section explains what the Imaging role does in MediLink, how to sign in, and how the Imaging screen is laid out.</p>
+<div class="inthis"><div class="ih">In this section</div><ul><li><a href="#s1-1">1.1 About the Imaging role</a></li><li><a href="#s1-2">1.2 Signing in</a></li><li><a href="#s1-3">1.3 The Imaging screen</a></li><li><a href="#s1-4">1.4 Account menu and signing out</a></li></ul></div><h2 id="s1-1">1.1 About the Imaging role</h2><p>MediLink, the Integrated Healthcare System of the Municipality of Oas, connects patients, doctors and the clinic's service units. The <b>Imaging</b> role is used by the imaging unit (for example ECG and X-ray). As Imaging staff you can:</p><ul class="bul"><li>find patients with imaging requests;</li><li>keep the list of imaging tests and their rates up to date; and</li><li>view the imaging transactions, open a result and print it.</li></ul><div class="call important"><b>IMPORTANT</b> <b>Sample data only.</b> All names, tests, rates, results and contact details shown in this manual are sample data used for training. They are not real records.</div><div class="call note"><b>NOTE</b> Screens in this manual were captured from the live system on 24 October 2026 with an imaging account.</div><h2 id="s1-2">1.2 Signing in</h2><ol class="steps"><li>Open a web browser and go to <b>medilink.oas.lguapp.com</b>.</li><li>On the MediLink home page, click <b>LOGIN</b> at the top right (Figure 1.1).</li><li>Sign in with the imaging account given to you by the system administrator.</li><li>MediLink opens the <b>Patients</b> page (Section 2).</li></ol><figure class=""><img src="fig/f-home.jpg" style="width:80%"><figcaption><b>Figure 1.1.</b> The MediLink home page.</figcaption><div class="legend"><span><b>1</b>LOGIN button</span></div></figure><h2 id="s1-3">1.3 The Imaging screen</h2><figure class="full"><img src="fig/f-layout.jpg"><figcaption><b>Figure 1.2.</b> The Imaging screen.</figcaption><div class="legend"><span><b>1</b>Top bar</span><span><b>2</b>Your photo, name and email</span><span><b>3</b>Main menu</span><span><b>4</b>Account menu</span><span><b>5</b>Work area</span></div></figure><table class=""><thead><tr><th>Part</th><th>What it does</th></tr></thead><tbody><tr><td>1 Top bar</td><td>Shows that you are signed in with the <b>Imaging</b> role.</td></tr><tr><td>2 Your profile</td><td>Your photo, name and email.</td></tr><tr><td>3 Main menu</td><td><b>Patients</b> (Section 2), <b>Test</b> (Section 3) and <b>Report</b> (Section 4). The page you are on is shown in blue.</td></tr><tr><td>4 Account menu</td><td>Click it for <b>Account</b> and <b>Logout</b> (1.4).</td></tr><tr><td>5 Work area</td><td>The content of the page you opened.</td></tr></tbody></table><h2 id="s1-4">1.4 Account menu and signing out</h2><figure class=""><img src="fig/f-usermenu.jpg" style="width:60%"><figcaption><b>Figure 1.3.</b> The account menu at the top right.</figcaption><div class="legend"><span><b>1</b>Account menu</span><span><b>2</b>Account</span><span><b>3</b>Logout</span></div></figure><ul class="bul"><li>Click <b>Account</b> to change your profile, email or password (Section 5).</li><li>Click <b>Logout</b> to sign out. Always sign out when you leave a shared computer.</li></ul></section><section class="sec" id="s2">
+<div class="kick">SECTION 2</div><h1>Patients</h1><div class="rule"></div>
+<p class="lead">The Patients page is where imaging staff find the patients they need to serve.</p>
+<div class="inthis"><div class="ih">In this section</div><ul><li><a href="#s2-1">2.1 The patient list</a></li></ul></div><h2 id="s2-1">2.1 The patient list</h2><p>Click <b>Patients</b> in the main menu. Type a patient's name in <b>Search patient</b> to find the patient in the <b>Patient List</b>.</p><figure class=""><img src="fig/f-patients.jpg" style="width:55%"><figcaption><b>Figure 2.1.</b> The Patient List.</figcaption><div class="legend"><span><b>1</b>Patient List</span><span><b>2</b>Search patient</span></div></figure><div class="call note"><b>NOTE</b> When this manual was prepared the Patient List was empty, and searching (for example <i>David</i>) returned no patients. Doctors request imaging tests from the patient record (Imaging › UNSAVED › ADD TEST › CONFIRM ALL in the Doctor manual); no such request was pending, so the steps for opening a patient and entering a result could not be captured.</div></section><section class="sec" id="s3">
+<div class="kick">SECTION 3</div><h1>Imaging Tests</h1><div class="rule"></div>
+<p class="lead">The Test page lists the imaging tests the unit offers and their rates. Doctors choose from this list when they request a test.</p>
+<div class="inthis"><div class="ih">In this section</div><ul><li><a href="#s3-1">3.1 The test list</a></li><li><a href="#s3-2">3.2 Adding a test</a></li><li><a href="#s3-3">3.3 Changing a test or rate</a></li></ul></div><h2 id="s3-1">3.1 The test list</h2><p>Click <b>Test</b> in the main menu. Each row shows the <b>Test</b> name and its <b>Rate</b> in pesos, for example <i>ECG</i> at 120 and <i>X-ray</i> at 220.</p><figure class="full"><img src="fig/f-test.jpg"><figcaption><b>Figure 3.1.</b> The Test page.</figcaption><div class="legend"><span><b>1</b>New Test</span><span><b>2</b>Tests and rates</span><span><b>3</b>Edit</span></div></figure><h2 id="s3-2">3.2 Adding a test</h2><ol class="steps"><li>Click <b>New Test</b>. The <b>Add Imaging Test</b> panel opens on the right.</li><li>Type the <b>Test</b> name.</li><li>Type the <b>Rate</b>.</li><li>Click <b>CREATE</b>, or the <b>X</b> to close without saving.</li></ol><figure class=""><img src="fig/f-newtest.jpg" style="width:55%"><figcaption><b>Figure 3.2.</b> The Add Imaging Test panel.</figcaption><div class="legend"><span><b>1</b>Test</span><span><b>2</b>Rate</span><span><b>3</b>CREATE</span><span><b>4</b>Close</span></div></figure><h2 id="s3-3">3.3 Changing a test or rate</h2><ol class="steps"><li>Click the edit icon on the test's row. The <b>Update Imaging Test</b> panel opens with the current name and rate.</li><li>Change the <b>Test</b> name or the <b>Rate</b>.</li><li>Click <b>UPDATE</b>.</li></ol><figure class=""><img src="fig/f-edittest.jpg" style="width:55%"><figcaption><b>Figure 3.3.</b> The Update Imaging Test panel.</figcaption><div class="legend"><span><b>1</b>Test</span><span><b>2</b>Rate</span><span><b>3</b>UPDATE</span></div></figure><div class="call important"><b>IMPORTANT</b> Doctors see the test name and rate when they request a test, so check new rates with the clinic before saving.</div></section><section class="sec" id="s4">
+<div class="kick">SECTION 4</div><h1>Report</h1><div class="rule"></div>
+<p class="lead">The Report page lists imaging transactions so you can review collections and reprint results.</p>
+<div class="inthis"><div class="ih">In this section</div><ul><li><a href="#s4-1">4.1 The transaction list</a></li><li><a href="#s4-2">4.2 Viewing and printing a result</a></li></ul></div><h2 id="s4-1">4.1 The transaction list</h2><p>Click <b>Report</b> in the main menu. Each row shows the <b>Date</b>, <b>Transaction ID</b> and <b>Amount</b>. The <b>Total</b> of all listed amounts is shown at the bottom.</p><figure class="full"><img src="fig/f-report.jpg"><figcaption><b>Figure 4.1.</b> The Reports page.</figcaption><div class="legend"><span><b>1</b>Transactions</span><span><b>2</b>Print (open the result)</span><span><b>3</b>Total</span></div></figure><h2 id="s4-2">4.2 Viewing and printing a result</h2><ol class="steps"><li>Click the printer icon on a transaction. The result opens, showing the test (for example <i>ECG</i>), the <b>Result</b> and the <b>Impression</b>.</li><li>Click <b>DETAILS</b> to see the printable copy with the clinic's name and address.</li><li>Click <b>PRINT</b> to print it.</li><li>Click outside the window to close it.</li></ol><figure class=""><img src="fig/f-result.jpg" style="width:80%"><figcaption><b>Figure 4.2.</b> A result.</figcaption><div class="legend"><span><b>1</b>Result and impression</span><span><b>2</b>DETAILS</span></div></figure><figure class=""><img src="fig/f-resultprint.jpg" style="width:80%"><figcaption><b>Figure 4.3.</b> The printable result.</figcaption><div class="legend"><span><b>1</b>Printable copy</span><span><b>2</b>PRINT</span></div></figure></section><section class="sec" id="s5">
+<div class="kick">SECTION 5</div><h1>Account Settings</h1><div class="rule"></div>
+<p class="lead">Use Account settings to keep your profile, email and password up to date.</p>
+<div class="inthis"><div class="ih">In this section</div><ul><li><a href="#s5-1">5.1 Profile</a></li><li><a href="#s5-2">5.2 Changing your email</a></li><li><a href="#s5-3">5.3 Changing your password</a></li></ul></div><h2 id="s5-1">5.1 Profile</h2><p>Open <b>Account</b> from the account menu (1.4). The <b>Settings</b> page has three tabs: <b>General</b>, <b>Email</b> and <b>Security</b>.</p><figure class="full"><img src="fig/f-account.jpg"><figcaption><b>Figure 5.1.</b> Account settings, General tab.</figcaption><div class="legend"><span><b>1</b>GENERAL, EMAIL and SECURITY tabs</span><span><b>2</b>Photo and UPLOAD PROFILE</span><span><b>3</b>Profile details</span><span><b>4</b>SAVE CHANGES</span></div></figure><ol class="steps"><li>To change your photo, click <b>UPLOAD PROFILE</b> and choose an image.</li><li>Edit your <b>First Name</b>, <b>Last Name</b>, <b>Phone Number</b>, <b>State</b> and <b>Country</b>.</li><li>Click <b>SAVE CHANGES</b>.</li></ol><h2 id="s5-2">5.2 Changing your email</h2><figure class="full"><img src="fig/f-email.jpg"><figcaption><b>Figure 5.2.</b> The Email tab.</figcaption><div class="legend"><span><b>1</b>Current Email</span><span><b>2</b>New Email</span><span><b>3</b>CHANGE EMAIL</span></div></figure><ol class="steps"><li>Click the <b>EMAIL</b> tab.</li><li>Type your <b>New Email</b>.</li><li>Click <b>CHANGE EMAIL</b>.</li></ol><h2 id="s5-3">5.3 Changing your password</h2><figure class="full"><img src="fig/f-security.jpg"><figcaption><b>Figure 5.3.</b> The Security tab.</figcaption><div class="legend"><span><b>1</b>Password</span><span><b>2</b>Password Confirmation</span><span><b>3</b>CHANGE PASSWORD</span></div></figure><ol class="steps"><li>Click the <b>SECURITY</b> tab.</li><li>Type the new <b>Password</b>, and type it again in <b>Password Confirmation</b>.</li><li>Click <b>CHANGE PASSWORD</b>.</li></ol></section><section class="sec" id="sa"><div class="kick">APPENDIX A</div><h1>Quick Reference</h1><div class="rule"></div><p class="lead">Where to go for common tasks.</p><table class="w3"><thead><tr><th>I want to…</th><th>Go to</th><th>See</th></tr></thead><tbody><tr><td>Find a patient</td><td>Patients › Search patient</td><td>2.1</td></tr><tr><td>Add an imaging test</td><td>Test › New Test › CREATE</td><td>3.2</td></tr><tr><td>Change a test rate</td><td>Test › edit icon › UPDATE</td><td>3.3</td></tr><tr><td>See collections</td><td>Report</td><td>4.1</td></tr><tr><td>Reprint a result</td><td>Report › printer icon › DETAILS › PRINT</td><td>4.2</td></tr><tr><td>Change my password</td><td>Account › SECURITY</td><td>5.3</td></tr></tbody></table></section>
+</body></html>
