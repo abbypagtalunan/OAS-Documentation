@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fil">
+<head>
+<meta charset="utf-8">
+<title>OAS-CMS: Admin User Manual</title>
+<link rel="stylesheet" href="manual.css">
+<style>
+.fig.tall img { max-height: 90mm; }
+.step { display: flex; align-items: center; gap: 3mm; }
+.step .no { flex: 0 0 auto; width: 8mm; height: 8mm; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 700; text-align: center; line-height: 8mm; }
+.unit { break-inside: avoid; }
+h2, h3, h4 { break-after: avoid; }
+.closing { text-align: center; color: var(--muted); margin-top: 8mm; }
+.cover .coverimg { margin-top: 10mm; }
+.cover .coverimg img { max-width: 120mm; max-height: 70mm; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="t">OAS Content Management System</div>
+  <div class="s">Admin User Manual for OAS</div>
+  <div class="fig coverimg"><img src="images/cms-cover.png" alt="OAS Content Management System" style="border:none"></div>
+  <div class="m">Hatid ng iConcept IT Solutions.</div>
+</div>
+
+<div class="section-no">Admin User Manual for OAS</div>
+<h1>Ang OAS-CMS</h1>
+<p class="lead">Ang OAS Content Management System o ang OAS-CMS, hatid ng iConcept IT Solutions, ay isang system na idinisenyo upang mapadali ang pag-aayos, pag-publish, at pamamahala ng digital content sa website ng OAS. Sa pamamagitan ng system na ito, hindi na kinakailangan ang malalim na kaalaman sa coding upang makapag-update ng content sa website.</p>
+
+<div class="toc">
+<div class="toc-title">Table of Contents</div>
+<ul>
+  <li><a href="#sA">Ano-ano ang Maaaring Gawin sa CMS?</a></li>
+  <li><a href="#sB">Gabay sa Paggamit ng OAS-CMS</a></li>
+  <li><a href="#s1">1 I-access ang OAS-CMS</a></li>
+  <li><a href="#s2">2 Mag-log in sa OAS-CMS</a></li>
+  <li><a href="#s3">3 Interface ng OAS-CMS</a></li>
+  <li class="sub"><a href="#s3-1">3.1 Interface - Sidebar</a></li>
+  <li><a href="#s4">4 Paano Gamitin ang CMS?</a></li>
+  <li class="sub"><a href="#s4-1">4.1 Pag-add ng Content</a></li>
+  <li class="sub"><a href="#s4-2">4.2 Pag-edit ng Content</a></li>
+  <li class="sub"><a href="#s4-3">4.3 Pag-delete ng Content</a></li>
+  <li class="sub"><a href="#sade">Add, Edit, Delete</a></li>
+  <li class="sub"><a href="#s4-4">4.4 Hero Slider</a></li>
+  <li class="sub"><a href="#s4-5">4.5 Contacts</a></li>
+  <li class="sub"><a href="#s4-6">4.6 Users</a></li>
+  <li class="sub2"><a href="#s4-6-u">4.6 Users: Add User</a></li>
+</ul>
+</div>
+
+<h2 id="sA">Ano-ano ang Maaaring Gawin sa CMS?</h2>
+
+<p>Pag-view, pag-add, pag-edit, at pag-delete ng content sa OAS website.</p>
+<ul>
+  <li><strong>View Content</strong> Silipin ang mga kasalukuyang mga post sa website.</li>
+  <li><strong>Add Content</strong> Magdagdag ng mga bagong artikulo o updates sa website.</li>
+  <li><strong>Edit Content</strong> Baguhin o i-update ang mga naka-post.</li>
+  <li><strong>Delete Content</strong> Magtanggal ng mga outdated o maling posts.</li>
+</ul>
+
+<h2 id="sB">Gabay sa Paggamit ng OAS-CMS</h2>
+
+<h2 id="s1">1 I-access ang OAS-CMS</h2>
+
+<div class="unit"><p class="step"><span class="no">1</span><span>Pumunta sa <a href="https://app.oas.lguapp.com">app.oas.lguapp.com</a></span></p>
+<div class="fig tall"><img src="images/cms-p06.png" alt="I-access ang OAS-CMS"></div>
+<div class="caption">Larawan 1. I-access ang OAS-CMS</div></div>
+
+<div class="unit"><p class="step"><span class="no">2</span><span>Pindutin ang <strong>LGU Services Button</strong> upang makita ang iba’t-ibang section ng website.</span></p>
+<div class="fig tall"><img src="images/cms-p07.png" alt="I-access ang OAS-CMS"></div>
+<div class="caption">Larawan 2. I-access ang OAS-CMS</div></div>
+
+<h2 id="s2">2 Mag-log in sa OAS-CMS</h2>
+
+<div class="unit"><p class="step"><span class="no">1</span><span>I-enter ang iyong email address at password. Pagkatapos, pindutin ang <strong>Sign In</strong>.</span></p>
+<div class="fig tall"><img src="images/cms-p08.png" alt="Mag-log in sa OAS-CMS"></div>
+<div class="caption">Larawan 3. Mag-log in sa OAS-CMS</div></div>
+
+<div class="unit"><p class="step"><span class="no">2</span><span>Kung wala pang account, pindutin ang <strong>Create Account.</strong></span></p>
+<div class="fig tall"><img src="images/cms-p09.png" alt="Mag-log in sa OAS-CMS"></div>
+<div class="caption">Larawan 4. Mag-log in sa OAS-CMS</div></div>
+
+<div class="unit"><p class="step"><span class="no">3</span><span>I-fill out ang mga detalyeng hinihingi at pindutin ang <strong>Send Verification Code.</strong> Pagkatapos, mag login gamit ang account.</span></p>
+<div class="fig tall"><img src="images/cms-p10.png" alt="Mag-log in sa OAS-CMS"></div>
+<div class="caption">Larawan 5. Mag-log in sa OAS-CMS</div></div>
+
+<h2 id="s3">3 Interface ng OAS-CMS</h2>
+
+<div class="unit"><p>Ang CMS ay mayroong dalawang bahagi, ang nasa kaliwa o ang <strong>sidebar</strong> at ang gitna o kanan ng sidebar ay ang <strong>main content</strong>.</p>
+<div class="fig tall"><img src="images/cms-p11.png" alt="Interface ng OAS-CMS"></div>
+<div class="caption">Larawan 6. Interface ng OAS-CMS</div></div>
+
+<h3 id="s3-1">3.1 Interface - Sidebar</h3>
+
+<div class="unit"><p>Makikita sa <strong>SIDEBAR</strong> ang iba’t-ibang section na napapakita sa OAS website tulad ng <strong>News and Announcements, Bids and Awards, Mayor’s Corner, Hero Slider, Transparency Reports, at ang OAS Profile.</strong></p>
+<p>Makikita rin dito ang mga <strong>Users</strong> at <strong>Contacts (Messages)</strong> na nakaka-access sa CMS.</p>
+<div class="fig tall"><img src="images/cms-p12.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 7. Interface - Sidebar</div></div>
+
+<div class="unit"><p>Ang mga sumusunod na mga paglalarawan ay nagpapakita ng <strong>koneksyon ng CMS sidebar sections sa kaakibat ng OAS Website page</strong> o main content.</p>
+<p>Halimbawa, ang News and Announcements sa CMS Sidebar ay connected (o ang category mismo) sa News.</p>
+<div class="fig tall"><img src="images/cms-p13.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 8. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p14.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 9. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p15.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 10. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p16.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 11. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p17.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 12. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p18.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 13. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p19.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 14. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p20.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 15. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p21.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 16. Interface - Sidebar</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p22.png" alt="Interface - Sidebar"></div>
+<div class="caption">Larawan 17. Interface - Sidebar</div></div>
+
+<h2 id="s4">4 Paano Gamitin ang CMS?</h2>
+
+<div class="unit"><p>Pumili sa sidebar ng section na nais ayusin ang content. Halimbawa, ang News and Announcements section.</p>
+<div class="fig tall"><img src="images/cms-p23.png" alt="Paano Gamitin ang CMS?"></div>
+<div class="caption">Larawan 18. Paano Gamitin ang CMS?</div></div>
+
+<div class="unit"><p>Pagkapindot, makikita ang mga post na nilalaman ng section na napili. Maaari rin mag-search ng posts o mag-sort ng posts ayon sa petsa ng pag-post nito.</p>
+<div class="fig tall"><img src="images/cms-p24.png" alt="Paano Gamitin ang CMS?"></div>
+<div class="caption">Larawan 19. Paano Gamitin ang CMS?</div></div>
+
+<h3 id="s4-1">4.1 Pag-add ng Content</h3>
+
+<div class="unit"><p>Pindutin ang Add News button, na makikita sa bandang kanan.</p>
+<div class="fig tall"><img src="images/cms-p25.png" alt="Pag-add ng Content"></div>
+<div class="caption">Larawan 20. Pag-add ng Content</div></div>
+
+<div class="unit"><p>Ilagay ang title, subtitle, content, date, at files na kailangang ipakita sa post na nais gawin. Pagkatapos, pindutin ang Save button.</p>
+<div class="fig tall"><img src="images/cms-p26.png" alt="Pag-add ng Content"></div>
+<div class="caption">Larawan 21. Pag-add ng Content</div></div>
+
+<div class="unit"><p>I-refresh ang website upang makita ang idinagdag na content. Makikitang nai-post ang inadd na news.</p>
+<div class="fig tall"><img src="images/cms-p27.png" alt="Pag-add ng Content"></div>
+<div class="caption">Larawan 22. Pag-add ng Content</div></div>
+
+<h3 id="s4-2">4.2 Pag-edit ng Content</h3>
+
+<div class="unit"><p>Pindutin ang Edit button. Kung siguradong i-eedit ang content ng napiling post, pindutin ang Continue Edit.</p>
+<div class="fig tall"><img src="images/cms-p28.png" alt="Pag-edit ng Content"></div>
+<div class="caption">Larawan 23. Pag-edit ng Content</div></div>
+
+<div class="unit"><p>Maaari nang i-edit ang detalyeng nais baguhin. Pindutin ang Save pagkatapos. I-refresh ang website upang makita ang binagong content.</p>
+<div class="fig tall"><img src="images/cms-p29.png" alt="Pag-edit ng Content"></div>
+<div class="caption">Larawan 24. Pag-edit ng Content</div></div>
+
+<h3 id="s4-3">4.3 Pag-delete ng Content</h3>
+
+<div class="unit"><p>Pindutin ang Delete button. Kung siguradong i-dedelete ang content ng napiling post, pindutin ang “Continue Delete.”</p>
+<div class="fig tall"><img src="images/cms-p30.png" alt="Pag-delete ng Content"></div>
+<div class="caption">Larawan 25. Pag-delete ng Content</div></div>
+
+<div class="unit"><p>I-refresh ang website upang makita na burado na ang content.</p>
+<div class="fig tall"><img src="images/cms-p31.png" alt="Pag-delete ng Content"></div>
+<div class="caption">Larawan 26. Pag-delete ng Content</div></div>
+
+<h3 id="sade">Add, Edit, Delete</h3>
+
+<div class="unit"><p>Ganito rin ang makikita at ang paggamit sa iba’t-ibang section ng website. Sa <strong>Bids and Awards</strong>, Mayor’s Corner, Hero Slider, Transparency Reports, at ang OAS Profile.</p>
+<div class="fig tall"><img src="images/cms-p32.png" alt="Add, Edit, Delete"></div>
+<div class="caption">Larawan 27. Bids andAwards</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p33.png" alt="Add, Edit, Delete"></div>
+<div class="caption">Larawan 28. Mayor’s Corner</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p34.png" alt="Add, Edit, Delete"></div>
+<div class="caption">Larawan 29. ,Hero Slider</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p35.png" alt="Add, Edit, Delete"></div>
+<div class="caption">Larawan 30. ,Transparency Reports</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p36.png" alt="Add, Edit, Delete"></div>
+<div class="caption">Larawan 31. ,OAS Profile</div></div>
+
+<h3 id="s4-4">4.4 Hero Slider</h3>
+
+<div class="unit"><p>Upang ma-access ang section na ito sa OAS-CMS, pindutin ang Hero Slider sa sidebar. Upang makapag-add ng content, pindutin ang Add Slide.</p>
+<div class="fig tall"><img src="images/cms-p37.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 32. Hero Slider</div></div>
+
+<div class="unit"><p>Mayroong anim na detalyeng dapat punan, ito ay ang <strong>label, title, text, button link na \href, button text, at slide image.</strong></p>
+<div class="fig tall"><img src="images/cms-p38.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 33. Hero Slider</div></div>
+
+<div class="unit"><p>Ang <strong>label</strong> isang maikling text na nagsisilbing kategorya o panimula ng slide. Ito ay makikita sa itaas ng pamagat.</p>
+<div class="fig tall"><img src="images/cms-p39.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 34. Hero Slider</div></div>
+
+<div class="unit"><p>Ang <strong>title</strong>, ay ang headline ng slide. Ito ang pinakamalaking teksto at siyang unang napapansin.</p>
+<div class="fig tall"><img src="images/cms-p40.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 35. Hero Slider</div></div>
+
+<div class="unit"><div class="fig tall"><img src="images/cms-p41.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 36. Hero Slider</div></div>
+
+<div class="unit"><p>Ang <strong>button link</strong> na pupuntahan ng gumagamit kapag pinindot ang button. Maaari itong magturo sa ibang pahina ng website tulad ng /home,/about, /government, /services, /transparency, at /news. Ito ay nagsisimula sa isang forward slash (/).</p>
+<p>I-hover ang mouse sa menu o bahagi ng website na nais mong ituro ng button. Makikita sa lower-left corner ng browser ang URL o address.</p>
+<div class="fig tall"><img src="images/cms-p42.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 37. Hero Slider</div></div>
+
+<div class="unit"><p>Kopyahin lamang ang bahagi ng URL na nagsisimula sa forward slash (/) at iyon ang ilagay sa Button Link (href).</p>
+<div class="fig tall"><img src="images/cms-p43.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 38. Hero Slider</div></div>
+
+<div class="unit"><p>Ang <strong>Button Text</strong> ay ang text na nakalagay sa button. Halimbawa, sa slide na ito, ang button text ay “Learn More”</p>
+<div class="fig tall"><img src="images/cms-p44.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 39. Hero Slider</div></div>
+
+<div class="unit"><p>Ang <strong>Slide Image</strong> ay ang larawang ipapakita sa slider. Siguraduhing tama at malinaw ito.</p>
+<div class="fig tall"><img src="images/cms-p45.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 40. Hero Slider</div></div>
+
+<div class="unit"><p>Pindutin ang <strong>Save</strong> button pagkatapos punan lahat ng detalyeng kinakailangan.</p>
+<div class="fig tall"><img src="images/cms-p46.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 41. Hero Slider</div></div>
+
+<div class="unit"><p>Pindutin ang <strong>Edit</strong> button kung kailangang baguhin ang laman ng slide. Pindutin ang <strong>Delete</strong> button kung kailangang burahin ang slide.</p>
+<div class="fig tall"><img src="images/cms-p47.png" alt="Hero Slider"></div>
+<div class="caption">Larawan 42. Hero Slider</div></div>
+
+<h3 id="s4-5">4.5 Contacts</h3>
+
+<div class="unit"><p>Ang section na Contacts naman ay naglalaman ng mga messages o inquiry na nagmula sa “Contact Us” sa website.</p>
+<div class="fig tall"><img src="images/cms-p48.png" alt="Contacts"></div>
+<div class="caption">Larawan 43. Contacts</div></div>
+
+<h3 id="s4-6">4.6 Users</h3>
+
+<div class="unit"><p>Ang <strong>Users</strong> sa sidebar ay para sa <strong>pag-manage ng mga accounts na nakaka-access ng OAS-CMS.</strong> Maaari rin mag-add, edit, at delete ng User.</p>
+<div class="fig tall"><img src="images/cms-p49.png" alt="Users"></div>
+<div class="caption">Larawan 44. Users</div></div>
+
+<h4 id="s4-6-u">4.6 Users: Add User</h4>
+
+<div class="unit"><p>Mayroong dalawang klase ng user, admin at user. Ang admin lamang ang makakapag-add ng user. Upang makapag-add ng user, pindutin ang <strong>Add User</strong> button.</p>
+<div class="fig tall"><img src="images/cms-p50.png" alt="Users: Add User"></div>
+<div class="caption">Larawan 45. Users: Add User</div></div>
+
+<div class="unit"><p>Ilagay lamang ang mga detalye tulad ng First Name, Last Name, Email, Password, at User type.</p>
+<div class="fig tall"><img src="images/cms-p51.png" alt="Users: Add User"></div>
+<div class="caption">Larawan 46. Users: Add User</div></div>
+
+<div class="note"><p><strong>At iyan ang mga pangunahing hakbang sa paggamit ng OAS Content Management System (OAS-CMS).</strong></p><p><strong>Sa pamamagitan ng OAS-CMS, mas madali nang mag-view, magdagdag, mag-edit, at mag-delete ng content sa website ng OAS.</strong></p><p><strong>Palaging tiyaking tama at napapanahon ang impormasyong ilalagay upang mapanatiling maaasahan at kapaki-pakinabang ang opisyal na website ng OAS para sa lahat ng mamamayan.</strong></p></div>
+
+<p class="closing">Hatid ng iConcept IT Solutions.</p>
+
+</body>
+</html>
