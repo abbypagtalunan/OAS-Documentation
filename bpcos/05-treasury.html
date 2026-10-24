@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BPCOS: Treasury</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 80mm; }</style>
+</head>
+<body>
+
+<div class="section-no">Section 5</div>
+<h1>The Treasury</h1>
+<p class="lead">The Treasury receives the payment of the fees of the permit and issues the official receipt (OR). This is done in a separate system of the Municipality, <strong>OTIS</strong>, on the page <strong>Cashier</strong>. This section shows how the cashier issues the OR for a building permit.</p>
+<div class="note"><strong>Account.</strong> The page shows the label <strong>Cashier</strong> at the top left. The cashier signs in to OTIS with an account of the Treasury, not with an account of BPCOS. The cashier finds the assessment of the application from BPCOS. Saving the receipt in OTIS does not change the status of the application in BPCOS.</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s5-1">5.1 The Cashier page</a></li>
+  <li><a href="#s5-2">5.2 Issuing an official receipt</a></li>
+  <li class="sub"><a href="#s5-2-1">5.2.1 Step 1. Type the OR number</a></li>
+  <li class="sub"><a href="#s5-2-2">5.2.2 Step 2. Find the application</a></li>
+  <li class="sub"><a href="#s5-2-3">5.2.3 Step 3. Retrieve the record</a></li>
+  <li class="sub"><a href="#s5-2-4">5.2.4 Step 4. Save the receipt</a></li>
+  <li class="sub"><a href="#s5-2-5">5.2.5 Step 5. Print the receipt</a></li>
+  <li><a href="#s5-3">5.3 Paying by check</a></li>
+  <li><a href="#s5-4">5.4 Printing a saved receipt</a></li>
+  <li><a href="#s5-5">5.5 Messages you may see</a></li>
+  <li class="sub"><a href="#s5-5-1">5.5.1 No record found</a></li>
+  <li class="sub"><a href="#s5-5-2">5.5.2 O.R # already used</a></li>
+  <li><a href="#s5-6">5.6 Reports: Abstract of Collection</a></li>
+  <li class="sub"><a href="#s5-6-1">5.6.1 Choosing what to display</a></li>
+  <li class="sub"><a href="#s5-6-2">5.6.2 Reading the report</a></li>
+</ul>
+</div>
+
+<h2 id="s5-1">5.1 The Cashier page</h2>
+<p>The sidebar has three menus and <strong>Exit</strong>, which signs you out. <strong>Collection</strong> opens a list of the receipts that the cashier issues: <strong>Issuance of Official Receipt(OR)</strong>, <strong>Business Permit(OR)</strong>, <strong>Building Permit</strong>, <strong>Community Tax Certificate(CTC) - Ind</strong>, <strong>Community Tax Certificate(CTC) - Corp</strong>, <strong>Burial Permit and Fee Receipt</strong> and <strong>Online Request</strong>. The other menus are <strong>Process</strong> and <strong>Reports</strong>. For a building permit, click <strong>Collection</strong>, then <strong>Building Permit</strong>.</p>
+<p>The page <strong>Building Permit</strong> has these parts:</p>
+<ul>
+  <li><strong>OR No.</strong> and the button <strong>Check</strong>, at the top left.</li>
+  <li><strong>Select OR To Print</strong>, at the top right.</li>
+  <li><strong>Template List</strong>: the fees that are paid. Its columns are <strong>#</strong>, <strong>Acct Code</strong>, <strong>Particulars</strong> and <strong>Amount</strong>, with the <strong>Total</strong> under it.</li>
+  <li><strong>Check List</strong>: for a payment by check. Its columns are <strong>Check No.</strong>, <strong>Check Date</strong>, <strong>Bank Code</strong>, <strong>Check Amount</strong> and <strong>Action</strong>. The button <strong>Add Check</strong> adds a check.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-6-initial.png" alt="The page Building Permit of the cashier. The label Cashier is boxed."></div>
+<div class="caption">Figure 5.1. The page Building Permit of the cashier. The label Cashier is boxed.</div>
+
+<h2 id="s5-2">5.2 Issuing an official receipt</h2>
+<p>The applicant pays the fees of the <a href="02-applicant.pdf#s2-5-5">assessment</a> at the Treasury. The cashier then issues the OR in these steps.</p>
+<h3 id="s5-2-1">5.2.1 Step 1. Type the OR number</h3>
+<p>Type the number of the next OR in <strong>OR No.</strong> and click <strong>Check</strong>. The system checks the number.</p>
+<div class="fig tall"><img src="images/fig-6-or-typed.png" alt="The OR number is typed. Check is boxed."></div>
+<div class="caption">Figure 5.2. The OR number is typed. Check is boxed.</div>
+<p>When the number is accepted, the page shows the details of the receipt:</p>
+<ul>
+  <li><strong>Payor</strong>: empty until you retrieve the application.</li>
+  <li><strong>Document Date</strong> and <strong>OR Date</strong>: the date, and the date and time, of the receipt.</li>
+  <li><strong>Add Details</strong>: finds the application that is paid. See the next step.</li>
+  <li>The box at the right: the <strong>Liq Officer</strong>, the <strong>Collector</strong>, the <strong>Form Type</strong>, which is the accountable form, and the <strong>RCD No.</strong> and <strong>RCLO No.</strong></li>
+</ul>
+<p><strong>Save</strong> is dimmed until an application is retrieved.</p>
+<div class="fig tall"><img src="images/fig-6-checked.png" alt="The details of the receipt. Add Details is boxed."></div>
+<div class="caption">Figure 5.3. The details of the receipt. Add Details is boxed.</div>
+
+<h3 id="s5-2-2">5.2.2 Step 2. Find the application</h3>
+<p>Click <strong>Add Details</strong>. The window <strong>Filter To Display</strong> opens. Choose how to search by checking one option, type the value, then click <strong>Filter</strong>:</p>
+<ul>
+  <li><strong>Search for Application No.:</strong> type the <strong>Application No.</strong> of the permit.</li>
+  <li><strong>Search for Owner:</strong> type the name of the owner in <strong>Owner</strong>. This box is required.</li>
+</ul>
+<p><strong>Filter</strong> is dimmed until you check an option and type the value.</p>
+<div class="fig tall"><img src="images/fig-6-filter.png" alt="The window Filter To Display. The two ways to search are boxed."></div>
+<div class="caption">Figure 5.4. The window Filter To Display. The two ways to search are boxed.</div>
+<div class="fig tall"><img src="images/fig-6-filter-owner.png" alt="Search for Owner. The name is typed and Filter is boxed."></div>
+<div class="caption">Figure 5.5. Search for Owner. The name is typed and Filter is boxed.</div>
+
+<h3 id="s5-2-3">5.2.3 Step 3. Retrieve the record</h3>
+<p>The window lists the applications that match, each with its <strong>Application No.</strong> and the name of the owner. Check that it is the right application, then click <strong>Retrieve</strong> to confirm it.</p>
+<div class="fig tall"><img src="images/fig-6-retrieve.png" alt="The matching application. Retrieve is boxed."></div>
+<div class="caption">Figure 5.6. The matching application. Retrieve is boxed.</div>
+<p>The page fills in. The <strong>Payor</strong> is the owner. The <strong>Template List</strong> shows the fees of the assessment, with the account code of each and the <strong>Total</strong> to be paid. At this stage the particulars read <em>FOR BUILDING / STRUCTURE (OBO)</em>. If the owner pays by check, click <strong>Add Check</strong> and fill in the check, see <a href="#s5-3">Section 5.3</a>. <strong>Save</strong> is now enabled.</p>
+<div class="fig tall"><img src="images/fig-6-retrieved.png" alt="The retrieved record. Save is boxed."></div>
+<div class="caption">Figure 5.7. The retrieved record. Save is boxed.</div>
+
+<h3 id="s5-2-4">5.2.4 Step 4. Save the receipt</h3>
+<p>Click <strong>Save</strong>. The message <em>Building permit created successfully</em> appears and the window <strong>Next OR?</strong> asks what you want to do. Click <strong>Yes</strong> to start the next OR. Click <strong>No</strong> to stay on this receipt, for example to print it.</p>
+<div class="fig tall"><img src="images/fig-6-next-or.png" alt="The window Next OR? appears after the receipt is saved. No and Yes are boxed."></div>
+<div class="caption">Figure 5.8. The window Next OR? appears after the receipt is saved. No and Yes are boxed.</div>
+<p>When you stay on the receipt, the button <strong>Print OR</strong> appears beside <strong>Select OR To Print</strong>. The particulars of the fees now show their names, for example <em>Accessory Structure Fees</em> and <em>Electrical Fees</em>.</p>
+<div class="fig tall"><img src="images/fig-6-saved.png" alt="The saved receipt. Print OR is boxed."></div>
+<div class="caption">Figure 5.9. The saved receipt. Print OR is boxed.</div>
+
+<h3 id="s5-2-5">5.2.5 Step 5. Print the receipt</h3>
+<p>Click <strong>Print OR</strong>. The print window of the browser opens with the receipt. Choose a printer, or save it as a PDF, then click <strong>Print</strong>. The receipt has the OR number and date, the office of the Treasury, the name of the payor, each fee with its account code and amount, the total in figures and in words, and the name of the treasurer.</p>
+<div class="fig tall"><img src="images/fig-6-print-dialog.png" alt="The print window of the browser."></div>
+<div class="caption">Figure 5.10. The print window of the browser.</div>
+<div class="fig tall"><img src="images/fig-6-or-printed.png" alt="The printed official receipt."></div>
+<div class="caption">Figure 5.11. The printed official receipt.</div>
+
+<h2 id="s5-3">5.3 Paying by check</h2>
+<p>When the owner pays by check, click <strong>Add Check</strong> in the <strong>Check List</strong>, before you save the receipt. The window that opens has these fields: <strong>Check No.</strong>, <strong>Check Date</strong>, which starts with the date of today, <strong>Bank Code</strong> and <strong>Check Amount</strong>. Fill them in and click <strong>Create</strong> to add the check to the list. Click <strong>Close</strong> to leave without adding it.</p>
+<div class="fig tall"><img src="images/fig-6-add-check.png" alt="The window to add a check. Create and Add Check are boxed."></div>
+<div class="caption">Figure 5.12. The window to add a check. Create and Add Check are boxed.</div>
+
+<h2 id="s5-4">5.4 Printing a saved receipt</h2>
+<p>To print a receipt that was issued before, click <strong>Select OR To Print</strong> at the top right. The window <strong>Select OR to print</strong> lists the saved receipts, newest first, with the <strong>OR Date</strong>, the <strong>OR No.</strong>, the <strong>Payor</strong> and the <strong>Business</strong>, which is empty for a building permit. Type an OR number, a payor or a business in the search box to find one. Click <strong>Select</strong> beside the receipt, then click <strong>Print OR</strong>, as in <a href="#s5-2-5">Step 5</a>.</p>
+<div class="fig tall"><img src="images/fig-6-select-or.png" alt="The window Select OR to print. The search box and Select are boxed."></div>
+<div class="caption">Figure 5.13. The window Select OR to print. The search box and Select are boxed.</div>
+
+<div class="note"><strong>Status in BPCOS.</strong> Saving the receipt does not update the status of the application in BPCOS. The application keeps the status it had before payment.</div>
+
+<h2 id="s5-5">5.5 Messages you may see</h2>
+<p>While you issue a receipt, the page may show one of the messages below. They do not harm the record. Read the message, then follow the steps.</p>
+
+<h3 id="s5-5-1">5.5.1 No record found</h3>
+<p>After you click <strong>Filter</strong> in the window <strong>Filter To Display</strong>, a red message, <em>No record found</em>, appears at the bottom left. It means that no application matches what you typed, so the <strong>Template List</strong> stays empty and the <strong>Check List</strong> says <em>No record found.</em> The most common causes are:</p>
+<ul>
+  <li>The name or the application number is typed wrongly. Check the spelling and try again.</li>
+  <li>The owner has not been assessed or approved yet, so there is nothing to pay. The application must first be assessed and approved by the Building Official.</li>
+  <li>The wrong way to search is checked. Check <strong>Search for Application No.</strong> to type a number, or <strong>Search for Owner</strong> to type a name, not both.</li>
+</ul>
+<p>Click <strong>Add Details</strong> again and search with a shorter name, such as the last name, or with the application number of the applicant.</p>
+<div class="fig tall"><img src="images/fig-6-no-record.png" alt="The message No record found."></div>
+<div class="caption">Figure 5.14. The message No record found. It is boxed.</div>
+
+<h3 id="s5-5-2">5.5.2 O.R # already used</h3>
+<p>When you type an OR number and click <strong>Check</strong>, the system looks it up. If a receipt with that number was already issued, the window <strong>O.R # ALREADY USED!</strong> appears. Click <strong>OK</strong> to close it. The page then shows the receipt that already uses the number: its payor, the fees in the <strong>Template List</strong> and the date. The buttons <strong>Select OR To Print</strong>, <strong>Mark As Cancelled</strong> and <strong>Print OR</strong> appear at the top right, and <strong>Add Details</strong> is dimmed, so you cannot save another receipt with the same number.</p>
+<p>Do not issue the receipt with this number. Do one of these:</p>
+<ul>
+  <li>Type the next unused OR number in <strong>OR No.</strong> and click <strong>Check</strong> again.</li>
+  <li>Click <strong>Print OR</strong> if you only need another copy of the receipt that was already issued, see <a href="#s5-4">Section 5.4</a>.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-6-or-used.png" alt="The window O.R # already used."></div>
+<div class="caption">Figure 5.15. The window O.R # already used. The message and OK are boxed.</div>
+
+<h2 id="s5-6">5.6 Reports: Abstract of Collection</h2>
+<p>Click <strong>Reports</strong> in the sidebar to open its menu. It has <strong>Accountable Forms</strong> and <strong>Collection</strong>. Click <strong>Collection</strong> to show three reports: <strong>Abstract of Collection</strong>, <strong>Report of Collection and Deposit(RCD)</strong> and <strong>Report of Collection by Liquidating Officer(RCLO)</strong>. Click <strong>Abstract of Collection</strong>.</p>
+<p>The <strong>Abstract of Collection</strong> lists the official receipts that were issued in a period. The page is empty, with a <strong>Total</strong> of 0.00, until you choose what to display. At the top right are three buttons:</p>
+<ul>
+  <li><strong>Filter:</strong> chooses what to display.</li>
+  <li><strong>Print:</strong> prints the report.</li>
+  <li><strong>Export To Excel:</strong> saves the report as a spreadsheet.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-6-abstract-empty.png" alt="The Abstract of Collection before a filter. Filter is boxed."></div>
+<div class="caption">Figure 5.16. The Abstract of Collection before a filter. Filter is boxed.</div>
+
+<h3 id="s5-6-1">5.6.1 Choosing what to display</h3>
+<p>Click <strong>Filter</strong>. In the window <strong>Filter To Display</strong>, check the filters that you need and fill in their boxes:</p>
+<ul>
+  <li><strong>Filter By Date:</strong> it is checked at the start. Set <strong>Date &amp; Time From</strong> and <strong>Date &amp; Time To</strong>. Click the calendar icon of a box to open a calendar, click the day, then click <strong>OK</strong>. Click <strong>Cancel</strong> to close the calendar.</li>
+  <li><strong>Filter By Collector:</strong> choose a <strong>Collector</strong> from the list.</li>
+  <li><strong>Filter By Fund:</strong> choose a <strong>Fund</strong> from the list.</li>
+  <li><strong>Filter By OR Template:</strong> choose an <strong>OR Template</strong> from the list.</li>
+</ul>
+<p>Click <strong>Filter</strong> to show the report.</p>
+<div class="fig tall"><img src="images/fig-6-abstract-filter.png" alt="The window Filter To Display. Filter is boxed."></div>
+<div class="caption">Figure 5.17. The window Filter To Display. Filter is boxed.</div>
+<div class="fig small"><img src="images/fig-6-abstract-date.png" alt="The calendar of a date box."></div>
+<div class="caption">Figure 5.18. The calendar of a date box.</div>
+
+<h3 id="s5-6-2">5.6.2 Reading the report</h3>
+<p>The report has the heading <em>Republic of the Philippines, Municipal Government of Oas</em>, the title <strong>Abstract of Collection</strong> and the period, written <em>For the period of</em> the first date <em>to</em> the last date. The table has the columns <strong>OR Date</strong>, <strong>OR No.</strong>, <strong>Gender</strong>, <strong>Payee</strong>, <strong>Account Code</strong>, <strong>Particulars</strong> and <strong>Amount</strong>. Each receipt has one row for each fee that it collected, with the account code of the fee.</p>
+<p>The rows are grouped by the accountable form of the receipts, written <strong>FORM</strong>, for example <strong>AF#51</strong>. After each group, the report shows the <strong>Sub Total for the month</strong> and the <strong>Sub Total for the form</strong>, and at the end of the report, the <strong>Total</strong>. The building permit receipts of <a href="#s5-2">Section 5.2</a> are listed here under AF#51, with their fees: <em>Electrical Fees</em> and <em>Accessory Structure Fees</em>.</p>
+<div class="fig tall"><img src="images/fig-6-abstract-report.png" alt="The Abstract of Collection for a period. The payees are covered."></div>
+<div class="caption">Figure 5.19. The Abstract of Collection for a period. The payees are covered.</div>
+
+</body>
+</html>

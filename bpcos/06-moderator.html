@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BPCOS: Moderator</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 80mm; }</style>
+</head>
+<body>
+
+<div class="section-no">Section 6</div>
+<h1>The Moderator</h1>
+<p class="lead">The Moderator handles the permits that the Building Official approved. After the permit is approved and the fees are paid, the Moderator records the Fire Safety Evaluation Clearance (FSEC), uploads its certificate and prints the building permit.</p>
+<div class="note"><strong>Account.</strong> The role of the account is shown at the top left of every page, next to the logo. For this role it reads <strong>MODERATOR</strong>. In the sidebar, the menu is named <strong>Requirements Reviewer Submenu</strong>.</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s6-1">6.1 The Dashboard</a></li>
+  <li><a href="#s6-2">6.2 The sidebar</a></li>
+  <li><a href="#s6-3">6.3 Permits for printing</a></li>
+  <li class="sub"><a href="#s6-3-1">6.3.1 The action icons</a></li>
+  <li class="sub"><a href="#s6-3-2">6.3.2 Remarks</a></li>
+  <li class="sub"><a href="#s6-3-3">6.3.3 Rollback to OBO</a></li>
+  <li class="sub"><a href="#s6-3-4">6.3.4 Adding the FSEC</a></li>
+  <li class="sub"><a href="#s6-3-5">6.3.5 Uploading the FSEC certificate</a></li>
+  <li class="sub"><a href="#s6-3-6">6.3.6 Printing the permit</a></li>
+  <li class="sub2"><a href="#s6-3-6-1">6.3.6.1 What the printed permit shows</a></li>
+</ul>
+</div>
+
+<h2 id="s6-1">6.1 The Dashboard</h2>
+<p>The first page is the <strong>Moderators Dashboard</strong>, titled <strong>Building Permit</strong>. It has three cards. Each card has a switch, a search box and, for <strong>Permits For Printing</strong>, a number in a blue circle that counts the permits waiting. Click the switch of a card to show or hide its list. Click <strong>Scan QR</strong> at the top right to open a permit by scanning its QR code.</p>
+<ul>
+  <li><strong>Permits For Printing:</strong> the building permits that the Building Official approved. See <a href="#s6-3">Section 6.3</a>.</li>
+  <li><strong>Declined Permits:</strong> the permits that were declined. Its columns are <strong>Date</strong>, <strong>Owner</strong>, <strong>Project Title</strong>, <strong>Location</strong> and <strong>Actions</strong>.</li>
+  <li><strong>Permit For Occupancy:</strong> the occupancy permit requests. Its columns are <strong>Date</strong>, <strong>Application No.</strong>, <strong>Project Title</strong>, <strong>Completion Date</strong>, <strong>Status</strong>, <strong>Attachment</strong> and <strong>Action</strong>.</li>
+</ul>
+<p>A list that has nothing to show says <em>No record found.</em></p>
+<div class="fig tall"><img src="images/fig-7-dashboard.png" alt="The Moderators Dashboard"></div>
+<div class="caption">Figure 6.1. The Moderators Dashboard. The role is boxed in red.</div>
+<div class="fig tall"><img src="images/fig-7-dashboard-open.png" alt="Declined Permits and Permit For Occupancy open"></div>
+<div class="caption">Figure 6.2. Declined Permits and Permit For Occupancy open.</div>
+
+<h2 id="s6-2">6.2 The sidebar</h2>
+<p>Under <strong>Requirements Reviewer Submenu</strong>, the sidebar has two pages:</p>
+<ul>
+  <li><strong>Processed Permits:</strong> the page <strong>Processed Building Permit</strong>. It lists the building permits that you processed, with the <strong>Date</strong>, the <strong>Application No.</strong>, the <strong>Application Type</strong>, the <strong>Owner</strong> and the <strong>Action</strong>. Type a number or a name in the search box to find one.</li>
+  <li><strong>Processed Permits For Occupancy:</strong> the page <strong>Processed Permit For Occupancy</strong>. It lists the occupancy permits that you processed, with the <strong>Date</strong>, the <strong>Application No.</strong>, the <strong>Permit Status</strong>, the <strong>Owner</strong> and the <strong>Action</strong>.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-7-processed.png" alt="Processed Building Permit"></div>
+<div class="caption">Figure 6.3. The page Processed Permits.</div>
+<div class="fig tall"><img src="images/fig-7-processed-occ.png" alt="Processed Permit For Occupancy"></div>
+<div class="caption">Figure 6.4. The page Processed Permits For Occupancy.</div>
+
+<h2 id="s6-3">6.3 Permits for printing</h2>
+<p>Click the switch of <strong>Permits For Printing</strong> to show the approved permits. Type a number, a type or a name in the search box to find one. Click the arrows beside <strong>Date</strong>, <strong>Owner</strong> and <strong>Location</strong> to sort the list. The columns are <strong>Date</strong>, <strong>Owner</strong>, <strong>Project Title</strong>, <strong>TIS OR</strong>, <strong>TIS OR Date</strong>, <strong>Location</strong> and <strong>Actions</strong>. <strong>TIS OR</strong> and <strong>TIS OR Date</strong> show the number and the date of the official receipt of the payment. They stay empty until the payment is recorded in BPCOS.</p>
+<div class="fig tall"><img src="images/fig-7-printing.png" alt="Permits For Printing"></div>
+<div class="caption">Figure 6.5. The list Permits For Printing. The tooltip of an icon appears when you point to it.</div>
+
+<h3 id="s6-3-1">6.3.1 The action icons</h3>
+<p>Each permit has six actions. They are labeled in the figure and explained below. An action that is not available is dimmed.</p>
+<div class="fig"><img src="images/fig-7-icons-labeled.png" alt="The action icons, labeled"></div>
+<div class="caption">Figure 6.6. The actions of a permit, from left to right.</div>
+<ol>
+  <li><strong>Remarks</strong> (the arrow icon): opens the window <strong>Permit Remarks</strong>. See <a href="#s6-3-2">Section 6.3.2</a>.</li>
+  <li><strong>Rollback to OBO</strong> (the circular arrows): sends the permit back to the Office of the Building Official. See <a href="#s6-3-3">Section 6.3.3</a>.</li>
+  <li><strong>Attachment</strong> (the paperclip): opens the requirements that the applicant uploaded.</li>
+  <li><strong>FSEC</strong> (the button): records the Fire Safety Evaluation Clearance. See <a href="#s6-3-4">Section 6.3.4</a>. It is enabled only when the Building Official approved the permit and no FSEC is recorded yet.</li>
+  <li><strong>Upload FSEC Certificate</strong> (the cloud icon): uploads the certificate of the FSEC. It is dimmed until an FSEC is added. Its tooltip then reads <em>Add FSEC first.</em> See <a href="#s6-3-5">Section 6.3.5</a>.</li>
+  <li><strong>Print</strong> (the button): prints the building permit. It is dimmed until the certificate is uploaded. Its tooltip then reads <em>Upload FSEC certificate to print this permit.</em> See <a href="#s6-3-6">Section 6.3.6</a>.</li>
+</ol>
+
+<h3 id="s6-3-2">6.3.2 Remarks</h3>
+<p>Click the arrow icon to read the remarks of the permit. Each remark has its <strong>Date</strong>, the office in <strong>Process From</strong>, the <strong>Remarks</strong> and the <strong>Status</strong>. For an approved permit, the Building Official wrote <em>Approved For Printing</em>. Click the X to close the window.</p>
+<div class="fig tall"><img src="images/fig-7-remarks.png" alt="Building Permit Remarks"></div>
+<div class="caption">Figure 6.7. The remarks of a permit for printing.</div>
+
+<h3 id="s6-3-3">6.3.3 Rollback to OBO</h3>
+<p>Click the circular arrows to send the permit back to the Building Official, for example when it must be corrected. Pointing to the icon shows the tooltip <em>Rollback to OBO</em>.</p>
+<div class="fig small"><img src="images/fig-7-rollback-icon.png" alt="Rollback to OBO icon"></div>
+<div class="caption">Figure 6.8. The icon Rollback to OBO and its tooltip.</div>
+<p>The window asks <em>Are you sure to rollback this to OBO?</em> Click <strong>Yes, Continue</strong> to send the permit back, or <strong>Cancel</strong> to keep it.</p>
+<div class="fig small"><img src="images/fig-7-rollback-confirm.png" alt="Rollback confirmation"></div>
+<div class="caption">Figure 6.9. The confirmation window.</div>
+<p>The green message <em>Building permit successfully rollback to OBO.</em> appears at the bottom left, and the permit leaves the list of Permits For Printing. The approval of the Building Official and the approval of the requirements are cleared, so the permit is no longer approved. It then appears again for the Building Official in the list of the Building Official (see Section 4.5, Approving or declining the permit), where it must be reviewed and approved again before it returns to the Moderator.</p>
+<div class="fig tall"><img src="images/fig-7-rollback-done.png" alt="After the rollback"></div>
+<div class="caption">Figure 6.10. After the rollback. The message is boxed.</div>
+
+<h3 id="s6-3-4">6.3.4 Adding the FSEC</h3>
+<p>Click <strong>FSEC</strong>. The window <strong>New FSEC</strong> opens with the project title and the selected occupancy of the permit, which come from the application. Fill in the other boxes. All of them are required:</p>
+<ul>
+  <li><strong>FSEC No.:</strong> the number of the Fire Safety Evaluation Clearance.</li>
+  <li><strong>OR Number:</strong> the number of the official receipt.</li>
+  <li><strong>Date Issued:</strong> the date of issue, which starts with the date of today.</li>
+</ul>
+<p>Click <strong>Save</strong>. The message <em>FSEC successfully added.</em> appears. Click <strong>No</strong> to leave without saving.</p>
+<div class="fig tall"><img src="images/fig-7-fsec.png" alt="New FSEC"></div>
+<div class="caption">Figure 6.11. The window New FSEC. FSEC No., OR Number and Save are boxed.</div>
+<p>After the save, the window closes and the green message <em>FSEC successfully added.</em> appears at the bottom left. In the row of that permit, the <strong>FSEC</strong> button is dimmed, because the FSEC is already recorded, and the cloud icon turns blue, so the certificate can now be uploaded.</p>
+<div class="fig tall"><img src="images/fig-7-fsec-added.png" alt="After the FSEC is added"></div>
+<div class="caption">Figure 6.12. After the FSEC is added. The message is boxed.</div>
+
+<h3 id="s6-3-5">6.3.5 Uploading the FSEC certificate</h3>
+<p>The cloud icon is dimmed until an FSEC is added to the permit. Pointing to it then shows <em>Add FSEC first.</em> The system treats a permit as having an FSEC when its FSEC number is filled in. After you save the FSEC in <a href="#s6-3-4">Section 6.3.4</a>, the cloud icon turns blue and its tooltip reads <em>Upload FSEC CERTIFICATE</em>.</p>
+<p>Click the cloud icon. The window <strong>Upload FSEC Certificate</strong> opens with the note <em>Upload the FSEC certificate file(s) for this permit.</em> Drop the file into the dotted box, or click <strong>browse</strong> to choose it from your computer. The file can be an image, a PDF or a Word document, and you can add more than one. The chosen files are listed in the window. Click <strong>Remove</strong> beside a file to take it out before the upload. Click <strong>Upload</strong> to send the files, or <strong>Cancel</strong> to close the window without sending.</p>
+<ul>
+  <li>If you click <strong>Upload</strong> with no file, the message <em>Please select at least one certificate file.</em> appears and nothing is sent.</li>
+  <li>After a successful upload, a green message at the bottom left reads <em>FSEC certificate uploaded successfully.</em> The list refreshes.</li>
+  <li>The certificate is saved with the FSEC record of the permit. The permit counts as having a certificate once at least one file is saved.</li>
+</ul>
+<div class="fig tall"><img src="images/fig-7-upload-cert.png" alt="Upload FSEC Certificate"></div>
+<div class="caption">Figure 6.13. The window Upload FSEC Certificate. browse and Upload are boxed.</div>
+<div class="fig tall"><img src="images/fig-7-uploaded.png" alt="After the upload"></div>
+<div class="caption">Figure 6.14. After the upload. The message is boxed, and the Print button of that permit is now enabled.</div>
+
+<h3 id="s6-3-6">6.3.6 Printing the permit</h3>
+<p>The <strong>Print</strong> button is dimmed until the FSEC certificate is uploaded. Pointing to it then shows <em>Upload FSEC certificate to print this permit.</em> This means the Moderator cannot print a permit before the FSEC is added and its certificate is uploaded. Once the certificate is uploaded, the tooltip reads <em>Print Permit</em> and the button turns blue.</p>
+<ol>
+  <li>Click <strong>Print</strong> on the row of the permit. The building permit opens below that row.</li>
+  <li>Check the details of the permit. See the list below.</li>
+  <li>Click <strong>Print Permit</strong> at the bottom of the permit. Click <strong>Cancel</strong> instead to close the permit without printing.</li>
+  <li>The print window of your browser opens. Choose your printer, or choose <strong>PDF</strong> at the bottom to save the permit as a file. Leave <strong>Print backgrounds</strong> ticked so the logos and the signature are printed. Click <strong>Print</strong>.</li>
+</ol>
+<p>The preview may show two pages, where the second is almost empty. To print only the permit, choose <strong>Range from 1 to 1</strong>.</p>
+<div class="fig tall"><img src="images/fig-7-permit-open.png" alt="The permit opened below its row"></div>
+<div class="caption">Figure 6.15. The permit opened below its row.</div>
+<div class="fig small"><img src="images/fig-7-print-button.png" alt="Print Permit and Cancel"></div>
+<div class="caption">Figure 6.16. The buttons Print Permit and Cancel at the bottom of the permit.</div>
+<div class="fig tall"><img src="images/fig-7-print-dialog.png" alt="The print window"></div>
+<div class="caption">Figure 6.17. The print window of the browser.</div>
+
+<h4 id="s6-3-6-1">6.3.6.1 What the printed permit shows</h4>
+<p>The permit comes from the Office of the Building Official. The system fills it in from the application and the records of the permit:</p>
+<ul>
+  <li><strong>Application Type</strong> and the ticked box above it, such as <strong>New</strong>.</li>
+  <li><strong>Building Permit No.</strong> and <strong>Date Issued</strong>.</li>
+  <li><strong>FSEC No.</strong> and its <strong>Date Issued</strong>, from the FSEC you added. They read <em>None</em> if no FSEC is recorded.</li>
+  <li><strong>Official Receipt No.</strong> and <strong>Date Paid</strong>, from the payment record. They read <em>N/A</em> if no payment is recorded.</li>
+  <li>The owner, the project title, the location, the use and class of occupancy, the scope of work, the total project cost and the professional in charge of the construction.</li>
+  <li>A QR code at the top right, and the signature of the Building Official under <strong>Permit Issued By</strong>.</li>
+</ul>
+<div class="note"><strong>End of the workflow.</strong> After the Moderator prints the building permit, the building permit is completely processed. This ends the building permit workflow.</div>
+<div class="fig tall"><img src="images/fig-7-printed.png" alt="The printed building permit"></div>
+<div class="caption">Figure 6.18. The printed building permit. The names are hidden.</div>
+
+</body>
+</html>

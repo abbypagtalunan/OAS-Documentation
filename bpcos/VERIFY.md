@@ -60,3 +60,40 @@
 - A shared API (api.bpcos.oas.lguapp.com/api/shared/building-permit/assessments and set-assessments-as-paid, headers x-ebpls-apicode / x-ebpls-apisecret) lets another system read unpaid assessments and mark them paid, with the same effect as Treasury. Which system calls it (eBPLS Municipal Treasurer's Office?) is not in the repos I have.
 - LGU OAS (api.oas.lguapp.com) receives transaction logs and supplies the applicant's registered email.
 - SECURITY: api/app/config/auth.config.js in the repo holds credentials in plain text (JWT secret, LGU OAS API secret, AWS keys, SMTP login, OpenAI key). They should be moved to environment variables and rotated. Do not copy them into the manual.
+
+## Treasury / Cashier (OTIS), Section 6
+- OTIS is a separate system (tab title "OTIS", page "Cashier", account "Oas Cashier Window 1"). Confirm its full name and that the cashier signs in with a Treasury account of OTIS, not BPCOS.
+- What does the small box beside CHECK show? What does CHECK verify (the OR number is free and belongs to the accountable form)?
+- What the Liq Officer, Collector, Form Type (Accountable Form # 51), RCD No. and RCLO No. mean, and who sets them.
+- Particulars read "FOR BUILDING / STRUCTURE (OBO)" before saving and the fee names after saving. Confirm.
+- Next OR? Yes/No after Save. SELECT OR TO PRINT: what it opens (reprint a saved OR?). ADD CHECK flow, and the menus Process and Reports.
+- Applicant page: Online Payment button is shown, but the code has its click action commented out. The manual says it is not available. Confirm.
+- Confirmed by the user: saving the OR in OTIS does NOT update the status in BPCOS. But the Building Official's For Print page shows OR number/date, and the shared API would set status 9 and the OR: who sends that to BPCOS, and how does the permit then show as paid?
+- Add Check: meaning of Bank Code not known yet (user will confirm).
+
+## Section 7: Moderator
+- The Moderator is the code's `requirements-reviewer` role (sidebar "Requirements Reviewer Submenu"). Confirm the official name of the role.
+- TIS OR and TIS OR Date are blank for permits already paid at the Treasury (OTIS). Confirm how and when the receipt reaches BPCOS.
+- Who sets the remark "Approved For Printing" (shown as Process From: Approver), and does it come from the Building Official approval?
+- Rollback to OBO clears the approvals of the Building Official and of the requirements (per code). Confirm the applicant sees the status change.
+- Screenshots still needed: the Attachment page and the Declined Permits list with records.
+- Printed permit: the building permit number differs from other screens (see the earlier view-permit note). The preview shows a second nearly empty page; confirm if this is expected.
+
+## Applicant: Application Paid
+- The status APPLICATION PAID appears in the applicant's list (Date Approved stays blank). Confirm what sets it (OTIS saving the OR, or another step) and when, because saving the OR in OTIS did not change the status at first.
+
+## Treasury: messages
+- "No record found": confirm the causes. The text says it can mean a wrong name or number, or that the application is not yet assessed and approved. Confirm which applications the cashier search returns.
+- "O.R # ALREADY USED!": confirm what Mark As Cancelled does (not described in the manual yet) and whether a cancelled OR number can be reused.
+- The note in Section 6 says saving the receipt does not change the status in BPCOS, but the applicant section now shows the status APPLICATION PAID after payment. Confirm and make both sections agree.
+
+## Section 2 (copied from the eBPLS manual, then checked against the BPCOS code)
+- The text follows the BPCOS code: Sign up has First Name, Last Name, Email Address, Password (at least 7 characters), Confirm Password (labelled "Confim Password") and the Terms box, with the button "Create account". There is no Gender field. 
+- Figures replaced with BPCOS screenshots: the Sign in page, the verification screen, the verification email, Registration completed, the Recovery page, the recovery link message and the password reset email.
+- Still eBPLS screenshots (images/ebpls-fig-2-*.png, with the BPCOS photo added): the sign in error messages, the email already in use message, the wrong code message, the code entered, the Reset Password page and the sign in page after the reset. Replace them with BPCOS screenshots.
+- Missing: a screenshot of the BPCOS Sign up form.
+- The two email screenshots and the text of Section 2 were edited to say BPCOS ("BPCOS OAS Verification Code", "BPCOS Password Reset"). The code of the system still sends "eBPLS OAS Verification Code" and "EBPLs Password Reset" (api/app/controllers/auth.controller.js and account.controller.js), so the emails will not match the manual until the subjects and the wording of the emails are changed in the system.
+
+## Section 1 (merged)
+- The Introduction was merged into Getting Started. The sections were renumbered: 1 Getting Started, 2 Applicant, 3 Reviewer, 4 Building Official, 5 Treasury, 6 Moderator. The files were renamed to match.
+- 1.3 Opening BPCOS: confirm that the link "Dashboard" at the top right of the landing page leads to the sign in page, and what the button "Paano Kumuha ng Building Permit" opens.
