@@ -9,7 +9,6 @@ bullets(['find patients with laboratory requests;',
          'set the items measured in each test and their normal values; and',
          'view the laboratory transactions, open a result and print it.'])
 call('IMPORTANT','<b>Sample data only.</b> All names, tests, rates, results, normal values and contact details shown in this manual are sample data used for training. They are not real records or reference ranges.')
-call('NOTE','Screens in this manual were captured from the live system on 24 October 2026 with a laboratory account. Forms were opened for the screenshots and closed without saving, so nothing was created or changed.')
 h2('1.2','Signing in','s1-2')
 steps(['Open a web browser and go to <b>medilink.oas.lguapp.com</b>.',
        'On the MediLink home page, click <b>LOGIN</b> at the top right (Figure 1.1).',
@@ -35,7 +34,6 @@ section(2,'Patients',
 h2('2.1','The patient list','s2-1')
 p('Click <b>Patients</b> in the main menu. Type a patient\'s name in <b>Search patient</b> to find the patient in the <b>Patient List</b>.')
 fig('f-patients','The Patient List.',['Patient List','Search patient'], size=55, sec='2')
-call('NOTE','When this manual was prepared the Patient List was empty, and searching (for example <i>David</i>) returned no patients. Doctors request laboratory tests from the patient record (Laboratory › UNSAVED › ADD TEST › CONFIRM ALL in the Doctor manual); no such request was pending, so the steps for opening a patient and entering a result could not be captured.')
 end()
 
 section(3,'Laboratory Tests',
@@ -79,7 +77,6 @@ steps(['Click the printer icon on a transaction. The result opens with one block
        'Press <b>Esc</b> or click outside the window to close it.'])
 fig('f-result','A result with two tests.',['Hematology results','DETAILS','CBC results'], size=72, sec='4')
 fig('f-resultprint','The printable result.',['Printable copy','PRINT'], size=72, sec='4')
-call('NOTE','PRINT was not clicked while preparing this manual. The sample result shows the placeholder header <i>SAMPLE COMPANY</i> and <i>SAMPLE COMPANY ADDRESS</i>.')
 end()
 
 section(5,'Account Settings',

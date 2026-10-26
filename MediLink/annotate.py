@@ -139,3 +139,36 @@ fig('71-account', '71-account', 'f-account', [(1, 276, 160, 488, 56), (2, 276, 2
 fig('72b-account-email', '72-account-email', 'f-email', [(1, 292, 303, 548, 64), (2, 856, 303, 548, 64), (3, 1259, 392, 145, 45)], crop=(256, 140, 1184, 330))
 fig('73b-account-security', '73-account-security', 'f-security', [(1, 292, 303, 548, 64), (2, 856, 303, 548, 64), (3, 1225, 392, 179, 45)], crop=(256, 140, 1184, 330))
 print(len(os.listdir(O)))
+
+
+# ---------------- User-supplied screenshots (coords in display px; k = actual/display) ----------------
+def boxes2(img, items, lw=9, r=40, minx=0, miny=0):
+    d = ImageDraw.Draw(img); f = ImageFont.truetype(FB, int(r * 1.15))
+    for n, X, Y, W, H in items:
+        d.rounded_rectangle([X, Y, X + W, Y + H], radius=8, outline=RED, width=lw)
+        if W < 70 and Y - 2 * r - 6 >= miny: cx = X + W / 2; cy = Y - r - 4
+        elif W < 120: cx = X + W; cy = max(miny + r + 2, Y)
+        elif X - 2 * r - 8 >= minx: cx = X - r - 6; cy = Y + r
+        else: cx = max(minx + r + 2, X); cy = max(miny + r + 2, Y)
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=RED, outline='white', width=3)
+        t = str(n); bb = d.textbbox((0, 0), t, font=f)
+        d.text((cx - (bb[2] - bb[0]) / 2 - bb[0], cy - (bb[3] - bb[1]) / 2 - bb[1]), t, fill='white', font=f)
+
+def ufig(src, name, bx, crop, k=1.47, r=40, lw=9, hide=()):
+    im = Image.open(f'raw/user/{src}').convert('RGB')
+    for x, y, w, h in hide:
+        b = (int(x * k), int(y * k), int((x + w) * k), int((y + h) * k))
+        im.paste(im.crop(b).filter(ImageFilter.GaussianBlur(14 * k)), b)
+    boxes2(im, [(n, x * k, y * k, w * k, h * k) for n, x, y, w, h in bx], lw=lw, r=r, minx=crop[0] * k, miny=crop[1] * k)
+    x, y, w, h = crop
+    im = im.crop((int(x * k), int(y * k), int((x + w) * k), int((y + h) * k)))
+    if im.width > 2000: im = im.resize((2000, round(im.height * 2000 / im.width)), Image.LANCZOS)
+    im.save(f'{O}/{name}.jpg', quality=88)
+
+ufig('d4-options.png', 'f-sc-options', [(1, 132, 150, 640, 160)], (60, 60, 820, 400), k=1, r=26, lw=6)
+ufig('d3-nofollowup.png', 'f-sc-none', [(1, 145, 178, 655, 136), (2, 143, 340, 659, 78)], (60, 60, 820, 420), k=1, r=26, lw=6)
+ufig('d2-setfollowup.png', 'f-sc-follow', [(1, 155, 176, 655, 138), (2, 155, 322, 655, 138), (3, 155, 488, 655, 614), (4, 153, 1131, 659, 78)], (75, 70, 800, 1190), k=1, r=28, lw=6)
+ufig('d1-completed.png', 'f-sc-done', [(1, 1295, 722, 145, 150), (2, 1642, 715, 64, 168)], (420, 150, 1510, 775), hide=[(625, 412, 150, 34)])
+ufig('d7-service-details.png', 'f-svc-details', [(1, 1334, 160, 646, 172), (2, 1915, 80, 52, 52)], (1260, 60, 740, 300))
+ufig('d6-service-edit.png', 'f-svc-edit', [(1, 1338, 152, 644, 114), (2, 1338, 277, 644, 114), (3, 1340, 409, 322, 61)], (1260, 60, 740, 440))
+ufig('d5-service-removed.png', 'f-svc-removed', [(1, 436, 256, 1477, 190), (2, 1700, 365, 180, 50)], (380, 150, 1560, 320))

@@ -72,7 +72,6 @@ bullets(['see your appointments in a calendar (month, week, day or agenda list);
          'manage the list of services you offer and their fees; and',
          'view a report of your consultations.'])
 call('IMPORTANT','<b>Sample data only.</b> All patients, doctors, appointments, results, prices and pharmacies shown in this manual are sample data used for training. They are not real records.')
-call('NOTE','Screens in this manual were captured from the live system on 24 October 2026 with a doctor account.')
 h2('1.2','Signing in','s1-2')
 steps(['Open a web browser and go to <b>medilink.oas.lguapp.com</b>.',
        'The MediLink home page opens. Click <b>LOGIN</b> at the top right (Figure 1.1).',
@@ -155,8 +154,21 @@ p('The <b>Appointments</b> tab lists the patient\'s appointments with the date a
 steps(['On the appointment row, click the arrow under <b>Next Action</b>.',
        'A <b>Details</b> panel shows the service, its amount (fee) and the reason for the visit.',
        'Click <b>SET COMPLETE</b> to mark the consultation as done.'])
-fig('f-nextaction','Completing an appointment.',['Service, amount and reason','SET COMPLETE button'], sec='4')
-call('WARNING','Click <b>SET COMPLETE</b> only after the consultation is finished. This manual did not test what happens after the click, so check with the administrator whether a completed appointment can be reopened.')
+fig('f-nextaction','Completing an appointment.',['Service, amount and reason','SET COMPLETE button'], size=82, sec='4')
+p('Clicking <b>SET COMPLETE</b> opens the <b>Set Complete</b> window. Choose whether the patient needs a follow-up in <b>Select Option</b> (required).')
+fig('f-sc-options','The Select Option list.',['NO FOLLOW-UP or SET FOLLOW-UP'], size=50, sec='4')
+p('<b>No follow-up needed:</b>')
+steps(['Choose <b>NO FOLLOW-UP</b>.','Click <b>SET COMPLETE</b>.'])
+fig('f-sc-none','Completing without a follow-up.',['Select Option: NO FOLLOW-UP','SET COMPLETE'], size=50, sec='4')
+p('<b>Patient should come back:</b>')
+steps(['Choose <b>SET FOLLOW-UP</b>. A <b>Description</b> box and a calendar appear.',
+       'Type the reason in <b>Description</b> (required), for example <i>New Prescription</i>.',
+       'Pick the follow-up date on the calendar. Use the arrows to change the month.',
+       'Click <b>SET COMPLETE</b>.'])
+fig('f-sc-follow','Completing with a follow-up.',['Select Option: SET FOLLOW-UP','Description','Follow-up date','SET COMPLETE'], size=48, sec='4')
+p('A green message <i>Appointment successfully updated.</i> confirms it, and the appointment\'s status changes to <b>COMPLETED</b> on the Appointments tab.')
+fig('f-sc-done','The completed appointments.',['Status: COMPLETED','Next Action'], sec='4')
+call('WARNING','Click <b>SET COMPLETE</b> only after the consultation is finished.')
 h2('4.2','Information tab','s4-2')
 p('The <b>Information</b> tab shows the patient\'s personal details: first name, last name, middle name, civil status, street, barangay, city, contact number and religion. You can view these details but not change them here.')
 fig('f-info','The Information tab.',['Patient details'], sec='4')
@@ -267,18 +279,24 @@ end()
 
 section(7,'Services',
  'The Services page lists the services you offer to patients and their fees.',
- [('7.1','Viewing and searching services','s7-1'),('7.2','Adding or changing a service','s7-2')])
+ [('7.1','Viewing and searching services','s7-1'),('7.2','Adding or changing a service','s7-2'),('7.3','Removing a service','s7-3')])
 h2('7.1','Viewing and searching services','s7-1')
 p('Click <b>Services</b> in the main menu.')
 fig('f-services','The Services page.',['Search service','NEW SERVICE','View','Edit','Delete'], size=88, sec='7')
 bullets(['Type in <b>Search service</b> to find a service by name.',
-         'Click the view icon (3) to see a service\'s name and amount.'])
+         'Click the view icon (3) to see a service\'s name and amount. A <b>Details</b> panel opens on the right; click <b>X</b> to close it.'])
+fig('f-svc-details','The service Details panel.',['Service and Amount','Close (X)'], size=55, sec='7')
 h2('7.2','Adding or changing a service','s7-2')
 steps(['Click <b>NEW SERVICE</b>, or the edit icon (4) on a service.',
        'Type the <b>Service</b> name and the <b>Amount</b> (fee).',
        'Click <b>SAVE</b> (or <b>UPDATE SERVICE</b> when editing). Click <b>CLOSE</b> to cancel.'])
 fig('f-servicenew','The New service panel.',['Service','Amount','SAVE button'], size=48, sec='7')
-call('WARNING','The bin icon (5) deletes the service. Delete only a service you no longer offer.')
+p('<b>To change a service:</b> click the edit icon (4). The <b>Edit</b> panel opens with the current name and amount. Change them and click <b>UPDATE SERVICE</b>, or <b>CLOSE</b> to cancel.')
+fig('f-svc-edit','The Edit panel.',['SERVICE','AMOUNT','CLOSE and UPDATE SERVICE'], size=55, sec='7')
+h2('7.3','Removing a service','s7-3')
+p('Click the bin icon (5) on the service. A green message <i>Service successfully removed.</i> confirms it, and the service is no longer listed. In the example below, <i>check-up</i> was removed and only <i>physical examination</i> is left.')
+fig('f-svc-removed','The Services list after removing a service.',['Remaining services','View, Edit and Delete icons'], sec='7')
+call('WARNING','Delete only a service you no longer offer.')
 end()
 
 section(8,'Reports',
@@ -337,8 +355,8 @@ html = f'''<!doctype html><html><head><meta charset="utf-8"><title>MediLink: Doc
  <div class="ct">MediLink<br>Integrated Healthcare System</div>
  <div class="cs">User Manual for Doctors</div>
  <div class="cu">medilink.oas.lguapp.com · Municipality of Oas, Albay</div>
- <img class="hero" src="fig/f-home.jpg">
- <div class="cm">Prepared by iConcept IT Solutions<br>Draft, 24 October 2026<br>All data shown is sample data only</div>
+ <img class="hero" src="fig/cover.jpg">
+ <div class="cm">Prepared by iConcept IT Solutions</div>
 </section>
 <section class="toc" id="toc"><div class="kick">CONTENTS</div><h1>Table of Contents</h1><div class="rule"></div>{''.join(toc)}</section>
 {''.join(body)}

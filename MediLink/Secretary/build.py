@@ -70,7 +70,6 @@ bullets(['view upcoming appointments, and reschedule or cancel them;',
          'view, filter and print receipts; and',
          'keep track of patients who need a follow-up visit.'])
 call('IMPORTANT','<b>Sample data only.</b> All patients, doctors, appointments, bills, receipts and contact details shown in this manual are sample data used for training. They are not real records.')
-call('NOTE','Screens in this manual were captured from the live system on 24 October 2026 with a secretary account.')
 h2('1.2','Signing in','s1-2')
 steps(['Open a web browser and go to <b>medilink.oas.lguapp.com</b>.',
        'On the MediLink home page, click <b>LOGIN</b> at the top right (Figure 1.1).',
@@ -112,8 +111,12 @@ steps(['Open the appointment (2.2) and click <b>RESCHEDULE APPOINMENT</b>.',
 fig('f-reschedule','The Reschedule Appointment window.',['Date Picker','Time Picker','SAVE'], size=60, sec='2')
 call('NOTE','The message <i>Date should not be before minimal date</i> means the date shown is already past. Choose today or a later date.')
 h2('2.4','Cancelling an appointment','s2-4')
-p('To cancel, open the appointment (2.2) and click <b>CANCEL APPOINTMENT</b>.')
-call('WARNING','Cancel only when the patient asks to cancel. This button was not clicked while preparing this manual, so check with the administrator whether MediLink asks you to confirm and whether a cancelled appointment can be restored.')
+steps(['Open the appointment (2.2) and click <b>CANCEL APPOINTMENT</b>.',
+       'MediLink asks <i>Are you to remove this appointment?</i> Click <b>YES</b> to cancel the appointment, or <b>NO</b> to keep it.',
+       'After <b>YES</b>, a green message confirms the change and the appointment disappears from the list.'])
+fig('f-cancelconfirm','Confirming the cancellation.',['CANCEL APPOINTMENT','YES (cancel the appointment)','NO (keep it)'], size=85, sec='2')
+fig('f-canceldone','After cancelling: the appointment is no longer listed.',['Appointment list without the cancelled appointment','Confirmation message'], size=46, sec='2')
+call('WARNING','Cancel only when the patient asks to cancel. The appointment is removed from the Appointment list right away.')
 end()
 
 section(3,'Patient List',
@@ -124,6 +127,7 @@ p('Click <b>Patient List</b> in the main menu. All patients are listed on the le
 fig('f-patients','The Patient List page with the Add Patient form.',['Search patient','Patients','Add Patient form','SAVE'], sec='3')
 h2('3.2','Adding a new patient','s3-2')
 p('When no patient is selected, the <b>Add Patient</b> form is shown on the right (Figure 3.1, box 3).')
+fig('f-addpatient','A completed Add Patient form.',['Name','Gender, Birth Date and Birth Place','Address','Occupation, Civil Status and Religion','Mobile and Telephone','Email and the account message','Others (health measurements)','SAVE'], size=82, sec='3')
 steps(['Type the patient\'s <b>First Name</b>, <b>Last Name</b> and <b>Middle Name</b>.',
        'Choose the <b>Gender</b>, then enter the <b>Birth Date</b> and <b>Birth Place</b>.',
        'Type the address: <b>Street</b>, <b>Barangay</b> and <b>City</b>.',
@@ -131,7 +135,13 @@ steps(['Type the patient\'s <b>First Name</b>, <b>Last Name</b> and <b>Middle Na
        'Type the <b>Mobile</b> number, and the <b>Telephone</b> and <b>Email</b> if the patient has them.',
        'Under <b>Others</b>, enter the patient\'s height (cm), weight (kg), pulse, temperature, blood pressure (systolic and diastolic) and choose the <b>Blood Type</b>.',
        'Click <b>SAVE</b>, or <b>CLOSE</b> to clear the form.'])
-call('IMPORTANT','Entering an <b>Email</b> creates a MediLink account for the patient with a default password (shown under the Email field). Ask the patient to sign in and change the password right away. The email becomes the patient\'s username and cannot be changed later.')
+p('<b>Email and the patient\'s account.</b> The <b>Email</b> field is optional, but filling it in does more than record an address. MediLink shows the message <i>Setting email will create account and the default password will be "hello123"</i> under the field (Figure 3.3).')
+fig('f-emailnote','The Email field and its account message.',['Email (becomes the patient\'s username)','Account message with the default password'], size=60, sec='3')
+bullets(['When you click <b>SAVE</b> with an email entered, MediLink creates a patient account. The email is the <b>username</b> and the password is the default <b>hello123</b>.',
+         'Tell the patient their username and default password, and ask them to sign in and change the password right away (Patient manual, Account Settings).',
+         'Check the email carefully before saving. It cannot be changed later, because it is the patient\'s username.',
+         'Leave <b>Email</b> blank if the patient does not need to sign in to MediLink.'])
+call('IMPORTANT','Every patient account created this way starts with the same password, <b>hello123</b>. Until the patient changes it, anyone who knows the patient\'s email can sign in as that patient.')
 h2('3.3','Patient details','s3-3')
 p('Click a patient\'s name. The <b>Patient Details</b> panel shows the patient\'s address, contact number, gender, birth date, birth place, religion and civil status. Below it are four tabs.')
 fig('f-patientdetails','Patient details.',['Patient information','Tabs: Appointment, Profiles, Laboratory, Imaging','The patient\'s appointments','APPOINTMENT button (book a new appointment)','CLOSE'], sec='3')
@@ -141,11 +151,14 @@ steps(['Open the patient (3.3). On the <b>Appointment</b> tab, click <b>APPOINTM
        'In <b>Add Appointment</b>, pick the date (<b>Date Picker</b>) and time (<b>Time Picker</b>).',
        'Type the <b>Reason of Appointment</b>.',
        'Choose the <b>Doctor</b>. Each doctor is listed with his or her specialty.',
-       'Choose the <b>Service</b>. The services of the chosen doctor appear with their fees, for example <i>check-up - ₱300</i> (Figure 3.4).',
+       'Choose the <b>Service</b>. The services of the chosen doctor appear with their fees, for example <i>check-up - ₱300</i> (Figure 3.6).',
        'Click <b>SAVE</b>, or <b>CLOSE</b> to cancel.'])
 fig('f-newappt','The Add Appointment window.',['Date Picker','Time Picker','Reason of Appointment','Doctor','Service','SAVE'], size=58, sec='3')
 fig('f-newappt2','After choosing a doctor, the doctor\'s services can be chosen.',['Doctor','Service'], size=58, sec='3')
-call('NOTE','The <b>Service</b> list says <i>No service added</i> until you choose a doctor.')
+p('<b>Required fields.</b> <b>Doctor</b> and <b>Service</b> must be chosen before the appointment can be saved. If you click <b>SAVE</b> while either still shows <b>-</b>, the field turns red and <b>Required</b> appears under it, and the appointment is not saved (Figure 3.7). Choose a doctor and a service, then click <b>SAVE</b> again.')
+fig('f-apptrequired','Saving without a doctor or service.',['Doctor: Required','Service: Required','SAVE'], size=58, sec='3')
+p('The <b>Service</b> list depends on the doctor. Until a doctor is chosen it offers only <i>No service added</i> (Figure 3.8), so choose the <b>Doctor</b> first and then open <b>Service</b> again.')
+fig('f-servicenone','The Service list before a doctor is chosen.',['No service added'], size=58, sec='3')
 h2('3.5','Viewing and editing a profile','s3-5')
 p('The <b>Profiles</b> tab shows the patient\'s personal details and <b>Health Records</b> (height, weight, pulse, temperature, blood pressure and blood type). Fields marked * are required.')
 fig('f-profiles','The Profiles tab.',['EDIT','Personal details','Health Records'], size=72, sec='3')
@@ -153,15 +166,18 @@ steps(['Click <b>EDIT</b>.','Change the details that need updating.','Click <b>S
 fig('f-profilesedit','Editing a profile.',['CANCEL and SAVE'], size=72, sec='3')
 call('NOTE','If the patient has an email, it serves as the patient\'s username and cannot be edited.')
 h2('3.6','Laboratory and imaging attachments','s3-6')
-p('The <b>Laboratory</b> and <b>Imaging</b> tabs list files attached to the patient\'s record, with the date and who added them (for example <i>patient</i>, <i>secretary</i> or <i>imaging</i>). Click the arrow (›) on a row to show the attached images.')
-fig('f-lab','The Laboratory tab.',['ADD','Attachments','Show or hide the images'], sec='3')
-p('<b>To attach a file:</b>')
-steps(['On the Laboratory or Imaging tab, click <b>ADD</b>. The <b>Upload images</b> panel opens.',
-       'Type a <b>Description</b> of the file.',
-       'Drag the file onto the box, or click <b>browse</b> and choose it from your computer.',
+p('The <b>Laboratory</b> and <b>Imaging</b> tabs hold result files attached to the patient\'s record, such as scanned laboratory results or X-ray images. Each attachment shows its description, the date and time it was added, and who added it (for example <i>secretary</i>). Click the arrow (›) on a row to show the attached images.')
+p('<b>To attach a laboratory result:</b>')
+steps(['Open the patient (3.3) and click the <b>LABORATORY</b> tab, then click <b>ADD</b>. The <b>Upload images</b> panel opens on the right.',
+       'Type a <b>Description</b>, for example <i>FBS CBC Results</i>.',
+       'Drag the file onto the box, or click <b>browse</b> and choose it from your computer. The chosen file is listed with its size; click the bin icon to remove it and choose another.',
        'Click <b>UPLOAD</b>.'])
-fig('f-labadd','The Upload images panel.',['Description','File drop area','UPLOAD'], size=58, sec='3')
-call('NOTE','When this manual was prepared, the attached images showed as broken image icons when a row was opened, and the upload panel says <i>Select imaging raw result</i> on the Laboratory tab too. Report these to the administrator.')
+fig('f-labupload','Uploading a laboratory result.',['Description','File drop area','Chosen file (bin icon removes it)','UPLOAD'], size=62, sec='3')
+p('A green message confirms the upload, and the file appears under <b>Laboratory Attachments</b> with the date and <i>Added by: secretary</i>.')
+fig('f-labadded','The uploaded result in Laboratory Attachments.',['LABORATORY tab','ADD','New attachment (click › to show the images)'], sec='3')
+p('<b>To attach an imaging result:</b> click the <b>IMAGING</b> tab and follow the same steps, for example with the description <i>Xray</i>.')
+fig('f-imgupload','Uploading an imaging result.',['Description','File drop area','Chosen file (bin icon removes it)','UPLOAD'], size=62, sec='3')
+fig('f-imgadded','The uploaded result in Imaging Attachments.',['IMAGING tab','ADD','New attachment (click › to show the images)'], sec='3')
 end()
 
 section(4,'Billing',
@@ -210,8 +226,10 @@ section(6,'Follow Up',
 h2('6.1','Ongoing follow-ups','s6-1')
 p('Click <b>Follow Up</b> in the main menu. The list shows the <b>Date</b> of the follow-up, the doctor\'s <b>Description</b>, the <b>Patient</b> and the patient\'s <b>Contact Number</b>.')
 fig('f-followup','Ongoing follow-ups.',['Search patient','Ongoing / Done','Follow-ups','Set As Done'], sec='6')
-steps(['Call or message the patient using the contact number.','When the follow-up is settled, click the thumbs-up icon (<b>Set As Done</b>) on the row.'])
-call('NOTE','<b>Set As Done</b> was not clicked while preparing this manual. Follow-ups already marked done are listed under <b>Done</b> (6.2).')
+steps(['Call or message the patient using the contact number.',
+       'When the follow-up is settled, click the thumbs-up icon (<b>Set As Done</b>) on the row.',
+       'A green message <i>Appointment followup updated successfully</i> confirms it. The follow-up leaves the <b>Ongoing</b> list and moves to <b>Done</b> (6.2).'])
+fig('f-followupset','After Set As Done: the follow-up has left the Ongoing list.',['Ongoing filter','Remaining ongoing follow-ups','Confirmation message'], size=85, sec='6')
 h2('6.2','Done follow-ups','s6-2')
 p('Choose <b>Done</b> in the list at the top right to see follow-ups already marked done. Choose <b>Ongoing</b> to go back.')
 fig('f-followupdone','Done follow-ups.',['Ongoing / Done','Done follow-ups'], sec='6')
@@ -261,8 +279,8 @@ html = f'''<!doctype html><html><head><meta charset="utf-8"><title>MediLink: Sec
  <div class="ct">MediLink<br>Integrated Healthcare System</div>
  <div class="cs">User Manual for Secretaries</div>
  <div class="cu">medilink.oas.lguapp.com · Municipality of Oas, Albay</div>
- <img class="hero" src="fig/f-layout.jpg">
- <div class="cm">Prepared by iConcept IT Solutions<br>Draft, 24 October 2026<br>All data shown is sample data only</div>
+ <img class="hero" src="fig/cover.jpg">
+ <div class="cm">Prepared by iConcept IT Solutions</div>
 </section>
 <section class="toc" id="toc"><div class="kick">CONTENTS</div><h1>Table of Contents</h1><div class="rule"></div>{''.join(toc)}</section>
 {''.join(body)}

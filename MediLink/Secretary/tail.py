@@ -13,8 +13,8 @@ html = f'''<!doctype html><html><head><meta charset="utf-8"><title>MediLink: Sec
  <div class="ct">MediLink<br>Integrated Healthcare System</div>
  <div class="cs">User Manual for Secretaries</div>
  <div class="cu">medilink.oas.lguapp.com · Municipality of Oas, Albay</div>
- <img class="hero" src="fig/f-layout.jpg">
- <div class="cm">Prepared by iConcept IT Solutions<br>Draft, 24 October 2026<br>All data shown is sample data only</div>
+ <img class="hero" src="fig/cover.jpg">
+ <div class="cm">Prepared by iConcept IT Solutions</div>
 </section>
 <section class="toc" id="toc"><div class="kick">CONTENTS</div><h1>Table of Contents</h1><div class="rule"></div>{''.join(toc)}</section>
 {''.join(body)}

@@ -26,17 +26,17 @@ def blur(img, rects, s=2, pad=3):
         img.paste(reg, b)
     return img
 
-def boxes(img, items, s=2, ox=0, oy=0, lw=9, r=40):
+def boxes(img, items, s=2, ox=0, oy=0, lw=9, r=40, minx=0, miny=0):
     d = ImageDraw.Draw(img); f = ImageFont.truetype(FB, int(r * 1.15))
     for it in items:
         n, x, y, w, h = it[:5]; col = it[5] if len(it) > 5 else RED
         X = (x - ox) * s; Y = (y - oy) * s
         d.rounded_rectangle([X, Y, X + w * s, Y + h * s], radius=8, outline=col, width=lw)
         if n is None: continue
-        if w < 70 and Y - 2 * r - 6 >= 0: cx = X + w * s / 2; cy = Y - r - 4
-        elif w < 120: cx = X + w * s; cy = max(r + 2, Y)
-        elif X - 2 * r - 8 >= 0: cx = X - r - 6; cy = Y + r
-        else: cx = max(r + 2, X); cy = max(r + 2, Y)
+        if w < 70 and Y - 2 * r - 6 >= miny * s: cx = X + w * s / 2; cy = Y - r - 4
+        elif w < 120: cx = X + w * s; cy = max(miny * s + r + 2, Y)
+        elif X - 2 * r - 8 >= minx * s: cx = X - r - 6; cy = Y + r
+        else: cx = max(minx * s + r + 2, X); cy = max(miny * s + r + 2, Y)
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=col, outline='white', width=3)
         t = str(n); bb = d.textbbox((0, 0), t, font=f)
         d.text((cx - (bb[2] - bb[0]) / 2 - bb[0], cy - (bb[3] - bb[1]) / 2 - bb[1]), t, fill='white', font=f)
@@ -54,7 +54,7 @@ def fig(src, key, name, bx, crop=None, extra_blur=(), keep=None):
     blur(im, pii_rects(key) + list(extra_blur))
     if keep:
         x, y, w, h = keep; b = (x * 2, y * 2, (x + w) * 2, (y + h) * 2); im.paste(orig.crop(b), b[:2])
-    boxes(im, bx)
+    boxes(im, bx, minx=crop[0] if crop else 0, miny=crop[1] if crop else 0)
     save(im, name, crop)
 
 
@@ -64,20 +64,21 @@ F = lambda src, name, bx, crop=None: fig(src, None, name, bx, crop=crop)
 F('01-appointment', 'f-layout', [(1, 2, 2, 1436, 60), (2, 4, 70, 248, 160), (3, 12, 230, 231, 236), (4, 1313, 12, 107, 40), (5, 262, 70, 1172, 770)])
 F('50-user-menu', 'f-usermenu', [(1, 1313, 12, 107, 40), (2, 1224, 56, 200, 36), (3, 1224, 92, 200, 36)], crop=(840, 0, 600, 300))
 # 2 appointments
-F('01-appointment', 'f-appt', [(1, 276, 147, 314, 48), (2, 276, 195, 360, 244)], crop=(256, 64, 1184, 420))
+F('01-appointment', 'f-appt', [(1, 276, 147, 314, 48), (2, 276, 195, 360, 244)], crop=(222, 64, 1218, 420))
 F('02-appt-details', 'f-apptdetails', [(1, 668, 120, 752, 360), (2, 981, 488, 228, 40), (3, 1216, 488, 204, 39), (4, 1325, 84, 95, 39)], crop=(256, 64, 1184, 500))
 F('03-reschedule', 'f-reschedule', [(1, 510, 365, 420, 64), (2, 510, 468, 420, 64), (3, 840, 548, 90, 50)], crop=(460, 260, 520, 380))
-F('04-appt-search', 'f-apptsearch', [(1, 276, 147, 314, 48), (2, 276, 195, 360, 150)], crop=(256, 64, 420, 340))
+F('04-appt-search', 'f-apptsearch', [(1, 276, 138, 314, 57), (2, 276, 199, 360, 146)], crop=(222, 64, 454, 300))
 # 3 patient list (1340 tall)
-F('10-patient-list', 'f-patients', [(1, 276, 138, 314, 48), (2, 276, 186, 360, 528), (3, 652, 68, 784, 803), (4, 1328, 797, 92, 50)], crop=(256, 64, 1184, 820))
+F('10-patient-list', 'f-patients', [(1, 276, 138, 314, 48), (2, 276, 186, 360, 528), (3, 652, 68, 784, 803), (4, 1328, 797, 92, 50)], crop=(222, 64, 1218, 820))
 F('11-patient-details', 'f-patientdetails', [(1, 652, 68, 784, 302), (2, 652, 378, 784, 80), (3, 652, 466, 784, 290), (4, 1267, 482, 153, 40), (5, 1325, 84, 95, 39)], crop=(256, 64, 1184, 700))
 F('17-new-appointment', 'f-newappt', [(1, 510, 260, 420, 64), (2, 510, 340, 420, 64), (3, 510, 420, 420, 64), (4, 510, 500, 420, 64), (5, 510, 580, 420, 64), (6, 840, 652, 90, 50)], crop=(460, 160, 520, 580))
 F('18-new-appointment-doctor', 'f-newappt2', [(1, 510, 500, 420, 64), (2, 510, 580, 420, 64)], crop=(460, 160, 520, 580))
 F('12-profiles', 'f-profiles', [(1, 1332, 483, 87, 40), (2, 664, 527, 754, 400), (3, 664, 940, 754, 330)], crop=(640, 360, 800, 940))
 F('12b-profiles-edit', 'f-profilesedit', [(1, 1192, 1246, 227, 45)], crop=(640, 360, 800, 940))
-F('13-laboratory', 'f-lab', [(1, 1326, 475, 85, 40), (2, 664, 515, 760, 150), (3, 677, 523, 56, 58)], crop=(640, 360, 800, 400))
+# replaced by user screenshots
+# F('13-laboratory', 'f-lab', [(1, 1326, 475, 85, 40), (2, 664, 515, 760, 150), (3, 677, 523, 56, 58)], crop=(640, 360, 800, 400))
 F('14-imaging', 'f-imaging', [], crop=(640, 360, 800, 540))
-F('15-lab-add', 'f-labadd', [(1, 851, 92, 577, 56), (2, 851, 160, 577, 200), (3, 851, 372, 577, 50)], crop=(820, 0, 620, 460))
+# F('15-lab-add', 'f-labadd', [(1, 851, 92, 577, 56), (2, 851, 160, 577, 200), (3, 851, 372, 577, 50)], crop=(820, 0, 620, 460))
 # 4 billing
 F('20-billing', 'f-billing', [(1, 276, 147, 314, 48), (2, 276, 195, 360, 244)], crop=(256, 64, 420, 420))
 F('21-billing-patient', 'f-bill', [(1, 668, 184, 752, 442), (2, 1297, 257, 56, 56), (3, 1190, 626, 114, 40), (4, 1305, 626, 115, 40)], crop=(640, 64, 800, 640))
@@ -97,3 +98,28 @@ F('51-account', 'f-account', [(1, 276, 160, 488, 56), (2, 276, 233, 371, 261), (
 F('52-account-email', 'f-email', [(1, 292, 303, 548, 64), (2, 856, 303, 548, 64), (3, 1259, 392, 145, 45)], crop=(256, 140, 1184, 330))
 F('53-account-security', 'f-security', [(1, 292, 303, 548, 64), (2, 856, 303, 548, 64), (3, 1225, 392, 179, 45)], crop=(256, 140, 1184, 330))
 print(len(os.listdir(O)))
+
+# ---------------- User-supplied screenshots (2940-wide Mac captures; coords in 2000-wide display px) ----------------
+def ufig(src, name, bx, crop, k=1.47, r=40, lw=9, hide=()):
+    im = Image.open(f'../raw/user/{src}').convert('RGB')
+    for x, y, w, h in hide:  # blur personal data (display px)
+        b = (int(x * k), int(y * k), int((x + w) * k), int((y + h) * k))
+        im.paste(im.crop(b).filter(ImageFilter.GaussianBlur(14 * k)), b)
+    sc = [(n, x * k / 2, y * k / 2, w * k / 2, h * k / 2) for n, x, y, w, h in bx]
+    boxes(im, sc, s=2, lw=lw, r=r, minx=crop[0] * k / 2, miny=crop[1] * k / 2)
+    x, y, w, h = crop
+    im = im.crop((int(x * k), int(y * k), int((x + w) * k), int((y + h) * k)))
+    if im.width > 2000: im = im.resize((2000, round(im.height * 2000 / im.width)), Image.LANCZOS)
+    im.save(f'{O}/{name}.jpg', quality=88)
+
+ufig('u1-cancel-confirm.png', 'f-cancelconfirm', [(1, 1701, 712, 267, 43), (2, 1086, 684, 117, 49), (3, 970, 684, 105, 49)], (770, 140, 1225, 640))
+ufig('u2-cancel-done.png', 'f-canceldone', [(1, 381, 305, 492, 270), (2, 27, 1208, 468, 66)], (0, 140, 920, 1160))
+ufig('u3-addappt-required.png', 'f-apptrequired', [(1, 718, 702, 564, 122), (2, 718, 841, 564, 122), (3, 1168, 983, 112, 57)], (650, 260, 700, 830))
+ufig('u4-service-none.png', 'f-servicenone', [(1, 100, 92, 290, 58)], (0, 0, 996, 210), k=1, r=28, lw=6)
+ufig('u5-addpatient-filled.png', 'f-addpatient', [(1, 926, 224, 1044, 92), (2, 926, 322, 1044, 92), (3, 926, 420, 1044, 92), (4, 926, 518, 1044, 92), (5, 926, 616, 689, 92), (6, 1627, 616, 345, 152), (7, 918, 778, 1052, 336), (8, 1853, 1130, 116, 61)], (868, 145, 1125, 1080), hide=[(940, 645, 250, 48), (1645, 645, 318, 48)])
+ufig('u6-email-note.png', 'f-emailnote', [(1, 58, 2, 428, 94), (2, 50, 104, 424, 94)], (0, 0, 506, 200), k=1, r=22, lw=5, hide=[(70, 38, 412, 56)])
+up = [(1, 1204, 160, 774, 94), (2, 1204, 263, 774, 272), (3, 1204, 556, 774, 76), (4, 1204, 670, 774, 62)]
+ufig('u7-lab-upload.png', 'f-labupload', up, (1182, 60, 818, 690))
+ufig('u9-img-upload.png', 'f-imgupload', up, (1182, 60, 818, 690))
+ufig('u8-lab-added.png', 'f-labadded', [(1, 1398, 562, 214, 90), (2, 1849, 685, 108, 48), (3, 950, 748, 1008, 76)], (880, 548, 1112, 372))
+ufig('u10-img-added.png', 'f-imgadded', [(1, 1616, 562, 214, 90), (2, 1849, 685, 108, 48), (3, 950, 748, 1008, 76)], (880, 548, 1112, 372))
