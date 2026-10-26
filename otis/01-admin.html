@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TIS: Admin</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 105mm; }h2,h3,h4{break-after:avoid;page-break-after:avoid;} .fig{break-inside:avoid;break-after:avoid;} .caption{break-before:avoid;}
+.cover-img{width:100%;margin-top:12mm;border:1px solid var(--line);border-radius:3px;} .cover .m{margin-top:12mm;}
+.rel{width:100%;border-collapse:collapse;margin:3mm 0 4mm;table-layout:fixed} .rel td{border:1px solid var(--line);padding:2.5mm;text-align:center;font-size:9.5pt;vertical-align:middle} .rel td.mid{background:var(--soft);font-weight:700;color:var(--brand)} .rel td.arr{border:none;width:9mm;font-size:15pt;color:var(--brand);padding:0}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="t">Municipality of Oas, Albay<br>Treasury Information System (TIS)</div>
+  <div class="s">User Manual</div>
+  <img class="cover-img" src="images/cover-landing.png" alt="The landing page of the Treasury Information System (TIS)">
+  <div class="m">Prepared by iConcept IT Solutions</div>
+</div>
+
+
+<div class="section-no">Section 1</div>
+<h1>Admin</h1>
+<p class="lead">The Admin menu is where the administrator of TIS manages the people who use the system. It has two pages: <strong>Users</strong> and <strong>Roles</strong>. This section explains each page and each button on it.</p>
+<div class="note"><strong>Who can use this section.</strong> The Admin menu appears for an account whose role is <strong>Admin</strong>. The other roles (Cashier, AF Issuer, Brgy Treasurer and Disbursing Officer) see their own menus and do not see Admin.</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s1-1">1.1 The Admin menu</a></li>
+  <li><a href="#s1-2">1.2 Users</a></li>
+  <li class="sub"><a href="#s1-2-1">1.2.1 Finding a user</a></li>
+  <li class="sub"><a href="#s1-2-2">1.2.2 Adding a user</a></li>
+  <li class="sub"><a href="#s1-2-3">1.2.3 Closing a window without saving</a></li>
+  <li class="sub"><a href="#s1-2-4">1.2.4 Editing a user</a></li>
+  <li class="sub"><a href="#s1-2-5">1.2.5 Assigning RPT users</a></li>
+  <li class="sub"><a href="#s1-2-6">1.2.6 Assigning personnel</a></li>
+  <li><a href="#s1-3">1.3 Roles</a></li>
+  <li class="sub"><a href="#s1-3-1">1.3.1 Adding a role</a></li>
+  <li class="sub"><a href="#s1-3-2">1.3.2 Editing a role</a></li>
+</ul>
+</div>
+
+<h2 id="s1-1">1.1 The Admin menu</h2>
+<p>After you sign in as Admin, the page title at the top left reads <strong>Admin</strong>. Click the menu icon (three lines) beside it to open the sidebar. The sidebar shows your name and email, and these groups: <strong>Transaction</strong>, <strong>Referential</strong>, <strong>Process</strong>, <strong>Reports</strong> and <strong>Admin</strong>. <strong>Exit</strong> at the bottom signs you out.</p>
+<p>Click <strong>Admin</strong> to open its pages:</p>
+<ul>
+  <li><strong>Users:</strong> the accounts of the people who sign in. See <a href="#s1-2">Section 1.2</a>.</li>
+  <li><strong>Roles:</strong> the list of roles that an account can have. See <a href="#s1-3">Section 1.3</a>.</li>
+</ul>
+<div class="fig tall"><img src="images/menu.png" alt="The sidebar with the Admin group open"></div>
+<div class="caption">Figure 1.1. The sidebar with the Admin group open. 1 Admin group · 2 The pages under Admin. The name and email are covered.</div>
+
+<h2 id="s1-2">1.2 Users</h2>
+<p>Click <strong>Users</strong> to see every account in TIS. The table shows the number, the <strong>Fullname</strong> (last name, then first name), the <strong>Role</strong> and the <strong>Action</strong> icons of each user.</p>
+<div class="fig tall"><img src="images/users-list.png" alt="The Users page"></div>
+<div class="caption">Figure 1.2. The Users page. 1 Search box · 2 Add User · 3 Table headings · 4 Action icons of a user. The names are covered.</div>
+<ol>
+  <li><strong>Search:</strong> type a name to find a user. See <a href="#s1-2-1">Section 1.2.1</a>.</li>
+  <li><strong>Add User</strong> (the person icon with a plus sign): opens the form for a new user. See <a href="#s1-2-2">Section 1.2.2</a>.</li>
+  <li>The table headings are <strong>Fullname</strong>, <strong>Role</strong> and <strong>Action</strong>.</li>
+  <li>The three <strong>Action</strong> icons of a user, from left to right: <strong>Assigned RPT</strong> (circle with a plus sign), <strong>Assigned Personnel</strong> (circle with a plus sign) and <strong>Edit</strong> (the pencil). Point to an icon to see its name. See Sections <a href="#s1-2-4">1.2.4</a> to <a href="#s1-2-6">1.2.6</a>.</li>
+</ol>
+
+<h3 id="s1-2-1">1.2.1 Finding a user</h3>
+<p>Type part of the first name or the last name in the <strong>Search</strong> box. The table shows only the users that match. Type the name in small letters. Clear the box to see all users again.</p>
+<p>The table lists all the users in one long list. Scroll down to see the end of the list. The paging line below the table (<strong>List</strong> 10, <strong>1-10 of 19</strong>) shows the number of users in the system.</p>
+<p>The <strong>List</strong> box beside it is a drop-down. Click it to choose how many rows the paging line counts: <strong>10</strong>, <strong>20</strong> or <strong>50</strong>.</p>
+<div class="fig tall"><img src="images/users-list-dd.png" alt="The List drop-down"></div>
+<div class="caption">Figure 1.3. The List drop-down with its three choices. 1 The choices 10, 20 and 50 · 2 The count of users. The names are covered.</div>
+<div class="fig tall"><img src="images/users-bottom.png" alt="The end of the Users list"></div>
+<div class="caption">Figure 1.4. The end of the Users list. 1 The paging line with the total number of users. The names are covered.</div>
+
+<h3 id="s1-2-2">1.2.2 Adding a user</h3>
+<ol>
+  <li>On the Users page, click <strong>Add User</strong> (the person icon at the top right).</li>
+  <li>In the window <strong>USER INFORMATION</strong>, fill in <strong>Firstname</strong>, <strong>Lastname</strong>, <strong>Contact Number</strong>, <strong>Email</strong> and <strong>Password</strong>.</li>
+  <li>Select the <strong>Role</strong> of the user from the list.</li>
+  <li>Click <strong>Create</strong>.</li>
+</ol>
+<div class="fig tall"><img src="images/users-add.png" alt="The Add User window"></div>
+<div class="caption">Figure 1.5. The Add User window. 1 The user's details · 2 Role · 3 Create.</div>
+<p>Click the <strong>Role</strong> box to open its drop-down list. The choices are <strong>Brgy Treasurer</strong>, <strong>Cashier</strong>, <strong>Admin</strong>, <strong>Customers</strong>, <strong>Disbursing Officer</strong> and <strong>AF Issuer</strong>. The same list appears when you edit a user.</p>
+<div class="fig tall"><img src="images/users-add-role.png" alt="The Role drop-down list"></div>
+<div class="caption">Figure 1.6. The Role drop-down list of the Add User window. 1 The six roles. The names in the table behind are covered.</div>
+<p>When you leave a required box empty, its border turns red and the word <em>Required</em> appears below it. Fill in the box to clear the message. You cannot save the user until every required box is filled in.</p>
+<div class="fig tall"><img src="images/users-add-required.png" alt="The Required messages"></div>
+<div class="caption">Figure 1.7. The Required messages of the Add User window. 1 The boxes that were left empty. The names in the table behind are covered.</div>
+<ul>
+  <li>Every box is required. A box that you leave empty shows <em>Required</em>.</li>
+  <li>The <strong>Email</strong> must be a valid email address. The user signs in with this email.</li>
+  <li>The <strong>Password</strong> box shows the letters as you type them. Make sure that nobody is watching, and give the password to the user in private.</li>
+  <li>The <strong>Role</strong> decides which menu the user sees after signing in. See <a href="#s1-3">Section 1.3</a>.</li>
+</ul>
+<div class="note">After you click <strong>Create</strong>, the message <em>User created successfully</em> appears and the new user is in the list.</div>
+
+<h3 id="s1-2-3">1.2.3 Closing a window without saving</h3>
+<p>Press the <strong>Esc</strong> key or click the gray area outside a window to close it. Nothing is saved until you click <strong>Create</strong>, <strong>Update</strong> or <strong>Add</strong> in that window.</p>
+
+<h3 id="s1-2-4">1.2.4 Editing a user</h3>
+<ol>
+  <li>On the Users page, click the <strong>Edit</strong> icon (the pencil) of the user.</li>
+  <li>The window <strong>Editing</strong> and the name of the user opens with the current details. Change <strong>Firstname</strong>, <strong>Lastname</strong>, <strong>Contact Number</strong>, <strong>Email</strong> or <strong>Role</strong>.</li>
+  <li>To give the user a new password, type it in the <strong>Password</strong> box under <strong>User Credentials</strong>. To keep the present password, leave the box empty.</li>
+  <li>Click <strong>Update</strong>.</li>
+</ol>
+<div class="fig tall"><img src="images/users-edit.png" alt="The Edit User window"></div>
+<div class="caption">Figure 1.8. The Edit User window. 1 The user's details · 2 Role · 3 Password and its note · 4 Update. The details are covered.</div>
+<div class="note">After you click <strong>Update</strong>, the message <em>User updated successfully</em> appears. If you changed the role, the user sees the menu of the new role the next time the user signs in.</div>
+
+<h3 id="s1-2-5">1.2.5 Assigning RPT users</h3>
+<p>Click the first circle icon, <strong>Assigned RPT</strong>, to see the RPT users that are linked to this TIS user. Each row shows the code and the name of an RPT user. These links decide which RPT users the TIS user can choose in the filter of the <strong>Report of Collection and Deposits (RCD)</strong>.</p>
+
+<div class="note"><strong>How assigned RPT users relate to users.</strong>
+<table class="rel"><tr><td>A user of TIS<br><em>(the row you clicked in the Users list)</em></td><td class="arr">&rarr;</td><td class="mid">Assigned RPT<br><em>(the link)</em></td><td class="arr">&rarr;</td><td>An RPT user<br><em>(a code and a name from the RPT payment system)</em></td></tr></table>
+<ul>
+  <li><strong>One user, many RPT users.</strong> A user can have several assigned RPT users. The same RPT user can be assigned to more than one user. The RPT users are not TIS users. They come from the RPT payment system, so you cannot add or change them here, only link them.</li>
+  <li><strong>The link belongs to the user.</strong> Adding or removing a link changes only that user. It does not change the RPT user or the other users.</li>
+  <li><strong>What it controls.</strong> In <strong>Reports</strong>, <strong>Report of Collection and Deposits (RCD)</strong>, the window that imports real property tax receipts has the boxes <strong>Date From</strong>, <strong>Date To</strong> and <strong>Encoded By</strong>. The <strong>Encoded By</strong> list shows only the RPT users that are assigned to the signed-in user. TIS then brings in the RPT receipts that the chosen RPT user encoded in those dates.</li>
+  <li><strong>With no link.</strong> A user with no assigned RPT user sees <em>No assigned RPT users</em> in the Encoded By list and cannot import RPT receipts.</li>
+</ul></div>
+<div class="fig"><img src="images/users-rpt.png" alt="The Assigned RPT window"></div>
+<div class="caption">Figure 1.9. The Assigned RPT window. 1 Add RPT User · 2 The RPT users that are assigned · 3 Remove icon. The names in the table behind and the RPT names are covered.</div>
+<ol>
+  <li>Click <strong>Add RPT User</strong>.</li>
+  <li>In the window <strong>Assign RPT User</strong>, select the <strong>RPT User</strong> from the list. The list shows the code and the name of each RPT user.</li>
+  <li>Click <strong>Add</strong>.</li>
+</ol>
+<div class="fig small"><img src="images/users-rpt-add.png" alt="The Assign RPT User window"></div>
+<div class="caption">Figure 1.10. The Assign RPT User window. 1 The RPT User list · 2 Add.</div>
+<p>Click the <strong>RPT User</strong> box to open its drop-down list. It starts with a dash (<strong>-</strong>), which means that nobody is chosen, and then shows every RPT user as the code, a dash and the name. Choose one, then click <strong>Add</strong>.</p>
+<div class="fig tall"><img src="images/users-rpt-dd.png" alt="The RPT User drop-down list"></div>
+<div class="caption">Figure 1.11. The RPT User drop-down list. 1 The RPT users, each shown as code - name. The names are covered.</div>
+<p>The message <em>RPT user assigned successfully</em> appears. To remove a link, click the remove icon at the end of its row. A question asks <em>Are you sure to delete this assigned RPT user?</em> Click <strong>Yes</strong> to remove it or <strong>No</strong> to keep it. A list with no row says <em>No record found!</em></p>
+<div class="fig tall"><img src="images/users-rpt-del.png" alt="The question to remove an assigned RPT user"></div>
+<div class="caption">Figure 1.12. The question before an assigned RPT user is removed. 1 The question · 2 No keeps the link · 3 Yes removes it. The names are covered.</div>
+
+
+<h3 id="s1-2-6">1.2.6 Assigning personnel</h3>
+<p>Click the second circle icon, <strong>Assigned Personnel</strong>, to see the officers that are linked to this user. Each row shows the <strong>name</strong>, the <strong>code</strong> and the <strong>type</strong> of the officer, such as <em>Accountable Officer</em>, <em>Collector</em> or <em>Liquidating Officer</em>. These links decide which receipts the user may process and which collectors the user can choose. The block below explains how. The officers themselves come from the Referential page <strong>Liq. Disb. Collector</strong>.</p>
+
+<div class="note"><strong>How assigned personnel relate to users.</strong>
+<table class="rel"><tr><td>A user of TIS<br><em>(the row you clicked in the Users list)</em></td><td class="arr">&rarr;</td><td class="mid">Assigned Personnel<br><em>(the link)</em></td><td class="arr">&rarr;</td><td>An officer<br><em>(a name, a code and a type from the LiqDisb Collector page)</em></td></tr></table>
+<ul>
+  <li><strong>One user, many officers.</strong> A user can have several assigned officers, for example a collector and the accountable officer. The same officer can be assigned to more than one user. The officers are kept on the Referential page <strong>LiqDisb Collector</strong> (<a href="02-referential.pdf#s2-lq">Section 2.6.6</a>). Here you only link them.</li>
+  <li><strong>The link belongs to the user.</strong> Adding or removing a link changes only that user. It does not change the officer or the other users.</li>
+  <li><strong>What it controls on the receipt pages.</strong> On the permit receipt pages (for example Business Permit, Building Permit and Burial Permit), the user enters a receipt number. TIS accepts the receipt only when its collector is one of the user's assigned personnel. For any other receipt, the window <em>You are not allowed to proccess this personnel.</em> appears (the system spells it this way).</li>
+  <li><strong>What it controls in RCD Processing.</strong> The <strong>Collector</strong> list offers only the assigned personnel whose type is <strong>Collector</strong>, each shown as the name and the code.</li>
+  <li><strong>With no link.</strong> A user with no assigned personnel has no collector to choose and is not allowed to process a receipt on these pages.</li>
+</ul></div>
+<div class="fig"><img src="images/users-personnel.png" alt="The Assigned Personnel window"></div>
+<div class="caption">Figure 1.13. The Assigned Personnel window. 1 Add Personnel · 2 The name, the code and the type of each officer · 3 Remove icon. The names and codes are covered.</div>
+<ol>
+  <li>Click <strong>Add Personnel</strong>.</li>
+  <li>In the window <strong>Assign Personnel</strong>, select the <strong>Personnel Officer</strong> from the list.</li>
+  <li>Click <strong>Add</strong>.</li>
+</ol>
+<div class="fig small"><img src="images/users-personnel-add.png" alt="The Assign Personnel window"></div>
+<div class="caption">Figure 1.14. The Assign Personnel window. 1 The Personnel Officer list · 2 Add. The names behind the window are covered.</div>
+<p>Click the <strong>Personnel Officer</strong> box to open its drop-down list. It starts with a dash (<strong>-</strong>) and then shows the name of every officer in the Liq. Disb. Collector list. Choose one, then click <strong>Add</strong>.</p>
+<div class="fig tall"><img src="images/users-personnel-dd.png" alt="The Personnel Officer drop-down list"></div>
+<div class="caption">Figure 1.15. The Personnel Officer drop-down list. 1 The officers that can be assigned. The names are covered.</div>
+<p>The message <em>Personnel added successfully</em> appears. To remove an officer, click the remove icon at the end of its row. A question asks <em>Are you sure to delete this personnel?</em> Click <strong>Yes</strong> to remove the officer or <strong>No</strong> to keep it. The message <em>Personnel deleted successfully</em> confirms it.</p>
+<div class="fig tall"><img src="images/users-personnel-del.png" alt="The question to remove an assigned personnel"></div>
+<div class="caption">Figure 1.16. The question before an assigned personnel is removed. 1 The question · 2 No keeps the officer · 3 Yes removes it. The names are covered.</div>
+
+<div class="note">The assigned officers are loaded when the user signs in. If you change them for a user who is signed in, ask the user to sign out and sign in again.</div>
+
+<h2 id="s1-3">1.3 Roles</h2>
+<p>Click <strong>Roles</strong> to see the roles that an account can have. The table shows the number and the name of each <strong>Role</strong>, and an <strong>Edit</strong> icon in the <strong>Action</strong> column. The roles in the system are Brgy Treasurer, Cashier, Admin, Customers, Disbursing Officer and AF Issuer.</p>
+<div class="fig tall"><img src="images/roles-list.png" alt="The Roles page"></div>
+<div class="caption">Figure 1.17. The Roles page. 1 Search box · 2 Add Role · 3 The roles · 4 Edit icons · 5 The paging line.</div>
+<div class="warning"><strong>Important.</strong> The sidebar of a user is chosen by the exact name of the role. Cashier, AF Issuer, Brgy Treasurer, Disbursing Officer and Admin each have their own menu. If you rename one of these roles, the users of that role no longer get their menu. Do not rename a role that users already have. The page has no Delete icon.</div>
+<p>The <strong>List</strong> box under the table works as it does on the Users page. It offers 10, 20 or 50.</p>
+
+<h3 id="s1-3-1">1.3.1 Adding a role</h3>
+<ol>
+  <li>Click <strong>Add</strong> (the person icon at the top right of the Roles page).</li>
+  <li>In the window <strong>ROLE INFORMATION</strong>, type the <strong>Name</strong> of the role. It is required.</li>
+  <li>Click <strong>Create</strong>.</li>
+</ol>
+<div class="fig small"><img src="images/roles-add.png" alt="The Add Role window"></div>
+<div class="caption">Figure 1.18. The Add Role window. 1 Name · 2 Create.</div>
+<p>The message <em>Role created successfully</em> appears. The new role is then in the <strong>Role</strong> list of the Add User and Edit User windows. A new name does not have its own menu yet. A user with a new role signs in but sees no menu until the system is set up for that role.</p>
+
+<h3 id="s1-3-2">1.3.2 Editing a role</h3>
+<ol>
+  <li>Click the <strong>Edit</strong> icon of the role.</li>
+  <li>In the window <strong>Editing</strong> and the role name, change the <strong>Name</strong>.</li>
+  <li>Click <strong>Update</strong>. The message <em>Role updated successfully</em> appears.</li>
+</ol>
+<div class="fig small"><img src="images/roles-edit.png" alt="The Edit Role window"></div>
+<div class="caption">Figure 1.19. The Edit Role window. 1 Name · 2 Update.</div>
+
+</body>
+</html>

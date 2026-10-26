@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TIS: Referential</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 105mm; }
+h2,h3,h4{break-after:avoid;page-break-after:avoid;} .fig{break-inside:avoid;break-after:avoid;} .caption{break-before:avoid;}
+.msg{display:inline-block;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:8.8pt;line-height:1.35;padding:.2mm 1.8mm;border-radius:2px;border:1px solid;font-style:normal;margin:.2mm 0;} .msg.q{background:#f1f3f5;border-color:#ced4da;color:#343a40;} .msg.ok{background:#e6f4ea;border-color:#8fcf9f;color:#1e6b34;} .msg.del{background:#fdecea;border-color:#f1a9a0;color:#a12418;} .msg.warn{background:#fff8e1;border-color:#f0d27a;color:#7a5b00;}
+.cover-img{width:100%;margin-top:12mm;border:1px solid var(--line);border-radius:3px;} .cover .m{margin-top:12mm;}</style>
+</head>
+<body>
+
+<div class="section-no">Section 2</div>
+<h1>Referential</h1>
+<p class="lead">The Referential menu holds the reference lists that the rest of TIS depends on: funds, allotments, the chart of accounts, accountable forms, officers, cost centers, official receipt templates and similar tables. This section explains each page, each window and each dropdown list.</p>
+<div class="note"><strong>Who can use this section.</strong> The Referential menu appears for an account whose role is <strong>Admin</strong>. These lists feed the other menus, so a change here changes what cashiers, issuers and other users see. Add, edit and delete only when you are sure.</div>
+
+<div class="toc">
+<div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s2-1">2.1 How the Referential pages work</a></li>
+  <li class="sub"><a href="#s2-1-1">2.1.1 The list page</a></li>
+  <li class="sub"><a href="#s2-1-2">2.1.2 Adding a record</a></li>
+  <li class="sub"><a href="#s2-1-3">2.1.3 Editing a record</a></li>
+  <li class="sub"><a href="#s2-1-4">2.1.4 Deleting a record</a></li>
+  <li><a href="#s2-2">2.2 Fund</a></li>
+  <li class="sub"><a href="#s2-fg">2.2.1 Fund Group</a></li>
+  <li class="sub"><a href="#s2-fc">2.2.2 Fund Code</a></li>
+  <li><a href="#s2-3">2.3 Allotment</a></li>
+  <li class="sub"><a href="#s2-ac">2.3.1 Allotment Code</a></li>
+  <li class="sub"><a href="#s2-acl">2.3.2 Allotment Class</a></li>
+  <li><a href="#s2-4">2.4 FPP</a></li>
+  <li class="sub"><a href="#s2-fn">2.4.1 Function Code</a></li>
+  <li class="sub"><a href="#s2-pc">2.4.2 Program Code</a></li>
+  <li class="sub"><a href="#s2-fpp">2.4.3 FPP Code</a></li>
+  <li><a href="#s2-5">2.5 Chart of Accounts</a></li>
+  <li class="sub"><a href="#s2-acct">2.5.1 Account Code</a></li>
+  <li class="sub"><a href="#s2-obj">2.5.2 Object Code</a></li>
+  <li><a href="#s2-6">2.6 Accountability</a></li>
+  <li class="sub"><a href="#s2-af">2.6.1 Accountable Forms</a></li>
+  <li class="sub"><a href="#s2-cb">2.6.2 Check Booklets</a></li>
+  <li class="sub"><a href="#s2-bd">2.6.3 Bank Depository</a></li>
+  <li class="sub"><a href="#s2-fm">2.6.4 Form Code</a></li>
+  <li class="sub"><a href="#s2-ot">2.6.5 Officer Type</a></li>
+  <li class="sub"><a href="#s2-lq">2.6.6 LiqDisb Collector</a></li>
+  <li class="sub"><a href="#s2-cc">2.6.7 Cost Center</a></li>
+  <li class="sub"><a href="#s2-cp">2.6.8 Creditor/Payee</a></li>
+  <li class="sub"><a href="#s2-or">2.6.9 OR Template</a></li>
+  <li class="sub"><a href="#s2-rel">2.6.10 How OR Template and Collection Type work together</a></li>
+  <li class="sub"><a href="#s2-ant">2.6.11 Accountant</a></li>
+  <li class="sub"><a href="#s2-trs">2.6.12 Treasurer</a></li>
+  <li class="sub"><a href="#s2-mayr">2.6.13 Mayor</a></li>
+  <li><a href="#s2-7">2.7 Collection Type</a></li>
+  <li><a href="#s2-8">2.8 Cemetery</a></li>
+</ul>
+</div>
+
+<h2 id="s2-1">2.1 How the Referential pages work</h2>
+<p>Open the sidebar with the menu icon (three lines) at the top left and click <strong>Referential</strong>. It opens seven choices: <strong>Fund</strong>, <strong>Allotment</strong>, <strong>FPP</strong>, <strong>Chart Of Accounts</strong>, <strong>Accountability</strong>, <strong>Collection Type</strong> and <strong>Cemetery</strong>. Fund, Allotment, FPP, Chart Of Accounts and Accountability open into smaller lists. Collection Type and Cemetery open their page directly.</p>
+<div class="fig tall"><img src="images/ref-menu-referential.png" alt="The Referential menu"></div>
+<div class="caption">Figure 2.1. The sidebar with Referential open. 1 Referential · 2 The seven choices. The name and email are blurred.</div>
+<p><strong>Accountability</strong> has twelve pages: <strong>Accountable Forms</strong>, <strong>Check Booklets</strong>, <strong>Bank Depository</strong>, <strong>Form Code</strong>, <strong>Officer Type</strong>, <strong>LiqDisb Collector</strong>, <strong>Cost Center</strong>, <strong>Creditor/Payee</strong>, <strong>OR Template</strong>, <strong>Accountant</strong>, <strong>Treasurer</strong> and <strong>Mayor</strong>. Scroll the sidebar to see all of them.</p>
+<div class="fig tall"><img src="images/ref-menu-accountability.png" alt="The Accountability pages"></div>
+<div class="caption">Figure 2.2. The sidebar scrolled to the Accountability pages. 1 The pages of Accountability · 2 Collection Type and Cemetery.</div>
+<p>Almost every page works the same way. Section 2.1 explains the common parts once. The pages that differ say so in their own sections.</p>
+<p><strong>How messages are shown in this manual.</strong> The questions and messages that TIS shows in its windows are written in a colored box. The color tells you what kind of message it is:</p>
+<ul>
+  <li><span class="msg q">Are you sure to delete this group?</span> <strong>Gray:</strong> a question or a notice. A question waits for your answer.</li>
+  <li><span class="msg ok">Fund code deleted successfully</span> <strong>Green:</strong> success. The action worked: a record was created, updated or deleted.</li>
+  <li><span class="msg del">Required</span> <strong>Red:</strong> an error. Something is wrong and the action did not happen until you correct it.</li>
+  <li><span class="msg warn">An active record already exists. New record will be saved as inactive.</span> <strong>Yellow:</strong> a warning. The action can continue, but be careful.</li>
+</ul>
+<h3 id="s2-1-1">2.1.1 The list page</h3>
+<ol>
+  <li><strong>Search:</strong> type part of a code or a description to find a record. The list shows only the records that match.</li>
+  <li><strong>Add button</strong> (blue, at the top right): opens the window for a new record. Its label names the record, for example <strong>ADD CODE</strong> or <strong>ADD GROUP</strong>.</li>
+  <li><strong>Table headings:</strong> the columns of the list.</li>
+  <li><strong>Action icons:</strong> the pencil (<strong>EDIT</strong>) opens the record for changes. The trash can (<strong>DELETE</strong>) removes the record after you confirm. Point to an icon to see its name.</li>
+</ol>
+<p>A list that has nothing to show says <span class="msg q">No record found.</span></p>
+<h3 id="s2-1-2">2.1.2 Adding a record</h3>
+<ol>
+  <li>Click the blue Add button.</li>
+  <li>Fill in the boxes of the window. A drop-down box opens a list: click it and click your choice. A dash (<strong>-</strong>) at the top of a list means that nothing is chosen.</li>
+  <li>Click <strong>Create</strong>. The message <span class="msg ok">... created successfully</span> appears and the new record is in the list.</li>
+</ol>
+<p>When you leave a required box empty, its border turns red and the word <span class="msg del">Required</span> appears under it. You cannot save the record until every required box is filled in. Press the <strong>Esc</strong> key or click the gray area outside the window to close it without saving.</p>
+<h3 id="s2-1-3">2.1.3 Editing a record</h3>
+<ol>
+  <li>Click the pencil of the record. The window <strong>Editing</strong> and the name of the record opens with the present values.</li>
+  <li>Change the boxes that need a change.</li>
+  <li>Click <strong>Update</strong>. The message <span class="msg ok">... updated successfully</span> appears.</li>
+</ol>
+<h3 id="s2-1-4">2.1.4 Deleting a record</h3>
+<p>Click the trash can of the record. A small window asks a question such as <span class="msg q">Are you sure to delete this group?</span> Click <strong>No</strong> to keep the record. Click <strong>Yes</strong> to remove it. After <strong>Yes</strong>, the message <span class="msg ok">... deleted successfully</span> appears.</p>
+<div class="fig small"><img src="images/ref-fundgroup-del.png" alt="The question before a record is deleted"></div>
+<div class="caption">Figure 2.3. The question before a record is deleted (Fund Group is shown). 1 The question · 2 No keeps the record · 3 Yes removes it.</div>
+<div class="warning"><strong>Be careful with Yes.</strong> Other pages and receipts use these records. Delete a record only when you are sure that nothing depends on it.</div>
+<p>The question always names the kind of record, for example <span class="msg q">Are you sure to delete this code?</span>, <span class="msg q">this group?</span>, <span class="msg q">this payee?</span> or <span class="msg q">this cost center?</span>. After <strong>Yes</strong>, a message tells you that the record was deleted, such as <span class="msg ok">Fund code deleted successfully</span>. In the same way, a new record shows a <span class="msg ok">... created successfully</span> message and a changed record shows an <span class="msg ok">... updated successfully</span> message.</p>
+<p>A few pages differ. On the Accountant, Treasurer and Mayor pages the question reads <span class="msg q">Are you sure you want to delete (the name)?</span> and the buttons are <strong>Cancel</strong> and <strong>Yes</strong>. On the Accountable Forms page the <strong>Delete</strong> icon appears only for a record from which no receipt has been issued yet. The Check Booklets page has no Edit or Delete icon.</p>
+
+<h2 id="s2-2">2.2 Fund</h2>
+
+<h3 id="s2-fg">2.2.1 Fund Group</h3>
+<p><strong>Fund Group</strong> lists the main groups of funds. The columns are <strong>Code</strong> and <strong>Description</strong>. The system has four groups: 100 GENERAL FUND, 200 SPECIAL EDUCATION FUND, 300 TRUST FUND and 400 OCC.</p>
+<div class="fig tall"><img src="images/ref-fundgroup-list.png" alt="Fund Group: list"></div>
+<div class="caption">Figure 2.4. The Fund Group page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>To add a group, click <strong>ADD GROUP</strong>. In the window <strong>Add Fund Group</strong>, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required. Click <strong>Create</strong>. To change a group, click its pencil, change the boxes and click <strong>Update</strong>.</p>
+<div class="fig tall"><img src="images/ref-fundgroup-add.png" alt="Fund Group: add"></div>
+<div class="caption">Figure 2.5. The window to add a record in Fund Group. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-fundgroup-edit.png" alt="Fund Group: edit"></div>
+<div class="caption">Figure 2.6. The window to edit a record in Fund Group. 1 Code · 2 Description · 3 Update</div>
+
+<h3 id="s2-fc">2.2.2 Fund Code</h3>
+<p><strong>Fund Code</strong> lists the funds. The columns are <strong>Code</strong>, <strong>Fund Group</strong> and <strong>Description</strong>. A fund code such as <em>100(01)</em> belongs to a fund group such as <em>100</em>.</p>
+<div class="fig tall"><img src="images/ref-fundcode-list.png" alt="Fund Code: list"></div>
+<div class="caption">Figure 2.7. The Fund Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Fund Code</strong>, type the <strong>Code</strong> and the <strong>Description</strong>, then choose the <strong>Main Fund</strong>. All three are required. The Main Fund list has four choices: <strong>GENERAL FUND</strong>, <strong>SPECIAL EDUCATION FUND</strong>, <strong>TRUST FUND</strong> and <strong>OCC</strong>. When you edit a fund code, the window also shows the <strong>Fund Group</strong> code of the Main Fund that you chose.</p>
+<div class="fig tall"><img src="images/ref-fundcode-add.png" alt="Fund Code: add"></div>
+<div class="caption">Figure 2.8. The window to add a record in Fund Code. 1 Code · 2 Description · 3 Main Fund · 4 Create</div>
+<div class="fig tall"><img src="images/ref-fundcode-dd-mainfund.png" alt="The Main Fund list"></div>
+<div class="caption">Figure 2.9. The Main Fund drop-down list. 1 The four choices and the dash.</div>
+<div class="fig tall"><img src="images/ref-fundcode-edit.png" alt="Fund Code: edit"></div>
+<div class="caption">Figure 2.10. The window to edit a record in Fund Code. 1 Code · 2 Description · 3 Main Fund · 4 Fund Group · 5 Update</div>
+
+<h2 id="s2-3">2.3 Allotment</h2>
+
+<h3 id="s2-ac">2.3.1 Allotment Code</h3>
+<p><strong>Allotment Code</strong> lists the classes of allotment. The columns are <strong>Code</strong> and <strong>Description</strong>. The eight records are PERSONAL SERVICES, MAINTENANCE AND OTHER OPERATING EXPENSES, CAPITAL OUTLAYS, INTERSPECIAL ACCOUNT TRANSFERS, INTERFUND TRANSFER, INTERLOCAL GOVERNMENT UNIT TRANSFER, INTERSPECIAL ACCOUNT TRANSFER and LIABILITIES.</p>
+<div class="fig tall"><img src="images/ref-allotcode-list.png" alt="Allotment Code: list"></div>
+<div class="caption">Figure 2.11. The Allotment Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Allotment Code</strong>, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required. Click <strong>Create</strong>.</p>
+<div class="fig tall"><img src="images/ref-allotcode-add.png" alt="Allotment Code: add"></div>
+<div class="caption">Figure 2.12. The window to add a record in Allotment Code. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-allotcode-edit.png" alt="Allotment Code: edit"></div>
+<div class="caption">Figure 2.13. The window to edit a record in Allotment Code. 1 Code · 2 Description · 3 Update</div>
+
+<h3 id="s2-acl">2.3.2 Allotment Class</h3>
+<p><strong>Allotment Class</strong> links an allotment code to an object code. The columns are the first (unnamed) column, <strong>Code</strong>, <strong>Allotment Code</strong>, <strong>Object Code</strong> and <strong>Description</strong>.</p>
+<div class="fig tall"><img src="images/ref-allotclass-list.png" alt="Allotment Class: list"></div>
+<div class="caption">Figure 2.14. The Allotment Class page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Allotment Class</strong>, fill in:</p>
+<ul>
+  <li><strong>Code</strong> (required).</li>
+  <li><strong>Allotment Description</strong> (required): choose from the list of allotment codes. The window then shows the code of your choice.</li>
+  <li><strong>Object Description</strong> (required): choose from the list of object codes. The window then shows the code of your choice.</li>
+  <li><strong>Description</strong> (required).</li>
+  <li><strong>Post to JAO</strong> (check box): tick it when the class posts to JAO.</li>
+</ul>
+<div class="fig tall"><img src="images/ref-allotclass-add.png" alt="Allotment Class: add"></div>
+<div class="caption">Figure 2.15. The window to add a record in Allotment Class. 1 Code · 2 Allotment Description · 3 Object Description · 4 Description · 5 Check box · 6 Create</div>
+<div class="fig tall"><img src="images/ref-allotclass-dd-allotdesc.png" alt="The Allotment Description list"></div>
+<div class="caption">Figure 2.16. The Allotment Description drop-down list. 1 The eight allotment descriptions and the dash.</div>
+<div class="fig tall"><img src="images/ref-allotclass-dd-objdesc.png" alt="The Object Description list"></div>
+<div class="caption">Figure 2.17. The Object Description drop-down list. 1 The object descriptions: EXPENSE, TO SPECIAL EDUCATION FUND, TO PROVICIAL GOVERNMENT, TO CITY GOVERNMENT, TO MUNICIPAL GOVERNMENT and TO BARANGAY GOVERNMENT, as the system spells them.</div>
+<p>When you edit a class, the window also shows the <strong>Allotment Code</strong> and the <strong>Object Code</strong> beside their descriptions.</p>
+<div class="fig tall"><img src="images/ref-allotclass-edit.png" alt="Allotment Class: edit"></div>
+<div class="caption">Figure 2.18. The window to edit a record in Allotment Class. 1 Code · 2 Allotment Code · 3 Allotment Description · 4 Object Code · 5 Object Description · 6 Description · 7 Check box · 8 Update</div>
+
+<h2 id="s2-4">2.4 FPP</h2>
+
+<h3 id="s2-fn">2.4.1 Function Code</h3>
+<p><strong>Function Code</strong> lists the function codes. The columns are <strong>Code</strong> and <strong>Description</strong>. In the window <strong>Add Function Code</strong>, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required.</p>
+<div class="fig tall"><img src="images/ref-functioncode-list.png" alt="Function Code: list"></div>
+<div class="caption">Figure 2.19. The Function Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<div class="fig tall"><img src="images/ref-functioncode-add.png" alt="Function Code: add"></div>
+<div class="caption">Figure 2.20. The window to add a record in Function Code. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-functioncode-edit.png" alt="Function Code: edit"></div>
+<div class="caption">Figure 2.21. The window to edit a record in Function Code. 1 Code · 2 Description · 3 Update</div>
+
+<h3 id="s2-pc">2.4.2 Program Code</h3>
+<p><strong>Program Code</strong> lists the program codes. The columns are <strong>Code</strong>, <strong>Description</strong> and <strong>Program Code</strong>. The page has no record yet, so it says <span class="msg q">No record found.</span></p>
+<div class="fig tall"><img src="images/ref-programcode-list.png" alt="Program Code: list"></div>
+<div class="caption">Figure 2.22. The Program Code page. 1 Search box · 2 Add button · 3 Table headings</div>
+<p>In the window <strong>Add Program Code</strong>, type the <strong>Code</strong> and the <strong>Description</strong> and choose the <strong>Function Code</strong>. All three are required. The window then shows the description of the function code that you chose.</p>
+<div class="fig tall"><img src="images/ref-programcode-add.png" alt="Program Code: add"></div>
+<div class="caption">Figure 2.23. The window to add a record in Program Code. 1 Code · 2 Description · 3 Function Code · 4 Create</div>
+<div class="fig tall"><img src="images/ref-programcode-dd-functioncode.png" alt="The Function Code list"></div>
+<div class="caption">Figure 2.24. The Function Code drop-down list. 1 The function codes (here one) and the dash.</div>
+
+<h3 id="s2-fpp">2.4.3 FPP Code</h3>
+<p><strong>FPP Code</strong> lists the combined function, program and project codes. The columns are <strong>Code</strong> and <strong>Description</strong>. The system has two records, 1011 MAYOR and 1016 VICE MAYOR.</p>
+<div class="fig tall"><img src="images/ref-fppcode-list.png" alt="FPP Code: list"></div>
+<div class="caption">Figure 2.25. The FPP Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>The window <strong>Add FPP Code</strong> has these boxes: <strong>Code</strong> (required), <strong>Function Code</strong>, <strong>Program Code</strong> and <strong>Project Code</strong> (each with a list and a box that shows its description), <strong>Description</strong> (required), <strong>Income Type</strong> (a list), the check box <strong>Based on individual income</strong>, <strong>Signatory</strong> and <strong>Designation</strong>. The four lists show only the dash at present, because they have no other choices yet.</p>
+<div class="fig tall"><img src="images/ref-fppcode-add.png" alt="FPP Code: add"></div>
+<div class="caption">Figure 2.26. The window to add a record in FPP Code. 1 The boxes of the form · 2 Create</div>
+<div class="fig tall"><img src="images/ref-fppcode-edit.png" alt="FPP Code: edit"></div>
+<div class="caption">Figure 2.27. The window to edit a record in FPP Code. 1 The boxes of the form · 2 Update</div>
+
+<h2 id="s2-5">2.5 Chart of Accounts</h2>
+
+<h3 id="s2-acct">2.5.1 Account Code</h3>
+<p><strong>Account Code</strong> is the chart of accounts. The columns are <strong>Code</strong>, <strong>Description</strong>, <strong>GL Account Code</strong> and <strong>Order</strong>. The list is long (283 accounts), so use the <strong>Search</strong> box to find one, for example <em>Building Permit</em>.</p>
+<div class="fig tall"><img src="images/ref-accountcode-list.png" alt="Account Code: list"></div>
+<div class="caption">Figure 2.28. The Account Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p><strong>Adding an account code takes two steps.</strong> In the window <strong>Add Account Code</strong>, type the <strong>Account Code</strong> and click <strong>Check</strong>. The system looks for the same code. When the code is new, the message <span class="msg ok">Account code is available</span> appears and the rest of the form opens.</p>
+<div class="fig tall"><img src="images/ref-accountcode-add.png" alt="Account Code: add"></div>
+<div class="caption">Figure 2.29. The window to add a record in Account Code. 1 Account Code · 2 Check</div>
+<p>The full form (the same one that opens when you edit) has these boxes:</p>
+<ul>
+  <li><strong>Account Code</strong> and <strong>Description</strong> (both required).</li>
+  <li><strong>Seq Code</strong>, <strong>Sub Seq Code</strong>, <strong>Group Code</strong> and <strong>Sub Group Code</strong>: lists. They show only the dash at present.</li>
+  <li><strong>GL Code</strong>.</li>
+  <li><strong>Fpp Code</strong>: a list with <strong>MAYOR</strong> and <strong>VICE MAYOR</strong>. The box <strong>FPP Description</strong> shows the description of your choice.</li>
+  <li><strong>Order By Account Code</strong>: a number. The default is 13. A lower number appears first on the printed official receipt.</li>
+  <li>Five check boxes: <strong>Post to RSL when JV</strong>, <strong>Post to RSL when DV</strong>, <strong>Post to Surplus when JV</strong>, <strong>Post to Surplus when DV</strong> and <strong>Post to Cash Book when JV</strong>.</li>
+</ul>
+<p>The window is taller than a small screen. Scroll inside the window to reach the check boxes and the <strong>Update</strong> button.</p>
+<div class="fig tall"><img src="images/ref-accountcode-edit-top.png" alt="The top of the Edit Account Code window"></div>
+<div class="caption">Figure 2.30. The top of the window to edit an account code. 1 The boxes of the account.</div>
+<div class="fig tall"><img src="images/ref-accountcode-edit-bottom.png" alt="The bottom of the Edit Account Code window"></div>
+<div class="caption">Figure 2.31. The window scrolled down. 1 Description, GL Code, Fpp Code and Order · 2 The five posting check boxes · 3 Update.</div>
+
+<h3 id="s2-obj">2.5.2 Object Code</h3>
+<p><strong>Object Code</strong> lists the object codes. The columns are <strong>Code</strong> and <strong>Description</strong>. In the window <strong>Add Object Code</strong>, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required.</p>
+<div class="fig tall"><img src="images/ref-objectcode-list.png" alt="Object Code: list"></div>
+<div class="caption">Figure 2.32. The Object Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<div class="fig tall"><img src="images/ref-objectcode-add.png" alt="Object Code: add"></div>
+<div class="caption">Figure 2.33. The window to add a record in Object Code. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-objectcode-edit.png" alt="Object Code: edit"></div>
+<div class="caption">Figure 2.34. The window to edit a record in Object Code. 1 Code · 2 Description · 3 Update</div>
+
+<h2 id="s2-6">2.6 Accountability</h2>
+
+<h3 id="s2-af">2.6.1 Accountable Forms</h3>
+<p><strong>Accountable Forms</strong> records the booklets of official receipts and other accountable forms that are given to a collector. The columns are <strong>Document Date</strong>, <strong>Form Code</strong>, <strong>Fund Code</strong>, <strong>Transaction Type</strong>, <strong>Start No.</strong>, <strong>End No.</strong>, <strong>Qty</strong>, <strong>Amount</strong>, <strong>Status</strong>, <strong>Suffix</strong> and <strong>Action</strong>. The page has a paging line at the bottom. The icon at the top right (a folder with a plus sign, named <strong>CREATE ACCOUNTABLE FORM</strong>) adds a record. The icon in the <strong>Action</strong> column (named <strong>Details</strong>) opens the record. The <strong>Delete</strong> icon appears only for a record from which no receipt has been issued yet.</p>
+<div class="fig tall"><img src="images/ref-accountableforms-list.png" alt="Accountable Forms: list"></div>
+<div class="caption">Figure 2.35. The Accountable Forms page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Details)</div>
+<p>In the window <strong>CREATE ACCOUNTABLE FORM</strong>:</p>
+<ul>
+  <li><strong>Liquidating Officer</strong>, <strong>Collector</strong>, <strong>Cost Center</strong>, <strong>Form Type</strong> and <strong>Fund</strong> are required lists.</li>
+  <li><strong>Document Date</strong> starts as today's date. <strong>Trans Type</strong> is <em>Issuance</em> and cannot be changed.</li>
+  <li><strong>OR Suffix</strong> is optional.</li>
+  <li>Type the <strong>Start No.</strong> of the booklet. The system fills in the <strong>End No.</strong> (the start number plus 49, with the same number of digits), and sets <strong>Quantity</strong> and <strong>Balance</strong> to 50. You can change the End No.</li>
+  <li>Type the <strong>Unit Value</strong>. The <strong>Amount</strong> is the unit value multiplied by the quantity.</li>
+  <li><strong>Status</strong> starts as <em>Open</em>.</li>
+</ul>
+<p>If the receipt numbers already exist in the system, the message <span class="msg del">O.R already exist in the system</span> appears and the record is not saved.</p>
+<div class="fig tall"><img src="images/ref-accountableforms-add.png" alt="Accountable Forms: add"></div>
+<div class="caption">Figure 2.36. The window to add a record in Accountable Forms. 1 The boxes of the form · 2 Create</div>
+<p>The lists of the window offer these choices:</p>
+<ul>
+  <li><strong>Liquidating Officer</strong>: the liquidating officers. <strong>Collector</strong>: the collectors, three at present. Both come from the LiqDisb Collector page (<a href="#s2-lq">Section 2.6.6</a>).</li>
+  <li><strong>Cost Center</strong>: ACCOUTANTABLE OFFICER (spelled this way in the system) and OAS MUNICIPAL HALL.</li>
+  <li><strong>Form Type</strong>: the forms of the Form Code page (<a href="#s2-fm">Section 2.6.4</a>), such as CASH TICKET AT P 1.00 EACH or COMMUNITY TAX CERTIFICATION.</li>
+  <li><strong>Fund</strong>: the fund codes, from 100(01) GENERAL FUND to 400 OCC.</li>
+</ul>
+<div class="fig tall"><img src="images/ref-accountableforms-dd-formtype.png" alt="The Form Type list"></div>
+<div class="caption">Figure 2.37. The Form Type drop-down list. 1 The forms that can be chosen.</div>
+<div class="fig tall"><img src="images/ref-accountableforms-dd-fund.png" alt="The Fund list"></div>
+<div class="caption">Figure 2.38. The Fund drop-down list. 1 The fund codes.</div>
+<div class="fig tall"><img src="images/ref-accountableforms-dd-costcenter.png" alt="The Cost Center list"></div>
+<div class="caption">Figure 2.39. The Cost Center drop-down list. 1 The two cost centers.</div>
+<div class="fig tall"><img src="images/ref-accountableforms-dd-collector.png" alt="The Collector list"></div>
+<div class="caption">Figure 2.40. The Collector drop-down list. 1 The collectors. The names are blurred.</div>
+<p>Click the <strong>Details</strong> icon of a record to read it. The window <strong>Accountable Form Details</strong> shows <strong>Basic Information</strong> (the document date, the status, the transaction type, the OR suffix and the two officers), <strong>Form, Fund, and Cost Center Information</strong>, the <strong>OR Number Range</strong> (start number, end number and quantity) and <strong>Financial Information</strong> (unit value and total value). Scroll inside the window to read all of it. Click <strong>Close</strong> or the X when you finish.</p>
+<div class="fig tall"><img src="images/ref-accountableforms-details.png" alt="The Accountable Form Details window"></div>
+<div class="caption">Figure 2.41. The Accountable Form Details window. 1 Basic Information · 2 Form, Fund, and Cost Center Information · 3 Close. The officer names are blurred.</div>
+
+<h3 id="s2-cb">2.6.2 Check Booklets</h3>
+<p><strong>Check Booklets</strong> records the booklets of checks that are given to a disbursing officer. The columns are <strong>Document Date</strong>, <strong>Transaction Type</strong>, <strong>Check No.</strong>, <strong>Amount</strong>, <strong>Qty</strong>, <strong>Check Date</strong>, <strong>Refno DV No.</strong>, <strong>Start No.</strong>, <strong>End No.</strong>, <strong>Qty</strong> and <strong>Status</strong>. The page has a paging line. The page has no record yet and has no Edit or Delete icon. The icon at the top right (<strong>CREATE CHECK BOOKLET</strong>) adds a record.</p>
+<div class="fig tall"><img src="images/ref-checkbooklets-list.png" alt="Check Booklets: list"></div>
+<div class="caption">Figure 2.42. The Check Booklets page. 1 Search box · 2 Add button · 3 Table headings · 4 Paging line</div>
+<p>The window <strong>CREATE CHECK BOOKLET</strong> shows <strong>Transaction: Distribute</strong>. Fill in:</p>
+<ul>
+  <li><strong>Releasing Officer</strong> and <strong>Disbursing Officer</strong> (lists of the officers), <strong>Document Date</strong>, <strong>Cost Center</strong> and <strong>Bank</strong> (all required).</li>
+  <li><strong>Start No.</strong>, <strong>End No.</strong> and <strong>Quantity</strong> of the checks (all required).</li>
+  <li>The right column (<strong>Start No.</strong>, <strong>End No.</strong>, <strong>Balance</strong>, <strong>Last Trans Date</strong> and <strong>Status</strong>) shows the position of the booklet. The status starts as <em>Open</em>.</li>
+</ul>
+<div class="fig tall"><img src="images/ref-checkbooklets-add.png" alt="Check Booklets: add"></div>
+<div class="caption">Figure 2.43. The window to add a record in Check Booklets. 1 The boxes of the form · 2 Create</div>
+<div class="fig tall"><img src="images/ref-checkbooklets-dd-releasing.png" alt="The Releasing Officer list"></div>
+<div class="caption">Figure 2.44. The Releasing Officer drop-down list. 1 The officers. The names are blurred. The Disbursing Officer list has the same choices.</div>
+<div class="fig tall"><img src="images/ref-checkbooklets-dd-bank.png" alt="The Bank list"></div>
+<div class="caption">Figure 2.45. The Bank drop-down list. 1 The banks of the Bank Depository page (here LBP - TF (HDMF)).</div>
+
+<h3 id="s2-bd">2.6.3 Bank Depository</h3>
+<p><strong>Bank Depository</strong> lists the bank accounts of the municipality. The columns are <strong>Account No.</strong>, <strong>Bank</strong>, <strong>Branch</strong>, <strong>Fund Code</strong>, <strong>SL Code</strong>, <strong>GL Code</strong>, <strong>Object</strong> and <strong>Action</strong>.</p>
+<div class="fig tall"><img src="images/ref-bankdepository-list.png" alt="Bank Depository: list"></div>
+<div class="caption">Figure 2.46. The Bank Depository page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Bank Depository</strong>, fill in <strong>Account No</strong>, <strong>Bank</strong>, <strong>Branch</strong>, <strong>Fund Code</strong>, <strong>Account Code</strong> and <strong>Object</strong>. All six are required. <strong>Fund Code</strong> is a list of the fund codes. <strong>Account Code</strong> is a long list of the accounts of the chart of accounts, each shown as the code, a dash and the description.</p>
+<div class="fig tall"><img src="images/ref-bankdepository-add.png" alt="Bank Depository: add"></div>
+<div class="caption">Figure 2.47. The window to add a record in Bank Depository. 1 Account No · 2 Bank · 3 Branch · 4 Fund Code · 5 Account Code · 6 Object · 7 Create</div>
+<div class="fig tall"><img src="images/ref-bankdepository-dd-fundcode.png" alt="The Fund Code list"></div>
+<div class="caption">Figure 2.48. The Fund Code drop-down list. 1 The ten fund codes.</div>
+<div class="fig tall"><img src="images/ref-bankdepository-dd-accountcode.png" alt="The Account Code list"></div>
+<div class="caption">Figure 2.49. The Account Code drop-down list. 1 The accounts of the chart of accounts. Scroll the list to see them all.</div>
+<div class="fig tall"><img src="images/ref-bankdepository-edit.png" alt="Bank Depository: edit"></div>
+<div class="caption">Figure 2.50. The window to edit a record in Bank Depository. 1 Account No · 2 Bank · 3 Branch · 4 Fund Code · 5 Account Code · 6 Object · 7 Update</div>
+
+<h3 id="s2-fm">2.6.4 Form Code</h3>
+<p><strong>Form Code</strong> lists the accountable forms and their value. The columns are <strong>Code</strong>, <strong>Description</strong> and <strong>Unit Value</strong>. It includes cash tickets, accountable form #51, community tax certificates, the marriage license and fee receipt, the municipal burial permit and fee receipt, and the real property tax receipt.</p>
+<div class="fig tall"><img src="images/ref-formcode-list.png" alt="Form Code: list"></div>
+<div class="caption">Figure 2.51. The Form Code page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Form Code</strong>, type the <strong>Code</strong> and the <strong>Description</strong> (both required) and, if the form has a fixed price, the <strong>Unit Value</strong>.</p>
+<div class="fig tall"><img src="images/ref-formcode-add.png" alt="Form Code: add"></div>
+<div class="caption">Figure 2.52. The window to add a record in Form Code. 1 Code · 2 Description · 3 Unit Value · 4 Create</div>
+<div class="fig tall"><img src="images/ref-formcode-edit.png" alt="Form Code: edit"></div>
+<div class="caption">Figure 2.53. The window to edit a record in Form Code. 1 Code · 2 Description · 3 Unit Value · 4 Update</div>
+
+<h3 id="s2-ot">2.6.5 Officer Type</h3>
+<p><strong>Officer Type</strong> lists the types of officer. The columns are <strong>Code</strong> and <strong>Description</strong>. The seven types are CASH, COLL, DISB, LIQ, RELO, STAFF and AO. The LiqDisb Collector page uses them as its <strong>Office Type</strong> list.</p>
+<div class="fig tall"><img src="images/ref-officertype-list.png" alt="Officer Type: list"></div>
+<div class="caption">Figure 2.54. The Officer Type page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Office Type</strong>, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required.</p>
+<div class="fig tall"><img src="images/ref-officertype-add.png" alt="Officer Type: add"></div>
+<div class="caption">Figure 2.55. The window to add a record in Officer Type. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-officertype-edit.png" alt="Officer Type: edit"></div>
+<div class="caption">Figure 2.56. The window to edit a record in Officer Type. 1 Code · 2 Description · 3 Update</div>
+
+<h3 id="s2-lq">2.6.6 LiqDisb Collector</h3>
+<p><strong>LiqDisb Collector</strong> lists the liquidating, disbursing and collecting officers. The columns are <strong>Code</strong>, <strong>Description</strong> (the name of the officer), <strong>Type</strong> and <strong>Cost Center</strong>. The Assigned Personnel window of a user (<a href="01-admin.pdf#s1-2-6">Section 1.2.6</a>) takes its officers from this page.</p>
+<div class="fig tall"><img src="images/ref-liqdisb-list.png" alt="LiqDisb Collector: list"></div>
+<div class="caption">Figure 2.57. The LiqDisb Collector page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Collector</strong>, fill in:</p>
+<ul>
+  <li><strong>Code</strong> (required).</li>
+  <li><strong>Office Type</strong> (required): CASH, COLL, DISB, LIQ, RELO, STAFF or AO. The box beside it shows the description.</li>
+  <li><strong>Cost Center</strong> (required): AO or MMH. The box beside it shows the description.</li>
+  <li><strong>Name</strong> (required) and <strong>Designation</strong>.</li>
+  <li><strong>SL Code</strong> (required): 1011 or 1016, with its description below.</li>
+  <li><strong>User</strong>.</li>
+</ul>
+<div class="fig tall"><img src="images/ref-liqdisb-add.png" alt="LiqDisb Collector: add"></div>
+<div class="caption">Figure 2.58. The window to add a record in LiqDisb Collector. 1 The boxes of the form · 2 Create</div>
+<div class="fig tall"><img src="images/ref-liqdisb-dd-officetype.png" alt="The Office Type list"></div>
+<div class="caption">Figure 2.59. The Office Type drop-down list. 1 The seven office types.</div>
+<div class="fig tall"><img src="images/ref-liqdisb-dd-costcenter.png" alt="The Cost Center list"></div>
+<div class="caption">Figure 2.60. The Cost Center drop-down list. 1 The two cost centers.</div>
+<div class="fig tall"><img src="images/ref-liqdisb-edit.png" alt="LiqDisb Collector: edit"></div>
+<div class="caption">Figure 2.61. The window to edit a record in LiqDisb Collector. 1 The boxes of the form · 2 Update</div>
+
+<h3 id="s2-cc">2.6.7 Cost Center</h3>
+<p><strong>Cost Center</strong> lists the offices that hold funds or forms. The columns are <strong>Code</strong> and <strong>Description</strong>. The two cost centers are AO (the accountable officer) and MMH (OAS MUNICIPAL HALL). In the window <strong>Add Cost Center</strong>, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required.</p>
+<div class="fig tall"><img src="images/ref-costcenter-list.png" alt="Cost Center: list"></div>
+<div class="caption">Figure 2.62. The Cost Center page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<div class="fig tall"><img src="images/ref-costcenter-add.png" alt="Cost Center: add"></div>
+<div class="caption">Figure 2.63. The window to add a record in Cost Center. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-costcenter-edit.png" alt="Cost Center: edit"></div>
+<div class="caption">Figure 2.64. The window to edit a record in Cost Center. 1 Code · 2 Description · 3 Update</div>
+
+<h3 id="s2-cp">2.6.8 Creditor/Payee</h3>
+<p><strong>Creditor/Payee</strong> lists the people and companies that the municipality pays or that pay it. The columns are <strong>Description</strong> (the name), <strong>Type</strong> and <strong>Address</strong>.</p>
+<div class="fig tall"><img src="images/ref-creditorpayee-list.png" alt="Creditor/Payee: list"></div>
+<div class="caption">Figure 2.65. The Creditor/Payee page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Payee</strong>, fill in <strong>Type</strong>, <strong>TIN</strong>, <strong>Description</strong> (the name), <strong>Address</strong> and <strong>Contact Info</strong>. All five are required when you add a payee. <strong>Type</strong> is a list with seven choices: <strong>Employee</strong>, <strong>Supplier</strong>, <strong>Contractor</strong>, <strong>Indigent</strong>, <strong>Client</strong>, <strong>Patient</strong> and <strong>Tax Payer</strong>.</p>
+<div class="fig tall"><img src="images/ref-creditorpayee-add.png" alt="Creditor/Payee: add"></div>
+<div class="caption">Figure 2.66. The window to add a record in Creditor/Payee. 1 Type · 2 TIN · 3 Description · 4 Address · 5 Contact Info · 6 Create</div>
+<div class="fig tall"><img src="images/ref-creditorpayee-dd-type.png" alt="The Type list"></div>
+<div class="caption">Figure 2.67. The Type drop-down list. 1 The seven types of payee.</div>
+<div class="fig tall"><img src="images/ref-creditorpayee-edit.png" alt="Creditor/Payee: edit"></div>
+<div class="caption">Figure 2.68. The window to edit a record in Creditor/Payee. 1 Type · 2 TIN · 3 Description · 4 Address · 5 Contact Info · 6 Update</div>
+
+<h3 id="s2-or">2.6.9 OR Template</h3>
+<p><strong>OR Template</strong> sets which accounts appear for each collection type on an official receipt (see <a href="#s2-rel">Section 2.6.10</a> for how the two pages work together). The columns are <strong>#</strong>, <strong>Collection Type</strong>, <strong>Account Code</strong>, <strong>Description</strong>, <strong>Order</strong>, <strong>Amount</strong>, <strong>Fund</strong> and <strong>Action</strong>. The list is long (385 rows), so use the <strong>Search</strong> box. In this list the pencil is above the trash can in each row.</p>
+<div class="fig tall"><img src="images/ref-ortemplate-list.png" alt="OR Template: list"></div>
+<div class="caption">Figure 2.69. The OR Template page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add OR Template</strong>, fill in:</p>
+<ul>
+  <li><strong>Account Code</strong> (required): click the box and pick an account, or type to search. The box beside it shows the description.</li>
+  <li><strong>Collection Type</strong> (required): pick a collection type from the Collection Type page.</li>
+  <li><strong>Account Group</strong> (required): <strong>CTC - Details</strong>, <strong>CTC - Interest</strong>, <strong>N/A</strong>, the numbers 1 to 9 or the letters a to z.</li>
+  <li><strong>Amount</strong>: the usual amount of the account.</li>
+  <li><strong>Fund</strong> (required): pick a fund code. The box beside it shows the description.</li>
+  <li><strong>Is Special Account?</strong> (check box).</li>
+</ul>
+<div class="fig tall"><img src="images/ref-ortemplate-add.png" alt="OR Template: add"></div>
+<div class="caption">Figure 2.70. The window to add a record in OR Template. 1 Account Code · 2 Box · 3 Collection Type · 4 Account Group · 5 Amount · 6 Fund · 7 Box · 8 Check box · 9 Create</div>
+<div class="fig tall"><img src="images/ref-ortemplate-dd-group.png" alt="The Account Group list"></div>
+<div class="caption">Figure 2.71. The Account Group list. 1 The choices. Scroll the list to see all of them.</div>
+<div class="fig tall"><img src="images/ref-ortemplate-edit.png" alt="OR Template: edit"></div>
+<div class="caption">Figure 2.72. The window to edit a record in OR Template. 1 Account Code · 2 Box · 3 Collection Type · 4 Account Group · 5 Amount · 6 Fund · 7 Box · 8 Check box · 9 Update</div>
+
+<h3 id="s2-rel">2.6.10 How OR Template and Collection Type work together</h3>
+<div class="note"><strong>The relationship in one line.</strong> A <strong>Collection Type</strong> is the kind of payment that a cashier chooses (for example <em>006 Amusement</em>). The <strong>OR Template</strong> is the list of accounts that belong to that collection type. One collection type has many OR template lines, and each OR template line belongs to one collection type.</div>
+<p>Each line of the OR Template page links one account of the chart of accounts (<a href="#s2-acct">Section 2.5.1</a>) and one fund (<a href="#s2-fc">Section 2.2.2</a>) to one collection type. The usual amount of the account is kept on the line. The lines of a collection type together make up what is printed on the official receipt for that kind of payment.</p>
+<p><strong>A sample: the collection type Amusement.</strong> First, the Collection Type page lists <strong>006 Amusement</strong>. It is only a code and a name.</p>
+<div class="fig small"><img src="images/ref-ct-sample.png" alt="The collection type Amusement"></div>
+<div class="caption">Figure 2.73. Step 1. The collection type 006 Amusement on the Collection Type page. 1 The Search box with the word typed · 2 The code and the name of the collection type.</div>
+<p>Second, the OR Template page lists the lines that belong to Amusement. Typing <strong>Amusement</strong> in the Search box of the OR Template page finds them, because the search also matches the collection type. Amusement has eight lines: Business Tax-Amusement, Health and Sanitary Permit, Occupation Fees, Other Fees, Permit Fees-Business (Mayor's Permit), Registration Plates, Tags and Stickers Fees, Penalty and Garbage Fees. Seven lines have an amount of 0.00 and Garbage Fees has 30.00. All eight use the fund 100(01).</p>
+<div class="fig tall"><img src="images/ref-or-sample.png" alt="The OR template lines of Amusement"></div>
+<div class="caption">Figure 2.74. Step 2. The eight OR template lines of the collection type Amusement. 1 The Search box · 2 The Collection Type column (every line says Amusement) · 3 The account code and the description of each line · 4 The amount and the fund of each line.</div>
+<p>Third, click the pencil of any line. The window shows the link: the <strong>Account Code</strong>, the <strong>Collection Type</strong> that the line belongs to, and the <strong>Fund</strong>. To move a line to another collection type, change the Collection Type box and click <strong>Update</strong>.</p>
+<div class="fig tall"><img src="images/ref-or-edit-sample.png" alt="The Collection Type of an OR template line"></div>
+<div class="caption">Figure 2.75. Step 3. The window of one OR template line. 1 The account of the line · 2 The Collection Type of the line (Amusement) · 3 The fund of the line.</div>
+<p><strong>Where the cashier sees it.</strong> On the Issuance of Official Receipt page, the cashier chooses a collection type. TIS then loads the OR template lines of that collection type (the accounts, the amounts and the funds) and the cashier adds them to the receipt. This part is described from the system's code and is shown in the Transaction section of this manual.</p>
+<p><strong>To make a new kind of payment available:</strong></p>
+<ol>
+  <li>Add the collection type on the Collection Type page (<a href="#s2-7">Section 2.7</a>).</li>
+  <li>On the OR Template page, add one line for each account of that payment. In every line choose the same <strong>Collection Type</strong>, then the <strong>Account Code</strong>, the <strong>Account Group</strong> and the <strong>Fund</strong>.</li>
+  <li>Check the result by typing the name of the collection type in the Search box of the OR Template page.</li>
+</ol>
+<div class="warning"><strong>Take care.</strong> A collection type with no OR template line gives the cashier nothing to load. Deleting a collection type or a line changes the receipts of that kind of payment from then on.</div>
+
+<h3 id="s2-ant">2.6.11 Accountant</h3>
+<p><strong>Accountant</strong> lists the municipal accountants. It has the same columns and windows as the Treasurer page: <strong>#</strong>, <strong>Full Name</strong>, <strong>Position</strong>, <strong>Status</strong> and <strong>Action</strong>. The page has no record yet, so it says <span class="msg q">No record found.</span></p>
+<div class="fig tall"><img src="images/ref-accountant-list.png" alt="Accountant: list"></div>
+<div class="caption">Figure 2.76. The Accountant page. 1 Search box · 2 Add button · 3 Table headings</div>
+<p>In the window <strong>Add Accountant</strong>, type the <strong>Full Name</strong> and the <strong>Position</strong> (both required). Click <strong>Add Accountant</strong> to save, or <strong>Cancel</strong> to close without saving. If an active record already exists, the window says <span class="msg warn">An active record already exists. New record will be saved as inactive.</span></p>
+<div class="fig tall"><img src="images/ref-accountant-add.png" alt="Accountant: add"></div>
+<div class="caption">Figure 2.77. The window to add a record in Accountant. 1 Full Name · 2 Position · 3 Cancel · 4 Add Accountant</div>
+
+<h3 id="s2-trs">2.6.12 Treasurer</h3>
+<p><strong>Treasurer</strong> lists the municipal treasurers. The columns are <strong>#</strong>, <strong>Full Name</strong>, <strong>Position</strong>, <strong>Status</strong> and <strong>Action</strong>. The status <strong>Active</strong> marks the treasurer that the system uses at present. Only one record can be active.</p>
+<div class="fig tall"><img src="images/ref-treasurer-list.png" alt="Treasurer: list"></div>
+<div class="caption">Figure 2.78. The Treasurer page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<p>In the window <strong>Add Treasurer</strong>, type the <strong>Full Name</strong> and the <strong>Position</strong> (both required). Click <strong>Add Treasurer</strong> to save, or <strong>Cancel</strong> to close without saving. If an active record already exists, the window says <span class="msg warn">An active record already exists. New record will be saved as inactive.</span></p>
+<div class="fig tall"><img src="images/ref-treasurer-add.png" alt="Treasurer: add"></div>
+<div class="caption">Figure 2.79. The window to add a record in Treasurer. 1 Full Name · 2 Position · 3 Cancel · 4 Add Treasurer</div>
+<p>In the window <strong>Edit Treasurer</strong>, the check box <strong>Set as Active</strong> makes this treasurer the active one. The note says <span class="msg warn">Only one active record is allowed. Setting this active will deactivate all others.</span> To delete a record, click its trash can. The question reads <span class="msg q">Are you sure you want to delete (the name)?</span> with <strong>Cancel</strong> and <strong>Yes</strong>.</p>
+<div class="fig tall"><img src="images/ref-treasurer-edit.png" alt="Treasurer: edit"></div>
+<div class="caption">Figure 2.80. The window to edit a record in Treasurer. 1 Full Name · 2 Position · 3 Check box · 4 Cancel · 5 Edit Treasurer</div>
+
+<h3 id="s2-mayr">2.6.13 Mayor</h3>
+<p><strong>Mayor</strong> lists the municipal mayors. It has the same columns and windows as the Treasurer page: <strong>#</strong>, <strong>Full Name</strong>, <strong>Position</strong>, <strong>Status</strong> and <strong>Action</strong>. The page has no record yet, so it says <span class="msg q">No record found.</span></p>
+<div class="fig tall"><img src="images/ref-mayor-list.png" alt="Mayor: list"></div>
+<div class="caption">Figure 2.81. The Mayor page. 1 Search box · 2 Add button · 3 Table headings</div>
+<p>In the window <strong>Add Mayor</strong>, type the <strong>Full Name</strong> and the <strong>Position</strong> (both required). Click <strong>Add Mayor</strong> to save, or <strong>Cancel</strong> to close without saving. If an active record already exists, the window says <span class="msg warn">An active record already exists. New record will be saved as inactive.</span></p>
+<div class="fig tall"><img src="images/ref-mayor-add.png" alt="Mayor: add"></div>
+<div class="caption">Figure 2.82. The window to add a record in Mayor. 1 Full Name · 2 Position · 3 Cancel · 4 Add Mayor</div>
+
+<h2 id="s2-7">2.7 Collection Type</h2>
+<p><strong>Collection Type</strong> lists the types of collection that the cashier chooses from. The columns are <strong>Code</strong> and <strong>Description</strong>. The list is long (171 types), so use the <strong>Search</strong> box. In the window to add a record, type the <strong>Code</strong> and the <strong>Description</strong>. Both are required.</p>
+<div class="note">A collection type is only a code and a name. The accounts that belong to it are set on the OR Template page. See <a href="#s2-rel">Section 2.6.10</a>.</div>
+<div class="fig tall"><img src="images/ref-collectiontype-list.png" alt="Collection Type: list"></div>
+<div class="caption">Figure 2.83. The Collection Type page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<div class="fig tall"><img src="images/ref-collectiontype-add.png" alt="Collection Type: add"></div>
+<div class="caption">Figure 2.84. The window to add a record in Collection Type. 1 Code · 2 Description · 3 Create</div>
+<div class="fig tall"><img src="images/ref-collectiontype-edit.png" alt="Collection Type: edit"></div>
+<div class="caption">Figure 2.85. The window to edit a record in Collection Type. 1 Code · 2 Description · 3 Update</div>
+
+<h2 id="s2-8">2.8 Cemetery</h2>
+<p><strong>Cemetery</strong> lists the cemeteries of the municipality, such as the cemeteries that burial permits refer to. The only column is <strong>Description</strong> (17 cemeteries at present). In the window to add a record, type the <strong>Description</strong>. It is required.</p>
+<div class="fig tall"><img src="images/ref-cemetery-list.png" alt="Cemetery: list"></div>
+<div class="caption">Figure 2.86. The Cemetery page. 1 Search box · 2 Add button · 3 Table headings · 4 Action icons (Edit, Delete)</div>
+<div class="fig tall"><img src="images/ref-cemetery-add.png" alt="Cemetery: add"></div>
+<div class="caption">Figure 2.87. The window to add a record in Cemetery. 1 Description · 2 Create</div>
+<div class="fig tall"><img src="images/ref-cemetery-edit.png" alt="Cemetery: edit"></div>
+<div class="caption">Figure 2.88. The window to edit a record in Cemetery. 1 Description · 2 Update</div>
+
+</body>
+</html>
