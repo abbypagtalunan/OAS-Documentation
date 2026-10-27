@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>TIS: Transaction</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 105mm; }
+h2,h3,h4{break-after:avoid;page-break-after:avoid;} .fig{break-inside:avoid;break-after:avoid;} .caption{break-before:avoid;}
+.msg{display:inline-block;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:8.8pt;line-height:1.35;padding:.2mm 1.8mm;border-radius:2px;border:1px solid;font-style:normal;margin:.2mm 0;} .msg.q{background:#f1f3f5;border-color:#ced4da;color:#343a40;} .msg.ok{background:#e6f4ea;border-color:#8fcf9f;color:#1e6b34;} .msg.del{background:#fdecea;border-color:#f1a9a0;color:#a12418;} .msg.warn{background:#fff8e1;border-color:#f0d27a;color:#7a5b00;}</style>
+</head><body>
+<div class="section-no">Section 3</div>
+<h1>Transaction</h1>
+<p class="lead">The Transaction menu is where receipts and vouchers are made. <strong>Collection</strong> records the money that the municipality receives, and gives an official receipt (OR) for each payment. <strong>Disbursement</strong> records the money that the municipality pays out, with a disbursement voucher (DV). This section explains each page, each button and each message.</p>
+<div class="note"><strong>Reading the colored boxes.</strong> Messages of TIS are shown in boxes: <span class="msg q">gray</span> for a question or notice, <span class="msg ok">green</span> for success, <span class="msg del">red</span> for an error and <span class="msg warn">yellow</span> for a warning.</div>
+<div class="toc"><div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s3-1">3.1 The Transaction menu</a></li>
+  <li><a href="#s3-2">3.2 How a receipt is made</a></li>
+  <li class="sub"><a href="#s3-2-1">3.2.1 Messages after Check</a></li>
+  <li class="sub"><a href="#s3-2-2">3.2.2 After the receipt is saved</a></li>
+  <li class="sub"><a href="#s3-2-3">3.2.3 The buttons of a saved receipt</a></li>
+  <li><a href="#s3-3">3.3 Issuance of Official Receipt(OR)</a></li>
+  <li class="sub"><a href="#s3-3-1">3.3.1 Select OR To Print</a></li>
+  <li class="sub"><a href="#s3-3-2">3.3.2 A new receipt</a></li>
+  <li class="sub"><a href="#s3-3-3">3.3.3 Adding the accounts of the collection type</a></li>
+  <li class="sub"><a href="#s3-3-4">3.3.4 The Check List</a></li>
+  <li class="sub"><a href="#s3-3-5">3.3.5 A saved receipt</a></li>
+  <li><a href="#s3-4">3.4 Business Permit(OR)</a></li>
+  <li><a href="#s3-5">3.5 Building Permit</a></li>
+  <li><a href="#s3-6">3.6 Community Tax Certificate(CTC) - Ind</a></li>
+  <li><a href="#s3-7">3.7 Community Tax Certificate(CTC) - Corp</a></li>
+  <li><a href="#s3-8">3.8 Burial Permit and Fee Receipt</a></li>
+  <li><a href="#s3-9">3.9 Online Request</a></li>
+  <li><a href="#s3-10">3.10 Disbursement Voucher(DV)</a></li>
+  <li class="sub"><a href="#s3-10-1">3.10.1 The voucher list, Filter and Add Record</a></li>
+  <li class="sub"><a href="#s3-10-2">3.10.2 Header and Add Record</a></li>
+  <li class="sub"><a href="#s3-10-3">3.10.3 Checks Entry</a></li>
+  <li class="sub"><a href="#s3-10-5">3.10.4 Query and Query Result</a></li>
+  <li class="sub"><a href="#s3-10-6">3.10.5 RCI: Report of Checks Issued</a></li>
+  <li class="sub"><a href="#s3-10-8">3.10.6 Preview Print</a></li>
+</ul></div>
+<h2 id="s3-1">3.1 The Transaction menu</h2>
+<p>Open the sidebar and click <strong>Transaction</strong>. It has two groups. <strong>Collection</strong> has seven pages: <strong>Issuance of Official Receipt(OR)</strong>, <strong>Business Permit(OR)</strong>, <strong>Building Permit</strong>, <strong>Community Tax Certificate(CTC) - Ind</strong>, <strong>Community Tax Certificate(CTC) - Corp</strong>, <strong>Burial Permit and Fee Receipt</strong> and <strong>Online Request</strong>. <strong>Disbursement</strong> has one page, <strong>Disbursement Voucher(DV)</strong>.</p>
+<div class="fig tall"><img src="images/tx-menu.png" alt="The Transaction menu"></div>
+<div class="caption">Figure 3.1. The sidebar with Transaction open. 1 The seven Collection pages · 2 Disbursement. The name and email are blurred.</div>
+<h2 id="s3-2">3.2 How a receipt is made</h2>
+<p>Six of the Collection pages (Issuance, Business Permit, Building Permit, CTC Ind, CTC Corp and Burial Permit) work in the same way. A receipt is never typed from nothing. It always starts from a receipt number that already exists in a booklet.</p>
+<ol>
+  <li><strong>The booklet comes first.</strong> On the Referential page <strong>Accountable Forms</strong> (<a href="02-referential.pdf#s2-af">Section 2.6.1</a>), a booklet of 50 receipts is recorded for a collector. This gives TIS the receipt numbers, the form type, the fund, the liquidating officer and the collector.</li>
+  <li><strong>Type the receipt number.</strong> On the page, type the number in the <strong>OR No.</strong> box (on the CTC pages, the <strong>CTC No.</strong> box) and click <strong>Check</strong>, or press <strong>Ctrl+Enter</strong>.</li>
+  <li><strong>TIS looks the number up.</strong> A new number from a booklet opens the form, and the gray box at the right shows the <strong>Liq Officer</strong>, the <strong>Collector</strong>, the <strong>Form Type</strong>, the <strong>RCD No.</strong> and the <strong>RCLO No.</strong> from the booklet. You do not type them.</li>
+  <li><strong>Fill in the payor and what is paid.</strong> Fill in the boxes of the page, then choose the collection type or the details. TIS loads the accounts of that payment (see <a href="02-referential.pdf#s2-rel">Section 2.6.10</a>).</li>
+  <li><strong>Save.</strong> Click <strong>Save</strong> (or press <strong>Ctrl+S</strong>). The receipt is saved. Then print it and TIS asks if you want the next receipt number.</li>
+</ol>
+<p>The collector must also be one of the officers assigned to your user (<a href="01-admin.pdf#s1-2-6">Section 1.2.6</a>). If not, the receipt is refused.</p>
+<h3 id="s3-2-1">3.2.1 Messages after Check</h3>
+<p>When you check a receipt number, TIS answers with one of these windows. Each shows a red circle with an exclamation mark, the message and an <strong>OK</strong> button.</p>
+<ul>
+  <li><span class="msg del">O.R # NOT FOUND!</span> The number is not in any booklet, or it is in a booklet of another kind of form (for example a CTC number on the Issuance page).</li>
+  <li><span class="msg del">O.R # ALREADY USED!</span> The receipt was already saved. After OK, TIS shows the saved receipt so that you can read it.</li>
+  <li><span class="msg del">You are not allowed to proccess this personnel.</span> The collector of the receipt is not one of your assigned personnel (the system spells it this way).</li>
+  <li><span class="msg del">O.R # REGISTERED TO THE BUSINESS PERMIT!</span> The number already belongs to a business permit receipt, so it cannot be used on this page.</li>
+</ul>
+<div class="fig small"><img src="images/tx-iss-notfound.png" alt="O.R # NOT FOUND window"></div>
+<div class="caption">Figure 3.2. The window after checking a number that does not exist. 1 The message and the OK button.</div>
+<h3 id="s3-2-2">3.2.2 After the receipt is saved</h3>
+<ul>
+  <li><span class="msg ok">Issuance details updated successfully</span> appears when the receipt is saved. The receipt then opens for printing.</li>
+  <li><span class="msg q">Next OR?</span> TIS asks if you want to work on the next receipt number. Click <strong>Yes</strong> to fill the OR No. box with the next number (the number plus 1), or <strong>No</strong> to stay.</li>
+  <li><span class="msg q">No record found.</span> shows in an empty Template List or Check List.</li>
+</ul>
+<h3 id="s3-2-3">3.2.3 The buttons of a saved receipt</h3>
+<p>When you check a number that was already used, TIS shows the saved receipt and these buttons at the top right:</p>
+<ul>
+  <li><strong>Select OR To Print:</strong> opens the list of receipts that can be printed (<a href="#s3-3-1">Section 3.3.1</a>).</li>
+  <li><strong>Mark As Cancelled:</strong> cancels the receipt. TIS does not ask a question first and the message <span class="msg ok">Issuance OR cancelled successfully</span> follows at once, so click it only when you mean it.</li>
+  <li><strong>Print OR:</strong> prints the receipt (<strong>Ctrl+P</strong>).</li>
+  <li><strong>Edit:</strong> opens the lines of the receipt so that the particulars and the amounts can be changed. <span class="msg ok">Issuance OR updated successfully</span> follows.</li>
+  <li><strong>Erase:</strong> removes the lines of the receipt after the question <span class="msg q">Are you sure to delete this issuance?</span> It is also the <strong>Del</strong> key. The message <span class="msg ok">Issuance deleted successfully</span> follows.</li>
+</ul>
+<div class="warning"><strong>Caution.</strong> Mark As Cancelled, Edit and Erase change a receipt that was already given to a payor. Use them only with the approval of the treasurer. These buttons were not pressed while this manual was prepared; they are described from the code.</div>
+<h2 id="s3-3">3.3 Issuance of Official Receipt(OR)</h2>
+<p>This page makes an official receipt for any payment that does not have its own page. When you open it, only the <strong>OR No.</strong> box, the <strong>Check</strong> button and the <strong>Select OR To Print</strong> button show. Below are the <strong>Template List</strong> (the accounts paid) and the <strong>Check List</strong> (the checks that paid it).</p>
+<div class="note"><strong>Click the Check button first.</strong> Type the number in the OR No. box and click the <strong>Check</strong> button (or press <strong>Ctrl+Enter</strong>). The form window then opens below it. Nothing can be filled in before you click Check.</div>
+<div class="fig tall"><img src="images/tx-iss-entry.png" alt="The Issuance page when it opens"></div>
+<div class="caption">Figure 3.3. The Issuance of Official Receipt page when it opens. 1 OR No. · 2 Check · 3 Select OR To Print · 4 Template List · 5 Check List.</div>
+<h3 id="s3-3-1">3.3.1 Select OR To Print</h3>
+<p>Click <strong>Select OR To Print</strong> to see the receipts that were issued and can still be printed or copied. The list shows the <strong>OR Date</strong>, the <strong>OR No.</strong> and the <strong>Payor</strong>. Type in the <strong>Search OR No. or payor</strong> box to find one, then click <strong>Select</strong>. A preview of the receipt opens with a <strong>Print</strong> button. If there is nothing to print, the message <span class="msg del">No OR to print</span> appears.</p>
+<div class="fig tall"><img src="images/tx-iss-sel.png" alt="Select OR to print"></div>
+<div class="caption">Figure 3.4. The Select OR to print window. 1 The search box · 2 The Select buttons. The payor names are blurred.</div>
+<h3 id="s3-3-2">3.3.2 A new receipt</h3>
+<p>Type a receipt number of an open booklet and click <strong>Check</strong>. The form opens. The boxes are:</p>
+<table>
+<thead><tr><th>Box</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>OR No.</td><td>The receipt number that you checked.</td></tr>
+<tr><td>Payor</td><td>Required. The name of the person or company that pays.</td></tr>
+<tr><td>Gender</td><td>Required. A list: <strong>Male</strong> or <strong>Female</strong>.</td></tr>
+<tr><td>Address</td><td>Required. It starts as <em>OAS, ALBAY</em>.</td></tr>
+<tr><td>Document Date and OR Date</td><td>Required. Both start as today's date.</td></tr>
+<tr><td>Business Type, Business Info, Remarks</td><td>They start as <em>N/A</em>. Change them when they apply.</td></tr>
+<tr><td>Collection Type</td><td>Required. A list of the collection types (<a href="02-referential.pdf#s2-7">Section 2.7</a>). The choice decides which accounts are added.</td></tr>
+<tr><td>Fund Code</td><td>Shown by TIS after the collection type is chosen.</td></tr>
+<tr><td>Gray box at the right</td><td>Liq Officer, Collector, Form Type, RCD No. and RCLO No. from the booklet. It cannot be changed.</td></tr>
+</tbody></table>
+<div class="fig tall"><img src="images/tx-iss-form.png" alt="The Issuance form"></div>
+<div class="caption">Figure 3.5. The form after checking an open receipt number. 1 OR No. · 2 Payor, Gender and Address · 3 Collection Type · 4 The booklet information · 5 Save (gray until the form is complete) · 6 Add Template (gray until a collection type is chosen). The officer names are blurred.</div>
+<div class="fig small"><img src="images/tx-iss-gender.png" alt="The Gender list"></div>
+<div class="caption">Figure 3.6. The Gender list. 1 Male and Female.</div>
+<div class="fig tall"><img src="images/tx-iss-ct.png" alt="The Collection Type list"></div>
+<div class="caption">Figure 3.7. The Collection Type list. 1 The collection types. Type a few letters to search. The officer names are blurred.</div>
+<h3 id="s3-3-3">3.3.3 Adding the accounts of the collection type</h3>
+<p>When you choose a collection type, TIS asks <span class="msg q">Do you want to add the template?</span> Click <strong>Yes</strong> to add all the OR template lines of that collection type to the <strong>Template List</strong>. Each line shows the account code, the particulars and the amount, and the total is shown below. <span class="msg ok">Adding template to table success</span> appears. The <strong>Add Template</strong> button is gray until a template has been added. After that it adds one more account by hand (account code, account group, amount and fund) and shows <span class="msg ok">Template added to list successfully</span>.</p>
+<p><strong>Step 1.</strong> Click the <strong>Collection Type</strong> box and choose a collection type from the list. The <strong>Fund Code</strong> then fills in by itself (here 100(01)).</p>
+<div class="fig tall"><img src="images/tx-iss-pick.png" alt="A collection type chosen"></div>
+<div class="caption">Figure 3.8. A collection type chosen. 1 Collection Type: Birth Local · 2 Fund Code, filled in by itself.</div>
+<p><strong>Step 2.</strong> At once TIS asks the question. Click <strong>Yes</strong> to add the template, or <strong>No</strong> to leave without adding it.</p>
+<div class="fig small"><img src="images/tx-iss-tpl.png" alt="The template question"></div>
+<div class="caption">Figure 3.9. The question after choosing a collection type. 1 The question · 2 No · 3 Yes, which adds the template lines.</div>
+<p><strong>Step 3.</strong> After <strong>Yes</strong>, the lines fill the Template List.</p>
+<p>For example, the collection type <em>Birth Local</em> adds the lines <em>Doc Stamp</em> (4-02-01-020-37, 30.00) and <em>Birth Cert. (Local)</em> (4-02-01-040-10, 50.00), a total of 80.00.</p>
+<h3 id="s3-3-4">3.3.4 The Check List</h3>
+<p>When a payment is made by check, click <strong>Add Check</strong> and fill in <strong>Check No.</strong>, <strong>Check Date</strong>, <strong>Bank Code</strong> and <strong>Check Amount</strong>. <span class="msg ok">Check created successfully</span> appears. A check row has a trash can to remove it. The Add Check button is gray until a receipt is open.</p>
+<h3 id="s3-3-5">3.3.5 A saved receipt</h3>
+<p>This is a receipt that was already issued, opened with <strong>Check</strong>. The form is read-only and the buttons of Section 3.2.3 show at the top. The Template List shows the accounts and the total of the receipt.</p>
+<div class="fig tall"><img src="images/tx-iss-used.png" alt="A saved receipt"></div>
+<div class="caption">Figure 3.10. A saved receipt. 1 Mark As Cancelled · 2 Print OR · 3 Edit · 4 Erase · 5 The accounts and the total. The payor, the officers and the collector are blurred.</div>
+<h2 id="s3-4">3.4 Business Permit(OR)</h2>
+<p>This page makes the official receipt for a business permit. It works like Issuance (<a href="#s3-3">Section 3.3</a>), with these differences: the collection type is fixed to <strong>BUSINESS</strong>, the gender box is named <strong>Sex</strong>, and the accounts come from the assessment of the business.</p>
+<div class="note"><strong>Click the Check button first.</strong> Type the number in the OR No. box and click the <strong>Check</strong> button (or press <strong>Ctrl+Enter</strong>). The form window then opens below it. Nothing can be filled in before you click Check.</div>
+<div class="fig tall"><img src="images/tx-bp-form.png" alt="The Business Permit form"></div>
+<div class="caption">Figure 3.11. The Business Permit form after checking an open receipt number. 1 OR No. · 2 Collection Type: BUSINESS (fixed) · 3 Add Details · 4 Save. The officer names are blurred.</div>
+<p>Click <strong>Add Details</strong> to find the business. The window <strong>Filter To Display</strong> offers two ways to search. Tick <strong>Search for Business</strong> and type the <strong>Business Name</strong>, or tick <strong>Search for Assessment Code</strong> and type the <strong>Assessment Code</strong>. Then click <strong>Filter</strong>. TIS looks in the assessments of the Business Permit system and shows the matches in a list. Click <strong>Retrieve</strong> on the right business. TIS then fills in the business name and the payor, and adds the assessed fees to the Template List for this receipt number.</p>
+<ul>
+  <li><span class="msg del">Please select a filter type</span> appears when you click Filter without ticking a search.</li>
+  <li><span class="msg del">Assessment Code is required</span> appears when there is no assessment code.</li>
+  <li><span class="msg del">No record found</span> appears when nothing matches.</li>
+  <li>After the receipt is saved, TIS marks the assessment as paid in the Business Permit system.</li>
+</ul>
+<p>The buttons of a saved business receipt are the same as in Section 3.2.3. Mark As Cancelled shows <span class="msg ok">Business cancelled successfully</span> and Erase shows <span class="msg ok">Business permit deleted successfully</span>.</p>
+<div class="fig small"><img src="images/tx-bp-details.png" alt="Filter To Display for a business"></div>
+<div class="caption">Figure 3.12. The window Filter To Display. 1 The two ways to search: by business name or by assessment code.</div>
+<h2 id="s3-5">3.5 Building Permit</h2>
+<p>This page makes the official receipt for a building permit. The form is short: the receipt number, the <strong>Payor</strong>, the dates, and <strong>Add Details</strong>. The application is taken from the building permit applications.</p>
+<div class="note"><strong>Click the Check button first.</strong> Type the number in the OR No. box and click the <strong>Check</strong> button (or press <strong>Ctrl+Enter</strong>). The form window then opens below it. Nothing can be filled in before you click Check.</div>
+<div class="fig tall"><img src="images/tx-bld-form.png" alt="The Building Permit form"></div>
+<div class="caption">Figure 3.13. The Building Permit form after checking an open receipt number. 1 Payor · 2 Add Details · 3 Document Date and OR Date. The officer names are blurred.</div>
+<p>Click <strong>Add Details</strong>. In the window <strong>Filter To Display</strong>, tick <strong>Search for Application No.</strong> and type the <strong>Application No.</strong>, or tick <strong>Search for Owner</strong> and type the <strong>Owner</strong>, then click <strong>Filter</strong>. Click <strong>Retrieve</strong> on the right application. The owner becomes the payor and the fees of the application fill the Template List. <span class="msg del">Please select a filter type</span> and <span class="msg del">No record found</span> appear as on the Business Permit page.</p>
+<div class="fig small"><img src="images/tx-bld-details.png" alt="Filter To Display for a building permit"></div>
+<div class="caption">Figure 3.14. The window Filter To Display. 1 Search by application number or by owner.</div>
+<h2 id="s3-6">3.6 Community Tax Certificate(CTC) - Ind</h2>
+<p>This page makes a community tax certificate for a person. It starts with the <strong>CTC No.</strong> of an open booklet of the form type <em>COMMUNITY TAX CERTIFICATION</em>. The gray box shows the <strong>CTC Type: Individual</strong> and the fund.</p>
+<div class="note"><strong>Click the Check button first.</strong> Type the number in the CTC No. box and click the <strong>Check</strong> button (or press <strong>Ctrl+Enter</strong>). The form window then opens below it. Nothing can be filled in before you click Check.</div>
+<div class="fig tall"><img src="images/tx-ctci-form.png" alt="The CTC Individual form"></div>
+<div class="caption">Figure 3.15. The CTC Individual form after checking an open number. 1 The person: name, address, date and place of birth, civil status, gender, occupation · 2 The incomes, each multiplied by 12 · 3 The booklet information · 4 Add Details. The officer names are blurred.</div>
+<table>
+<thead><tr><th>Box</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Name, Address</td><td>The person. The address starts as <em>OAS, ALBAY</em>.</td></tr>
+<tr><td>Date of birth, Place of birth, Citizenship</td><td>Date of birth is typed or chosen from a calendar. Place of birth starts as <em>OAS, ALBAY</em>, citizenship as <em>Filipino</em>.</td></tr>
+<tr><td>Civil Status, Gender</td><td>Lists.</td></tr>
+<tr><td>Profession / Occupation / Business</td><td>Starts as <em>Employee</em>.</td></tr>
+<tr><td>TIN (If Any), ICR No. (If Any), Height (ft), Weight (kg)</td><td>TIN starts as <em>N/A</em>, the others as 0.</td></tr>
+<tr><td>Gross Receipt / Salaries / Earnings; Gross Receipt of Earnings from Business; Gross Income from Real Property</td><td>The yearly figures. The page shows each one multiplied by 12 with the result beside it.</td></tr>
+<tr><td>Document Date, CTC Date</td><td>Start as today's date.</td></tr>
+</tbody></table>
+<p>Choose the details with <strong>Add Details</strong> and add the accounts with <strong>Add Template</strong>. The question is <span class="msg q">Do you want to add the CTC Ind template?</span>. <span class="msg ok">CTC Ind created successfully</span> follows the save, and Erase asks <span class="msg q">Are you sure to delete this CTC Ind?</span> and shows <span class="msg ok">CTC Ind deleted successfully</span>. This page also has an <strong>Erase</strong> button beside Save.</p>
+<h2 id="s3-7">3.7 Community Tax Certificate(CTC) - Corp</h2>
+<p>This page makes a community tax certificate for a company. It works like the CTC Ind page, with a <strong>CTC No.</strong> box, a <strong>Check</strong> button and the Template List and Check List.</p>
+<div class="note"><strong>Click the Check button first.</strong> Type the number in the CTC No. box and click the <strong>Check</strong> button (or press <strong>Ctrl+Enter</strong>). The form window then opens below it. Nothing can be filled in before you click Check.</div>
+<div class="fig tall"><img src="images/tx-ctcc-entry.png" alt="The CTC Corp page"></div>
+<div class="caption">Figure 3.16. The CTC Corporation page when it opens. 1 CTC No. · 2 Check.</div>
+<p>A new number opens a form with these boxes (from the code): <strong>Company's Name</strong>, <strong>Place of Business</strong>, <strong>Kind of Organization</strong>, <strong>Kind/Nature of Business</strong>, <strong>Place of Incorporation</strong>, <strong>Date of Reg/Incorporation</strong>, <strong>TIN (If Any)</strong>, <strong>Assessed Value of Real Property</strong>, <strong>Gross Receipts / Salaries / Earnings</strong>, <strong>Document Date</strong> and <strong>CTC Date</strong>, and the gray box of the booklet. The messages are <span class="msg q">Do you want to add the CTC Corp template?</span>, <span class="msg ok">CTC Corp created successfully</span>, <span class="msg ok">CTC Corp cancelled successfully</span>, <span class="msg q">Are you sure to delete this CTC Corp?</span> and <span class="msg ok">CTC Corp deleted successfully</span>.</p>
+<h2 id="s3-8">3.8 Burial Permit and Fee Receipt</h2>
+<p>This page makes the official receipt for a burial permit. It uses the form type <em>MUNICIPAL BURIAL PERMIT AND FEE RECEIPT</em>. It works like the Issuance page, with the <strong>OR No.</strong> box, <strong>Check</strong>, <strong>Add Template</strong> and <strong>Add Check</strong>.</p>
+<div class="note"><strong>Click the Check button first.</strong> Type the number in the OR No. box and click the <strong>Check</strong> button (or press <strong>Ctrl+Enter</strong>). The form window then opens below it. Nothing can be filled in before you click Check.</div>
+<p>The form (from the code) has the boxes <strong>Payee (S/F/M)</strong>, <strong>Gender</strong>, <strong>Deceased Name (S/F/M)</strong>, <strong>Deceased Gender</strong>, <strong>Nationality</strong>, <strong>Cause Death</strong>, <strong>Date Death</strong> (with <strong>Day</strong>, <strong>Month</strong> and <strong>Year</strong>), <strong>Cemetery</strong> or <strong>Name of Cemetery</strong> (the cemetery list of <a href="02-referential.pdf#s2-8">Section 2.8</a>), <strong>Document Date</strong> and <strong>OR Date</strong>. The messages are <span class="msg ok">Burial Permit created successfully</span>, <span class="msg q">Are you sure to delete this burial?</span> and <span class="msg ok">Burial deleted successfully</span>.</p>
+<h2 id="s3-9">3.9 Online Request</h2>
+<p>This page shows the requests that people made online (for example a burial permit) and are waiting to be paid at the treasury. The list shows the <strong>Payor#</strong>, the <strong>Service Type</strong> and an eye icon. Type in <strong>Search payor</strong> to find one. <strong>Scan QR</strong> opens a request by scanning its QR code, and <strong>Upload QR</strong> opens it from a picture of the QR code.</p>
+<div class="fig tall"><img src="images/tx-onl-list.png" alt="The Online Request page"></div>
+<div class="caption">Figure 3.17. The Online Request page. 1 Search payor · 2 Scan QR · 3 Upload QR · 4 The eye icon, which opens the request.</div>
+<p>Click the eye icon to open the <strong>Request Details</strong> window. It shows the <strong>Request Information</strong> (the payee, the sex, the deceased, the cemetery, the dates, the nationality and the cause of death) and the <strong>Breakdown</strong>, which is a table of the accounts with their amounts and a total.</p>
+<div class="fig tall"><img src="images/tx-onl-det.png" alt="Request Details"></div>
+<div class="caption">Figure 3.18. The Request Details window. 1 Request Information · 2 Breakdown.</div>
+<p>Scroll down in the window. Each breakdown row has an <strong>Edit</strong> icon that opens <strong>Editing Amount</strong> to change the amount of that row; it shows <span class="msg ok">Template updated successfully</span>. Under the table are the <strong>Reference No.</strong> and the <strong>Status</strong>: <span style="color:#c62828">Cancelled</span>, <span style="color:#2e7d32">Approved</span> or <span style="color:#e08a00">Pending</span>. Two buttons follow:</p>
+<ul>
+  <li><strong>Set Payment:</strong> opens the window <strong>Set Payment</strong>. Type the <strong>OR No.</strong> and the <strong>OR Date</strong> of the receipt that the person was given at the cashier, and click <strong>Confirm Payment</strong>. <span class="msg ok">Payment confirmed successfully</span> appears.</li>
+  <li><strong>Upload Attachment:</strong> adds a file to the request. <span class="msg ok">Attachment uploaded successfully</span> appears, and <span class="msg del">Please select a file to upload</span> appears when no file was chosen.</li>
+</ul>
+<div class="fig tall"><img src="images/tx-onl-det2.png" alt="Request Details, scrolled down"></div>
+<div class="caption">Figure 3.19. The Request Details window scrolled down. 1 The Breakdown with its Edit icons and the total · 2 Set Payment and Upload Attachment. The reference number is blurred. The request shown is a test record.</div>
+<div class="warning"><strong>Caution.</strong> Set Payment marks the request as paid. Press it only after the person has paid. The window <strong>Set Payment</strong> itself was not opened while this manual was prepared; it is described from the code.</div>
+<h2 id="s3-10">3.10 Disbursement Voucher(DV)</h2>
+<p>This page records a payment that the municipality makes (for example to a supplier) on a disbursement voucher. The left side lists the vouchers. The right side has tabs for the voucher that is selected: <strong>Header</strong>, <strong>Checks Entry</strong>, <strong>Query</strong>, <strong>Query Result</strong>, <strong>RCI</strong> and <strong>Preview Print</strong>.</p>
+<div class="fig tall"><img src="images/tx-dv-header.png" alt="The Disbursement Voucher page"></div>
+<div class="caption">Figure 3.20. The Disbursement Voucher page. 1 The list of vouchers (the check number and the series) · 2 Add Record · 3 Filter · 4 The tabs. The representative is blurred.</div>
+<h3 id="s3-10-1">3.10.1 The voucher list, Filter and Add Record</h3>
+<ul>
+  <li><strong>The list:</strong> each row shows a number (the check number once there is one) and the <strong>series</strong>, for example <em>100(01)-2026-10-000004</em>: fund, year, month and a running number. Click a row to open that voucher.</li>
+  <li><strong>Filter:</strong> opens <strong>Filter To Display</strong>. Choose the <strong>Fund</strong> and the <strong>Year</strong> (a year and month), then click <strong>Retrieve</strong>. Retrieve stays gray until both are chosen.</li>
+  <li><strong>Add Record:</strong> shows an empty form titled <strong>Add Record</strong> (Section 3.10.2). Nothing is saved until you click <strong>Create</strong>.</li>
+</ul>
+<h3 id="s3-10-2">3.10.2 Header and Add Record</h3>
+<p>The <strong>Header</strong> tab has the main details of the voucher. In a new record fill in:</p>
+<ul>
+  <li><strong>Fund</strong> (list of fund codes), <strong>Voucher No.</strong> and <strong>Claimant Name</strong> (list of the payees of the Creditor/Payee page, <a href="02-referential.pdf#s2-cp">Section 2.6.8</a>).</li>
+  <li><strong>Paying Agency</strong> (starts as <em>Municipal Treasurer's Office</em>), <strong>Representative</strong> and <strong>Particulars</strong> (what is paid).</li>
+  <li><strong>Fpp</strong> (list: MAYOR or VICE MAYOR) and <strong>Allotment Object</strong> (list of the allotment classes).</li>
+  <li><strong>Gross</strong>, <strong>Vat Amount</strong> and <strong>EWT Amount</strong>. TIS shows the <strong>Net Amount</strong> below them.</li>
+  <li><strong>Releasing Officer</strong> (list of the officers of the LiqDisb Collector page) and <strong>Check Description</strong>.</li>
+  <li>On the right: <strong>Report No.</strong>, <strong>Report Type</strong> (<em>Disbursement</em>), <strong>DV Date</strong> (starts as today), <strong>Type</strong> and <strong>Status</strong> (<em>For Processing</em>).</li>
+</ul>
+<div class="fig tall"><img src="images/tx-dv-whole.png" alt="The Add Record form"></div>
+<div class="caption">Figure 3.21. The Add Record form of the Disbursement Voucher. The whole form. 1 The boxes of the voucher · 2 Report Type, DV Date, Type and Status · 3 The Create button.</div>
+<div class="fig tall"><img src="images/tx-dv-type.png" alt="The Type list"></div>
+<div class="caption">Figure 3.22. The Type list. 1 Cash, Check and ADA.</div>
+<p><strong>When the form is complete, click the Create button</strong> at the bottom right of the form (boxed 3 in the figure) to save the voucher. <span class="msg ok">Disbursement created successfully</span> appears. On a saved voucher, the button <strong>Mark As Cancelled</strong> changes the status from <em>For Processing</em> to <em>Cancelled</em> (and back). <span class="msg ok">Status updated to Cancelled</span> appears, or <span class="msg del">Failed to update status</span> when it fails.</p>
+<div class="warning"><strong>Caution.</strong> Mark As Cancelled does not ask a question first. Press it only when you mean it.</div>
+<h3 id="s3-10-3">3.10.3 Checks Entry</h3>
+<p>This tab lists the checks of the voucher. Click <strong>Add</strong> to open <strong>Add Check Entry</strong>. Type the <strong>Check No.</strong> and the <strong>Obligation No.</strong> TIS looks the check number up in the check booklets of the Referential menu (<a href="02-referential.pdf#s2-cb">Section 2.6.2</a>). <span class="msg del">Check No. not found!</span> appears when the number is not in a booklet and <span class="msg del">Check No. already used!</span> when it was used. <span class="msg ok">Check entry created successfully</span> follows a good entry.</p>
+<div class="fig tall"><img src="images/tx-dv-checks.png" alt="The Checks Entry tab"></div>
+<div class="caption">Figure 3.23. The Checks Entry tab. 1 Add.</div>
+<h3 id="s3-10-5">3.10.4 Query and Query Result</h3>
+<p>The <strong>Query</strong> tab searches the vouchers. <strong>Filter</strong> opens <strong>Filter To Display</strong> to choose what to look for, <strong>Retrieve Query</strong> loads the vouchers and <strong>Clear Query</strong> empties the table. The columns are <strong>Released</strong>, <strong>Fund</strong>, <strong>DV Date</strong>, <strong>Name</strong>, <strong>Voucher No.</strong>, <strong>Obligation No.</strong>, <strong>Check Number</strong>, <strong>Particulars</strong>, <strong>Total</strong>, <strong>Tax</strong> and <strong>Gross</strong>. Scroll the table sideways to see all of them. The <strong>Query Result</strong> tab shows the result of the query.</p>
+<div class="fig tall"><img src="images/tx-dv-query.png" alt="The Query tab"></div>
+<div class="caption">Figure 3.24. The Query tab. 1 Retrieve Query, Clear Query and Filter · 2 The columns of the result.</div>
+<h3 id="s3-10-6">3.10.5 RCI: Report of Checks Issued</h3>
+<p>The <strong>RCI</strong> tab shows the <strong>Report of Checks Issued</strong> for the Municipal Government of Oas. Click <strong>Filter</strong> and choose the <strong>Date From</strong>, the <strong>Date To</strong> and the <strong>Fund</strong> (or <em>All Funds</em>). <span class="msg del">Date from and date to are required</span> and <span class="msg del">Date from cannot be after date to</span> appear when the dates are wrong, and <span class="msg del">Failed to retrieve RCI records</span> when the report cannot be loaded. The report lists each check (date, serial number, DV or payroll number, office, payee, nature of payment and amount) and ends with the certification of the municipal treasurer. The treasurer's name comes from the <strong>active</strong> record of the Treasurer page (<a href="02-referential.pdf#s2-trs">Section 2.6.12</a>). <strong>Export</strong> saves the report as a file and <strong>Print</strong> prints it.</p>
+<div class="fig tall"><img src="images/tx-dv-rci.png" alt="The RCI tab"></div>
+<div class="caption">Figure 3.25. The RCI tab. 1 Filter, Export and Print. The name of the treasurer is blurred.</div>
+<h3 id="s3-10-8">3.10.6 Preview Print</h3>
+<p>The <strong>Preview Print</strong> tab shows the printed form of the voucher: <strong>Republic of the Philippines, Province of Albay, Municipal Government of Oas</strong>, the voucher number, the mode of payment, the payee, the address, the explanation, the amount and four signature blocks: <strong>A. Certified</strong> (the accountant), <strong>B. Certified</strong> (the treasurer), <strong>C. Approved for payment</strong> (the mayor) and <strong>D. Received Payment</strong>. The three names come from the <strong>active</strong> records of the Accountant, Treasurer and Mayor pages of the Referential menu (<a href="02-referential.pdf#s2-ant">Section 2.6.11</a> to <a href="02-referential.pdf#s2-mayr">2.6.13</a>). Click <strong>Print</strong> to print the voucher.</p>
+<div class="fig tall"><img src="images/tx-dv-print.png" alt="The Preview Print tab"></div>
+<div class="caption">Figure 3.26. The Preview Print tab. 1 Print · 2 The signature blocks A, B, C and D. The names are blurred.</div>
+<div class="note"><strong>Keep the Referential lists current.</strong> When the accountant, the treasurer or the mayor changes, set the new person as <strong>Active</strong> on their Referential page. If you do not, the vouchers and the reports print the old name.</div>
+</body></html>

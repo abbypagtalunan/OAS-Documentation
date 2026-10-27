@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>TIS: Reports</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 105mm; }
+h2,h3,h4{break-after:avoid;page-break-after:avoid;} .fig{break-inside:avoid;break-after:avoid;} .caption{break-before:avoid;}
+.msg{display:inline-block;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:8.8pt;line-height:1.35;padding:.2mm 1.8mm;border-radius:2px;border:1px solid;font-style:normal;margin:.2mm 0;} .msg.q{background:#f1f3f5;border-color:#ced4da;color:#343a40;} .msg.ok{background:#e6f4ea;border-color:#8fcf9f;color:#1e6b34;} .msg.del{background:#fdecea;border-color:#f1a9a0;color:#a12418;} .msg.warn{background:#fff8e1;border-color:#f0d27a;color:#7a5b00;}</style>
+</head><body>
+<div class="section-no">Section 5</div>
+<h1>Reports</h1>
+<p class="lead">The Reports menu shows and prints the official reports of the treasury. Most of them are made from the receipts and numbers of the earlier sections: the forms report on the booklets, the Abstract of Collection reports on the receipts, and the RCD and RCLO reports show the numbers made in Process.</p>
+<div class="note"><strong>Reading the colored boxes.</strong> Messages of TIS are shown in boxes: <span class="msg q">gray</span> for a question or notice, <span class="msg ok">green</span> for success, <span class="msg del">red</span> for an error and <span class="msg warn">yellow</span> for a warning.</div>
+<div class="toc"><div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s5-1">5.1 The Reports menu</a></li>
+  <li><a href="#s5-2">5.2 Accountable Forms</a></li>
+  <li class="sub"><a href="#s5-2-1">5.2.1 Report of Accountability for Accountable Forms</a></li>
+  <li class="sub"><a href="#s5-2-2">5.2.2 Consolidated Report of Accountability for Accountable Forms</a></li>
+  <li><a href="#s5-3">5.3 Abstract of Collection</a></li>
+  <li><a href="#s5-4">5.4 Report of Collection and Deposit (RCD)</a></li>
+  <li class="sub"><a href="#s5-4-1">5.4.1 Search, Retrieve and Print</a></li>
+  <li class="sub"><a href="#s5-4-2">5.4.2 Import RPT</a></li>
+  <li><a href="#s5-5">5.5 Report of Collection by Liquidating Officer (RCLO)</a></li>
+  <li class="sub"><a href="#s5-5-1">5.5.1 Search, Retrieve and Print</a></li>
+  <li class="sub"><a href="#s5-5-2">5.5.2 Breakdown and deposits</a></li>
+</ul></div>
+<h2 id="s5-1">5.1 The Reports menu</h2>
+<p>Open the sidebar and click <strong>Reports</strong>. It has five reports in three groups: <strong>Accountable Forms</strong> (two reports), <strong>Collection</strong> (<strong>Abstract of Collection</strong>), and then <strong>Report of Collection and Deposit(RCD)</strong> and <strong>Report of Collection by Liquidating Officer(RCLO)</strong>.</p>
+<div class="fig tall"><img src="images/rp-menu.png" alt="The Reports menu"></div>
+<div class="caption">Figure 5.1. The sidebar with Reports open. 1 The Reports group. The name and email are blurred.</div>
+<p>The pages use the same few buttons: <strong>Filter</strong> or <strong>Search</strong> opens a window to choose what to show, <strong>Print</strong> prints the report as it is on the page, and in the Abstract of Collection <strong>Export To Excel</strong> saves it as a spreadsheet. Choosing the filter only reads data. It does not change any receipt.</p>
+<h2 id="s5-2">5.2 Accountable Forms</h2>
+<h3 id="s5-2-1">5.2.1 Report of Accountability for Accountable Forms</h3>
+<p>This report shows, for each booklet of accountable forms, what happened to it during the year. When it opens it shows the empty form: the title, <strong>Accountable Officer</strong>, <strong>Designation</strong> and <strong>Cost Center</strong>, and a table with the columns <strong>Form Code</strong>, <strong>Trans Date</strong>, <strong>Beginning Balance</strong>, <strong>Receipt</strong>, <strong>Issued</strong>, <strong>Returned or Transfer</strong> and <strong>Ending Balance</strong>. Each of the five groups has <strong>Qty.</strong>, <strong>From</strong> and <strong>To</strong>.</p>
+<div class="fig tall"><img src="images/rp-af.png" alt="The Report of Accountability"></div>
+<div class="caption">Figure 5.2. Step 1. Click Filter (1). 1 Filter · 2 Print · 3 Accountable Officer, Designation and Cost Center · 4 The columns of the report.</div>
+<p><strong>Step 2. Choose what to show.</strong> The window <strong>Filter To Display</strong> has the <strong>Year</strong> (it starts as the present year) and the check box <strong>Filter By Collector</strong>. Tick the box to choose one collector from the list; leave it empty to show all collectors. Then click <strong>Filter</strong> in the window.</p>
+<div class="fig tall"><img src="images/rp-af-s2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 5.3. Step 2. The filter window. 1 Year · 2 Filter By Collector (ticked) · 3 The Collector list · 4 Filter. The collector name is blurred.</div>
+<p><strong>Step 3. Read the report.</strong> Each row is one booklet. In the example the first row is a booklet of 50 receipts of <em>BIR#0016</em>: how many receipts were issued and how many are left (the ending balance). The heading shows the accountable officer, the designation and the cost center. The data of the officer is blurred.</p>
+<div class="fig tall"><img src="images/rp-af-s3.png" alt="The report with data"></div>
+<div class="caption">Figure 5.4. Step 3. The report after Filter. 1 Filter · 2 Print · 3 Accountable Officer, Designation and Cost Center · 4 One row for each booklet.</div>
+<p>Below the table is the certification of the accountable officer, with the name and signature and the date.</p>
+<div class="fig tall"><img src="images/rp-af-s4.png" alt="The certification"></div>
+<div class="caption">Figure 5.5. The end of the report. 1 The certification, the name of the accountable officer and the date. The name is blurred.</div>
+<p><strong>Print.</strong> Click <strong>Print</strong>. TIS opens the print window of the browser with the report as it is on the page. Choose the printer, or <em>Save as PDF</em>, and print.</p>
+<h3 id="s5-2-2">5.2.2 Consolidated Report of Accountability for Accountable Forms</h3>
+<p>This is the same report in a short form, one row for each booklet without the dates, for the <strong>Treasurer</strong>. The name of the treasurer at the top comes from the <strong>active</strong> record of the Treasurer page (<a href="02-referential.pdf#s2-trs">Section 2.6.12</a>). It has a <strong>Report No</strong> line to write by hand and the column <strong>Remarks</strong>, which shows the collector that holds the booklet.</p>
+<p><strong>Step 1.</strong> Click <strong>Consolidated Report of Accountability for Accountable Forms</strong> in the menu (1), then click <strong>Filter</strong> (2).</p>
+<div class="fig tall"><img src="images/rp-cra-s1.png" alt="The Consolidated Report when it opens"></div>
+<div class="caption">Figure 5.6. Step 1. The report when it opens. 1 The menu item · 2 Filter. The names are blurred.</div>
+<p><strong>Step 2.</strong> Its filter has only the <strong>Year</strong>. Type the year (it starts as the present year) and click <strong>Filter</strong>.</p>
+<div class="fig tall"><img src="images/rp-cra-s2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 5.7. Step 2. The filter window. 1 Year · 2 Filter.</div>
+<p><strong>Step 3.</strong> The report shows all the booklets of the year. <strong>Remarks</strong> shows the collector of each booklet.</p>
+<div class="fig tall"><img src="images/rp-cra-s3.png" alt="The Consolidated Report with data"></div>
+<div class="caption">Figure 5.8. Step 3. The report after Filter. 1 Filter · 2 Print · 3 Remarks: the collector of each booklet. The names are blurred.</div>
+<p>At the end of the report is the line <strong>Certified Correct</strong> with the name of the Municipal Treasurer and a line for the date.</p>
+<div class="fig tall"><img src="images/rp-cra-s4.png" alt="The end of the Consolidated Report"></div>
+<div class="caption">Figure 5.9. The end of the report. 1 Certified Correct, the Municipal Treasurer and the date. The names are blurred.</div>
+<p><strong>Print.</strong> Click <strong>Print</strong>. TIS opens the print window of the browser with the report as it is on the page. Choose the printer, or <em>Save as PDF</em>, and print.</p>
+<h2 id="s5-3">5.3 Abstract of Collection</h2>
+<p>The Abstract of Collection lists the receipts that were issued, with the payee, the account and the amount. When it opens it is empty, with the columns <strong>OR Date</strong>, <strong>OR No.</strong>, <strong>Gender</strong>, <strong>Payee</strong>, <strong>Account Code</strong>, <strong>Particulars</strong> and <strong>Amount</strong> and a <strong>Total</strong>. The example uses <strong>October 21, 2026</strong>.</p>
+<p><strong>Step 1.</strong> Click <strong>Abstract of Collection</strong> in the menu (1), then click <strong>Filter</strong> (2).</p>
+<div class="fig tall"><img src="images/rp-abs-s1.png" alt="The Abstract when it opens"></div>
+<div class="caption">Figure 5.10. Step 1. The empty report. 1 The menu item · 2 Filter. The name and email are blurred.</div>
+<p><strong>Step 2.</strong> In <strong>Filter To Display</strong> tick the check box of each way of filtering that you want:</p>
+<ul>
+  <li><strong>Filter By Date:</strong> from <strong>Date &amp; Time From</strong> to <strong>Date &amp; Time To</strong>. Choose October 21, 2026 in both boxes.</li>
+  <li><strong>Filter By Collector:</strong> one collector.</li>
+  <li><strong>Filter By Fund:</strong> one fund code. <strong>Filter By OR Template:</strong> one collection type (the list of <a href="02-referential.pdf#s2-7">Section 2.7</a>).</li>
+</ul>
+<p>The <strong>Filter</strong> button of the window stays gray until you tick at least one. When a box that is needed is empty, <span class="msg del">Collector required!</span> or <span class="msg del">Fund required!</span> appears. Click <strong>Filter</strong> (3).</p>
+<div class="fig tall"><img src="images/rp-abs-s2.png" alt="Filter To Display of the Abstract"></div>
+<div class="caption">Figure 5.11. Step 2. The filter window with Filter By Date ticked. 1 The check box · 2 The dates · 3 Filter. The payee names are blurred.</div>
+<p><strong>Step 3.</strong> The report shows the period, <em>For the period of 21/10/2026 to 21/10/2026</em>, and is grouped by form. Under each <strong>FORM</strong> (for example <em>AF#51</em>) the receipts are listed with their date, number, payee, account and amount. The buttons at the top are <strong>Filter</strong>, <strong>Print</strong> and <strong>Export To Excel</strong>.</p>
+<div class="fig tall"><img src="images/rp-abs-s3.png" alt="The Abstract of Collection"></div>
+<div class="caption">Figure 5.12. Step 3. The abstract after Filter. 1 Filter · 2 Print · 3 Export To Excel · 4 The columns. The payee names are blurred.</div>
+<p>At the end of each form TIS adds a <strong>Sub Total for the month</strong> and a <strong>Sub Total for the form</strong>, and then the <strong>Total</strong> of the report.</p>
+<div class="fig tall"><img src="images/rp-abs-s4.png" alt="The totals"></div>
+<div class="caption">Figure 5.13. The end of the report. 1 The sub totals and the Total.</div>
+<p><strong>Print.</strong> Click <strong>Print</strong> to print the abstract with the browser print window. Click <strong>Export To Excel</strong> to save it as a spreadsheet file.</p>
+<h2 id="s5-4">5.4 Report of Collection and Deposit (RCD)</h2>
+<p>This report shows one RCD made in <a href="04-process.pdf#s4-2">RCD Processing</a>. When it opens it is empty: <strong>RCD No.</strong>, <strong>Liq Officer</strong>, <strong>Collector</strong>, <strong>RCD Date</strong>, <strong>Amount</strong> and <strong>Ref No.</strong> have no value, and the table has the columns <strong>OR Date</strong>, <strong>OR No.</strong>, <strong>Payor</strong>, <strong>Particulars</strong>, <strong>Acct Code</strong> and <strong>Amount</strong> with a <strong>Grand Total</strong>.</p>
+<div class="fig tall"><img src="images/rp-rcd.png" alt="The RCD report when it opens"></div>
+<div class="caption">Figure 5.14. The RCD report when it opens. 1 Search · 2 Import · 3 The details of the RCD · 4 The table.</div>
+<h3 id="s5-4-1">5.4.1 Search, Retrieve and Print</h3>
+<p>Follow these steps. The example uses the date <strong>October 21, 2026</strong>.</p>
+<p><strong>Step 1. Click Search.</strong> The window <strong>Filter To Display</strong> opens. Each way of finding an RCD has a check box at its left: <strong>Collector</strong>, <strong>Year</strong>, <strong>Month</strong> and, after the word <strong>OR</strong>, a single <strong>Date</strong>. The boxes are gray and the <strong>Filter</strong> button is gray until you tick one.</p>
+<div class="fig tall"><img src="images/rp-rcd-s1.png" alt="The Search window"></div>
+<div class="caption">Figure 5.15. Step 1. Click Search (1). The filter window opens. 1 Search · 2 The check boxes · 3 Filter (gray until you tick a box).</div>
+<p><strong>Step 2. Tick the check box</strong> of the way that you want, here <strong>Date</strong>. Its box becomes active and the <strong>Filter</strong> button turns blue.</p>
+<div class="fig tall"><img src="images/rp-rcd-s2.png" alt="Date ticked"></div>
+<div class="caption">Figure 5.16. Step 2. The Date check box is ticked. 1 The check box · 2 The Date box, now active.</div>
+<p><strong>Step 3. Choose the date.</strong> Click the Date box. A calendar opens. Click the day, here the <strong>21</strong>, then click <strong>OK</strong>. For Collector, Year or Month choose from the list or type in the box.</p>
+<div class="fig tall"><img src="images/rp-rcd-s3.png" alt="The calendar"></div>
+<div class="caption">Figure 5.17. Step 3. The calendar. 1 The day 21 · 2 OK.</div>
+<p><strong>Step 4. Click Filter</strong> (highlighted). The box now reads <em>October 21st</em>.</p>
+<div class="fig tall"><img src="images/rp-rcd-s4.png" alt="Filter ready"></div>
+<div class="caption">Figure 5.18. Step 4. The date is October 21st. 1 The Date box · 2 Click Filter.</div>
+<p>A list <strong>RCD No. List</strong> opens with the RCD numbers of that day and their amounts. <span class="msg del">Date from and date to are required</span> and <span class="msg del">Date from cannot be after date to</span> appear when the dates of a filter are wrong.</p>
+<p><strong>Step 5. Click Retrieve</strong> on the RCD that you want.</p>
+<div class="fig tall"><img src="images/rp-rcd-s5.png" alt="The RCD No. List"></div>
+<div class="caption">Figure 5.19. Step 5. The RCD No. List for October 21: two RCDs. 1 The list · 2 Retrieve.</div>
+<p>The page shows the RCD: its number, the liquidating officer, the collector, the RCD date and the amount, and the table of all the receipts of the RCD, grouped by form, with a <strong>Grand Total</strong>.</p>
+<div class="fig tall"><img src="images/rp-rcd-s6.png" alt="The RCD retrieved"></div>
+<div class="caption">Figure 5.20. The RCD after Retrieve. 1 Print · 2 The details of the RCD · 3 The receipts. The payors and the officer names are blurred.</div>
+<p><strong>Step 6. Click Print</strong> (box 1 of the figure above). A print page opens, the <strong>Collector's Report of Collections and Deposits</strong> of the <em>Office of the Treasurer</em>. It shows the fund, the accountable officer, the date and the RCD No., <strong>A. Collections</strong> (the forms with quantity, start and end numbers, amount and total), <strong>B. Remittances/Deposits</strong> and <strong>C. Accountability for Accountable Forms</strong>. Click its own <strong>Print</strong> button (box 1 below) to send it to the printer.</p>
+<div class="fig tall"><img src="images/rp-rcd-s7.png" alt="The print page of the RCD"></div>
+<div class="caption">Figure 5.21. The print page of the RCD. 1 Print · 2 A. Collections · 3 B. Remittances/Deposits. The officer names are blurred.</div>
+<h3 id="s5-4-2">5.4.2 Import RPT</h3>
+<p>Real property tax receipts are made in another system. <strong>Import</strong> brings them into the RCD. In the window <strong>Import RPT</strong>, choose the <strong>Date From</strong>, the <strong>Date To</strong> and <strong>Encoded By</strong>, then click <strong>Filter</strong>. The <strong>Encoded By</strong> list shows only the RPT users that are assigned to your user (<a href="01-admin.pdf#s1-2-5">Section 1.2.5</a>). TIS then lists the RPT receipts of that person (<em>From API RPT OR List</em>) so that you can import them. The messages are <span class="msg del">Encoded by is required</span>, <span class="msg del">No rpt permit OR records found</span> and <span class="msg del">No OR records to import</span>.</p>
+<div class="warning"><strong>Caution.</strong> Importing saves the RPT receipts into the RCD. Filter only shows them first. The import itself was not pressed while this manual was prepared; it is described from the code.</div>
+<div class="fig small"><img src="images/rp-rcd-imp.png" alt="Import RPT"></div>
+<div class="caption">Figure 5.22. The window Import RPT. 1 Date From and Date To · 2 Encoded By (the RPT users assigned to you) · 3 Filter.</div>
+<h2 id="s5-5">5.5 Report of Collection by Liquidating Officer (RCLO)</h2>
+<p>This report shows one RCLO made in <a href="04-process.pdf#s4-3">RCLO Processing</a>, and records the deposits of its money. When it opens it is empty: <strong>RCLO No.</strong>, <strong>RCLO Date</strong>, <strong>Liq Officer</strong>, <strong>Doc Date</strong> and <strong>Amount</strong> have no value. It has three parts: the table of the RCDs of the RCLO, the checks with a <strong>Breakdown</strong> box, and the table of deposits.</p>
+<div class="fig tall"><img src="images/rp-rclo.png" alt="The RCLO report when it opens"></div>
+<div class="caption">Figure 5.23. The RCLO report when it opens. 1 Search · 2 The details of the RCLO · 3 The RCDs · 4 The Breakdown · 5 The deposits.</div>
+<h3 id="s5-5-1">5.5.1 Search, Retrieve and Print</h3>
+<p>The steps are the same as for the RCD (<a href="#s5-4-1">Section 5.4.1</a>). The example uses <strong>October 21, 2026</strong>.</p>
+<p><strong>Step 1. Click Search.</strong> In <strong>Filter To Display</strong> the check boxes are <strong>Liquidation Officer</strong>, <strong>Year</strong>, <strong>Month</strong> and, after <strong>OR</strong>, a single <strong>Date</strong>. <strong>Filter</strong> is gray until you tick one.</p>
+<div class="fig tall"><img src="images/rp-rclo-s1.png" alt="The Search window"></div>
+<div class="caption">Figure 5.24. Step 1. Click Search (1). 1 Search · 2 The check boxes · 3 Filter (gray until you tick a box).</div>
+<p><strong>Step 2. Tick Date</strong>, then click the Date box and choose the day in the calendar (here the <strong>21</strong>), and click <strong>OK</strong>.</p>
+<div class="fig tall"><img src="images/rp-rclo-s3.png" alt="The calendar"></div>
+<div class="caption">Figure 5.25. Step 2. The calendar. 1 The day 21 · 2 OK.</div>
+<p><strong>Step 3. Click Filter.</strong> The Date box reads <em>October 21st</em>.</p>
+<div class="fig tall"><img src="images/rp-rclo-s4.png" alt="Date ticked and Filter ready"></div>
+<div class="caption">Figure 5.26. Step 3. Date ticked and set to October 21st. 1 The Date check box · 2 Click Filter.</div>
+<p>The <strong>RCLO No. List</strong> opens with the RCLO numbers of that day and their amounts.</p>
+<p><strong>Step 4. Click Retrieve</strong> on the RCLO that you want.</p>
+<div class="fig tall"><img src="images/rp-rclo-s5.png" alt="The RCLO No. List"></div>
+<div class="caption">Figure 5.27. Step 4. The RCLO No. List for October 21: one RCLO, 9,388.40. 1 The list · 2 Retrieve.</div>
+<p>The page shows the RCLO. The table lists the collector, the RCD date, the <strong>RCD No</strong>, and for each form its <strong>Qty</strong>, <strong>Start No</strong>, <strong>End No</strong> and <strong>Amount</strong>, with a <strong>Sub Total</strong> and a <strong>Grand Total</strong>. In the example, the RCLO <em>100(01) GENERAL FUND10212026000014</em> has one RCD with 8 receipts (1,070.00) and 18 receipts (8,318.40), a total of 9,388.40. The Breakdown shows the cash (Current) and the checks.</p>
+<div class="fig tall"><img src="images/rp-rclo-s6.png" alt="The RCLO retrieved"></div>
+<div class="caption">Figure 5.28. The RCLO after Retrieve. 1 Print · 2 The RCDs and the totals · 3 The Breakdown and Add Deposit. The collector and officer names are blurred.</div>
+<p><strong>Step 5. Click Print</strong> (box 1 above). A print page opens with <strong>A. Collections</strong> (the receipts with date issued, serial number, payor, particulars and amount), <strong>B. Remittances/Deposits</strong> (the accountable officer or bank, the reference and the amount) and <strong>C. Accountability for Accountable Forms</strong>. Click its own <strong>Print</strong> button (box 1 below) to send it to the printer.</p>
+<div class="fig tall"><img src="images/rp-rclo-s7.png" alt="The print page of the RCLO"></div>
+<div class="caption">Figure 5.29. The print page of the RCLO. 1 Print · 2 A. Collections · 3 B. Remittances/Deposits. The officer names and payors are blurred.</div>
+<h3 id="s5-5-2">5.5.2 Breakdown and deposits</h3>
+<p>The <strong>Breakdown</strong> box adds up the money of the RCLO: <strong>Current</strong> (cash), <strong>Check</strong> (the checks of the receipts, listed on the left with their number, date, bank and amount) and the <strong>Grand Total</strong>. The money has to be deposited. Click <strong>Add Deposit</strong> and fill in the window:</p>
+<ul>
+  <li><strong>Bank / Accountable Officer:</strong> where the money goes (a bank of the Bank Depository page, or an officer).</li>
+  <li><strong>Method:</strong> <strong>Cash</strong> or <strong>Check</strong>.</li>
+  <li><strong>Validation No / O.R / Deposit Slip:</strong> the number of the deposit slip or receipt.</li>
+  <li><strong>Deposit Date</strong> (starts as today) and <strong>Amount</strong>.</li>
+</ul>
+<p>Click <strong>Create</strong>. <span class="msg ok">RCLO deposits created successfully</span> appears and the deposit shows in the table of deposits at the bottom (bank or officer, cash, validation number, date and amount). <strong>Add Deposit</strong> is gray until an RCLO is on the page.</p>
+<div class="fig tall"><img src="images/rp-rclo-dep.png" alt="Add Deposit"></div>
+<div class="caption">Figure 5.30. The window Add Deposit. 1 The boxes of the deposit · 2 Create. The collector and officer names are blurred.</div>
+<div class="note"><strong>Printing.</strong> The Print buttons of the RCD and RCLO reports open the printed forms of these reports (with the treasurer's certification). They were not opened while this manual was prepared.</div>
+</body></html>

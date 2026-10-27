@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>TIS: Process</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 105mm; }
+h2,h3,h4{break-after:avoid;page-break-after:avoid;} .fig{break-inside:avoid;break-after:avoid;} .caption{break-before:avoid;}
+.msg{display:inline-block;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:8.8pt;line-height:1.35;padding:.2mm 1.8mm;border-radius:2px;border:1px solid;font-style:normal;margin:.2mm 0;} .msg.q{background:#f1f3f5;border-color:#ced4da;color:#343a40;} .msg.ok{background:#e6f4ea;border-color:#8fcf9f;color:#1e6b34;} .msg.del{background:#fdecea;border-color:#f1a9a0;color:#a12418;} .msg.warn{background:#fff8e1;border-color:#f0d27a;color:#7a5b00;}</style>
+</head><body>
+<div class="section-no">Section 4</div>
+<h1>Process</h1>
+<p class="lead">The Process menu closes the collections of a period. <strong>RCD Processing</strong> gathers the receipts of one collector into a <strong>Report of Collection and Deposits (RCD)</strong>. <strong>RCLO Processing</strong> then gathers the RCDs of a fund into a <strong>Report of Collection by Liquidating Officer (RCLO)</strong>. Each step gives the report a number.</p>
+<div class="note"><strong>Reading the colored boxes.</strong> Messages of TIS are shown in boxes: <span class="msg q">gray</span> for a question or notice, <span class="msg ok">green</span> for success, <span class="msg del">red</span> for an error and <span class="msg warn">yellow</span> for a warning.</div>
+<div class="toc"><div class="toc-title">In this section</div>
+<ul>
+  <li><a href="#s4-1">4.1 The Process menu and the order of work</a></li>
+  <li><a href="#s4-2">4.2 RCD Processing</a></li>
+  <li class="sub"><a href="#s4-2-1">4.2.1 The Process RCD window</a></li>
+  <li class="sub"><a href="#s4-2-2">4.2.2 Retrieve: read before you process</a></li>
+  <li class="sub"><a href="#s4-2-3">4.2.3 Process</a></li>
+  <li class="sub"><a href="#s4-2-4">4.2.4 The list of RCDs and Remove</a></li>
+  <li><a href="#s4-3">4.3 RCLO Processing</a></li>
+  <li class="sub"><a href="#s4-3-1">4.3.1 The Process RCLO window</a></li>
+  <li class="sub"><a href="#s4-3-2">4.3.2 Retrieve and Process</a></li>
+  <li class="sub"><a href="#s4-3-3">4.3.3 The list of RCLOs and Remove</a></li>
+</ul></div>
+<h2 id="s4-1">4.1 The Process menu and the order of work</h2>
+<p>Open the sidebar and click <strong>Process</strong>. It has two pages: <strong>Report of Collection and Deposits(RCD) Processing</strong> and <strong>Report of Collection by Liquidating Officer(RCLO) Processing</strong>.</p>
+<div class="fig tall"><img src="images/pr-menu.png" alt="The Process menu"></div>
+<div class="caption">Figure 4.1. The sidebar with Process open. 1 The two Process pages. The name and email are blurred.</div>
+<p>The two steps follow each other:</p>
+<ol>
+  <li><strong>Receipts are issued</strong> on the Transaction pages (<a href="03-transaction.pdf#s3-2">Section 3.2</a>). Each receipt comes from a booklet of 50 (<a href="02-referential.pdf#s2-af">Section 2.6.1</a>).</li>
+  <li><strong>RCD Processing</strong> (Section 4.2) takes the receipts of one collector, one fund and one kind of form in a range of dates, adds up the money and gives them an <strong>RCD No.</strong></li>
+  <li><strong>RCLO Processing</strong> (Section 4.3) takes the RCDs of one fund in a range of dates and gives them an <strong>RCLO No.</strong></li>
+</ol>
+<p>Both pages also feed the reports of the Reports menu.</p>
+<h2 id="s4-2">4.2 RCD Processing</h2>
+<p>This page processes the receipts of one collector into an RCD. When it opens, it shows a table and two icons at the top right: the <strong>folder icon with a plus sign</strong> opens the window <strong>PROCESS RCD DIALOG</strong>, and the <strong>magnifying glass</strong> opens the list of RCDs that were already made. The table has no row until you retrieve one, and says <span class="msg q">No record found.</span></p>
+<div class="fig tall"><img src="images/pr-rcd-list.png" alt="The RCD Processing page"></div>
+<div class="caption">Figure 4.2. The RCD Processing page when it opens. 1 The folder icon: process an RCD · 2 The magnifying glass: the list of RCDs · 3 The table.</div>
+<h3 id="s4-2-1">4.2.1 The Process RCD window</h3>
+<p>Click the folder icon. Fill in the boxes of <strong>PROCESS RCD DIALOG</strong> from top to bottom:</p>
+<table>
+<thead><tr><th>Box</th><th>What to do</th></tr></thead>
+<tbody>
+<tr><td>Liq Officer</td><td>Required. A list of the liquidating officers.</td></tr>
+<tr><td>Collector</td><td>Required. A list of the collectors, each shown as the name and the code. The list follows your assigned personnel (<a href="01-admin.pdf#s1-2-6">Section 1.2.6</a>): only the collectors of type Collector that are assigned to you appear.</td></tr>
+<tr><td>Fund Code</td><td>Required. A list of the fund codes (100(01), 100(91), 100(92), 200, 200(01), 300, 300(13), 300(14), 300(15) and 400).</td></tr>
+<tr><td>Form Code</td><td>Required. The kind of receipt, for example <em>AF#51 - ACCOUNTABLE FORM # 51</em>.</td></tr>
+<tr><td>From OR Date and To OR Date</td><td>The first and the last date of the receipts. Both start as today. Change From OR Date to go back in time.</td></tr>
+<tr><td>RCD Date</td><td>The date of the RCD. It starts as today.</td></tr>
+<tr><td>RCD No.</td><td>Empty at first. TIS fills it in after you click Process.</td></tr>
+</tbody></table>
+<p>The two buttons at the bottom are gray until the required boxes are filled in. <strong>Retrieve</strong> shows the receipts. <strong>Process</strong> makes the RCD.</p>
+<div class="fig tall"><img src="images/pr-rcd-dlg.png" alt="The Process RCD window"></div>
+<div class="caption">Figure 4.3. The Process RCD window. 1 Liq Officer, Collector, Fund Code and Form Code · 2 From OR Date, To OR Date and RCD Date · 3 RCD No. · 4 Retrieve · 5 Process.</div>
+<div class="fig tall"><img src="images/pr-rcd-dd-collector.png" alt="The Collector list"></div>
+<div class="caption">Figure 4.4. The Collector list. 1 The collectors that you may choose. The names are blurred.</div>
+<div class="fig tall"><img src="images/pr-rcd-dd-formcode.png" alt="The Form Code list"></div>
+<div class="caption">Figure 4.5. The Form Code list. 1 The kinds of receipt, from the cash tickets to the real property tax receipt.</div>
+<h3 id="s4-2-2">4.2.2 Retrieve: read before you process</h3>
+<p>Click <strong>Retrieve</strong>. TIS fills the table of the page behind the window. It only reads, it does not make the RCD. Check the table first. The columns are:</p>
+<ul>
+  <li><strong>Collector</strong> and, under <strong>Issued</strong>, the booklet that was given to the collector: <strong>Qty</strong>, <strong>From</strong> and <strong>To</strong>. Every booklet has 50 receipts.</li>
+  <li>Under <strong>Sold</strong>: how many receipts were used (<strong>Qty</strong>) and the first and last number that were used (<strong>From</strong> and <strong>To</strong>).</li>
+  <li><strong>Collected Amount:</strong> the money collected with those receipts.</li>
+  <li><strong>Suffix</strong>, <strong>Fromno</strong> and <strong>Tono</strong>: the receipt suffix and the first and last number of the booklet.</li>
+  <li><strong>Balance:</strong> the receipts that were not used yet (50 minus the Qty sold).</li>
+</ul>
+<p>The total of the Collected Amount is shown below the table. For example, one booklet of 50 receipts, number 4099451 to 4099500, shows 49 sold from 4099452 to 4099500, an amount of 5,310.00 and a balance of 1.</p>
+<div class="fig tall"><img src="images/pr-rcd-res.png" alt="The result of Retrieve"></div>
+<div class="caption">Figure 4.6. The table after Retrieve. 1 Issued: the booklet · 2 Sold: the receipts that were used · 3 Collected Amount · 4 Balance. The collector names are blurred.</div>
+<h3 id="s4-2-3">4.2.3 Process</h3>
+<p>When the table is right, click <strong>Process</strong> in the window. TIS gives the RCD a number and fills the <strong>RCD No.</strong> box. The number is made of the fund code, the collector code, the RCD date and a running number, for example <em>100(01)JRR10212026029</em>: fund 100(01), collector JRR, 10/21/2026, number 029. <span class="msg ok">RCD No. updated successfully</span> appears.</p>
+<p>Process then marks every receipt of the range (and its checks) with the RCD No. and the RCD date, so that the same receipt cannot go into another RCD. Receipts of other collectors, other funds or other forms are not touched.</p>
+<div class="warning"><strong>Caution.</strong> Process changes many receipts at once. Retrieve first and check the dates, the fund and the collector.</div>
+<h3 id="s4-2-4">4.2.4 The list of RCDs and Remove</h3>
+<p>Click the magnifying glass to open the <strong>RCD List</strong>. It shows the <strong>RCD Date</strong>, the <strong>RCD No.</strong> and the <strong>RCLO No.</strong> of each RCD, with a <strong>Remove</strong> button. Type in <strong>Search RCD No.</strong> to find one. When there is none, <span class="msg q">No RCD record</span> appears.</p>
+<ul>
+  <li>An RCD that is already in an RCLO shows its RCLO No. and its <strong>Remove</strong> button is gray, so it cannot be removed.</li>
+  <li>An RCD without an RCLO No. can be removed. TIS asks <span class="msg q">Are you sure to delete this RCD?</span> <strong>Yes</strong> removes the RCD, and the receipts of that RCD become free again for a new RCD. <span class="msg ok">RCD deleted successfully</span> follows.</li>
+</ul>
+<div class="fig tall"><img src="images/pr-rcd-listwin.png" alt="The RCD List"></div>
+<div class="caption">Figure 4.7. The RCD List. 1 Search RCD No. · 2 The RCD No. of each RCD · 3 The RCLO No. of each RCD (empty when the RCD is not in an RCLO yet).</div>
+<h2 id="s4-3">4.3 RCLO Processing</h2>
+<p>This page gathers RCDs into an RCLO. It looks like RCD Processing: a table, the folder icon (<strong>PROCESS RCLO DIALOG</strong>) and the magnifying glass (the list of RCLOs). Its columns are <strong>RCD No.</strong>, <strong>Liquidating Officer</strong>, <strong>Collector</strong>, <strong>Money Value</strong> and <strong>RCD Date</strong>.</p>
+<div class="fig tall"><img src="images/pr-rclo-list.png" alt="The RCLO Processing page"></div>
+<div class="caption">Figure 4.8. The RCLO Processing page when it opens. 1 The folder icon: process an RCLO · 2 The magnifying glass: the list of RCLOs · 3 The table.</div>
+<h3 id="s4-3-1">4.3.1 The Process RCLO window</h3>
+<p>Click the folder icon. The window <strong>PROCESS RCLO DIALOG</strong> has fewer boxes than the RCD window:</p>
+<ul>
+  <li><strong>Fund Code</strong> (required): the fund of the RCDs.</li>
+  <li><strong>From RCD Date</strong> and <strong>To RCD Date</strong>: the first and the last date of the RCDs. Both start as today.</li>
+  <li><strong>RCLO Date</strong>: the date of the RCLO. It starts as today.</li>
+  <li><strong>RCLO No.</strong>: empty until you click Process.</li>
+  <li><strong>Retrieve</strong> and <strong>Process</strong>, gray until a fund is chosen.</li>
+</ul>
+<div class="fig tall"><img src="images/pr-rclo-dlg.png" alt="The Process RCLO window"></div>
+<div class="caption">Figure 4.9. The Process RCLO window. 1 Fund Code · 2 From RCD Date, To RCD Date and RCLO Date · 3 RCLO No. · 4 Retrieve · 5 Process.</div>
+<h3 id="s4-3-2">4.3.2 Retrieve and Process</h3>
+<div class="note"><strong>RCD and RCLO are not the same report.</strong> <strong>RCD</strong> means <strong>Report of Collection and Deposit</strong>. <strong>RCLO</strong> means <strong>Report of Collection by Liquidating Officer</strong>. The RCD is the smaller report and the RCLO is built from RCDs.</div>
+<table>
+<thead><tr><th></th><th>RCD (Section 4.2)</th><th>RCLO (Section 4.3)</th></tr></thead>
+<tbody>
+<tr><td>Full name</td><td>Report of Collection and Deposit</td><td>Report of Collection by Liquidating Officer</td></tr>
+<tr><td>What it processes</td><td>The <strong>official receipts</strong> of one collector, one fund and one kind of form, in a range of receipt dates (From OR Date and To OR Date).</td><td>The <strong>RCDs</strong> of one fund, in a range of RCD dates (From RCD Date and To RCD Date). It does not look at single receipts.</td></tr>
+<tr><td>What you choose</td><td>Liq Officer, Collector, Fund Code and Form Code.</td><td>Fund Code only.</td></tr>
+<tr><td>What it makes</td><td>An <strong>RCD No.</strong> (fund, collector code, date and a running number), for example 100(01)JRR09102026022.</td><td>An <strong>RCLO No.</strong> (fund name, date and a running number), for example 100(01) GENERAL FUND09102026000010.</td></tr>
+<tr><td>What is marked</td><td>Every receipt (and check) of the range receives the RCD No. and the RCD date.</td><td>Every RCD of the range receives the RCLO No. and the RCLO date.</td></tr>
+<tr><td>The result on the page</td><td>One row for each booklet of the collector: issued, sold, collected amount and balance.</td><td>One row for each RCD: its number, the officer, the collector, the money value and the date, with the total.</td></tr>
+<tr><td>Who it covers</td><td>One collector.</td><td>All the collectors of the liquidating officer under the fund.</td></tr>
+<tr><td>Printed report</td><td>Report of Collection and Deposit (<a href="05-reports.pdf#s5-4">Section 5.4</a>).</td><td>Report of Collection by Liquidating Officer, with the deposits (<a href="05-reports.pdf#s5-5">Section 5.5</a>).</td></tr>
+<tr><td>Order</td><td>First.</td><td>Second, after the RCDs exist. An RCD in an RCLO can no longer be removed.</td></tr>
+</tbody></table>
+<p>Choose the fund and the first date, then click <strong>Retrieve</strong>. The page behind the window lists the RCDs that are not yet in an RCLO: the RCD No., the liquidating officer, the collector, the money value of each RCD and the RCD date, with the total below. In the example, one RCD, <em>100(01)JRR09102026022</em> of 09/10/2026, has a money value of 14,970.00.</p>
+<div class="fig tall"><img src="images/pr-rclo-res.png" alt="The result of Retrieve"></div>
+<div class="caption">Figure 4.10. The table after Retrieve. 1 The RCDs that are not in an RCLO yet, and their total. The officer and collector names are blurred.</div>
+<p>When the table is right, click <strong>Process</strong>. TIS gives the RCLO a number (the fund name, the RCLO date and a running number, for example <em>100(01) GENERAL FUND10212026000014</em>) and fills the <strong>RCLO No.</strong> box. <span class="msg ok">RCLO no. updated successfully</span> appears. Every RCD of the table receives the RCLO No. and the RCLO date.</p>
+<div class="warning"><strong>Caution.</strong> Process makes the RCDs part of an RCLO and locks them: an RCD with an RCLO No. can no longer be removed from RCD Processing.</div>
+<h3 id="s4-3-3">4.3.3 The list of RCLOs and Remove</h3>
+<p>Click the magnifying glass to open the <strong>RCLO List</strong>. It shows the <strong>RCLO Date</strong> and the <strong>RCLO No.</strong> of each RCLO, with a <strong>Remove</strong> button. Type in <strong>Search RCLO No.</strong> to find one. When there is none, <span class="msg q">No RCLO record</span> appears. <strong>Remove</strong> asks <span class="msg q">Are you sure to delete this RCLO?</span> <strong>Yes</strong> removes the RCLO and frees its RCDs, which can then go into another RCLO. <span class="msg ok">RCLO deleted successfully</span> follows.</p>
+<div class="fig tall"><img src="images/pr-rclo-listwin.png" alt="The RCLO List"></div>
+<div class="caption">Figure 4.11. The RCLO List. 1 Search RCLO No. · 2 The RCLO No. of each RCLO · 3 The Remove buttons.</div>
+<div class="note"><strong>The two reports.</strong> The printed reports of these numbers are in the Reports menu: <strong>Report of Collection and Deposit(RCD)</strong> and <strong>Report of Collection by Liquidating Officer(RCLO)</strong>.</div>
+</body></html>

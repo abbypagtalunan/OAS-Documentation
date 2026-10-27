@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>TIS: Cashier Manual</title>
+<link rel="stylesheet" href="manual.css">
+<style>.fig.small img { max-height: 55mm; } .fig.tall img { max-height: 105mm; }
+h2,h3,h4{break-after:avoid;page-break-after:avoid;} .fig{break-inside:avoid;break-after:avoid;} .caption{break-before:avoid;}
+.msg{display:inline-block;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:8.8pt;line-height:1.35;padding:.2mm 1.8mm;border-radius:2px;border:1px solid;font-style:normal;margin:.2mm 0;} .msg.q{background:#f1f3f5;border-color:#ced4da;color:#343a40;} .msg.ok{background:#e6f4ea;border-color:#8fcf9f;color:#1e6b34;} .msg.del{background:#fdecea;border-color:#f1a9a0;color:#a12418;} .msg.warn{background:#fff8e1;border-color:#f0d27a;color:#7a5b00;}</style>
+</head><body>
+<div class="section-no">TIS User Manual</div>
+<h1>The Cashier</h1>
+<p class="lead">The Cashier is the person who receives payments at the treasury. This manual follows the sidebar of the Cashier, item by item: <strong>Collection</strong> (seven pages), <strong>Process</strong> (two pages) and <strong>Reports</strong> (five pages). For each page it shows what the page is for, what each button opens, and what you see after you filter or retrieve. Every figure was taken with a Cashier account.</p>
+<div class="note"><strong>Reading the colored boxes.</strong> Messages of TIS are shown in boxes: <span class="msg q">gray</span> for a question or notice, <span class="msg ok">green</span> for success, <span class="msg del">red</span> for an error and <span class="msg warn">yellow</span> for a warning. In the figures, red boxes with numbers point to the parts that the text explains, and names of people are blurred.</div>
+<div class="toc"><div class="toc-title">In this manual</div>
+<ul>
+  <li><a href="#s1-1">1. The Cashier workspace</a></li>
+  <li><a href="#s1-2">2. Collection</a></li>
+  <li class="sub"><a href="#s1-2-1">2.1 Issuance of Official Receipt(OR)</a></li>
+  <li class="sub"><a href="#s1-2-2">2.2 Business Permit(OR)</a></li>
+  <li class="sub"><a href="#s1-2-3">2.3 Building Permit</a></li>
+  <li class="sub"><a href="#s1-2-4">2.4 Community Tax Certificate(CTC) - Ind</a></li>
+  <li class="sub"><a href="#s1-2-5">2.5 Community Tax Certificate(CTC) - Corp</a></li>
+  <li class="sub"><a href="#s1-2-6">2.6 Burial Permit and Fee Receipt</a></li>
+  <li class="sub"><a href="#s1-2-7">2.7 Online Request</a></li>
+  <li><a href="#s2-1">3. Process</a></li>
+  <li class="sub"><a href="#s2-1-1">3.1 Report of Collection and Deposits(RCD) Processing</a></li>
+  <li class="sub"><a href="#s2-1-2">3.2 Report of Collection by Liquidating Officer(RCLO) Processing</a></li>
+  <li><a href="#s3-1">4. Reports</a></li>
+  <li class="sub"><a href="#s3-1-1">4.1 Accountable Forms: Report of Accountability for Accountable Forms</a></li>
+  <li class="sub"><a href="#s3-1-2">4.2 Accountable Forms: Consolidated Report of Accountability for Accountable Forms</a></li>
+  <li class="sub"><a href="#s3-1-3">4.3 Collection: Abstract of Collection</a></li>
+  <li class="sub"><a href="#s3-1-4">4.4 Report of Collection and Deposit(RCD)</a></li>
+  <li class="sub"><a href="#s3-1-5">4.5 Report of Collection by Liquidating Officer(RCLO)</a></li>
+  <li><a href="#s4-1">5. What limits a cashier</a></li>
+</ul></div>
+<h2 id="s1-1">1. The Cashier workspace</h2>
+<p>When a user with the role <strong>Cashier</strong> signs in, the header shows <strong>Cashier</strong> and the sidebar has three groups, then <strong>Exit</strong>. Click the menu icon (three lines) at the top left to open the sidebar. The Admin menus (Transaction, Referential and Admin) do not appear.</p>
+<div class="fig tall"><img src="images/cash-menu.png" alt="The Cashier sidebar"></div>
+<div class="caption">Figure 1. The sidebar of the Cashier, with Collection open. 1 Collection · 2 The seven Collection pages · 3 Process · 4 Reports. The name and email are blurred.</div>
+<p>Pages that list receipts, RCDs or RCLOs only <strong>read</strong> the data when you filter or retrieve. Pressing <strong>Print</strong> prints a page as it is. Nothing changes the records until you press a button such as <strong>Create</strong>, <strong>Process</strong>, <strong>Remove</strong>, <strong>Import</strong> or <strong>Add Deposit</strong>, which this manual only describes.</p>
+<h2 id="s1-2">2. Collection</h2>
+<p>The Collection group makes the official receipts. Six of its pages have the same layout, the seventh (Online Request) lists requests made online.</p>
+<h4>The process of every receipt page (in general)</h4>
+<p>All six receipt pages follow the same process. The two examples in this manual, Issuance of Official Receipt (details typed by the cashier) and Building Permit (details retrieved from an application), show it step by step. Business Permit(OR), Community Tax Certificate - Ind, Community Tax Certificate - Corp and Burial Permit and Fee Receipt work the same way.</p>
+<ol>
+  <li><strong>Check the number.</strong> Type the OR number (or CTC number) from your booklet and click <strong>Check</strong>. TIS shows the officer, collector and form type of the booklet. If the number is not available, a message appears (for example that it is already used, not found, or not of an officer assigned to you).</li>
+  <li><strong>Get the details.</strong> Either type them (payor, gender, address, collection type) or retrieve them from the record of the permit with <strong>Add Details</strong>.</li>
+  <li><strong>Look at the Template List.</strong> It lists the accounts that are paid, their amounts and the total. Add or change lines if the page allows it. Add checks in the Check List.</li>
+  <li><strong>Click Save</strong> (or Ctrl+S). A green message confirms it.</li>
+  <li><strong>Print.</strong> Print the receipt, or find it later with <strong>Select OR To Print</strong>.</li>
+</ol>
+<h3 id="s1-2-1">2.1 Issuance of Official Receipt(OR)</h3>
+<p>Makes a receipt for any payment that has no page of its own. The page has two parts: the <strong>Template List</strong> (the accounts being paid, with their amounts) and the <strong>Check List</strong> (the checks that the payor gave). <strong>Add Template</strong> and <strong>Add Check</strong> are gray until a receipt number has been checked.</p>
+<p>The steps below follow one receipt from the number to Save. To look at a receipt that is already made, click <strong>Select OR To Print</strong> (box 1 of the next figure).</p>
+<div class="fig tall"><img src="images/cash-iss1.png" alt="Issuance of Official Receipt"></div>
+<div class="caption">Figure 2. The page when it opens. 1 Select OR To Print · 2 OR No. · 3 Check · 4 Template List · 5 Check List.</div>
+<p><strong>The button Select OR To Print.</strong> A window opens with the receipts of the day: the date, the OR number and the payor. Type in the search box (box 1) to find an OR number or a payor. Click <strong>Select</strong> (box 3) on the receipt that you want.</p>
+<div class="fig tall"><img src="images/cash-iss2.png" alt="Select OR to print"></div>
+<div class="caption">Figure 3. The window Select OR to print. 1 Search OR No. or payor · 2 The list of receipts · 3 Select. The payors are blurred.</div>
+<p>The receipt opens in a small window with its number, date, payor, the accounts and amounts, the total in words and the checks. Click <strong>Print</strong> (box 2) to print it.</p>
+<div class="fig tall"><img src="images/cash-iss3.png" alt="The receipt"></div>
+<div class="caption">Figure 4. The receipt that was selected. 1 The receipt · 2 Print. The payor is blurred.</div>
+<h4>Making a receipt, step by step</h4>
+<p><strong>Step 1. Check the number.</strong> Type the receipt number from your booklet in <strong>OR No.</strong> and click <strong>Check</strong> (or press Ctrl+Enter). The form opens. The box at the right shows the <strong>Liq Officer</strong>, the <strong>Collector</strong> and the <strong>Form Type</strong> of the booklet, and the <strong>RCD No.</strong> and <strong>RCLO No.</strong> stay empty until the receipt is processed. The <strong>Document Date</strong> and <strong>OR Date</strong> start as today.</p>
+<p><strong>Step 2. Fill in the payor.</strong> Type the <strong>Payor</strong>, choose the <strong>Gender</strong> and check the <strong>Address</strong>. <strong>Business Type</strong>, <strong>Business Info</strong> and <strong>Remarks</strong> can stay <em>N/A</em>. A box that is left empty shows <span class="msg del">Required</span> under it when you save.</p>
+<div class="fig tall"><img src="images/cash-iss-form.png" alt="The form after Check"></div>
+<div class="caption">Figure 5. The form after Check. 1 OR No. and Check · 2 Payor · 3 Gender · 4 Collection Type.</div>
+<p><strong>Step 3. Choose the Collection Type.</strong> Open the <strong>Collection Type</strong> list and choose the payment, for example <em>Aggregate Landholdings</em>. The list can be searched by typing. The <strong>Fund Code</strong> is filled in for you.</p>
+<div class="fig tall"><img src="images/cash-iss-type.png" alt="The Collection Type list"></div>
+<div class="caption">Figure 6. The Collection Type list. 1 The collection types (the OR templates).</div>
+<p>TIS asks <span class="msg q">Do you want to add the template?</span> Click <strong>Yes</strong> to put the lines of that collection type in the Template List, or <strong>No</strong> to stop.</p>
+<div class="fig tall"><img src="images/cash-iss-confirm.png" alt="Do you want to add the template?"></div>
+<div class="caption">Figure 7. The question. 1 The question · 2 Yes.</div>
+<p>A green message <span class="msg ok">Adding template to table success</span> appears and the Template List shows the lines: the account code, the particulars and the amount, with the total below.</p>
+<div class="fig tall"><img src="images/cash-iss-added.png" alt="The template added"></div>
+<div class="caption">Figure 8. The template added. 1 Collection Type · 2 The message · 3 The Template List and its total.</div>
+<p><strong>Step 4. Add another collection type.</strong> If the payor pays for something else, click <strong>Add Template</strong>. In <strong>Select Additional Collection Type</strong> choose the type and answer <strong>Yes</strong> to the question. Its lines are added under the others and the total grows.</p>
+<div class="fig tall"><img src="images/cash-iss-addtpl.png" alt="Select Additional Collection Type"></div>
+<div class="caption">Figure 9. The button and the window. 1 Add Template · 2 Select Additional Collection Type.</div>
+<div class="fig tall"><img src="images/cash-iss-added2.png" alt="Another template added"></div>
+<div class="caption">Figure 10. After the second template. 1 The message · 2 The Template List, now with three lines and a total of 110.00 · 3 Add Check.</div>
+<p><strong>Step 5. Change a line (if needed).</strong> Click the pencil icon of a line. The window <strong>Edit</strong> shows the <strong>Particulars</strong> and the <strong>Amount</strong>. Change them and click <strong>Update</strong>, or click <strong>Close</strong> to leave without a change.</p>
+<div class="fig tall"><img src="images/cash-iss-edit.png" alt="Edit a line"></div>
+<div class="caption">Figure 11. The window Edit. 1 Particulars, Amount, Close and Update · 2 The pencil icon of the line.</div>
+<p><strong>Step 6. Checks.</strong> If the payor pays by check, click <strong>Add Check</strong> and fill in the check number, date, bank and amount. The checks appear in the Check List.</p>
+<p><strong>Step 7. Click Save.</strong> The buttons at the top right of the form are <strong>Select OR To Print/Copy</strong>, <strong>Save</strong> and <strong>Erase</strong>.</p>
+<div class="fig small"><img src="images/cash-iss-btn.png" alt="The buttons"></div>
+<div class="caption">Figure 12. The buttons of the form. 1 Select OR To Print/Copy · 2 Save · 3 Erase.</div>
+<p><strong>What Save does.</strong> Click <strong>Save</strong> (or press Ctrl+S). <strong>Save</strong> is gray until the form has at least one line in the Template List. TIS then records the receipt under the OR number, with the payor, gender, address, collection type, the dates and the total amount (split between special accounts and the other accounts). The green message <span class="msg ok">Issuance details updated successfully</span> appears and the receipt is shown again as saved, with its lines and checks. After a moment the receipt opens for printing, and then TIS asks <strong>Next OR?</strong> Choose <strong>Yes</strong> to continue with the next number of the booklet. A saved receipt can later be found with <strong>Select OR To Print/Copy</strong>. <strong>Erase</strong> cancels a receipt that was saved, and shows <span class="msg ok">Issuance OR cancelled successfully</span>.</p>
+<h3 id="s1-2-2">2.2 Business Permit(OR)</h3>
+<p>Makes the receipt of a business permit. The business and its fees come from the assessment of the business. It has the same layout as the page above: <strong>OR No.</strong>, <strong>Check</strong>, <strong>Template List</strong> and <strong>Check List</strong>, and <strong>Select OR To Print</strong>.</p>
+<div class="fig tall"><img src="images/cash-bp1.png" alt="Business Permit"></div>
+<div class="caption">Figure 13. The page when it opens. 1 Select OR To Print · 2 OR No. · 3 Check · 4 Template List.</div>
+<p><strong>What a cashier sees on Check.</strong> A receipt can be handled only when its booklet belongs to an officer that is assigned to your user. If you type a number of another officer, TIS shows a red message. Click <strong>OK</strong> and ask the Admin to assign the officer to your user.</p>
+<div class="fig tall"><img src="images/cash-bp2.png" alt="The message of Check"></div>
+<div class="caption">Figure 14. Check on a number that is not of an assigned officer. 1 OR No. · 2 Check · 3 The message · 4 OK.</div>
+<p>The message reads <span class="msg del">You are not allowed to proccess this personnel.</span></p>
+<h3 id="s1-2-3">2.3 Building Permit</h3>
+<p>Makes the receipt of a building permit from the application of the permit. This is the sample for the pages that take their data from another office: the payor and the fees are not typed, they are retrieved from the application. <strong>Business Permit(OR)</strong> and the other Collection pages follow <strong>the same process</strong> (check the number, retrieve or fill in the details, look at the Template List, click Save, print). Only the source of the details differs.</p>
+<p><strong>Step 1. Check the number.</strong> Type the OR number and click <strong>Check</strong>. The form opens with the officer, collector and form type of the booklet. The <strong>Payor</strong> is empty, <strong>Save</strong> is gray and the Template List shows <em>No record found</em>. Click <strong>Add Details</strong>.</p>
+<div class="fig tall"><img src="images/cash-bld-empty.png" alt="Building Permit after Check"></div>
+<div class="caption">Figure 15. The form after Check. 1 OR No. and Check · 2 Add Details · 3 The empty Template List. The officers are blurred.</div>
+<p><strong>Step 2. Find the application.</strong> The window <strong>Filter To Display</strong> offers two ways: tick <strong>Search for Application No.</strong> and type the number, or tick <strong>Search for Owner</strong> and type the name (the owner is required). Click <strong>Filter</strong>.</p>
+<div class="fig tall"><img src="images/cash-bld-filter.png" alt="Filter To Display"></div>
+<div class="caption">Figure 16. The window Filter To Display. 1 Search for Application No. · 2 Search for Owner · 3 Filter.</div>
+<p>The list shows each application with its number and the owner. Use the search box to narrow it. Click <strong>Retrieve</strong> on the application of the payor.</p>
+<div class="fig tall"><img src="images/cash-bld-list.png" alt="The applications"></div>
+<div class="caption">Figure 17. The list of applications. 1 Search application no./owner · 2 Retrieve. The owner is blurred.</div>
+<p><strong>Step 3. Look at the receipt.</strong> The <strong>Payor</strong> is filled in and the Template List shows the fees of the permit with their account codes and the total, here 5,808.50 and 468.00 for 6,276.50. <strong>Save</strong> is now blue. If the payor pays by check, use <strong>Add Check</strong> as in <a href="#s1-2-1">2.1</a>.</p>
+<div class="fig tall"><img src="images/cash-bld-filled.png" alt="Building Permit retrieved"></div>
+<div class="caption">Figure 18. The form after Retrieve. 1 Payor · 2 The fees of the permit and the total · 3 Save. The names are blurred.</div>
+<p><strong>Step 4. Click Save</strong> (or press Ctrl+S).</p>
+<div class="fig tall"><img src="images/cash-bld-btn.png" alt="The buttons"></div>
+<div class="caption">Figure 19. The buttons of the page. 1 Select OR To Print · 2 Save.</div>
+<p>The green message <span class="msg ok">Building permit created successfully</span> appears. The button <strong>Save</strong> is replaced by <strong>Print OR</strong>, and the lines of the Template List now show the particulars of the accounts (for example <em>Accessory Structure Fees</em> and <em>Electrical Fees</em>).</p>
+<div class="fig tall"><img src="images/cash-bld-saved.png" alt="Building Permit saved"></div>
+<div class="caption">Figure 20. After Save. 1 The message · 2 Print OR · 3 The saved fees. The names are blurred.</div>
+<p><strong>Step 5. Print.</strong> Click <strong>Print OR</strong> to print the receipt on the official form: the date, the OR number, the fund, the payor, the lines with their account codes and amounts, the total in figures and in words, and the name of the treasurer. To print an older receipt, use <strong>Select OR To Print</strong>.</p>
+<div class="fig tall"><img src="images/cash-bld-print.png" alt="The printed receipt"></div>
+<div class="caption">Figure 21. The printed receipt. The payor and the treasurer are blurred.</div>
+<h3 id="s1-2-4">2.4 Community Tax Certificate(CTC) - Ind</h3>
+<p>Makes a community tax certificate for a person. The first box is the <strong>CTC No.</strong> (not an OR number), followed by <strong>Check</strong> and a small box for the suffix. <strong>Add Template</strong> and <strong>Add Check</strong> work as in the other pages after a number is checked.</p>
+<div class="fig tall"><img src="images/cash-ctci1.png" alt="CTC Individual"></div>
+<div class="caption">Figure 22. The page when it opens. 1 Select OR To Print · 2 CTC No. · 3 Check · 4 Add Template · 5 Add Check.</div>
+<h3 id="s1-2-5">2.5 Community Tax Certificate(CTC) - Corp</h3>
+<p>The same page for a company. It also shows <strong>CTC No.</strong>, <strong>Check</strong>, <strong>Add Template</strong>, <strong>Add Check</strong> and <strong>Select OR To Print</strong>.</p>
+<div class="fig tall"><img src="images/cash-ctcc1.png" alt="CTC Corporation"></div>
+<div class="caption">Figure 23. The page when it opens. 1 Select OR To Print · 2 CTC No. · 3 Check · 4 Add Template · 5 Add Check.</div>
+<h3 id="s1-2-6">2.6 Burial Permit and Fee Receipt</h3>
+<p>Makes the receipt of a burial permit and its fees. The page has <strong>OR No.</strong>, <strong>Check</strong>, <strong>Add Template</strong>, <strong>Add Check</strong> and <strong>Select OR To Print</strong>.</p>
+<div class="fig tall"><img src="images/cash-bur1.png" alt="Burial Permit and Fee Receipt"></div>
+<div class="caption">Figure 24. The page when it opens. 1 Select OR To Print · 2 OR No. · 3 Check · 4 Add Template · 5 Add Check.</div>
+<h3 id="s1-2-7">2.7 Online Request</h3>
+<p>Lists the payments that people requested online, so that the cashier can find a request and set it as paid. The list shows the number, the payor and the <strong>Service Type</strong> (for example <em>burial</em>). Use the search box (box 1) to find a payor, <strong>Scan QR</strong> (box 2) to read the QR code of a request with the camera, or <strong>Upload QR</strong> (box 3) to read it from a picture file. The eye icon in the <strong>Action</strong> column opens the request.</p>
+<div class="fig tall"><img src="images/cash-onl1.png" alt="Online Request"></div>
+<div class="caption">Figure 25. The page when it opens. 1 Search payor · 2 Scan QR · 3 Upload QR · 4 The requests. The example is a test request.</div>
+<p>The window <strong>Request Details</strong> shows the <strong>Request Information</strong> (payee, deceased, cemetery, dates and cause) and the <strong>Breakdown</strong>: the accounts to pay with their amounts. The pencil icon of each line changes that line.</p>
+<div class="fig tall"><img src="images/cash-onl2.png" alt="Request Details"></div>
+<div class="caption">Figure 26. The window Request Details. 1 Request Information · 2 Breakdown.</div>
+<h2 id="s2-1">3. Process</h2>
+<p>Process closes the collection. The RCD gathers the receipts of one collector, and the RCLO gathers the RCDs of one fund. Both pages have two icons at the top right: the <strong>folder with a plus</strong> (to process) and the <strong>magnifier</strong> (to list what was processed).</p>
+<h3 id="s2-1-1">3.1 Report of Collection and Deposits(RCD) Processing</h3>
+<p>The table shows the collector, the receipts <strong>Issued</strong> and <strong>Sold</strong> (quantity, from and to), the <strong>Collected Amount</strong>, the booklet <strong>Suffix</strong>, <strong>Fromno</strong>, <strong>Tono</strong> and the <strong>Balance</strong>. It is empty until you retrieve.</p>
+<div class="fig tall"><img src="images/cash-rcd1.png" alt="RCD Processing"></div>
+<div class="caption">Figure 27. The page when it opens. 1 Process (folder icon) · 2 The list of RCDs (magnifier) · 3 The table of the collector.</div>
+<p><strong>The magnifier</strong> opens the <strong>RCD List</strong>: the date of each RCD, its number and the RCLO that holds it. Use the search box (box 1) to find an RCD number. The <strong>Remove</strong> button of a line is blue only for an RCD that is not yet in an RCLO.</p>
+<div class="fig tall"><img src="images/cash-rcd2.png" alt="RCD List"></div>
+<div class="caption">Figure 28. The window RCD List. 1 Search RCD No. · 2 RCD date, RCD number and RCLO number.</div>
+<p><strong>The folder icon</strong> opens <strong>PROCESS RCD DIALOG</strong>. Choose the <strong>Liq Officer</strong>, the <strong>Collector</strong> (only the officers assigned to your user are offered), the <strong>Fund Code</strong> and the <strong>Form Code</strong>, then the <strong>From OR Date</strong>, <strong>To OR Date</strong> and the <strong>RCD Date</strong>. Click <strong>Retrieve</strong> to see the receipts of that choice. <strong>Process</strong> gives the RCD its number. Both buttons are gray until the lists are chosen.</p>
+<div class="fig tall"><img src="images/cash-rcd3.png" alt="Process RCD dialog"></div>
+<div class="caption">Figure 29. The window PROCESS RCD DIALOG. 1 Liq Officer · 2 Collector · 3 Fund Code · 4 Form Code · 5 The dates · 6 RCD No. · 7 Retrieve · 8 Process.</div>
+<h3 id="s2-1-2">3.2 Report of Collection by Liquidating Officer(RCLO) Processing</h3>
+<p>The table lists the RCDs that go into the RCLO: <strong>RCD No.</strong>, <strong>Liquidating Officer</strong>, <strong>Collector</strong>, <strong>Money Value</strong> and <strong>RCD Date</strong>.</p>
+<div class="fig tall"><img src="images/cash-rclo1.png" alt="RCLO Processing"></div>
+<div class="caption">Figure 30. The page when it opens. 1 Process (folder icon) · 2 The list of RCLOs (magnifier) · 3 The table of RCDs.</div>
+<p><strong>The folder icon</strong> opens <strong>PROCESS RCLO DIALOG</strong>: choose the <strong>Fund Code</strong>, the <strong>From RCD Date</strong> and <strong>To RCD Date</strong>, and the <strong>RCLO Date</strong>. <strong>Retrieve</strong> shows the RCDs of the period. <strong>Process</strong> gives them the RCLO number.</p>
+<div class="fig tall"><img src="images/cash-rclo2.png" alt="Process RCLO dialog"></div>
+<div class="caption">Figure 31. The window PROCESS RCLO DIALOG. 1 Fund Code · 2 The dates · 3 RCLO No. · 4 Retrieve · 5 Process.</div>
+<p><strong>The magnifier</strong> opens the <strong>RCLO List</strong>, with the date and number of each RCLO and a <strong>Remove</strong> button. Use the search box to find an RCLO number.</p>
+<div class="fig tall"><img src="images/cash-rclo3.png" alt="RCLO List"></div>
+<div class="caption">Figure 32. The window RCLO List. 1 Search RCLO No. · 2 The RCLOs · 3 Remove.</div>
+<h2 id="s3-1">4. Reports</h2>
+<p>The Reports group has five reports. The pages only show data. Each one has a <strong>Filter</strong> or <strong>Search</strong> button to choose what to show, and <strong>Print</strong> to print the report on the page. Printing opens the print window of the browser.</p>
+<h3 id="s3-1-1">4.1 Accountable Forms: Report of Accountability for Accountable Forms</h3>
+<p>Shows what happened to each booklet of receipts during a year.</p>
+<p><strong>Step 1.</strong> The page opens with the empty report. Click <strong>Filter</strong> (box 1).</p>
+<div class="fig tall"><img src="images/cash-af1.png" alt="Report of Accountability"></div>
+<div class="caption">Figure 33. The report when it opens. 1 Filter · 2 Print · 3 The columns of the report.</div>
+<p><strong>Step 2.</strong> In <strong>Filter To Display</strong> the <strong>Year</strong> starts as the present year. Tick <strong>Filter By Collector</strong> to choose one collector, or leave it empty to show all. Click <strong>Filter</strong>.</p>
+<div class="fig tall"><img src="images/cash-af2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 34. The filter window. 1 Year · 2 Filter By Collector and the Collector list · 3 Filter.</div>
+<p><strong>Step 3.</strong> Each row is one booklet: its form code, date, the beginning balance, what was issued and the ending balance. Click <strong>Print</strong> to print it.</p>
+<div class="fig tall"><img src="images/cash-af3.png" alt="The report"></div>
+<div class="caption">Figure 35. The report after Filter. 1 Filter · 2 Print · 3 The columns · 4 One row for each booklet.</div>
+<h3 id="s3-1-2">4.2 Accountable Forms: Consolidated Report of Accountability for Accountable Forms</h3>
+<p>The same report in a short form, for the Treasurer, with a <strong>Report No</strong> line to write by hand and a <strong>Remarks</strong> column with the collector who holds each booklet. The filter has only the <strong>Year</strong>.</p>
+<div class="fig tall"><img src="images/cash-cra1.png" alt="Consolidated Report"></div>
+<div class="caption">Figure 36. The report when it opens. 1 Filter · 2 Print · 3 The columns. The name of the treasurer is blurred.</div>
+<div class="fig tall"><img src="images/cash-cra2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 37. The filter window. 1 Year · 2 Filter.</div>
+<div class="fig tall"><img src="images/cash-cra3.png" alt="Consolidated Report with data"></div>
+<div class="caption">Figure 38. The report after Filter. 1 Filter · 2 Print · 3 Remarks: the collector of each booklet. The names are blurred.</div>
+<h3 id="s3-1-3">4.3 Collection: Abstract of Collection</h3>
+<p>Lists the receipts that were issued, with the payee, the account and the amount, grouped by form and month, with sub totals and a total. The buttons are <strong>Filter</strong>, <strong>Print</strong> and <strong>Export To Excel</strong> (saves the report as a spreadsheet).</p>
+<div class="fig tall"><img src="images/cash-abs1.png" alt="Abstract of Collection"></div>
+<div class="caption">Figure 39. The report when it opens. 1 Filter · 2 Print · 3 Export To Excel · 4 The columns.</div>
+<p>Click <strong>Filter</strong>. Tick the check box of each way of filtering: <strong>Filter By Date</strong> (from and to), <strong>Filter By Collector</strong>, <strong>Filter By Fund</strong> and <strong>Filter By OR Template</strong>. A list is active only after its box is ticked. <strong>Filter</strong> stays gray until you tick at least one box. If a ticked list is empty, <span class="msg del">Collector required!</span> or <span class="msg del">Fund required!</span> appears.</p>
+<div class="fig tall"><img src="images/cash-abs2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 40. The filter window with Filter By Date ticked. 1 Date · 2 Collector · 3 Fund · 4 OR Template · 5 Filter.</div>
+<p>The report then shows the period, for example <em>For the period of 27/10/2026 to 27/10/2026</em>, and the receipts.</p>
+<div class="fig tall"><img src="images/cash-abs3.png" alt="The abstract"></div>
+<div class="caption">Figure 41. The abstract after Filter. 1 Filter · 2 Print · 3 Export To Excel · 4 The columns. The payee names are blurred.</div>
+<h3 id="s3-1-4">4.4 Report of Collection and Deposit(RCD)</h3>
+<p>Shows one RCD made in RCD Processing. When it opens it is empty. The buttons are <strong>Search</strong> and <strong>Import</strong>; <strong>Print</strong> appears when an RCD is on the page.</p>
+<p><strong>Step 1.</strong> Click <strong>Search</strong>. In <strong>Filter To Display</strong> each way of finding an RCD has a check box: <strong>Collector</strong>, <strong>Year</strong>, <strong>Month</strong>, and after the word <strong>OR</strong> a single <strong>Date</strong>. <strong>Filter</strong> stays gray until you tick one.</p>
+<div class="fig tall"><img src="images/cash-rpr1.png" alt="RCD report"></div>
+<div class="caption">Figure 42. The report when it opens. 1 Search · 2 Import · 3 The details of the RCD · 4 The table.</div>
+<div class="fig tall"><img src="images/cash-rpr2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 43. The filter window. 1 Collector · 2 Year · 3 Month · 4 Date · 5 Filter.</div>
+<p><strong>Step 2.</strong> Tick a box (here the <strong>Year</strong>) and click <strong>Filter</strong>. The window <strong>RCD No. List</strong> lists the RCDs with their amounts.</p>
+<p><strong>Step 3.</strong> Click <strong>Retrieve</strong> on the RCD that you want.</p>
+<div class="fig tall"><img src="images/cash-rpr4.png" alt="RCD No. List"></div>
+<div class="caption">Figure 44. The window RCD No. List. 1 The RCDs and their amounts · 2 Retrieve.</div>
+<p>The page shows the number, date, liquidating officer, collector and amount of the RCD, and the table of its receipts with the <strong>Grand Total</strong>.</p>
+<div class="fig tall"><img src="images/cash-rpr5.png" alt="The RCD"></div>
+<div class="caption">Figure 45. The RCD after Retrieve. 1 Search · 2 Import · 3 Print · 4 The details · 5 The receipts. The names are blurred.</div>
+<p><strong>Step 4. Print.</strong> The button <strong>Print</strong> opens the print page, the <strong>Collector's Report of Collections and Deposits</strong>, with the collections, the remittances and deposits and the accountability for accountable forms. Click its own <strong>Print</strong> button to send it to the printer.</p>
+<div class="fig tall"><img src="images/cash-rpr7.png" alt="The print page of the RCD"></div>
+<div class="caption">Figure 46. The print page. 1 Print · 2 The heading and the accountable officer · 3 A. Collections · 4 B. Remittances/Deposits. The names are blurred.</div>
+<p><strong>Import.</strong> Real property tax receipts are made in another system. <strong>Import</strong> opens <strong>Import RPT</strong>: choose the <strong>Date From</strong>, <strong>Date To</strong> and <strong>Encoded By</strong> (only the RPT users assigned to your user), then click <strong>Filter</strong> to list them. The messages are <span class="msg del">Encoded by is required</span>, <span class="msg del">No rpt permit OR records found</span> and <span class="msg del">No OR records to import</span>.</p>
+<div class="fig tall"><img src="images/cash-rpr6.png" alt="Import RPT"></div>
+<div class="caption">Figure 47. The window Import RPT. 1 Date From and Date To · 2 Encoded By · 3 Filter.</div>
+<h3 id="s3-1-5">4.5 Report of Collection by Liquidating Officer(RCLO)</h3>
+<p>Shows one RCLO made in RCLO Processing and records the deposits of its money. When it opens it is empty. It has the table of the RCDs, a list of checks with a <strong>Breakdown</strong> box and the table of deposits.</p>
+<div class="fig tall"><img src="images/cash-rpl1.png" alt="RCLO report"></div>
+<div class="caption">Figure 48. The report when it opens. 1 Search · 2 The details of the RCLO · 3 The RCDs · 4 The Breakdown · 5 The deposits.</div>
+<p><strong>Step 1.</strong> Click <strong>Search</strong>. The check boxes are <strong>Liquidation Officer</strong>, <strong>Year</strong>, <strong>Month</strong> and, after <strong>OR</strong>, a single <strong>Date</strong>.</p>
+<div class="fig tall"><img src="images/cash-rpl2.png" alt="Filter To Display"></div>
+<div class="caption">Figure 49. The filter window. 1 Liquidation Officer · 2 Year · 3 Month · 4 Date · 5 Filter.</div>
+<p><strong>Step 2.</strong> Tick a box (here the <strong>Year</strong>) and click <strong>Filter</strong>. The <strong>RCLO No. List</strong> opens.</p>
+<p><strong>Step 3.</strong> Click <strong>Retrieve</strong> on the RCLO that you want.</p>
+<div class="fig tall"><img src="images/cash-rpl3.png" alt="RCLO No. List"></div>
+<div class="caption">Figure 50. The window RCLO No. List. 1 The RCLOs and their amounts · 2 Retrieve.</div>
+<p>The page shows the RCLO: the collector, the RCD date, the RCD number and, for each form, its quantity, start number, end number and amount, with a <strong>Sub Total</strong> and a <strong>Grand Total</strong>. The <strong>Breakdown</strong> adds up the cash (<strong>Current</strong>) and the <strong>Check</strong>.</p>
+<div class="fig tall"><img src="images/cash-rpl4.png" alt="The RCLO"></div>
+<div class="caption">Figure 51. The RCLO after Retrieve. 1 Search · 2 Print · 3 The details · 4 The RCDs and totals · 5 The Breakdown and Add Deposit. The names are blurred.</div>
+<p><strong>Add Deposit.</strong> The money has to be deposited. <strong>Add Deposit</strong> (gray until an RCLO is on the page) opens a window: the <strong>Bank / Accountable Officer</strong>, the <strong>Method</strong> (cash or check), the <strong>Validation No / O.R / Deposit Slip</strong>, the <strong>Deposit Date</strong> and the <strong>Amount</strong>. <strong>Create</strong> saves the deposit and shows it in the table at the bottom.</p>
+<div class="fig tall"><img src="images/cash-rpl5.png" alt="Add Deposit"></div>
+<div class="caption">Figure 52. The window Add Deposit. 1 Bank / Accountable Officer and Method · 2 Validation No · 3 Deposit Date · 4 Amount · 5 Create.</div>
+<p><strong>Print.</strong> The button <strong>Print</strong> opens the <strong>Report of Collections and Deposits</strong> with the collections (date issued, serial numbers, payor, particulars, amount), the remittances and deposits, and the accountability for accountable forms. Click its own <strong>Print</strong> button to print it.</p>
+<div class="fig tall"><img src="images/cash-rpl6.png" alt="The print page of the RCLO"></div>
+<div class="caption">Figure 53. The print page. 1 Print · 2 The accountable officer and the RD number · 3 A. Collections · 4 B. Remittances/Deposits. The names are blurred.</div>
+<h2 id="s4-1">5. What limits a cashier</h2>
+<ul>
+  <li><strong>Assigned officers.</strong> A receipt can be handled only when its booklet belongs to an officer assigned to your user. Otherwise TIS shows <span class="msg del">You are not allowed to proccess this personnel.</span>. The Collector list of RCD Processing offers only the assigned officers.</li>
+  <li><strong>Assigned RPT users.</strong> Import RPT offers only the RPT users assigned to your user.</li>
+  <li><strong>No set-up pages.</strong> Funds, accounts, collection types, officers, booklets and the OR templates are kept by the Admin. If one is missing, ask the Admin.</li>
+  <li><strong>Erase.</strong> The Erase button of the Business Permit page is shown only to the Admin.</li>
+</ul>
+</body></html>
